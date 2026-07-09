@@ -1,0 +1,354 @@
+/* ============================================================
+   Briefing de Business — stiluri comune
+   Dark-mode editorial, mobile-first, fără dependențe externe.
+   ============================================================ */
+
+:root {
+  --bg: #0e1116;
+  --bg-raised: #151a21;
+  --bg-inset: #10141a;
+  --border: #262d38;
+  --border-strong: #38424f;
+  --ink: #e8e6e1;
+  --ink-dim: #9aa3ad;
+  --ink-faint: #6b7480;
+  --accent: #e3b341;        /* auriu editorial */
+  --accent-soft: rgba(227, 179, 65, 0.12);
+  --up: #4ade80;
+  --down: #f87171;
+  --link: #7fb4e6;
+  --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: "SF Mono", "Cascadia Code", Consolas, Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* ---------- Masthead (antet de ziar) ---------- */
+
+.masthead {
+  border-bottom: 3px double var(--border-strong);
+  padding: 36px 0 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.masthead .kicker {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+
+.masthead h1 {
+  font-size: clamp(30px, 6vw, 46px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.masthead h1 a { color: var(--ink); }
+.masthead h1 a:hover { text-decoration: none; color: var(--accent); }
+
+.masthead .tagline {
+  font-style: italic;
+  color: var(--ink-dim);
+  font-size: 15px;
+  margin: 10px 0 0;
+}
+
+.masthead .edition-date {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 14px 0 0;
+}
+
+/* ---------- Lista de ediții (index) ---------- */
+
+.editions { margin-top: 36px; }
+
+.editions-heading {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+  margin: 0 0 4px;
+}
+
+.edition-card {
+  display: block;
+  padding: 26px 4px;
+  border-bottom: 1px solid var(--border);
+  color: inherit;
+}
+
+.edition-card:hover { background: var(--bg-raised); text-decoration: none; }
+
+.edition-card .date {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.edition-card h2 {
+  font-size: clamp(21px, 4vw, 27px);
+  line-height: 1.25;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+
+.edition-card:hover h2 { color: var(--accent); }
+
+.edition-card .teaser {
+  color: var(--ink-dim);
+  font-size: 16px;
+  margin: 0;
+}
+
+.empty-state {
+  padding: 48px 4px;
+  color: var(--ink-faint);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ---------- Corpul unei ediții ---------- */
+
+.briefing h2.section-title {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-top: 3px double var(--border-strong);
+  padding-top: 22px;
+  margin: 52px 0 6px;
+}
+
+.briefing .section-sub {
+  color: var(--ink-faint);
+  font-style: italic;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.briefing h3 {
+  font-size: 21px;
+  line-height: 1.3;
+  margin: 30px 0 10px;
+}
+
+.briefing h4 {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin: 26px 0 8px;
+}
+
+.briefing p { margin: 0 0 16px; }
+
+.briefing ul, .briefing ol { padding-left: 24px; margin: 0 0 16px; }
+.briefing li { margin-bottom: 10px; }
+
+.briefing .lede {
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* Semnale (Puls Global) */
+.signal {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 0 0 14px;
+}
+
+.signal .signal-head {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+
+.signal p { margin: 0 0 6px; font-size: 15.5px; color: var(--ink-dim); }
+
+.signal .src {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  color: var(--ink-faint);
+}
+
+/* Cifre / mișcări de piață */
+.num-up { color: var(--up); font-family: var(--mono); font-size: 0.92em; }
+.num-down { color: var(--down); font-family: var(--mono); font-size: 0.92em; }
+.num { font-family: var(--mono); font-size: 0.92em; color: var(--ink); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  margin: 0 0 20px;
+}
+
+th {
+  text-align: left;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border-bottom: 1px solid var(--border-strong);
+  padding: 8px 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.table-wrap { overflow-x: auto; }
+
+/* Vocile celor 3 agenți */
+.agent-take {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 0 0 14px;
+  background: var(--bg-inset);
+}
+
+.agent-take .agent-name {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.agent-take.strateg .agent-name { color: #8ab4f8; }
+.agent-take.marketer .agent-name { color: #f0a35e; }
+.agent-take.financiar .agent-name { color: #7ed6a7; }
+
+.agent-take p { margin: 0 0 10px; font-size: 16px; }
+.agent-take p:last-child { margin-bottom: 0; }
+
+/* Planul de execuție */
+.exec-plan {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+
+.exec-plan ol { margin: 0; padding-left: 22px; }
+.exec-plan li { margin-bottom: 12px; }
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+  font-family: var(--sans);
+}
+
+.meta-pill {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+.meta-pill strong { color: var(--accent); }
+
+/* Contra-argumente / riscuri */
+.risks {
+  border-left: 3px solid var(--down);
+  padding: 4px 0 4px 18px;
+  margin: 20px 0;
+}
+
+.risks h4 { color: var(--down); margin-top: 0; }
+
+/* Verdictul */
+.verdict {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 22px 24px;
+  margin: 24px 0;
+  font-size: 18px;
+}
+
+.verdict p { margin: 0 0 12px; }
+.verdict p:last-child { margin-bottom: 0; }
+
+/* Navigație subsol */
+.footer-nav {
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink-faint);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.disclaimer {
+  margin-top: 28px;
+  font-size: 12.5px;
+  font-family: var(--sans);
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .container { padding: 0 14px 60px; }
+  .masthead { padding-top: 26px; }
+}
