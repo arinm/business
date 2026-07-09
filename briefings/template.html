@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ediția YYYY-MM-DD — [Titlul Oportunității #1]</title>
+<meta name="description" content="[Teaser-ul ediției, 1-2 fraze — același text ca în cardul din index.html.]">
+<meta property="og:title" content="[Titlul Oportunității #1] — Lovitura, ZZ luna AAAA">
+<meta property="og:description" content="[Rezumat scurt al ediției.]">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -13,7 +18,7 @@
     <p class="kicker">Briefing de business · Ediție zilnică</p>
     <h1><a href="../index.html">Lovitura</a></h1>
     <p class="tagline">Doi parteneri, o misiune: găsim și executăm cea mai bună oportunitate.</p>
-    <p class="edition-date">Ediția din ZZ luna AAAA</p>
+    <p class="edition-date">Ediția din ZZ luna AAAA · Ediția N</p>
   </header>
 
   <p class="lede">[Lede: 2-3 fraze care rezumă ediția — care e semnalul dominant al zilei și ce recomandăm.]</p>
@@ -24,8 +29,9 @@
 
   <div class="signal">
     <p class="signal-head">[Semnal 1 — titlu]</p>
-    <p>[Ce s-a întâmplat și de ce contează pentru noi.]</p>
-    <p class="src">Sursă: <a href="#">[publicație, data]</a></p>
+    <p>[Ce s-a întâmplat și de ce contează pentru noi. Mișcările se marchează cu
+       <span class="num-up">+X%</span> / <span class="num-down">−X%</span> / <span class="num">$XM</span>.]</p>
+    <p class="src">Sursă: <a href="https://REPLACE-ME.example">[publicație, data]</a></p>
   </div>
   <!-- Repetă .signal de 5 ori -->
 
@@ -36,33 +42,55 @@
   <div class="table-wrap">
     <table>
       <thead>
-        <tr><th>Sector / Companie</th><th>Mișcare</th><th>De ce</th><th>Sursă</th></tr>
+        <tr><th>Unde</th><th>Mișcare</th><th>De ce</th><th>Sursă</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td>[Nume]</td>
+          <td>[Sector / companie / categorie VC]</td>
           <td><span class="num-up">+X%</span></td>
           <td>[Motiv]</td>
-          <td><a href="#">[link]</a></td>
+          <td><a href="https://REPLACE-ME.example">[link]</a></td>
+        </tr>
+        <tr>
+          <td>[Exemplu scădere]</td>
+          <td><span class="num-down">−X%</span></td>
+          <td>[Motiv]</td>
+          <td><a href="https://REPLACE-ME.example">[link]</a></td>
+        </tr>
+        <tr>
+          <td>[Exemplu rundă VC]</td>
+          <td><span class="num">$XM seed</span></td>
+          <td>[Motiv]</td>
+          <td><a href="https://REPLACE-ME.example">[link]</a></td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <h4>Citirea rotației de capital</h4>
+  <h3 class="subhead">Citirea rotației de capital</h3>
   <p>[Ce spun mișcările despre unde curg banii instituționali și VC.]</p>
+  <p class="src">Surse suplimentare: <a href="https://REPLACE-ME.example">[link]</a> · <a href="https://REPLACE-ME.example">[link]</a></p>
 
   <!-- ============ 3. OPORTUNITATEA #1 ============ -->
   <h2 class="section-title">3 · Oportunitatea #1</h2>
   <p class="section-sub">Cea mai bună idee de arbitraj a acestei ediții.</p>
 
-  <h3>[Numele ideii]</h3>
-  <p>[Ce e, unde a prins deja — dovezi: cifre, MRR, finanțări, cu linkuri.]</p>
+  <h3>[Numele ideii — titlu cu cârlig]</h3>
+
+  <p><strong>Ce e:</strong> [descrierea produsului/modelului în 2-4 fraze, cu durerea pe care o rezolvă.]</p>
+
+  <p><strong>De ce acum — lanțul de dovezi:</strong></p>
+  <ul>
+    <li><strong>[Dovadă 1]:</strong> [cifre + link.]</li>
+    <li><strong>[Dovadă 2]:</strong> [cifre + link.]</li>
+    <li><strong>[Dovadă 3 — validarea modelului în altă piață]:</strong> [cifre + link.]</li>
+  </ul>
 
   <div class="meta-row">
     <span class="meta-pill"><strong>Fereastră:</strong> [X luni]</span>
     <span class="meta-pill"><strong>Cost MVP:</strong> [€X]</span>
     <span class="meta-pill"><strong>Primul client:</strong> [X săpt.]</span>
+    <span class="meta-pill"><strong>Preț țintă:</strong> [X lei/lună]</span>
   </div>
 
   <div class="agent-take strateg">
@@ -116,8 +144,9 @@
 
   <!-- ============ 5. FOLLOW-UP ============ -->
   <h2 class="section-title">5 · Follow-up</h2>
-  <p class="section-sub">Ce urmărim din edițiile anterioare, ce s-a schimbat, ce ucidem.</p>
+  <p class="section-sub">Memoria edițiilor anterioare.</p>
 
+  <p>[Intro de 1-2 fraze: ce s-a schimbat de la edițiile trecute. La prima ediție: „Prima ediție — follow-up de la următoarea."]</p>
   <ul>
     <li><strong>[Idee din ediția X]:</strong> [status — re-verificat / în creștere / ucisă și de ce]</li>
   </ul>
@@ -134,7 +163,7 @@
 
   <nav class="footer-nav">
     <a href="../index.html">← Toate edițiile</a>
-    <span>Lovitura · briefing generat cu echipa de agenți</span>
+    <span>Lovitura · ediția YYYY-MM-DD</span>
   </nav>
 
 </div>

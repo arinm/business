@@ -11,7 +11,7 @@
   --border-strong: #38424f;
   --ink: #e8e6e1;
   --ink-dim: #9aa3ad;
-  --ink-faint: #6b7480;
+  --ink-faint: #7d8794;
   --accent: #e3b341;        /* auriu editorial */
   --accent-soft: rgba(227, 179, 65, 0.12);
   --up: #4ade80;
@@ -137,13 +137,6 @@ a:hover { text-decoration: underline; }
   margin: 0;
 }
 
-.empty-state {
-  padding: 48px 4px;
-  color: var(--ink-faint);
-  font-style: italic;
-  text-align: center;
-}
-
 /* ---------- Corpul unei ediții ---------- */
 
 .briefing h2.section-title {
@@ -170,7 +163,8 @@ a:hover { text-decoration: underline; }
   margin: 30px 0 10px;
 }
 
-.briefing h4 {
+.briefing h4,
+.briefing h3.subhead {
   font-family: var(--sans);
   font-size: 13px;
   letter-spacing: 0.08em;
@@ -210,7 +204,7 @@ a:hover { text-decoration: underline; }
 
 .signal p { margin: 0 0 6px; font-size: 15.5px; color: var(--ink-dim); }
 
-.signal .src {
+.src {
   font-family: var(--sans);
   font-size: 12.5px;
   color: var(--ink-faint);
