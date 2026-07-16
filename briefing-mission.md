@@ -23,6 +23,25 @@ automation) · capital limitat · timp limitat. Deci ideile trebuie să fie
 săptămâni. Stack de referință pentru MVP: Vue/Nuxt/React, Supabase,
 RevenueCat, n8n, Claude API.
 
+## REGULA MEDIULUI — TESTEAZĂ REȚEAUA ÎNTÂI (30 secunde, o singură dată)
+Rulează `curl -s -o /dev/null -w "%{http_code}" --max-time 10 https://techcrunch.com`.
+- Dacă primești **200/301** → ai acces complet: poți folosi și WebFetch pe articole.
+- Dacă primești **403/000** → politica de rețea a mediului blochează site-urile
+  externe. În acest caz: folosește **EXCLUSIV WebSearch** (funcționează mereu,
+  rulează server-side). **NU folosi WebFetch/curl pe alte site-uri și NU
+  reîncerca fetch-uri eșuate** — pierzi zeci de minute degeaba. WebSearch îți
+  dă titluri, URL-uri și rezumate: suficient pentru ediție (așa a fost făcută
+  și ediția din 2026-07-09). Citează URL-urile din rezultatele de căutare și
+  menționează în ediție că sursele au fost accesate prin căutare, nu direct.
+Transmite EXPLICIT concluzia acestui test fiecărui sub-agent pe care îl lansezi.
+
+## BUGET DE TIMP (strict)
+Întreaga misiune trebuie să se încheie, cu push făcut, în **maximum 45 de
+minute**. Orientativ: Faza 1 max 20 min (sub-agenții primesc instrucțiune să
+se limiteze la 5-8 căutări fiecare), Fazele 2-3 max 15 min, Faza 4 max 10 min.
+Dacă timpul se scurge, publică ce ai — o ediție onestă și mai scurtă bate o
+rulare care nu se mai termină.
+
 ## PASUL 0 — MEMORIA COMUNĂ (fă asta primul)
 Citește ultimele 2-3 fișiere din `briefings/` (edițiile anterioare). Sunt
 memoria noastră: ce idei am urmărit, ce am promis să verificăm, ce semnale
@@ -43,6 +62,10 @@ căutări cumulate. Fronturi:
   subreddit-uri RO) + presă economică RO (startupcafe, avocatnet, contzilla,
   contabilul.ro) pentru dureri de compliance/fiscal. NOTĂ: dacă Reddit e
   inaccesibil din mediu, spune-o explicit în ediție și folosește surse RO.
+
+Fiecare sub-agent primește în prompt: concluzia testului de rețea (WebSearch-only
+sau acces complet), limita de 5-8 căutări și un deadline — răspunde cu ce a
+găsit până atunci, nu continuă la nesfârșit.
 
 ## FAZA 2 — GÂNDIRE, NU LISTARE
 - **ARBITRAJ GEOGRAFIC** (secțiunea cheie): ce a prins în SUA/Asia și NU există
