@@ -562,3 +562,95 @@ td:first-child { font-weight: 600; color: var(--ink); }
   * { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================================
+   Layout lat pe 2 coloane (opt-in prin .container-wide + .layout-split)
+   Edițiile fără aceste wrappere rămân pe layoutul liniar — zero regresie.
+   Stânga = Lumea (semnale, bani) · Dreapta = Ideile (oportunități, radar).
+   ============================================================ */
+
+.container-wide { max-width: 1360px; }
+
+/* masthead-ul și blocurile full-width rămân la lățime editorială, centrate */
+.container-wide .masthead,
+.container-wide > .lede,
+.container-wide > .full-band {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+@media (min-width: 1080px) {
+  .layout-split {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .layout-split .col-world .table-wrap { overflow-x: auto; }
+  .layout-split .col-world table { font-size: 0.85rem; }
+  .layout-split .col-world .signal p { font-size: 14.5px; }
+  /* prima secțiune din fiecare coloană nu are nevoie de spațiul mare de sus */
+  .layout-split .col-world > .section-title:first-child,
+  .layout-split .col-ideas > .section-title:first-child { margin-top: 24px; }
+}
+
+/* ---------- Taburi Joc Mare / Quick Wins (CSS-only, radio) ---------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.idea-tracks { margin-top: 8px; }
+
+.track-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 20px;
+  flex-wrap: wrap;
+}
+
+.track-tab {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--ink-dim);
+  cursor: pointer;
+  user-select: none;
+  transition: color .15s ease, background .15s ease, border-color .15s ease;
+}
+
+.track-tab:hover { color: var(--ink); border-color: var(--border-strong); }
+
+#t-big:checked ~ .track-tabs label[for="t-big"],
+#t-quick:checked ~ .track-tabs label[for="t-quick"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sr-only:focus-visible + label.track-tab,
+.idea-tracks input.sr-only:focus-visible ~ .track-tabs label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.track-panel { display: none; }
+#t-big:checked ~ .panel-big { display: block; }
+#t-quick:checked ~ .panel-quick { display: block; }
+
+/* fără CSS modern / la print: totul vizibil, liniar */
+@media print {
+  .layout-split { display: block; }
+  .track-panel { display: block !important; }
+  .track-tabs { display: none; }
+}

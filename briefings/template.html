@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<div class="container briefing">
+<div class="container container-wide briefing">
 
   <header class="masthead">
     <p class="kicker">Briefing de business · Ediții zilnice</p>
@@ -25,6 +25,9 @@
   </header>
 
   <p class="lede">[Lede: 2-3 fraze care rezumă ediția — care e semnalul dominant al zilei și ce recomandăm.]</p>
+
+  <div class="layout-split">
+  <div class="col-world">
 
   <!-- ============ 1. PULS GLOBAL ============ -->
   <h2 class="section-title">1 · Puls Global</h2>
@@ -74,9 +77,22 @@
   <p>[Ce spun mișcările despre unde curg banii instituționali și VC.]</p>
   <p class="src">Surse suplimentare: <a href="https://REPLACE-ME.example">[link]</a> · <a href="https://REPLACE-ME.example">[link]</a></p>
 
+  </div><!-- /col-world -->
+  <div class="col-ideas">
+
   <!-- ============ 3. OPORTUNITATEA #1 ============ -->
   <h2 class="section-title">3 · Oportunitatea #1</h2>
-  <p class="section-sub">Cea mai bună idee de arbitraj a acestei ediții.</p>
+  <p class="section-sub">Ambele track-uri de idei ale ediției: jocul mare (venture-scale) și quick wins (scale mic).</p>
+
+  <div class="idea-tracks">
+    <input type="radio" name="track" id="t-big" class="sr-only" checked>
+    <input type="radio" name="track" id="t-quick" class="sr-only">
+    <div class="track-tabs" role="tablist">
+      <label for="t-big" class="track-tab">🎯 Jocul Mare</label>
+      <label for="t-quick" class="track-tab">⚡ Quick Wins</label>
+    </div>
+
+    <section class="track-panel panel-big">
 
   <h3>[Numele ideii — titlu cu cârlig]</h3>
 
@@ -134,6 +150,15 @@
       <li>[Pas 5]</li>
     </ol>
   </div>
+    </section><!-- /panel-big -->
+
+    <section class="track-panel panel-quick">
+      <h3>⚡ Quick win #1: [numele ideii de scale mic]</h3>
+      <p>[Durerea + sursa (link) + de ce e bani rapizi dar produs, nu companie. Competiție verificată pe scurt. Preț țintă, timp până la primul client, primii 2-3 pași.]</p>
+      <p class="src">[Riscul principal, spus direct.]</p>
+      <!-- Repetă blocul h3+p pentru al doilea quick win dacă există -->
+    </section><!-- /panel-quick -->
+  </div><!-- /idea-tracks -->
 
   <!-- ============ 4. RADAR ROMÂNIA/EUROPA ============ -->
   <h2 class="section-title">4 · Radar România / Europa</h2>
@@ -154,6 +179,10 @@
     <li><strong>[Idee din ediția X]:</strong> [status — re-verificat / în creștere / ucisă și de ce]</li>
   </ul>
 
+  </div><!-- /col-ideas -->
+  </div><!-- /layout-split -->
+
+  <div class="full-band">
   <!-- ============ 6. VERDICTUL PARTENERULUI ============ -->
   <h2 class="section-title">6 · Verdictul Partenerului</h2>
 
@@ -168,6 +197,7 @@
     <a href="../index.html">← Toate edițiile</a>
     <span>Lovitura · ediția YYYY-MM-DD</span>
   </nav>
+  </div><!-- /full-band -->
 
 </div>
 </body>

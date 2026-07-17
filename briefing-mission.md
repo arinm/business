@@ -37,9 +37,15 @@ Oportunității #1:
   poată fi construit de partener + AI în săptămâni, dar wedge-ul e începutul
   unei companii mari, nu produsul final. Arată explicit scara: wedge → produs
   → platformă → categorie.
-Ideile mici dar bune (cash-flow rapid, micro-SaaS) nu se aruncă — se mută la
-secțiunea Radar ca „quick wins", clar etichetate. Oportunitatea #1 e
-întotdeauna jocul mare.
+DUBLU-TRACK obligatoriu: fiecare ediție are AMBELE track-uri de idei, în
+secțiunea 3, comutabile prin taburi (markup-ul din template):
+- **JOCUL MARE** (tabul implicit) — oportunitatea venture-scale, cu filtrele
+  de mai sus;
+- **QUICK WINS** — 1-2 idei de scale mic (cash-flow rapid, micro-SaaS,
+  executabile solo în 3-5 săptămâni), analizate mai scurt dar cu aceeași
+  onestitate (durere reală + sursă + competiție verificată + primii pași).
+Niciun track nu se sacrifică pentru celălalt: ideea mică NU se umflă ca să
+pară venture, ideea venture NU se diluează ca să pară executabilă mâine.
 
 ## CALITATEA AGENȚILOR
 Lansează TOȚI sub-agenții de scanare, sinteză și verificare cu modelul cel mai
@@ -131,6 +137,15 @@ găsit până atunci, nu continuă la nesfârșit.
 2. Salvează raportul ca `briefings/YYYY-MM-DD.html` (data de AZI), pornind de la
    `briefings/template.html` și folosind `styles.css` pentru design consistent.
    Completează meta description + og: din head (vezi template).
+   **REGULA DE ARHIVĂ — NU SUPRASCRIE NICIODATĂ**: dacă există deja o ediție cu
+   data de azi, NU o modifica și NU o șterge — salvează noua ediție ca
+   `YYYY-MM-DD-v2.html` (apoi `-v3`, `-v4`...). Fiecare briefing e un document
+   de arhivă permanent; edițiile vechi nu se ating nici pentru „corecturi".
+   În index, fiecare versiune primește propriul card (eticheta „· v2" la dată).
+   Template-ul are layout pe 2 coloane (stânga = Lumea: secțiunile 1-2;
+   dreapta = Ideile: secțiunile 3-5) și taburi Joc Mare / Quick Wins în
+   secțiunea 3 — păstrează exact structura de wrappere
+   (`.layout-split`/`.col-world`/`.col-ideas`/`.idea-tracks`/`.full-band`).
 3. Actualizează `index.html`: adaugă noua ediție PRIMA în listă (sub comentariul
    „adaugă noua ediție PRIMA"), cu data, ordinala (nr. carduri existente + 1),
    titlul Oportunității #1 și un teaser de 1-2 fraze. Respectă exact structura
