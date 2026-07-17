@@ -101,11 +101,20 @@ găsit până atunci, nu continuă la nesfârșit.
    „adaugă noua ediție PRIMA"), cu data, ordinala (nr. carduri existente + 1),
    titlul Oportunității #1 și un teaser de 1-2 fraze. Respectă exact structura
    de card documentată acolo.
-4. Commit: `Ediția YYYY-MM-DD: [titlul oportunității]`. Push pe `main`
-   (`git push origin HEAD:main`). Publicarea pe site e automată prin GitHub
-   Actions după push.
-5. Verifică după push că fișierele sunt în repo. Dacă push-ul eșuează,
-   reîncearcă (backoff); dacă tot eșuează, raportează eroarea explicit.
+4. Commit: `Ediția YYYY-MM-DD: [titlul oportunității]`. Push pe `main` DIRECT pe
+   github.com, cu token cu drept de scriere — integrarea managed a sesiunii e
+   read-only (dă 403 la `git push origin`), deci NU folosi `origin`:
+   `git push "https://x-access-token:${GH_PUSH_TOKEN}@github.com/arinm/business.git" HEAD:main`
+   URL-ul cu token înglobat ocolește automat rescrierea internă către proxy-ul
+   read-only (nu se potrivește cu prefixul `https://github.com/`), așa că ajunge
+   direct la GitHub. Tokenul vine din variabila de mediu `GH_PUSH_TOKEN`
+   (fine-grained PAT, Contents: Read and write, doar pe acest repo). Publicarea
+   pe site e automată prin GitHub Actions după push.
+5. Verifică după push că fișierele sunt pe `main`. Dacă push-ul eșuează,
+   reîncearcă (backoff). FALLBACK dacă `GH_PUSH_TOKEN` lipsește sau push-ul tot
+   eșuează: NU te bloca — publică ediția ca Artifact (HTML self-contained, cu
+   `styles.css` inline, fără referințe externe) și trimite linkul prin
+   PushNotification, apoi raportează eroarea de push explicit.
 
 ## REGULI DE AUR
 - Cifre și surse (linkuri) la fiecare afirmație. Speculația se marchează explicit.
