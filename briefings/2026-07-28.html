@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ediția 2026-07-28 — Verificare pozitivă pentru KYA: Visa și Kord nu ne suprapun; cipurile intră în a doua cădere globală</title>
+<meta name="description" content="Verificarea cerută ieri iese pozitivă: Visa Trusted Agent Protocol certifică doar identitatea per-tranzacție a unui agent (nu răspunderea legală mapată pe eIDAS2/AMLD/PSD3), iar Kord (UK) e onboarding pentru clienți umani în industrii reglementate, nu identitate de agent AI — ambele riscuri de suprapunere semnalate ieri sunt clarificate. KYA rămâne candidatul, cu un singur risc rămas deschis (x401/Proof). În paralel, cipurile intră în a doua cădere globală — KOSPI -8,1% cu circuit breaker, ASML -8,4%, pe frica de finanțare circulară Nvidia-OpenAI de ~250 mld $. Plus un quick win nou și urgent: portița de 60 de zile pentru anularea deciziilor de impunere ANAF emise din oficiu.">
+<meta property="og:title" content="Verificare pozitivă pentru KYA; cipurile în cădere globală — Lovitura, 28 iulie 2026">
+<meta property="og:description" content="Cele două riscuri de suprapunere semnalate ieri (Visa, Kord) sunt clarificate — KYA rămâne candidatul viu al ediției. Cipurile intră în a doua undă de selloff global.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container container-wide briefing">
+
+  <header class="masthead">
+    <p class="kicker">Briefing de business · Ediții zilnice</p>
+    <h1><a href="../index.html">Lovitura</a></h1>
+    <p class="tagline">Doi parteneri, o misiune: găsim și executăm cea mai bună oportunitate.</p>
+    <p class="edition-date">Ediția din 28 iulie 2026 · Ediția 13</p>
+  </header>
+
+  <p class="lede">Ediția 12 a lăsat un singur pas obligatoriu pentru azi: verifică dacă Visa „Trusted Agent Protocol + Agent Directory" ocupă deja spațiul candidatului nostru de jocul mare, KYA european (identitate și răspundere de agent AI mapată pe eIDAS2/AMLD/PSD3). Am făcut verificarea — și iese pozitiv. Specificația publică a Visa TAP arată clar: protocolul certifică doar că „acest agent e cine pretinde că e și acționează în scope-ul declarat (browsing/purchasing)" — o verificare criptografică per-tranzacție, legată de rețeaua de carduri Visa, nu un strat de răspundere legală generalist. Al doilea risc semnalat ieri, Kord (UK, £6,4M), s-a dovedit un fals pozitiv: e onboarding + AML pentru clienți umani din industrii reglementate (imobiliare, avocatură), nu identitate de agent AI. KYA rămâne candidatul viu al ediției, cu un singur risc rămas deschis de verificat (x401/Proof — vezi secțiunea 3). În paralel, piața globală a intrat într-o a doua undă de selloff pe AI-infra, mai dură decât cea de vineri: KOSPI a declanșat circuit breaker (-8,1%), ASML a pierdut ~44 mld $ într-o zi, iar declanșatorul e nou — Nvidia negociază garanții de finanțare de ~250 mld $ pentru un data center OpenAI, citite de piață ca „finanțare circulară". Plus un quick win nou, cu fereastră de doar 60 de zile: ANAF a pornit ieri o campanie de decizii de impunere din oficiu, țintind diaspora.</p>
+
+  <div class="layout-split">
+  <div class="col-world">
+
+  <!-- ============ 1. PULS GLOBAL ============ -->
+  <h2 class="section-title">1 · Puls Global</h2>
+  <p class="section-sub">Delta 27-28 iulie: ce e cu adevărat nou față de ediția 12.</p>
+
+  <div class="signal">
+    <p class="signal-head">Verificare KYA: Visa TAP certifică doar identitate per-tranzacție — nu se suprapune cu răspunderea legală generalistă a candidatului nostru</p>
+    <p>Specificația publică (GitHub, Visa Developer) confirmă: Visa TAP + Agent Directory semnează identitatea unui agent în header-ele HTTP, ca merchant-ul să poată verifica criptografic „e acest agent legitim, în scope-ul declarat (browsing sau purchasing)". Atât Visa cât și Mastercard rulează directoare <strong>separate, siloate pe rețea</strong> — nu există un strat unificat, cross-network, de identitate de agent. Nu se atinge deloc de mapare pe eIDAS2/AMLD/PSD3, de delegare multi-nivel sau de cine răspunde legal dacă agentul greșește — exact golul pe care-l țintește KYA. Concluzie: riscul semnalat ieri nu se confirmă.</p>
+    <p class="src">Surse: <a href="https://github.com/visa/trusted-agent-protocol">GitHub — visa/trusted-agent-protocol</a> · <a href="https://developer.visa.com/capabilities/trusted-agent-protocol/trusted-agent-protocol-specifications">Visa Developer — specificații TAP</a> · <a href="https://blog.cloudflare.com/secure-agentic-commerce/">Cloudflare Blog</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Verificare Kord: fals pozitiv — e onboarding pentru clienți umani în industrii reglementate, nu identitate de agent AI</p>
+    <p>Kord (Londra, £6,4M Series A, Guinness Ventures) combină verificare de identitate, AML/compliance, onboarding digital și procesare de plăți — dar pentru <strong>clienți umani</strong> ai firmelor din imobiliare, avocatură și servicii financiare reglementate, nu pentru identitatea sau autorizarea agenților AI. Al doilea risc de suprapunere semnalat în ediția 12 e clarificat: nu există overlap real.</p>
+    <p class="src">Surse: <a href="https://tech.eu/2026/07/08/kord-secures-ps64m-to-unify-onboarding-compliance-and-payments/">Tech.eu</a> · <a href="https://financialit.net/news/fundraising-news/kord-secures-ps64m-combat-ai-driven-fraud-and-process-payments-regulated">Financial IT</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">A doua undă de selloff pe AI-infra: Nvidia negociază ~250 mld $ garanții pentru OpenAI, piața citește „finanțare circulară" — ASML -8,4%, KOSPI circuit breaker -8,1%</p>
+    <p>WSJ a raportat pe 27 iulie că Nvidia negociază garanții de finanțare de <span class="num-down">~250 mld $</span> pentru un data center OpenAI de 10GW în Ohio, plus până la 350 mld $ pentru finanțarea cipurilor — proiect total peste 500 mld $. Piața a citit-o ca „furnizorul își garantează singur clientul, pentru că băncile au spus nu" — NVDA <span class="num-down">-5%</span>. În aceeași zi, The Information a raportat că China (SiCarrier + Huawei) a intrat în producție de serie pe litografie DUV — <span class="num-down">ASML -8,4%</span> (~44 mld $ evaporate). Azi, 28 iulie: <span class="num-down">KOSPI -8,1%</span> cu circuit breaker declanșat, <span class="num-down">SK Hynix -11%</span> (ADR-ul din NY sub prețul de IPO), Samsung <span class="num-down">-9,45%</span>, Nikkei <span class="num-down">-3,9%</span>, Kioxia <span class="num-down">până la -18%</span>. SK Hynix raportează rezultate mâine, 29 iulie — primul raport de la debutul pe Nasdaq, catalizator major.</p>
+    <p class="src">Surse: <a href="https://finance.yahoo.com/technology/ai/articles/nvidia-talks-openai-guarantee-250-233930971.html">Reuters/Yahoo</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue">Bloomberg</a> · <a href="https://www.koreajoongangdaily.com/business/kospi-opens-sharply-lower-on-tech-losses-triggers-sellside-sidecar/12794765">Korea JoongAng Daily</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Al treilea concurent european pe fostul nostru wedge de plăți: Paymove (Polonia, €2,12 mil.) — validează retroactiv decizia de ucidere din ediția 11</p>
+    <p>Paymove a strâns <span class="num">€2,12 mil.</span> seed pe „sisteme de plată de generație următoare construite pentru AI agentic" — al treilea comparabil european găsit în trei zile, după Ralio (Londra, €2,1M) și SolvaPay (Stockholm, €2,4M) din ediția 12. Nu schimbă nimic decizional (rails de plată rămâne ucis din ediția 11), dar întărește: piața europeană de „agent payments" s-a umplut mai repede decât am putut cerceta noi.</p>
+    <p class="src">Sursă: <a href="https://www.therecursive.com/cee-startup-tech-weekly-bulgarian-startup-paypercut-raises-seed-round-backed-by-regional-vcs/">The Recursive</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">PayPal raportează azi, înainte de deschiderea pieței — catalizator confirmat, rezultate încă nepublicate la ora scanării</p>
+    <p>Consens Street: <span class="num">EPS $1,28</span> (-8,6% y/y), venituri ~<span class="num">$8,47-8,52 mld.</span> Context neschimbat: consiliul a respins oferta Stripe+Advent de $60,50/acțiune (~$53 mld.) pe 20 iulie, țintește ~$70/acțiune. Verifică investor.pypl.com pentru cifrele reale — nu erau disponibile la ora scanării (dimineața, US).</p>
+    <p class="src">Sursă: <a href="https://news.alphastreet.com/paypal-holdings-q2-2026-earnings-preview-july-28-street-expects-1-28-eps/">Alphastreet preview</a></p>
+  </div>
+
+  <!-- ============ 2. UNDE CURG BANII ============ -->
+  <h2 class="section-title">2 · Unde Curg Banii</h2>
+  <p class="section-sub">Mișcările din 26-28 iulie, cu cifre.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Unde</th><th>Mișcare</th><th>De ce</th><th>Sursă</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Memorie/chipuri (KOSPI, ASML, Kioxia, SK Hynix)</td>
+          <td><span class="num-down">-8% până la -18% în 24-48h</span></td>
+          <td>Teamă de finanțare circulară Nvidia-OpenAI (~$250 mld.) + China intră în producție DUV</td>
+          <td><a href="https://www.bloomberg.com/news/articles/2026-07-28/korean-stocks-sink-as-chipmakers-plung-on-deepening-ai-fatigue">Bloomberg</a></td>
+        </tr>
+        <tr>
+          <td>Agent payments, Europa (Paymove, al treilea comparabil)</td>
+          <td><span class="num">€2,12M seed</span></td>
+          <td>Confirmă retroactiv decizia de ucidere a rails-ului din ediția 11</td>
+          <td><a href="https://www.therecursive.com/cee-startup-tech-weekly-bulgarian-startup-paypercut-raises-seed-round-backed-by-regional-vcs/">The Recursive</a></td>
+        </tr>
+        <tr>
+          <td>Compliance-as-software, verificat Stripe-linked (Comp AI)</td>
+          <td><span class="num">~$531k venit/30 zile</span></td>
+          <td>Dovadă că "compliance-as-software" (SOC2/ISO27001) se monetizează serios — relevant pentru poziționarea KYA</td>
+          <td><a href="https://trustmrr.com/category/saas">TrustMRR</a></td>
+        </tr>
+        <tr>
+          <td>Agent GTM B2B (GojiberryAI)</td>
+          <td><span class="num">$498k MRR verificat</span></td>
+          <td>Creștere abruptă recentă — cel mai puternic semnal micro-SaaS de "agent AI B2B" din acest ciclu</td>
+          <td><a href="https://trustmrr.com/category/ai">TrustMRR</a></td>
+        </tr>
+        <tr>
+          <td>e-Facturare UE (mandate în cascadă)</td>
+          <td>Belgia ian. 2026 · Polonia feb-apr 2026 · Franța sept. 2026/2027</td>
+          <td>Cerere forțată, cu deadline, pentru un wrapper multi-tenant peste Access Point-uri Peppol existente</td>
+          <td><a href="https://www.fiskaly.com/blog/e-invoicing-mandates-in-europe-2026">Fiskaly</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="subhead">Citirea rotației de capital</h3>
+  <p>Public vs. privat continuă să diveargă: bursele repreţuiesc riscul de capex AI circular (Nvidia-OpenAI), în timp ce categoria "agent trust infra" tot atrage capital de seed/Series A în SUA (Oak, Natural, Augustus — vezi ediția 12) și acum al treilea comparabil european (Paymove). Pentru noi, cifrele de azi de la micro-SaaS (Comp AI, GojiberryAI) confirmă dintr-un unghi diferit exact teza KYA: piața plătește deja bani reali, verificați, pentru compliance-as-software și pentru agenți B2B — problema nu e dacă categoria se monetizează, e dacă rămâne loc pentru un wedge european de identitate/răspundere, nu doar de plăți.</p>
+  <p class="src">Surse suplimentare: <a href="https://aifunding.me/insights/ai-agent-funding-july-2026">aifunding.me</a></p>
+
+  </div><!-- /col-world -->
+  <div class="col-ideas">
+
+  <!-- ============ 3. OPORTUNITATEA #1 ============ -->
+  <h2 class="section-title">3 · Oportunitatea #1</h2>
+  <p class="section-sub">Ambele track-uri de idei ale ediției: jocul mare (venture-scale) și quick wins (scale mic).</p>
+  <p class="section-sub">Notă de continuitate: verificarea cerută în ediția 12 iese pozitivă azi — KYA trece de cele două riscuri prioritare (Visa, Kord). Rămâne un singur risc deschis, nou identificat azi.</p>
+
+  <div class="idea-tracks">
+    <input type="radio" name="track" id="t-big" class="sr-only" checked>
+    <input type="radio" name="track" id="t-quick" class="sr-only">
+    <div class="track-tabs" role="tablist">
+      <label for="t-big" class="track-tab">🎯 Jocul Mare</label>
+      <label for="t-quick" class="track-tab">⚡ Quick Wins</label>
+    </div>
+
+    <section class="track-panel panel-big">
+
+  <h3>KYA European — candidatul trece primul test de verificare, cu un risc rămas deschis</h3>
+
+  <p><strong>Ce e:</strong> neschimbat față de ediția 12 — un „Know Your Agent" european, atestare criptografică a identității unui agent AI (cine e principalul uman/companie din spate, ce permisiuni are, cine răspunde dacă greșește), mapat pe eIDAS2, pachetul AML și delegated initiation din PSD3. Stă sub rails-urile deja ocupate (Visa, Mastercard, Crossmint, Ralio, SolvaPay, Paymove), ca strat de răspundere, nu ca rail concurent. <strong>Ce s-a schimbat azi:</strong> cele două riscuri de suprapunere prioritare din ediția 12 sunt clarificate — Visa TAP e per-tranzacție și siloat pe rețea, Kord e onboarding uman pentru industrii reglementate. Candidatul nu mai e „propus, neverificat" — e „verificat pe primele două riscuri, rămâne un al treilea de închis".</p>
+
+  <p><strong>De ce acum — lanțul de dovezi (actualizat):</strong></p>
+  <ul>
+    <li><strong>Verificare pozitivă azi:</strong> Visa TAP + Agent Directory nu acoperă identitatea/răspunderea generalistă mapată pe reglementarea UE — gol confirmat, nu presupus.</li>
+    <li><strong>Kord, fals pozitiv clarificat:</strong> piață diferită (onboarding uman în servicii reglementate), nu risc real.</li>
+    <li><strong>Risc rămas, de verificat mâine:</strong> Proof a lansat x401 — „dovadă criptografică a cine a autorizat acțiunea unui agent", parte din ecosistemul x402 Foundation. Descrierea sună mai aproape de KYA decât Visa TAP — nu am verificat azi scope-ul exact (mapare UE, delegare multi-nivel, sau doar autorizare per-tranzacție ca și TAP). Tratăm ca risc deschis, nu ca gol confirmat.</li>
+    <li><strong>Dovadă de piață indirectă:</strong> Comp AI ($531k venit/30 zile, verificat) confirmă că "compliance-as-software" se vinde bine, chiar dacă nu e pe agenți AI specific — semnal de apetit de piață pentru categoria mai largă.</li>
+  </ul>
+
+  <div class="meta-row">
+    <span class="meta-pill"><strong>Status:</strong> candidat, 2/3 riscuri clarificate</span>
+    <span class="meta-pill"><strong>Risc rămas:</strong> x401/Proof, neverificat</span>
+    <span class="meta-pill"><strong>Rundă țintă, dacă se confirmă:</strong> pre-seed €1-3M</span>
+  </div>
+
+  <div class="agent-take strateg">
+    <p class="agent-name">Strategul de business</p>
+    <p>Disciplina din ediția 12 a funcționat: am verificat înainte de a construi, nu după. Rezultatul de azi schimbă calculul de risc — de la "un candidat neverificat, poate deja ocupat" la "un candidat cu 2 din 3 riscuri majore închise". Nu declarăm încă victorie: x401/Proof rămâne singurul lucru care ar putea ucide ideea la fel de rapid cum a murit rails-ul în ediția 11. Un singur pas de verificare mai desparte candidatul de o decizie fermă de a începe construcția.</p>
+  </div>
+
+  <div class="agent-take marketer">
+    <p class="agent-name">Marketerul</p>
+    <p>Verificarea de azi deblochează practic outreach-ul: nu mai trimitem mesaje speculative "am putea suprapune cu Visa" — putem contacta Ralio, SolvaPay și Paymove direct cu un pitch clar, "vindem stratul de conformitate/răspundere pe care rails-ul vostru nu-l are, verificat că nu se suprapune cu Visa/Mastercard/Kord". Trei prospecți concreți de contactat, nu unul ipotetic.</p>
+  </div>
+
+  <div class="agent-take financiar">
+    <p class="agent-name">Financiarul</p>
+    <p>Comp-uri neschimbate: Oak ($60M seed identitate, SUA), SuperPlane/Ralio/Paymove/SolvaPay (€2-2,5M pre-seed/seed regional). Semnal financiar nou și pozitiv indirect: Comp AI la $531k venit/30 zile (verificat Stripe) arată că piața plătește bani reali pentru "compliance-as-software" — argument suplimentar de finanțabilitate pentru un fond ca Credo, dacă x401 nu ne ucide mâine.</p>
+  </div>
+
+  <h4>Competiția de verificat, în ordine de prioritate (actualizată)</h4>
+  <ul>
+    <li><strong>x401 / Proof (parte din x402 Foundation)</strong> — verificare #1 pentru mâine, poate ucide ideea singură dacă acoperă delegare multi-nivel + mapare regulatorie.</li>
+    <li>Visa TAP + Agent Directory — <em>clarificat azi, nu se suprapune</em>.</li>
+    <li>Kord (UK) — <em>clarificat azi, piață diferită, nu se suprapune</em>.</li>
+    <li>Ralio, SolvaPay, Paymove — payment layers, nu identitate/autorizare explicit; de confirmat direct în conversație, nu presupus.</li>
+  </ul>
+
+  <div class="risks">
+    <h4>De ce s-ar putea ca ediția de mâine să ucidă totuși ideea</h4>
+    <ul>
+      <li>x401/Proof, neverificat azi — riscul central rămas.</li>
+      <li>PSD3 e încă în tranziție (rollout 2026-2028) — construim pe reguli care se scriu acum.</li>
+      <li>Chiar dacă niciun concurent nu acoperă exact acest strat azi, x402 Foundation (cu Visa, Mastercard, Stripe la masă) poate adăuga conformitate UE nativ mai rapid decât un founder solo.</li>
+    </ul>
+  </div>
+
+  <div class="exec-plan">
+    <h4>Plan de execuție — primii pași, actualizați</h4>
+    <ol>
+      <li>Verifică scope-ul exact x401/Proof — singurul risc structural rămas deschis.</li>
+      <li>Dacă x401 nu se suprapune: trimite un DM tehnic scurt către Ralio, SolvaPay și Paymove — testează dacă ar vrea acces la comercianți UE fără să construiască conformitate/identitate intern.</li>
+      <li>Construiește un proof-of-concept minimal (atestare de agent + claim de principal, mapat pe eIDAS2) doar după pasul 1.</li>
+      <li>Deschide conversație cu Credo Ventures — testează dacă teza pare finanțabilă la pre-seed, cu verificările de azi și de mâine în mână.</li>
+      <li>Postează demo-ul în comunitatea x402/Linux Foundation, măsoară cererea reală din partea dezvoltatorilor de agenți B2B.</li>
+    </ol>
+  </div>
+    </section><!-- /panel-big -->
+
+    <section class="track-panel panel-quick">
+      <h3>⚡ Quick win #1: portița de 60 de zile — checker pentru deciziile de impunere ANAF emise din oficiu</h3>
+      <p>ANAF a început ieri, 27 iulie, o campanie de proporții: sute de mii de decizii de impunere din oficiu în următoarele 3 luni, pentru venituri nedeclarate 2021-2024, țintind în special venituri din străinătate pe baza schimbului automat de date UE (volum mare din Spania — risc ridicat pentru diaspora și administratori cu venituri externe). Informația cea mai puțin cunoscută și mai acționabilă: contribuabilul poate depune D212 chiar și după primirea deciziei, în 60 de zile de la comunicare, iar ANAF anulează decizia. Produsul: un checker care primește datele contribuabilului, verifică dacă se încadrează în profilul de risc și generează pas cu pas dosarul D212 de contestare, cu deadline-ul calculat automat.</p>
+      <p class="src">Persona: diaspora română cu venituri din străinătate nedeclarate + administratori de firme cu venituri externe. Preț țintă: 300-800 lei/dosar, vândut prin contabili ca unealtă white-label. Risc spus direct: fereastra de 60 de zile e per-decizie, deci marketing-ul trebuie sincronizat cu valul de comunicări ANAF din următoarele 3 luni — o întârziere de 4-6 săptămâni pierde deja o parte din piață. Surse: <a href="https://www.profit.ro/taxe-si-consultanta/exclusiv-anaf-lanseaza-campanie-proportii-sute-mii-decizii-impunere-emise-urmatoarele-3-luni-venituri-nedeclarate-2021-2024-volume-mari-date-tari-ue-spania-risc-romanii-diaspora-22543641">Profit.ro</a> · <a href="https://startupcafe.ro/decizii-de-impunere-anaf-2026-clarificari-de-la-un-consultant-fiscal-103933">StartupCafe</a>.</p>
+
+      <h3>⚡ Quick win #2: wrapper multi-tenant de e-Facturare/Peppol pentru micro-întreprinderi, pe valul de mandate UE</h3>
+      <p>Calendarul de mandate de e-facturare creează cerere forțată cu deadline în toată UE: Belgia din 1 ianuarie 2026, Polonia februarie-aprilie 2026, Franța faza 1 (companii mari/medii) din 1 septembrie 2026, iar micro-întreprinderile din Franța au termen 1 septembrie 2027 — segment neservit, cu ~12 luni de runway. Unghiul realist solo+AI: nu construiești conectivitate Peppol de la zero, te legi la un Access Point certificat prin API (acubeapi, Maventa, getpeppr) și vinzi stratul de UX multi-tenant — fiecare client final = participant Peppol separat sub o singură integrare.</p>
+      <p class="src">Persona: contabili/firme mici care gestionează mai multe entități legale mici. Preț țintă: 150-400 lei/lună per entitate. Risc spus direct: marja vine din diferența dintre costul Access Point-ului și prețul de vânzare — de negociat înainte de a construi orice. Surse: <a href="https://www.fiskaly.com/blog/e-invoicing-mandates-in-europe-2026">Fiskaly</a> · <a href="https://getpeppr.dev/best-peppol-api/">getpeppr</a>.</p>
+    </section><!-- /panel-quick -->
+  </div><!-- /idea-tracks -->
+
+  <!-- ============ 4. RADAR ROMÂNIA/EUROPA ============ -->
+  <h2 class="section-title">4 · Radar România / Europa</h2>
+  <p class="section-sub">Două probleme reale descoperite azi, cu sursa durerii. Reddit a rămas inaccesibil — surse RO de presă economică folosite direct.</p>
+
+  <h3>Blocaje ANAF de cont pentru taxe plătite la termen, dar nealocate în sistem</h3>
+  <p>Un expert contabil din București a semnalat cazuri de conturi blocate 3 zile pentru taxe efectiv plătite la termen, dar nealocate corect în sistemul ANAF — risc de execuări silite eronate exact în perioada de vârf declarativ (SAF-T pe 31 iulie). Schiță de soluție: o unealtă simplă care generează automat "pachetul de dovadă a plății" (extras cont + confirmare OP + referință declarație) pregătit de trimis la ANAF în caz de blocaj eronat. Nișă mică, dar durere acută — posibil quick win viitor dacă apar mai multe cazuri.</p>
+  <p class="src">Sursă: <a href="https://startupcafe.ro/blocaj-anaf-2026-contribuabil-conturi-blocate-taxe-impozite-platite-termen-nealocate-sistem-expert-contabil-bucuresti-101886">StartupCafe</a>.</p>
+
+  <h3>Sediu Fantomă, reactivat: suspendarea sancțiunilor a expirat pe 30 iunie — riscul e activ acum</h3>
+  <p>Actualizare pe ideea din ediția 2, cu detaliu nou: corectarea legislativă a venit deja prin OG nr. 6/2026 (martie) — firmele cu mai multe puncte de lucru în aceeași UAT nu mai iau CIF separat pentru fiecare. Dar sancțiunile pentru nedeclarare au fost doar suspendate, până la 30 iunie 2026 — termen deja trecut. ~400.000 sedii secundare vizate, conform datelor ANAF citate în presă. Nu am găsit un al doilea proiect de ordonanță de corectare. Merită redeschis activ ca radar — de verificat dacă a început aplicarea efectivă a sancțiunilor.</p>
+  <p class="src">Surse: <a href="https://www.contabun.ro/2026/03/13/modificari-importante-privind-sediile-secundare-og-nr-62026/">Contabun (OG 6/2026)</a> · <a href="https://startupcafe.ro/document-inregistrarea-fiscala-a-sediilor-secundare-urmeaza-sa-se-simplifice-se-vor-suspenda-si-sanctiunile-93615">StartupCafe</a>.</p>
+
+  <!-- ============ 5. FOLLOW-UP ============ -->
+  <h2 class="section-title">5 · Follow-up</h2>
+  <p class="section-sub">Memoria edițiilor anterioare (1-12, 9-27 iulie).</p>
+
+  <ul>
+    <li><strong>KYA European — identitate de agent (ediția 12 → azi, JOCUL MARE):</strong> verificare pozitivă azi pe 2 din 3 riscuri (Visa, Kord) — vezi secțiunea 3. Rămâne x401/Proof de verificat mâine înainte de a începe construcția.</li>
+    <li><strong>Rails de plată pentru agenți AI (ediția 8→11, UCIS):</strong> rămâne ucis. Al treilea comparabil european (Paymove) confirmă retroactiv decizia — vezi secțiunea 1.</li>
+    <li><strong>Cutia Neagră/DORA (ediția 2→9, PE PAUZĂ):</strong> fără update nou azi. Incidentul OpenAI-Hugging Face (ediția 12) rămâne cel mai serios candidat de reactivare.</li>
+    <li><strong>Klaimee (asigurare output agenți, ediția 11):</strong> fără cercetare dedicată azi — rămâne candidat secundar necercetat.</li>
+    <li><strong>Turnul de Control / Radar de Obligații (ediția 5, 9, 11):</strong> fără update azi.</li>
+    <li><strong>Monitorul de Inactivare (ediția 5):</strong> fără update azi.</li>
+    <li><strong>Mandat administrator expirat (ediția 11, quick win):</strong> fără update azi.</li>
+    <li><strong>CAEN Rev.3 (ediția 11, quick win):</strong> fără update azi, termen 25 septembrie.</li>
+    <li><strong>Cont bancar obligatoriu (ediția 11, radar):</strong> fără update azi.</li>
+    <li><strong>Verificator prag capital social 5.000 lei / calculator termen e-Factura (ediția 12, quick wins):</strong> fără update azi.</li>
+    <li><strong>Monitorul Salariului Minim / REGES (ediția 7):</strong> termenul limită a fost exact ieri, 27-28 iulie — rezultatul campaniei se va vedea în edițiile următoare.</li>
+    <li><strong>SAF-T (D406) microîntreprinderi (ediția 9):</strong> deadline 31 iulie, la 3 zile — cea mai urgentă fereastră activă. Fără perioadă de grație pentru contribuabilii mici, confirmat.</li>
+    <li><strong>ANAF — decizii de impunere din oficiu (nou azi):</strong> campanie majoră, pornită ieri — vezi quick win #1.</li>
+    <li><strong>Blocaje ANAF de cont (nou azi):</strong> vezi Radar — posibil quick win viitor.</li>
+    <li><strong>Sediu Fantomă (ediția 2):</strong> reactivat azi cu detaliu nou (suspendarea sancțiunilor a expirat) — vezi Radar.</li>
+    <li><strong>AEO/GEO monitor branduri românești (ediția 9):</strong> fără update azi.</li>
+    <li><strong>PayPal/Stripe:</strong> catalizator azi — raportare Q2 înainte de deschiderea pieței, rezultate încă nepublicate la ora scanării.</li>
+    <li><strong>Chipuri/memorie:</strong> a doua undă de selloff, mai dură — vezi secțiunea 1. SK Hynix raportează mâine, 29 iulie.</li>
+    <li><strong>TVA 9% locuințe (ediția 12, radar):</strong> expiră exact azi/mâine — 31 iulie, ultima fereastră.</li>
+  </ul>
+
+  </div><!-- /col-ideas -->
+  </div><!-- /layout-split -->
+
+  <div class="full-band">
+  <!-- ============ 6. VERDICTUL PARTENERULUI ============ -->
+  <h2 class="section-title">6 · Verdictul Partenerului</h2>
+
+  <div class="verdict">
+    <p><strong>Dacă aș fi în locul tău, în următoarele 48 de ore aș face un singur lucru:</strong></p>
+    <p>Verifică scope-ul exact x401/Proof — ultimul risc structural rămas pe candidatul KYA, la fel de rapid și ieftin cum a fost verificarea de azi pe Visa și Kord. Dacă nu se suprapune, trimite chiar mâine primele mesaje tehnice către Ralio, SolvaPay și Paymove — nu mai construi nimic înainte de asta, dar nici nu mai amâna outreach-ul cu o zi în plus, pentru că fereastra europeană se umple vizibil (al treilea concurent de plăți a apărut în trei zile). În paralel, SAF-T (31 iulie, 3 zile) și noua campanie ANAF de decizii din oficiu (60 de zile per decizie, valul abia a pornit) rămân quick win-uri cu deadline real și risc mult mai mic.</p>
+  </div>
+
+  <p class="disclaimer">Cifrele auto-raportate (MRR pe Indie Hackers/X) sunt marcate ca atare. Nimic de aici nu e sfat de investiții.</p>
+
+  <nav class="footer-nav">
+    <a href="../index.html">← Toate edițiile</a>
+    <span>Lovitura · ediția 2026-07-28</span>
+  </nav>
+  </div><!-- /full-band -->
+
+</div>
+</body>
+</html>
