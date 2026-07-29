@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ediția 2026-07-29 — KYA trece testul x401, dar apare un pericol mai serios: Trulioo + Worldpay</title>
+<meta name="description" content="Verificarea cerută ieri iese pozitivă, cu o corecție: x401/Proof nu e parte din x402 Foundation (eroare de atribuire, corectată azi) și nu acoperă mapare UE — al treilea risc clarificat pentru KYA. Dar cercetarea de azi găsește un concurent mult mai periculos, neverificat încă: Trulioo + Worldpay, un cadru „Digital Agent Passport” de la un jucător KYC/AML deja stabilit. Plus SK Hynix raportează rezultate record, KOSPI sare +2,76% după căderea de -10,84% de ieri, PayPal bate estimările, iar TVA 9% la locuințe a fost prelungit.">
+<meta property="og:title" content="KYA trece testul x401 — Lovitura, 29 iulie 2026">
+<meta property="og:description" content="Ediția 14: al treilea risc de suprapunere clarificat, dar un concurent mai periculos (Trulioo + Worldpay) devine prioritatea de verificat mâine. Plus rezultate record SK Hynix, PayPal bate estimările, whiplash pe chipuri continuă.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container container-wide briefing">
+
+  <header class="masthead">
+    <p class="kicker">Briefing de business · Ediții zilnice</p>
+    <h1><a href="../index.html">Lovitura</a></h1>
+    <p class="tagline">Doi parteneri, o misiune: găsim și executăm cea mai bună oportunitate.</p>
+    <p class="edition-date">Ediția din 29 iulie 2026 · Ediția 14</p>
+  </header>
+
+  <p class="lede">Ediția 13 a lăsat un singur pas obligatoriu pentru azi: verifică dacă x401/Proof acoperă exact stratul de identitate/răspundere pe care-l propune candidatul nostru KYA. Am făcut verificarea — iese pozitiv, cu o corecție de fapt: x401 <strong>nu</strong> face parte din x402 Foundation, cum spunea sursa citată ieri — e un protocol separat, lansat de Proof (fostă Notarize, $321M strânși), construit exclusiv pe cadru american NIST/IAL2, fără nicio mapare pe eIDAS2/AMLR/PSD3. Al treilea risc e clarificat. Dar verificarea a scos la iveală ceva mai serios: <strong>Trulioo + Worldpay</strong> au lansat un cadru „Digital Agent Passport" pe 5 straturi — un jucător KYC/AML deja stabilit, cu active de reglementare pe care noi ar trebui să le construim de la zero. Devine prioritatea #1 pentru mâine, spusă direct, nu ascunsă. În fundal: SK Hynix a raportat azi un trimestru record și piața a sărit după căderea de -10,84% de ieri, PayPal a bătut estimările de Q2 fără să respingă oferta Stripe, iar TVA 9% la locuințe (radar din ediția 12) a fost prelungit — deadline-ul de urgență a dispărut.</p>
+
+  <div class="layout-split">
+  <div class="col-world">
+
+  <!-- ============ 1. PULS GLOBAL ============ -->
+  <h2 class="section-title">1 · Puls Global</h2>
+  <p class="section-sub">Delta 28-29 iulie: ce e cu adevărat nou față de ediția 13.</p>
+
+  <div class="signal">
+    <p class="signal-head">Verificare x401/Proof: nu se suprapune cu KYA, dar scoate la iveală un concurent mult mai periculos — Trulioo + Worldpay</p>
+    <p>x401 verifică <em>identitatea umană din spatele unui agent</em> (credențial semnat, verificat IAL2, prin OpenID4VP + W3C Verifiable Credentials) — dovedește <strong>proveniența autorizării</strong>, nu <strong>răspunderea legală</strong>. Zero mențiune de eIDAS2, AMLD/AMLR, PSD2/PSD3 sau AI Act pe pagina de produs, pe blogul de lansare sau în patru surse de presă independente; cadrul de încredere citat e exclusiv american (NIST IAL2, FIPS 140-2, WebTrust). Corecție la ediția 13: x401 <strong>nu</strong> e guvernat de x402 Foundation — e un protocol separat al Proof, poziționat explicit ca „x402 = cum plătește un agent, x401 = cine e" — o eroare de atribuire în sursa de ieri, corectată azi. Rămâne un detaliu tehnic important: x401 rulează pe OpenID4VP, exact protocolul cerut de EUDI Wallet — deci „adaugă mapare UE" e o problemă de listă de încredere, nu de protocol nou. Concurentul real găsit azi: <strong>Trulioo + Worldpay</strong> au publicat un cadru „Digital Agent Passport" în cinci straturi — Trulioo fiind deja un furnizor KYC/AML cu infrastructură de conformitate existentă, nu un startup care ar trebui s-o construiască de la zero. Neverificat încă dacă acoperă mapare eIDAS2/PSD3 — verificare #1 pentru mâine.</p>
+    <p class="src">Surse: <a href="https://www.proof.com/blog/identity-infrastructure-agentic-internet-x401">Proof — blog de lansare x401</a> · <a href="https://www.helpnetsecurity.com/2026/06/26/proofs-x401-establishes-an-open-protocol-for-ai-agent-identity-and-authorization/">Help Net Security</a> · <a href="https://www.trulioo.com/resources/white-papers/know-your-agent-an-identity-framework-for-trusted-agentic-commerce">Trulioo — Know Your Agent framework</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">SK Hynix raportează un trimestru record — piața sare +2,76% după căderea de -10,84% de ieri (final, nu -8,1% cum arăta la ora scanării)</p>
+    <p>Rezultatele complete ale sesiunii de 28 iulie, disponibile azi: KOSPI a închis <span class="num-down">-10,84%</span> (minim intraday -11,29%), cu sidecar ȘI circuit breaker de piață declanșate simultan — mai dur decât cifra de -8,1% citată ieri la ora scanării, care surprindea probabil o valoare de mid-session. Samsung <span class="num-down">-13,39%</span> (cea mai mare scădere din octombrie 2008), SK Hynix <span class="num-down">-14,65%</span>. Pe Wall Street: SOX <span class="num-down">-4,5%</span>, Micron între <span class="num-down">-8,8% și -12%</span> (surse contradictorii), SanDisk <span class="num-down">-14,2%</span>, Nvidia doar <span class="num-down">-1,1%</span>. Azi, 29 iulie: SK Hynix a raportat venit de <span class="num">79,32 trilioane won (+257% an/an)</span> și profit operațional <span class="num">60,54 trilioane won (+557%, marjă 76%)</span> — ambele sub consens, dar record istoric — cu conducerea ghidând capex 2026 spre partea de sus a intervalului și cerere HBM4 „peste capacitate pentru următorii 3 ani". Piața a citit asta pozitiv: KOSPI <span class="num-up">+2,76%</span> la 6.190,04, Samsung <span class="num-up">+4,55%</span>, Nikkei <span class="num-up">+1,07%</span>.</p>
+    <p class="src">Surse: <a href="https://news.skhynix.com/en/q2-2026-business-results/">SK hynix Newsroom</a> · <a href="https://wolfstreet.com/2026/07/28/korean-kospi-crashes-10-8-today-34-in-25-days-after-300-spike-as-consensual-hallucination-fades/">Wolf Street</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">PayPal bate estimările de Q2, consiliul nu respinge oferta Stripe — catalizatorul din ediția 13 s-a produs</p>
+    <p>Rezultatele reale (nedisponibile la ora scanării de ieri): EPS ajustat <span class="num">$1,38</span> vs. $1,28 consens (+8%), venit <span class="num">$8,68 mld</span> (+5% an/an), TPV $486,4 mld (+10%). Ghidajul FY2026 ridicat la ~$5,38 EPS ajustat — al treilea trimestru consecutiv cu depășire. Conducerea nu a respins oferta Stripe/Advent de $60,50/acțiune — a lăsat ușa deschisă spre una mai mare, consistent cu ancora de ~$70 susținută de consiliu. Acțiunea a urcat <span class="num-up">+4-4,5%</span> la ~$58, tot sub prag. Notabil pentru firul KYA: niciun cuvânt despre comerț agentic pe apelul de rezultate.</p>
+    <p class="src">Surse: <a href="https://techcrunch.com/2026/07/28/paypal-leaves-the-door-open-to-a-higher-takeover-offer-following-earnings-beat/">TechCrunch</a> · <a href="https://siliconangle.com/2026/07/28/paypal-tops-q2-estimates-raises-full-year-forecast-amid-stripe-takeover-bid/">SiliconANGLE</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Securitatea identității pentru agenți devine categorie de M&A la scară de $1 mld: Cyera cumpără Oasis Security</p>
+    <p>Cyera a acceptat să achiziționeze Oasis Security pentru <span class="num">$1 mld</span>, ca să acopere identitățile non-umane (agenți AI, conturi de serviciu) care proliferează în producție. Validare indirectă utilă pentru orice teză de „încredere/identitate pentru agenți", inclusiv KYA — arată o cale de ieșire (exit) posibilă la scară mare pentru categorie, dincolo de fundraising-ul de pre-seed.</p>
+    <p class="src">Sursă: <a href="https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/">TechCrunch</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Petrolul se dezumflă complet: de la $100,65 la <span class="num-down">$84,91 (-16% în 3 sesiuni)</span> pe semnale de dezescaladare Iran-Golf</p>
+    <p>Ministrul de externe iranian a avut convorbiri separate cu omologii saudit și omanez despre Strâmtoarea Hormuz — presiunea inflaționistă de săptămâna trecută s-a domolit rapid, deși dezacordul de fond rămâne nerezolvat. Petrolul mai ieftin a alimentat explicit revenirea Dow (+537 puncte, +1,03%) pe 28 iulie, într-o zi de rotație dinspre AI/semiconductori spre restul pieței.</p>
+    <p class="src">Sursă: <a href="https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html">CNBC</a></p>
+  </div>
+
+  <!-- ============ 2. UNDE CURG BANII ============ -->
+  <h2 class="section-title">2 · Unde Curg Banii</h2>
+  <p class="section-sub">Mișcările din 28-29 iulie, cu cifre.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Unde</th><th>Mișcare</th><th>De ce</th><th>Sursă</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Memorie/chipuri (KOSPI)</td>
+          <td><span class="num-down">-10,84%</span> (28 iul, final) → <span class="num-up">+2,76%</span> (29 iul)</td>
+          <td>Teamă finanțare circulară Nvidia-OpenAI + China DUV → rezultate record SK Hynix</td>
+          <td><a href="https://news.skhynix.com/en/q2-2026-business-results/">SK hynix Newsroom</a></td>
+        </tr>
+        <tr>
+          <td>Identitate/securitate agenți (M&A) — Cyera/Oasis</td>
+          <td><span class="num">$1 mld achiziție</span></td>
+          <td>Guvernanța agenților devine categorie de exit la scară mare</td>
+          <td><a href="https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/">TechCrunch</a></td>
+        </tr>
+        <tr>
+          <td>Augustus (bancă reglementată stablecoin)</td>
+          <td><span class="num">$180M Series B</span> · evaluare $1 mld</td>
+          <td>Confirmă retroactiv: rails de plată rămâne corect ucis (ediția 11) — capital de reglementare la scară mare</td>
+          <td>tech.eu</td>
+        </tr>
+        <tr>
+          <td>AIsa (rails agenți + stablecoin, Alibaba)</td>
+          <td><span class="num">$6,5M seed</span></td>
+          <td>Al patrulea comparabil de plăți-pentru-agenți găsit în 4 zile — categorie clar ocupată</td>
+          <td>tech.eu</td>
+        </tr>
+        <tr>
+          <td>Fonduri CEE / România</td>
+          <td><span class="num-down">Zero runde noi</span></td>
+          <td>Credo/Nucleo cu capital proaspăt, dar nedesfășurat încă</td>
+          <td>The Recursive</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="subhead">Citirea rotației de capital</h3>
+  <p>Două categorii distincte, mișcări opuse. Rails de plată pentru agenți continuă să atragă capital la scară mare (Augustus $180M, AIsa $6,5M) — a patra și a cincea confirmare independentă că decizia de ucidere din ediția 11 a fost corectă, nu o eroare de moment. În paralel, identitatea/guvernanța agenților trece azi de la „categorie de seed" (Oak $60M, ediția 12) la „categorie de M&A la scară de $1 mld" (Cyera/Oasis) — o piață care se maturizează rapid pe ambele capete (fundraising ȘI exit), exact terenul pe care se joacă azi candidatul KYA.</p>
+  <p class="src">Surse suplimentare: <a href="https://tech.eu">tech.eu weekly recap</a></p>
+
+  </div><!-- /col-world -->
+  <div class="col-ideas">
+
+  <!-- ============ 3. OPORTUNITATEA #1 ============ -->
+  <h2 class="section-title">3 · Oportunitatea #1</h2>
+  <p class="section-sub">Ambele track-uri de idei ale ediției: jocul mare (venture-scale) și quick wins (scale mic).</p>
+  <p class="section-sub">Notă de continuitate: KYA trece al treilea test de verificare azi (x401), dar un concurent nou și mai periculos (Trulioo + Worldpay) devine prioritatea de mâine.</p>
+
+  <div class="idea-tracks">
+    <input type="radio" name="track" id="t-big" class="sr-only" checked>
+    <input type="radio" name="track" id="t-quick" class="sr-only">
+    <div class="track-tabs" role="tablist">
+      <label for="t-big" class="track-tab">🎯 Jocul Mare</label>
+      <label for="t-quick" class="track-tab">⚡ Quick Wins</label>
+    </div>
+
+    <section class="track-panel panel-big">
+
+  <h3>KYA European — al treilea risc clarificat (x401), dar apare unul mai serios: Trulioo + Worldpay</h3>
+
+  <p><strong>Ce e:</strong> neschimbat din ediția 12 — un „Know Your Agent" european: atestare criptografică a identității unui agent AI (cine e principalul uman/companie, ce permisiuni are, cine răspunde legal dacă greșește), mapată pe eIDAS2, AML și delegated initiation din PSD3. Stă sub rails-urile deja ocupate (Visa, Mastercard, Crossmint, Ralio, SolvaPay, Paymove, Augustus, AIsa), ca strat de răspundere, nu ca rail concurent.</p>
+
+  <p><strong>Ce s-a clarificat azi:</strong> x401 (Proof, fostă Notarize, $321M strânși, lansat 25 iunie) dovedește <em>cine a autorizat</em> acțiunea unui agent — un credențial semnat, verificat NIST IAL2 — dar nu stabilește <em>cine răspunde legal</em> și nu are nicio mapare pe reglementarea UE. E o infrastructură americană de proveniență a autorizării, nu un strat de conformitate european. Al treilea risc din lista priorizată e clarificat: nu se suprapune.</p>
+
+  <p><strong>Ce rămâne deschis, mai serios decât toate riscurile clarificate până acum:</strong> Trulioo + Worldpay au publicat public un cadru „Digital Agent Passport" în cinci straturi. Spre deosebire de Visa, Kord și x401 — toate infrastructură de plăți sau identitate generică — Trulioo e deja un <strong>furnizor KYC/AML stabilit</strong>, cu relații de reglementare și, probabil, acoperire UE existentă. Dacă au sau plănuiesc mapare pe eIDAS2/AMLR, candidatul KYA moare mâine, la fel de direct cum a murit rails-ul în ediția 11. Nu presupunem nimic azi — verificarea explicită e pasul #1.</p>
+
+  <p><strong>Categoria „identitate de agent" e deja aglomerată la nivel generic</strong> (DIF KYA-OS — spec donat de Vouched, martie 2026, fără mapare UE; Skyfire KYAPay; eco.com KYA; Billions Network; ERC-8004/ChaosChain), dar niciun jucător confirmat azi nu combină explicit identitatea de agent cu eIDAS2/AMLR/PSD3 — golul de reglementare UE rămâne, pe hârtie, deschis, cu o singură excepție neverificată (Trulioo).</p>
+
+  <div class="meta-row">
+    <span class="meta-pill"><strong>Status:</strong> candidat, 3/4 riscuri clarificate</span>
+    <span class="meta-pill"><strong>Risc rămas, prioritar:</strong> Trulioo + Worldpay, neverificat</span>
+    <span class="meta-pill"><strong>Insight tehnic nou:</strong> se poate construi ca strat de credențiale peste x401/OpenID4VP, nu ca protocol separat</span>
+    <span class="meta-pill"><strong>Rundă țintă, dacă se confirmă:</strong> pre-seed €1-3M</span>
+  </div>
+
+  <div class="agent-take strateg">
+    <p class="agent-name">Strategul de business</p>
+    <p>Disciplina din ediția 12-13 continuă să funcționeze: verificăm înainte de a construi, un risc pe zi, fără să declarăm victorie prematur. Rezultatul de azi schimbă și strategia de produs, nu doar scorul de risc: x401 rulează pe OpenID4VP, exact ce cere EUDI Wallet — deci nu trebuie să construim un protocol concurent, ci un emitent de credențiale UE care se conectează la infrastructura deja standardizată. Mai ieftin de construit, dar și mai ușor de replicat de altcineva cu acces mai rapid la statutul de QTSP — de unde vine urgența verificării Trulioo mâine.</p>
+  </div>
+
+  <div class="agent-take marketer">
+    <p class="agent-name">Marketerul</p>
+    <p>Mesajul se ascute din nou: nu „identitate pentru agenți" generic (ocupat de Proof/x401 la scară americană), ci „stratul de răspundere legală UE, verificat împotriva EUDI Wallet, pentru agenți care operează sub PSD3" — o propoziție pe care niciunul dintre concurenții confirmați azi n-o poate spune. Rămâne condiționat de rezultatul verificării Trulioo: dacă ei pot spune exact asta, mesajul nostru dispare.</p>
+  </div>
+
+  <div class="agent-take financiar">
+    <p class="agent-name">Financiarul</p>
+    <p>Doi comps noi utili: Cyera/Oasis ($1 mld M&A) arată o cale de exit credibilă pentru categorie, dincolo de pre-seed; Proof însuși ($321M strânși, 8.000+ relying parties) arată cât de mare poate deveni un jucător de identitate/autorizare dacă câștigă distribuția devreme — un argument pentru viteză, nu pentru amânare, dacă verificarea Trulioo iese pozitivă. Fonduri țintă neschimbate: Credo, Underline, Early Game Ventures.</p>
+  </div>
+
+  <h4>Competiția de verificat, în ordine de prioritate (actualizată azi)</h4>
+  <ul>
+    <li><strong>Trulioo + Worldpay „Digital Agent Passport"</strong> — verificare #1 pentru mâine, cel mai periculos concurent găsit până acum.</li>
+    <li>x401/Proof — <em>clarificat azi, nu se suprapune (fără mapare UE, fără răspundere legală).</em></li>
+    <li>Visa TAP + Agent Directory — <em>clarificat ediția 13, nu se suprapune.</em></li>
+    <li>Kord (UK) — <em>clarificat ediția 13, piață diferită.</em></li>
+    <li>DIF KYA-OS, Skyfire KYAPay, eco.com KYA, Billions Network — de verificat pe rând, fără mapare UE cunoscută azi.</li>
+  </ul>
+
+  <div class="risks">
+    <h4>De ce s-ar putea ca ediția de mâine să ucidă totuși ideea</h4>
+    <ul>
+      <li>Trulioo, neverificat azi — riscul central rămas, și cel mai plauzibil să acopere exact golul UE, dat fiind că pornesc deja din KYC/AML reglementat.</li>
+      <li>PSD3 e încă în tranziție (rollout 2026-2028) — construim pe reguli care se scriu acum.</li>
+      <li>x401 a câștigat deja distribuția pe protocolul de bază (OpenID4VP) — orice jucător mare poate adăuga un credențial UE mai rapid decât un founder solo poate construi statutul de emitent de încredere.</li>
+    </ul>
+  </div>
+
+  <div class="exec-plan">
+    <h4>Plan de execuție — primii pași, actualizați</h4>
+    <ol>
+      <li>Verifică scope-ul exact Trulioo + Worldpay „Digital Agent Passport" — singurul risc structural rămas deschis.</li>
+      <li>Dacă nu se suprapune: schițează produsul ca emitent de credențiale UE peste x401/OpenID4VP, nu ca protocol separat — insight-ul tehnic de azi.</li>
+      <li>Verifică rapid dacă DIF (Trusted AI Agents Working Group) are pe roadmap public vreo extensie de mapare UE.</li>
+      <li>Construiește un proof-of-concept minimal (emitent de credențiale + claim de principal, mapat pe eIDAS2) doar după pasul 1.</li>
+      <li>Deschide conversație cu Credo Ventures — testează finanțabilitatea, cu Cyera/Oasis și Proof ca noi comps de citat.</li>
+    </ol>
+  </div>
+    </section><!-- /panel-big -->
+
+    <section class="track-panel panel-quick">
+      <h3>⚡ Quick win #1: SAF-T (D406) pentru microîntreprinderi — 2 zile până la termen, fără grație anul acesta</h3>
+      <p>Neschimbat din ediția 13, acum la 2 zile: 2026 e primul an fără mecanismul de grație de 6 luni pentru nicio categorie de contribuabil — sancțiunile lovesc din prima perioadă raportată. Depunerea e exclusiv prin SPV cu certificat digital calificat; fără certificat, produsul nu poate fi folosit deloc, indiferent de cât de bun e. Nicio prelungire găsită azi.</p>
+      <p class="src">Risc spus direct: verifică certificatul SPV al clientului înainte de orice pitch. Persona: contabili cu portofolii de micro-SRL-uri nou intrate în obligație.</p>
+
+      <h3>⚡ Quick win #2: „ai ratat deja termenul" — checker de expunere REGES pentru salariul minim, cu remediere</h3>
+      <p>Termenul de 20 zile lucrătoare pentru înregistrarea în REGES-Online a majorării salariului minim (4.050→4.325 lei) a expirat tacit pe 28 iulie — nicio prelungire, nicio comunicare de la Inspecția Muncii găsită azi. Amenda: 5.000-8.000 lei per firmă. Registrul e digital, deci ITM poate detecta neconformitatea prin interogare — firmele care au ratat termenul sunt deja expuse și majoritatea nu știu. Produsul: verificare rapidă (CUI + date angajați) → „ești în regulă / ești expus" + pașii de remediere (act adițional + transmitere retroactivă).</p>
+      <p class="src">Risc spus direct: nicio dovadă publică de toleranță pentru depunere tardivă — verifică cu un consultant HR/legal înainte de a promite eliminarea amenzii. Preț țintă: 150-300 lei/verificare, vândut prin firme de HR/payroll.</p>
+    </section><!-- /panel-quick -->
+  </div><!-- /idea-tracks -->
+
+  <!-- ============ 4. RADAR ROMÂNIA/EUROPA ============ -->
+  <h2 class="section-title">4 · Radar România / Europa</h2>
+  <p class="section-sub">Două probleme reale descoperite, cu sursa durerii. Reddit rămâne complet inaccesibil (blocat la WebFetch și WebSearch deopotrivă) — surse RO folosite exclusiv.</p>
+
+  <h3>Controale ANAF pe plafonul de TVA la veniturile din drepturi de autor — freelanceri și creatori depășesc plafonul fără să știe</h3>
+  <p>Un contabil citat în presă (25 iulie) semnalează controale ANAF concrete pe plafonul de TVA la veniturile din drepturi de autor — „5 cazuri în ultima perioadă", nu un caz izolat. Populația afectată: freelanceri, PFA-uri și creatori de conținut cu venituri variabile, care nu au evidență contabilă continuă și depășesc plafonul fără să-și dea seama până la control. Schiță de soluție: monitor simplu de plafon TVA + alertă, conectat la facturile/veniturile declarate, pentru freelanceri și creatori.</p>
+  <p class="src">Sursă: <a href="https://startupcafe.ro/controale-anaf-la-veniturile-din-drepturi-de-autor-atentie-la-plafonul-de-tva-contabil-in-ultima-perioada-am-avut-5-cazuri-103989">StartupCafe</a></p>
+
+  <h3>Prețuri de transfer, overhaul necunoscut: Ordinul 828/2026 schimbă praguri și termene pentru orice firmă cu tranzacții afiliate</h3>
+  <p>Ordinul 828/2026 (Monitorul Oficial 543/2026, 2 iulie) modifică pragurile, termenele și procedurile de documentare a prețurilor de transfer — un subiect sub-acoperit în presa economică RO față de SAF-T sau REGES, deși afectează orice firmă cu tranzacții cu părți afiliate (grupuri, filiale, firma-mamă). Nu am cercetat azi suficient de adânc pentru un produs — merită un fir dedicat într-o ediție viitoare, mai ales dat fiind firul deja urmărit despre împrumuturi/retrageri intragrup (ediția 3, 10).</p>
+  <p class="src">Sursă: <a href="https://www.contzilla.ro/sinteza-noutati-contabile-luna-iulie-2026/">Contzilla — sinteză noutăți iulie 2026</a></p>
+
+  <!-- ============ 5. FOLLOW-UP ============ -->
+  <h2 class="section-title">5 · Follow-up</h2>
+  <p class="section-sub">Memoria edițiilor anterioare (1-13, 9-28 iulie).</p>
+
+  <ul>
+    <li><strong>KYA European — identitate de agent (ediția 12 → 13 → azi, JOCUL MARE):</strong> al treilea risc clarificat (x401/Proof, nu se suprapune) — vezi secțiunea 3. Trulioo + Worldpay devine verificarea #1 pentru mâine, cel mai periculos concurent găsit până acum.</li>
+    <li><strong>Rails de plată pentru agenți AI (ediția 8→11, UCIS):</strong> rămâne ucis. Augustus ($180M) și AIsa ($6,5M) confirmă azi decizia din altă direcție, nu o contrazic.</li>
+    <li><strong>Cutia Neagră/DORA (ediția 2→9, PE PAUZĂ):</strong> fără update nou azi. Incidentul OpenAI-Hugging Face (ediția 12) rămâne cel mai serios candidat de reactivare.</li>
+    <li><strong>SAF-T (D406) microîntreprinderi (ediția 9→13→azi):</strong> termenul de 31 iulie e la 2 zile — vezi Quick Win #1.</li>
+    <li><strong>Monitorul Salariului Minim / REGES (ediția 7):</strong> rezultatul urmărit din ediția 13 e azi confirmat — termenul a expirat tacit pe 28 iulie, fără extindere. Devine Quick Win #2, reformulat ca „ai ratat deja termenul".</li>
+    <li><strong>ANAF — decizii de impunere din oficiu (ediția 13, quick win):</strong> fără update nou azi, campania continuă.</li>
+    <li><strong>TVA 9% locuințe (ediția 12, radar — expira 31 iulie):</strong> <strong>rezolvat azi.</strong> Senatul a adoptat prelungirea până la 30 septembrie 2026 — urgența semnalată în ediția 12 a dispărut.</li>
+    <li><strong>Sediu Fantomă (ediția 2, reactivat ediția 13):</strong> fără update nou azi — rămâne fără ordonanță corectivă găsită.</li>
+    <li><strong>Blocaje ANAF de cont (ediția 13, radar):</strong> fără update azi, rămâne posibil quick win viitor.</li>
+    <li><strong>Turnul de Control / Radar de Obligații, Monitorul de Inactivare, Klaimee, AEO/GEO (ediții 5, 9, 11):</strong> fără update azi.</li>
+    <li><strong>PayPal/Stripe:</strong> catalizatorul din ediția 13 s-a produs — vezi secțiunea 1. Bătălia rămâne deschisă.</li>
+    <li><strong>Chipuri:</strong> al doilea val de selloff confirmat cu cifre finale, urmat de revenire pe rezultate SK Hynix — vezi secțiunea 1.</li>
+  </ul>
+
+  </div><!-- /col-ideas -->
+  </div><!-- /layout-split -->
+
+  <div class="full-band">
+  <!-- ============ 6. VERDICTUL PARTENERULUI ============ -->
+  <h2 class="section-title">6 · Verdictul Partenerului</h2>
+
+  <div class="verdict">
+    <p><strong>Dacă aș fi în locul tău, în următoarele 48 de ore aș face un singur lucru:</strong></p>
+    <p>Verifică scope-ul exact al Trulioo + Worldpay „Digital Agent Passport" — o singură căutare dedicată, la fel de ieftină ca cele de ieri și azi. Trulioo e cel mai periculos concurent găsit până acum pe firul KYA, pentru că pornește deja din KYC/AML reglementat, nu trebuie să construiască de la zero infrastructura de conformitate. Dacă acoperă mapare eIDAS2/AMLR, candidatul moare mâine, la fel de direct cum a murit rails-ul în ediția 11 — și mergem mai departe la Klaimee sau la reactivarea Cutiei Negre. Dacă nu, insight-ul tehnic de azi (construiește ca emitent de credențiale peste x401/OpenID4VP, nu ca protocol nou) reduce mult costul de pornire. Nu construi nimic înainte de acest pas. În paralel, SAF-T (Quick Win #1) are termen la 2 zile — risc zero, dar nu-l lăsa să-ți fure timpul de la verificarea Trulioo.</p>
+  </div>
+
+  <p class="disclaimer">Cifrele auto-raportate (MRR pe Indie Hackers/X) sunt marcate ca atare. Reddit a fost complet inaccesibil azi (blocat la WebFetch și WebSearch). Câteva cifre din presă coreeană/americană au surse contradictorii (Micron -8,8% vs -12%) — semnalate explicit, nereconciliate. Nimic de aici nu e sfat de investiții.</p>
+
+  <nav class="footer-nav">
+    <a href="../index.html">← Toate edițiile</a>
+    <span>Lovitura · ediția 2026-07-29</span>
+  </nav>
+  </div><!-- /full-band -->
+
+</div>
+</body>
+</html>
