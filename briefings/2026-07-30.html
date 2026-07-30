@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ediția 2026-07-30 — KYA trece de al patrulea test: toate riscurile de suprapunere cunoscute, verificate</title>
+<meta name="description" content="Verificarea cerută ieri iese pozitivă, cu o nuanță: Trulioo + Worldpay „Digital Agent Passport” nu acoperă răspunderea legală mapată pe eIDAS2/AMLR/PSD3 — al patrulea și ultimul risc cunoscut de pe listă e clarificat. Dar apare o amenințare mai subtilă decât suprapunerea de produs: Worldpay are deja distribuție la scară către comercianți. Plus Hush Security strânge $30M pe guvernanța agenților (Akamai strategic), iar SAF-T pentru microîntreprinderi are termen mâine, fără grație.">
+<meta property="og:title" content="KYA trece de al patrulea test — Lovitura, 30 iulie 2026">
+<meta property="og:description" content="Toate cele patru riscuri de suprapunere cunoscute (Visa, Kord, x401, Trulioo) sunt clarificate — dar riscul real devine viteza de distribuție a incumbenților, nu suprapunerea de produs.">
+<meta property="og:type" content="article">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container container-wide briefing">
+
+  <header class="masthead">
+    <p class="kicker">Briefing de business · Ediții zilnice</p>
+    <h1><a href="../index.html">Lovitura</a></h1>
+    <p class="tagline">Doi parteneri, o misiune: găsim și executăm cea mai bună oportunitate.</p>
+    <p class="edition-date">Ediția din 30 iulie 2026 · Ediția 15</p>
+  </header>
+
+  <p class="lede">Ediția 14 a lăsat un singur pas obligatoriu pentru azi: verifică dacă Trulioo + Worldpay „Digital Agent Passport" acoperă exact stratul de răspundere legală UE pe care-l propune candidatul nostru KYA. Am făcut verificarea — iese pozitiv, cu o nuanță importantă. Cadrul Trulioo/Worldpay certifică identitate și telemetrie per-tranzacție (proveniență, legătura cu utilizatorul, scope de permisiuni, comportament, scor de risc), dar nu menționează eIDAS2, EUDI Wallet, AMLR sau PSD3/PSR — e poziționat global generic, nu UE-native, și lasă explicit deschisă întrebarea „cine răspunde legal", exact ca toate cele trei verificări anterioare. Al patrulea și ultimul risc cunoscut de pe listă e clarificat: nu se suprapune direct. Dar cercetarea de azi scoate la iveală ceva mai subtil decât o suprapunere de produs — Worldpay are deja distribuție la scară către comercianți și suport declarat pentru protocolul agentic al OpenAI (ACP), deci ar putea adăuga un modul de conformitate UE mai rapid decât putem noi construi distribuție de la zero. Sesiunea de azi a fost concentrată pe această verificare critică, nu pe un scan larg — spus onest, nu inventăm o listă de semnale ca să umplem pagina.</p>
+
+  <div class="layout-split">
+  <div class="col-world">
+
+  <!-- ============ 1. PULS GLOBAL ============ -->
+  <h2 class="section-title">1 · Puls Global</h2>
+  <p class="section-sub">Delta 29-30 iulie: ce e cu adevărat nou față de ediția 14.</p>
+
+  <div class="signal">
+    <p class="signal-head">Verificare KYA: Trulioo + Worldpay nu acoperă răspunderea legală UE — al patrulea risc clarificat, dar apare riscul de distribuție</p>
+    <p>Cadrul „Digital Agent Passport" (parteneriat Trulioo + Worldpay, scris cu PayOS) verifică identitatea unui agent prin cinci puncte de control: proveniență, legătura cu utilizatorul uman, scope de permisiuni, telemetrie comportamentală, scor de risc — poziționare declarată „globală" (174 țări Worldpay, 195 Trulioo), fără nicio mențiune de eIDAS2, EUDI Wallet, AMLR sau PSD3/PSR în comunicatul oficial sau în white paper-ul KYA. PYMNTS citează chiar CEO-ul Trulioo: răspunderea pentru fraudă și chargeback-uri rămâne „un joc de cartof fierbinte" între emitenți și comercianți, nefixată de acest cadru. Trulioo are conținut separat, neconectat, despre eIDAS2/AMLR — două linii editoriale paralele, nu un produs unificat. Concluzie directă: nu se suprapune pe golul exact pe care-l țintim. Dar riscul real nu mai e „cineva a construit deja asta" — e că Worldpay, cu distribuție deja la scară către comercianți și suport declarat pentru ACP (protocolul agentic OpenAI), poate adăuga un modul de conformitate UE mult mai rapid decât putem noi construi canalul de distribuție.</p>
+    <p class="src">Surse: <a href="https://www.trulioo.com/resources/white-papers/know-your-agent-an-identity-framework-for-trusted-agentic-commerce">Trulioo — white paper KYA</a> · <a href="https://www.pymnts.com/artificial-intelligence-2/2025/trulioo-bets-on-a-digital-agent-passport-to-keep-bots-honest-at-checkout/">PYMNTS</a> · <a href="https://www.paymentsdive.com/news/worldpay-floats-agentic-protocol/806538/">Payments Dive</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Un nou comp de identitate/guvernanță pentru agenți: Hush Security strânge $30M Series A, cu Akamai ca investitor strategic</p>
+    <p>Hush Security a strâns <span class="num">$30M Series A</span> (Akamai strategic + Battery + YL Ventures) pe „AI agent governance gap" — identitate non-umană și control al agenților în producție enterprise. Alături de Oak ($60M seed, identity OS pentru oameni și agenți, deja citat ca comp în ediția 13), confirmă că investitori tier-1 scriu cecuri de 8 cifre pe categoria de identitate/guvernanță — dar ambele rămân enterprise IAM generic, fără mapare regulatorie UE, deci nu se suprapun direct cu KYA.</p>
+    <p class="src">Sursă: <a href="https://www.prnewswire.com/news-releases/hush-security-raises-30m-to-close-the-ai-agent-governance-gap-with-akamai-joining-as-strategic-investor-302836307.html">PRNewswire</a></p>
+  </div>
+
+  <div class="signal">
+    <p class="signal-head">Selloff-ul de memorie continuă fără schimbare majoră de direcție — SOX închide iulie cu cea mai proastă lună din 2008</p>
+    <p>Fără mișcare nouă de fond față de ediția 14: SOX <span class="num-down">-19% în iulie</span>, cea mai proastă lună din 2008. Pierderi de capitalizare cumulate: SK Hynix <span class="num-down">-$176 mld</span>, Samsung <span class="num-down">-$173 mld</span>, Micron <span class="num-down">-$113 mld</span>. Declanșatorii rămân cei deja cunoscuți — ghidajul de capex al SK Hynix (+50% la $31 mld) citit ca supra-încălzire, plus debutul CXMT la Shanghai.</p>
+    <p class="src">Surse: <a href="https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html">CNBC</a></p>
+  </div>
+
+  <!-- ============ 2. UNDE CURG BANII ============ -->
+  <h2 class="section-title">2 · Unde Curg Banii</h2>
+  <p class="section-sub">Mișcările din 29-30 iulie, cu cifre. Zi cu scan restrâns — vezi nota din lede.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Unde</th><th>Mișcare</th><th>De ce</th><th>Sursă</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Memorie/chipuri (SOX, luna iulie)</td>
+          <td><span class="num-down">-19% în iulie</span></td>
+          <td>Cea mai proastă lună din 2008 — capex SK Hynix + debut CXMT</td>
+          <td><a href="https://www.cnbc.com/2026/07/29/chip-selloff-sk-hynix-samsung-softbank.html">CNBC</a></td>
+        </tr>
+        <tr>
+          <td>Guvernanță agenți AI (Hush Security)</td>
+          <td><span class="num">$30M Series A</span></td>
+          <td>Akamai strategic — tier-1 pariază pe „AI agent governance gap"</td>
+          <td><a href="https://www.prnewswire.com/news-releases/hush-security-raises-30m-to-close-the-ai-agent-governance-gap-with-akamai-joining-as-strategic-investor-302836307.html">PRNewswire</a></td>
+        </tr>
+        <tr>
+          <td>Identitate agenți, comp (Oak, ediția 13)</td>
+          <td><span class="num">$60M seed</span></td>
+          <td>Accel/CRV/Greylock — identity OS pentru oameni + agenți</td>
+          <td>Yahoo Finance</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="subhead">Citirea rotației de capital</h3>
+  <p>Fără schimbare de fond față de ediția 14: capitalul public continuă să repreţuiască riscul de capex AI (memorie/chipuri), în timp ce capitalul privat toarnă cecuri de 8 cifre pe identitate/guvernanță de agenți (Hush Security azi, Oak săptămâna trecută) — dar niciunul din aceste cecuri nu acoperă încă mapare regulatorie UE, exact golul pe care-l țintim.</p>
+
+  </div><!-- /col-world -->
+  <div class="col-ideas">
+
+  <!-- ============ 3. OPORTUNITATEA #1 ============ -->
+  <h2 class="section-title">3 · Oportunitatea #1</h2>
+  <p class="section-sub">Ambele track-uri de idei ale ediției: jocul mare (venture-scale) și quick wins (scale mic).</p>
+  <p class="section-sub">Notă de continuitate: KYA trece azi al patrulea și ultimul test de verificare cunoscut — vezi mai jos ce se schimbă în plan.</p>
+
+  <div class="idea-tracks">
+    <input type="radio" name="track" id="t-big" class="sr-only" checked>
+    <input type="radio" name="track" id="t-quick" class="sr-only">
+    <div class="track-tabs" role="tablist">
+      <label for="t-big" class="track-tab">🎯 Jocul Mare</label>
+      <label for="t-quick" class="track-tab">⚡ Quick Wins</label>
+    </div>
+
+    <section class="track-panel panel-big">
+
+  <h3>KYA European — 4 din 4 riscuri cunoscute verificate; riscul real devine distribuția, nu suprapunerea de produs</h3>
+
+  <p><strong>Ce e:</strong> neschimbat din ediția 12 — un „Know Your Agent" european: atestare criptografică a identității unui agent AI (cine e principalul uman/companie, ce permisiuni are, cine răspunde legal dacă greșește), mapată pe eIDAS2, AML și delegated initiation din PSD3. Stă sub rails-urile deja ocupate (Visa, Mastercard, Crossmint, Ralio, SolvaPay, Paymove, Augustus, AIsa), ca strat de răspundere, nu ca rail concurent.</p>
+
+  <p><strong>Ce s-a clarificat azi:</strong> Trulioo + Worldpay „Digital Agent Passport" verifică identitate + telemetrie per-tranzacție, dar nu stabilește răspundere legală și nu are nicio mapare pe eIDAS2/AMLR/PSD3 — chiar CEO-ul Trulioo recunoaște public că problema răspunderii rămâne nerezolvată. Al patrulea risc din lista priorizată (după x401, Visa TAP, Kord) e clarificat: nu se suprapune. <strong>Toate riscurile de suprapunere cunoscute până acum sunt verificate și niciunul nu ocupă exact golul UE.</strong></p>
+
+  <p><strong>Dar verificarea de azi schimbă natura riscului rămas:</strong> patru din patru concurenți verificați au ceva ce noi nu avem — Visa are rețeaua de carduri, x401/Proof are deja 8.000+ relying parties pe OpenID4VP, Trulioo/Worldpay au distribuție la scară către comercianți plus suport declarat pentru ACP (protocolul agentic OpenAI). Riscul nu mai e „cineva a construit deja produsul" — e „un incumbent cu distribuție poate adăuga acest strat mai repede decât noi putem construi de la zero un canal de vânzare".</p>
+
+  <div class="meta-row">
+    <span class="meta-pill"><strong>Status:</strong> candidat, 4/4 riscuri cunoscute clarificate</span>
+    <span class="meta-pill"><strong>Risc nou identificat:</strong> viteza de distribuție a incumbenților, nu suprapunerea de produs</span>
+    <span class="meta-pill"><strong>Insight tehnic (ediția 14):</strong> se poate construi ca strat de credențiale peste x401/OpenID4VP</span>
+    <span class="meta-pill"><strong>Rundă țintă, dacă se confirmă:</strong> pre-seed €1-3M</span>
+  </div>
+
+  <div class="agent-take strateg">
+    <p class="agent-name">Strategul de business</p>
+    <p>Patru verificări consecutive negative pe suprapunere directă (Visa, Kord, x401, Trulioo) sunt o dovadă solidă că golul de conformitate UE e real, nu presupus — disciplina de „verifică înainte de a construi" din edițiile 12-14 și-a făcut treaba. Dar tiparul care se repetă la fiecare verificare (fiecare concurent are ceva ce noi nu avem: rețea, distribuție, adopție tehnică) înseamnă că trecerea de la verificare la construcție trebuie să vină cu un plan explicit de compensare a lipsei de distribuție — nu doar cu un produs tehnic bun.</p>
+  </div>
+
+  <div class="agent-take marketer">
+    <p class="agent-name">Marketerul</p>
+    <p>Mesajul de outreach are acum cea mai puternică formă de până acum: „verificat împotriva a patru concurenți majori (Visa, Kord, Proof, Trulioo) — niciunul nu acoperă răspunderea legală sub PSD3/eIDAS2". Restant de trei zile (cerut prima dată ediția 28): mesajele tehnice către Ralio, SolvaPay și Paymove tot n-au o confirmare de trimitere — cu riscul de distribuție identificat azi, întârzierea asta contează mai mult decât înainte.</p>
+  </div>
+
+  <div class="agent-take financiar">
+    <p class="agent-name">Financiarul</p>
+    <p>Comp nou util azi: Hush Security ($30M Series A, Akamai strategic) confirmă din nou apetitul tier-1 pentru identitate/guvernanță de agenți, alături de Oak ($60M seed) și Cyera/Oasis ($1 mld M&A, ediția 14) — trei semnale independente de finanțabilitate și de cale de exit pentru categorie, deși niciunul dintre ele nu e specific pe conformitate UE. Fonduri țintă neschimbate: Credo, Underline, Early Game Ventures.</p>
+  </div>
+
+  <h4>Competiția verificată, în ordine (toate cele patru riscuri cunoscute — actualizat azi)</h4>
+  <ul>
+    <li><strong>Trulioo + Worldpay „Digital Agent Passport"</strong> — <em>verificat azi, nu se suprapune direct (dar risc de distribuție, vezi mai sus).</em></li>
+    <li>x401/Proof — <em>clarificat ediția 14, nu se suprapune.</em></li>
+    <li>Visa TAP + Agent Directory — <em>clarificat ediția 13, nu se suprapune.</em></li>
+    <li>Kord (UK) — <em>clarificat ediția 13, piață diferită.</em></li>
+    <li>DIF KYA-OS, Skyfire KYAPay, eco.com KYA, Billions Network — rămân neverificate individual, fără mapare UE cunoscută azi.</li>
+  </ul>
+
+  <div class="risks">
+    <h4>De ce s-ar putea ca ideea să eșueze totuși</h4>
+    <ul>
+      <li><strong>Distribuția, nu produsul:</strong> Worldpay/Trulioo, Visa sau x402 Foundation (Visa, Mastercard, Stripe, Google la masă) pot adăuga un modul de conformitate UE mai repede decât putem noi construi un canal de vânzare de la zero.</li>
+      <li>PSD3 rămâne în tranziție (rollout 2026-2028) — construim pe reguli care se scriu acum.</li>
+      <li>Outreach-ul către Ralio/SolvaPay/Paymove, cerut prima dată acum 3 ediții, tot nu are o confirmare de trimitere — o idee care trece toate verificările de concurență, dar n-are încă niciun contact real cu piața, rămâne teoretică.</li>
+    </ul>
+  </div>
+
+  <div class="exec-plan">
+    <h4>Plan de execuție — de la „verifică" la „acționează"</h4>
+    <ol>
+      <li><strong>Restant, a treia zi la rând:</strong> trimite azi mesajele tehnice către Ralio, SolvaPay și Paymove — toate riscurile cunoscute sunt verificate, nu mai există motiv tehnic de amânare.</li>
+      <li>Construiește un proof-of-concept minimal (atestare de agent + claim de principal, mapat pe eIDAS2), folosind insight-ul din ediția 14 — peste x401/OpenID4VP, nu ca protocol separat.</li>
+      <li>Deschide conversație cu Credo Ventures — folosește Hush Security, Oak și Cyera/Oasis ca noi comps de finanțabilitate.</li>
+      <li>Monitorizează activ DIF (Trusted AI Agents Working Group), Skyfire KYAPay și eco.com KYA — singurele riscuri cunoscute rămase neverificate individual.</li>
+      <li>Postează demo-ul în comunitatea x402/Linux Foundation, măsoară cererea reală din partea dezvoltatorilor de agenți B2B.</li>
+    </ol>
+  </div>
+    </section><!-- /panel-big -->
+
+    <section class="track-panel panel-quick">
+      <h3>⚡ Quick win: SAF-T (D406) pentru microîntreprinderi — termen mâine, 31 iulie, ultima șansă</h3>
+      <p>Neschimbat din edițiile 13-14, acum la 1 zi: 2026 e primul an fără mecanismul de grație de 6 luni pentru nicio categorie de contribuabil — sancțiunile lovesc din prima perioadă raportată. Depunerea e exclusiv prin SPV cu certificat digital calificat. Onest: sesiunea de azi n-a făcut cercetare RO dedicată nouă (a fost concentrată pe verificarea Trulioo, vezi lede) — acesta rămâne singurul quick win cu fereastră activă din pipeline-ul deja cunoscut, nu o descoperire nouă. Dacă un produs pe acest fir n-a pornit deja, fereastra comercială practic se închide mâine.</p>
+      <p class="src">Risc spus direct: verifică certificatul SPV al clientului înainte de orice pitch — fără el, produsul nu poate fi folosit indiferent de calitate.</p>
+    </section><!-- /panel-quick -->
+  </div><!-- /idea-tracks -->
+
+  <!-- ============ 4. RADAR ROMÂNIA/EUROPA ============ -->
+  <h2 class="section-title">4 · Radar România / Europa</h2>
+  <p class="section-sub">Zi de scan restrâns pe frontul RO — o singură actualizare, spusă onest, nu două probleme noi inventate.</p>
+
+  <h3>Prețuri de transfer (Ordinul 828/2026): fir deschis din ediția 14, tot necercetat</h3>
+  <p>Ediția 14 (29 iulie) semnala Ordinul 828/2026 (Monitorul Oficial 543/2026, 2 iulie) — schimbă praguri, termene și proceduri de documentare a prețurilor de transfer pentru firmele cu tranzacții afiliate, un subiect sub-acoperit față de SAF-T sau REGES. Sesiunea de azi nu a alocat timp de cercetare pe acest fir (prioritatea a fost verificarea KYA) — rămâne exact acolo unde a fost lăsat ieri: candidat pentru o ediție viitoare, nu încă un quick win sau radar complet documentat.</p>
+  <p class="src">Sursă: <a href="https://www.contzilla.ro/sinteza-noutati-contabile-luna-iulie-2026/">Contzilla — sinteză noutăți iulie 2026</a></p>
+
+  <!-- ============ 5. FOLLOW-UP ============ -->
+  <h2 class="section-title">5 · Follow-up</h2>
+  <p class="section-sub">Memoria edițiilor anterioare (1-14, 9-29 iulie).</p>
+
+  <ul>
+    <li><strong>KYA European — identitate de agent (ediția 12 → 13 → 14 → azi, JOCUL MARE):</strong> al patrulea și ultimul risc cunoscut clarificat (Trulioo+Worldpay, nu se suprapune) — vezi secțiunea 3. Riscul devine distribuția incumbenților, nu suprapunerea de produs.</li>
+    <li><strong>Outreach Ralio/SolvaPay/Paymove (cerut ediția 13, repetat 14, azi):</strong> a treia zi fără confirmare de trimitere — cel mai serios semnal de urmărit, tratat direct în Verdict.</li>
+    <li><strong>Rails de plată pentru agenți AI (ediția 8→11, UCIS):</strong> rămâne ucis. Fără update nou azi.</li>
+    <li><strong>Cutia Neagră/DORA (ediția 2→9, PE PAUZĂ):</strong> fără update nou azi.</li>
+    <li><strong>SAF-T (D406) microîntreprinderi (ediția 9→13→14→azi):</strong> termen mâine, 31 iulie — vezi Quick Win.</li>
+    <li><strong>Prețuri de transfer / Ordinul 828/2026 (ediția 14):</strong> fără cercetare nouă azi — vezi Radar.</li>
+    <li><strong>ANAF — decizii de impunere din oficiu, fereastra de 60 zile (ediția 13, quick win):</strong> fără update azi.</li>
+    <li><strong>Blocaje ANAF de cont, Sediu Fantomă (ediția 13, radar):</strong> fără update azi.</li>
+    <li><strong>Turnul de Control, Monitorul de Inactivare, Klaimee, AEO/GEO (ediții 5, 9, 11):</strong> fără update azi.</li>
+    <li><strong>PayPal/Stripe:</strong> fără update nou pe 29-30 iulie — bătălia rămâne deschisă, fără mișcare de la earnings call.</li>
+    <li><strong>Chipuri/memorie:</strong> fără schimbare majoră de direcție față de ediția 14 — vezi secțiunea 1.</li>
+    <li><strong>TVA 9% locuințe (ediția 12, rezolvat ediția 14):</strong> fără update nou.</li>
+  </ul>
+
+  </div><!-- /col-ideas -->
+  </div><!-- /layout-split -->
+
+  <div class="full-band">
+  <!-- ============ 6. VERDICTUL PARTENERULUI ============ -->
+  <h2 class="section-title">6 · Verdictul Partenerului</h2>
+
+  <div class="verdict">
+    <p><strong>Dacă aș fi în locul tău, în următoarele 48 de ore aș face un singur lucru:</strong></p>
+    <p>Trimite azi mesajele tehnice către Ralio, SolvaPay și Paymove — cerute prima dată acum trei ediții, tot fără o confirmare de trimitere. Toate cele patru riscuri de suprapunere cunoscute (Visa, Kord, x401, Trulioo) sunt acum verificate și niciunul nu ocupă exact golul de răspundere legală UE — nu mai există niciun motiv tehnic de amânare. Riscul identificat azi (distribuția incumbenților, nu suprapunerea de produs) face ca fiecare zi de întârziere să conteze mai mult, nu mai puțin: cu cât outreach-ul întârzie, cu atât crește șansa ca Worldpay sau x402 Foundation să adauge singuri stratul de conformitate UE. Dacă mesajele tot nu pleacă în 48h, tratează-l ca pe același semnal pe care l-am tratat cu rails de plată în ediția 11 — o idee care trece toate testele tehnice, dar nu poate produce un singur contact real, nu mai e o idee validată, e o idee amânată.</p>
+  </div>
+
+  <p class="disclaimer">Cifrele auto-raportate (MRR pe Indie Hackers/X) sunt marcate ca atare. Nimic de aici nu e sfat de investiții.</p>
+
+  <nav class="footer-nav">
+    <a href="../index.html">← Toate edițiile</a>
+    <span>Lovitura · ediția 2026-07-30</span>
+  </nav>
+  </div><!-- /full-band -->
+
+</div>
+</body>
+</html>
