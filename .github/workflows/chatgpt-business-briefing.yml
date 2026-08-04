@@ -1,0 +1,128 @@
+name: ChatGPT Business Briefing
+
+on:
+  schedule:
+    - cron: '30 8 * * *'
+      timezone: 'Europe/Bucharest'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rulează chiar dacă nu au trecut două zile'
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chatgpt-business-briefing-main
+  cancel-in-progress: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "Secretul OPENAI_API_KEY lipsește din Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+      - name: Sync before research
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Generate researched report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.1' }}
+          FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}
+        run: node scripts/chatgpt-business-briefing.mjs generate /tmp/chatgpt-report.json
+
+      - name: Publish safely on the newest main
+        id: publish
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          IS_SKIP=$(node -e "const r=require('/tmp/chatgpt-report.json'); process.stdout.write(String(Boolean(r.skip)))")
+          if [ "$IS_SKIP" = "true" ]; then
+            REASON=$(node -e "const r=require('/tmp/chatgpt-report.json'); process.stdout.write(r.reason || 'skip')")
+            echo "Raport omis: $REASON"
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          REPORT_DATE=$(node -e "const r=require('/tmp/chatgpt-report.json'); process.stdout.write(r.date)")
+          REPORT_TITLE=$(node -e "const r=require('/tmp/chatgpt-report.json'); process.stdout.write(r.title)")
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for ATTEMPT in 1 2 3; do
+            echo "Publicare, încercarea $ATTEMPT/3"
+            git fetch origin main
+            git reset --hard origin/main
+
+            node scripts/chatgpt-business-briefing.mjs apply /tmp/chatgpt-report.json
+
+            git add index.html \
+              briefings/chatgpt-arhiva.html \
+              briefings/chatgpt-state.json \
+              "briefings/chatgpt-${REPORT_DATE}.html"
+
+            if git diff --cached --quiet; then
+              echo "Nu există modificări noi de publicat."
+              echo "published=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            git commit -m "Add ChatGPT business briefing ${REPORT_DATE}"
+
+            if git push origin HEAD:main; then
+              echo "published=true" >> "$GITHUB_OUTPUT"
+              echo "report_date=$REPORT_DATE" >> "$GITHUB_OUTPUT"
+              echo "report_title=$REPORT_TITLE" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            echo "Main s-a schimbat între timp; refac modificările peste ultima versiune."
+            sleep $((ATTEMPT * 5))
+          done
+
+          echo "Nu am putut publica după 3 încercări din cauza modificărilor concurente pe main."
+          exit 1
+
+      - name: Add publication summary
+        if: steps.publish.outputs.published == 'true'
+        env:
+          REPORT_DATE: ${{ steps.publish.outputs.report_date }}
+          REPORT_TITLE: ${{ steps.publish.outputs.report_title }}
+        run: |
+          {
+            echo "## Raport ChatGPT publicat"
+            echo
+            echo "**$REPORT_TITLE**"
+            echo
+            echo "https://arinm.github.io/business/briefings/chatgpt-${REPORT_DATE}.html"
+            echo
+            echo "Arhivă: https://arinm.github.io/business/briefings/chatgpt-arhiva.html"
+          } >> "$GITHUB_STEP_SUMMARY"
