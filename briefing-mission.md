@@ -72,6 +72,9 @@ Dacă timpul se scurge, publică ce ai — o ediție onestă și mai scurtă bat
 rulare care nu se mai termină.
 
 ## PASUL 0 — MEMORIA COMUNĂ (fă asta primul)
+Sincronizează întâi cu remote-ul, ca să nu lucrezi pe o stare veche dacă altă
+sesiune a scris între timp: `git fetch origin main && git merge origin/main
+--ff-only`.
 Citește ultimele 2-3 fișiere din `briefings/` (edițiile anterioare). Sunt
 memoria noastră: ce idei am urmărit, ce am promis să verificăm, ce semnale
 creșteau. NU repeta conținut deja acoperit decât dacă au apărut informații noi.
@@ -150,18 +153,25 @@ găsit până atunci, nu continuă la nesfârșit.
    „adaugă noua ediție PRIMA"), cu data, ordinala (nr. carduri existente + 1),
    titlul Oportunității #1 și un teaser de 1-2 fraze. Respectă exact structura
    de card documentată acolo.
-4. Commit: `Ediția YYYY-MM-DD: [titlul oportunității]`. Push pe `main` DIRECT pe
-   github.com, cu token cu drept de scriere — integrarea managed a sesiunii e
-   read-only (dă 403 la `git push origin`), deci NU folosi `origin`:
+4. Commit: `Ediția YYYY-MM-DD: [titlul oportunității]`. Imediat înainte de
+   push, sincronizează din nou (altă sesiune poate fi scris între timp):
+   `git fetch origin main && git rebase origin/main`. Dacă apare conflict pe
+   `index.html`, păstrează AMBELE carduri de ediție (al tău + al celeilalte
+   sesiuni) — niciodată nu rezolvi un conflict ștergând munca altei sesiuni.
+   Push pe `main` DIRECT pe github.com, cu token cu drept de scriere —
+   integrarea managed a sesiunii e read-only (dă 403 la `git push origin`),
+   deci NU folosi `origin`:
    `git push "https://x-access-token:${GH_PUSH_TOKEN}@github.com/arinm/business.git" HEAD:main`
    URL-ul cu token înglobat ocolește automat rescrierea internă către proxy-ul
    read-only (nu se potrivește cu prefixul `https://github.com/`), așa că ajunge
    direct la GitHub. Tokenul vine din variabila de mediu `GH_PUSH_TOKEN`
    (fine-grained PAT, Contents: Read and write, doar pe acest repo). Publicarea
    pe site e automată prin GitHub Actions după push.
-5. Verifică după push că fișierele sunt pe `main`. Dacă push-ul eșuează,
-   reîncearcă (backoff). FALLBACK dacă `GH_PUSH_TOKEN` lipsește sau push-ul tot
-   eșuează: NU te bloca — publică ediția ca Artifact (HTML self-contained, cu
+5. Dacă push-ul eșuează cu non-fast-forward, repetă pasul de sincronizare
+   (fetch + rebase, aceeași regulă de conflict pe `index.html`) și reîncearcă
+   push-ul, de maximum 3 ori. Verifică după push că fișierele sunt pe `main`.
+   FALLBACK dacă `GH_PUSH_TOKEN` lipsește sau push-ul tot eșuează după cele 3
+   încercări: NU te bloca — publică ediția ca Artifact (HTML self-contained, cu
    `styles.css` inline, fără referințe externe) și trimite linkul prin
    PushNotification, apoi raportează eroarea de push explicit.
 
