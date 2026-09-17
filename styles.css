@@ -226,6 +226,62 @@ a:hover { color: var(--accent-hover); text-decoration: underline; text-underline
   padding: 32px 4px;
 }
 
+/* ---------- Arhivă pe luni (calendar.html) ---------- */
+
+.pinned-archive { margin-bottom: 24px; }
+
+.month-groups { display: flex; flex-direction: column; gap: 14px; }
+
+.month-group {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-raised);
+  overflow: hidden;
+}
+
+.month-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 24px;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.month-summary::-webkit-details-marker { display: none; }
+.month-summary::marker { content: ""; }
+
+.month-summary .count {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-faint);
+}
+
+.month-summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: auto;
+  padding-left: 12px;
+}
+
+.month-group[open] .month-summary::after { content: "\2013"; }
+
+.month-cards {
+  padding: 4px 24px 24px;
+}
+
+.month-cards .edition-card:last-child { margin-bottom: 0; }
+
 /* ---------- Corpul unei ediții ---------- */
 
 .briefing h2.section-title {
