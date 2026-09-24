@@ -1,0 +1,289 @@
+[
+  {
+    "slug": "ai-native-accounting",
+    "title": "AI-native Accounting RO/CEE",
+    "score": 87,
+    "status": "Validate now",
+    "aliases": [
+      "AI accounting",
+      "contabilitate AI",
+      "mika",
+      "firma contabilitate",
+      "AI-native accounting"
+    ],
+    "buyer": "IMM-uri digitale din România și CEE; partenerul operațional este un contabil sau o firmă autorizată.",
+    "problem": "Fondatorii vor contabilitatea și depunerile făcute corect, cu mai puțin schimb de mesaje și documente.",
+    "wedge": "Serviciu complet pentru firme digitale, cu automatizare internă pentru documente, reconciliere și excepții, revizuit de contabilul responsabil.",
+    "test": "Discută cu cinci cabinete; mapează timpul per client și testează un flux repetitiv cu cel puțin 20 de firme într-un pilot.",
+    "gate": "Un cabinet oferă date și un pilot, ideal plătit; compară timpul uman per firmă înainte și după.",
+    "risk": "Reglementare profesională, acces la date, erori fiscale și costul real al verificării umane.",
+    "next": "Pilot cu un cabinet contabil și workflow real",
+    "related": [
+      "briefings/chatgptANALIZA-2026-08-26.html"
+    ],
+    "tags": [
+      "contabilitate",
+      "tax",
+      "software",
+      "IMM"
+    ]
+  },
+  {
+    "slug": "payment-fraud-bec-guard",
+    "title": "Payment Fraud / BEC Guard",
+    "score": 84,
+    "status": "Sell first",
+    "aliases": [
+      "payment fraud",
+      "bec guard",
+      "frauda plati",
+      "fraudă plăți",
+      "iban",
+      "schimbare iban",
+      "business email compromise",
+      "supplier fraud"
+    ],
+    "buyer": "Cabinete contabile implicate în aprobarea plăților, outsourced CFO / AP sau direct IMM-ul care controlează plățile.",
+    "problem": "O factură de la un furnizor cunoscut poate avea instrucțiuni de plată schimbate; fără verificare independentă, plata poate ajunge în alt cont.",
+    "wedge": "Audit al procesului de schimbare IBAN pentru un portofoliu de firme, urmat de istoric furnizor–IBAN, semnalarea schimbărilor, verificare independentă, aprobare și dovadă.",
+    "test": "Oferă Payment Fraud Exposure Audit la 490 €; discută cu 10 cumpărători relevanți despre un caz concret de IBAN schimbat și încearcă să închizi un audit.",
+    "gate": "Cel puțin cinci confirmă problema, trei arată procesul real și unul plătește auditul. Validează întâi dacă firma contabilă participă efectiv înainte de plată.",
+    "risk": "Cabinetul poate primi documentele doar după plată. Produsele consacrate verifică deja furnizorii; diferențierea trebuie să fie distribuția și fluxul local multi-client.",
+    "next": "Audit plătit de expunere la fraudă",
+    "related": [
+      "briefings/chatgptANALIZA-2026-09-13.html",
+      "briefings/chatgptANALIZA-2026-09-03.html"
+    ],
+    "tags": [
+      "fraudă",
+      "plăți",
+      "contabilitate",
+      "securitate"
+    ]
+  },
+  {
+    "slug": "hospital-back-office-agents",
+    "title": "Hospital Back-office AI Agents CEE",
+    "score": 82,
+    "status": "Validate",
+    "aliases": [
+      "hospital agents",
+      "spital",
+      "back office medical",
+      "healthcare agents"
+    ],
+    "buyer": "Director operațional sau financiar al unui spital ori al unei rețele private.",
+    "problem": "Operațiuni administrative repetitive în aplicații vechi, cu reconciliere și introducere manuală de date.",
+    "wedge": "Un singur flux administrativ îngust, auditat și supravegheat, operat în sistemul existent.",
+    "test": "Intervievează responsabili operaționali și alege un proces care poate fi măsurat în ore, erori sau timp de încasare.",
+    "gate": "Acces la un flux real și un pilot cu criterii de calitate și timp măsurabile.",
+    "risk": "Ciclu lung de vânzare, permisiuni IT, date sensibile și supraestimarea autonomiei.",
+    "next": "Identifică un proces administrativ îngust",
+    "related": [
+      "briefings/chatgptANALIZA-2026-09-18.html",
+      "briefings/chatgptANALIZA-2026-09-24.html"
+    ],
+    "tags": [
+      "spitale",
+      "AI agents",
+      "healthcare",
+      "operațiuni"
+    ]
+  },
+  {
+    "slug": "fiscal-operations-os",
+    "title": "Accounting / Fiscal Operations OS",
+    "score": 80,
+    "status": "Validate",
+    "aliases": [
+      "Tax Risk Mirror",
+      "fiscal operations",
+      "monitor fiscal",
+      "anaf"
+    ],
+    "buyer": "Cabinet contabil cu portofoliu mare de firme.",
+    "problem": "Datele fiscale și contabile apar în sisteme diferite, iar o neconcordanță poate trece neobservată între termene.",
+    "wedge": "Vizibilitate per client asupra declarațiilor, e-Factura, SAF-T, documentelor și excepțiilor, cu explicații și surse.",
+    "test": "Arată unui cabinet o comparație între două surse de date reale și măsoară dacă ar plăti pentru rezolvarea excepțiilor.",
+    "gate": "Un cabinet acordă acces la un portofoliu pilot și confirmă timp sau risc economisit.",
+    "risk": "Produsele contabile existente pot adăuga verificări similare; eventuale propuneri ANAF nu sunt obligații adoptate.",
+    "next": "Verifică nevoia unui cabinet multi-client",
+    "related": [
+      "briefings/chatgptANALIZA-2026-08-28.html"
+    ],
+    "tags": [
+      "SAF-T",
+      "D406",
+      "e-Factura",
+      "SPV",
+      "ANAF"
+    ]
+  },
+  {
+    "slug": "kidspass",
+    "title": "KidsPass B2B2C",
+    "score": 78,
+    "status": "Validate",
+    "aliases": [
+      "KidsPass",
+      "beneficii copii",
+      "benefit wallet",
+      "activități copii"
+    ],
+    "buyer": "Angajatorul plătește; părinții folosesc beneficiul la furnizorii de activități pentru copii.",
+    "problem": "Beneficiile pentru familii sunt fragmentate și distribuția direct către fiecare părinte poate costa prea mult.",
+    "wedge": "Portofel de beneficii pentru activitățile copiilor, distribuit prin angajatori.",
+    "test": "Testează cu departamente HR dacă ar aloca 50–150 RON per angajat pe lună și cu furnizorii dacă acceptă modelul.",
+    "gate": "Un angajator alocă buget sau semnează un pilot definit; furnizorii pot onora serviciul.",
+    "risk": "Trei laturi de activat: angajator, familie și furnizor; utilizarea reală poate fi redusă.",
+    "next": "Testează bugetul unui angajator",
+    "related": [
+      "briefings/chatgptANALIZA-2026-09-13.html"
+    ],
+    "tags": [
+      "beneficii",
+      "familie",
+      "HR",
+      "copii"
+    ]
+  },
+  {
+    "slug": "energy-grid-intelligence",
+    "title": "Energy / Grid Intelligence CEE",
+    "score": 76,
+    "status": "Find wedge",
+    "aliases": [
+      "GridQueue",
+      "grid intelligence",
+      "racordare energie",
+      "capacitate rețea",
+      "energy asset"
+    ],
+    "buyer": "Dezvoltatori regenerabile, BESS, fonduri și finanțatori.",
+    "problem": "Coada de racordare și statutul real al proiectelor sunt greu de interpretat pentru decizii de dezvoltare.",
+    "wedge": "Testează inteligența asupra probabilității ca proiectele să ajungă la racordare și a capacității care se poate elibera, pornind de la date și obligații verificabile.",
+    "test": "Scanare competitivă dedicată și cinci discuții cu cumpărători; cere decizia pe care ar lua-o diferit cu această informație.",
+    "gate": "Un cumpărător plătește sau oferă un pilot pentru o decizie specifică; sursele de date sunt suficient de fiabile.",
+    "risk": "Hărți de capacitate și produse de grid intelligence există deja; date incomplete și premise contradictorii între rapoarte.",
+    "next": "Scanare competitori și cinci cumpărători",
+    "related": [
+      "briefings/2026-09-21.html",
+      "briefings/2026-09-22.html"
+    ],
+    "tags": [
+      "energie",
+      "GridQueue",
+      "capacitate",
+      "ATR"
+    ]
+  },
+  {
+    "slug": "expert-data-service",
+    "title": "Expert Data-as-a-Service CEE",
+    "score": 75,
+    "status": "Discover",
+    "aliases": [
+      "expert data",
+      "datasets CEE",
+      "evaluation sets",
+      "RL environments"
+    ],
+    "buyer": "Echipe enterprise AI sau laboratoare care cumpără date și evaluări specializate.",
+    "problem": "Modelele AI au nevoie de seturi de evaluare și date cu expertiză de domeniu și limbă locală.",
+    "wedge": "Un set de evaluare sau benchmark pentru o nișă CEE definită, livrat cu verificare de experți.",
+    "test": "Intervievează cumpărători despre un set de date concret, criterii de calitate și buget.",
+    "gate": "Cerere plătită pentru un livrabil clar, cu cost al expertului calculat.",
+    "risk": "Nu există încă dovadă de cerere pentru un domeniu românesc specific; servicii generice au concurență.",
+    "next": "Identifică cerere pentru dataset specializat",
+    "related": [],
+    "tags": [
+      "date",
+      "AI",
+      "benchmark",
+      "CEE"
+    ]
+  },
+  {
+    "slug": "saft-deadline-monitor",
+    "title": "SAF-T / Fiscal Deadline Monitor",
+    "score": 74,
+    "status": "Quick win",
+    "aliases": [
+      "SAF-T",
+      "D406",
+      "deadline fiscal",
+      "portfolio compliance"
+    ],
+    "buyer": "Cabinete contabile cu zeci sau sute de firme.",
+    "problem": "Un portofoliu mare are multe depuneri, iar statusul fiecărei declarații poate rămâne neclar.",
+    "wedge": "Tablou per firmă: D406 așteptat → generat → validat → depus → recipisă confirmată.",
+    "test": "Verifică la cabinete dacă exporturile și recipisele existente lasă goluri și dacă ar plăti pentru monitorizare.",
+    "gate": "Un cabinet acceptă un pilot plătit și economisește timp la urmărirea termenelor.",
+    "risk": "Funcția se poate adăuga rapid în produse contabile existente.",
+    "next": "Testează monitorizarea portofoliului",
+    "related": [
+      "briefings/chatgptANALIZA-2026-08-28.html"
+    ],
+    "tags": [
+      "SAF-T",
+      "D406",
+      "contabilitate",
+      "termene"
+    ]
+  },
+  {
+    "slug": "connection-offer-desk",
+    "title": "Connection Offer / Securities Desk",
+    "score": 72,
+    "status": "Service only",
+    "aliases": [
+      "ATR",
+      "connection offer",
+      "garantii racordare",
+      "security desk"
+    ],
+    "buyer": "Dezvoltator sau finanțator de proiecte energetice.",
+    "problem": "Ofertele de racordare și obligațiile de garanție au termene și sume care pot fi ratate ori interpretate greșit.",
+    "wedge": "Serviciu pe un singur proiect: document → termen, garanție, MW și bani expuși, cu citat exact.",
+    "test": "Vinde analiza unui document pentru un proiect; validează dacă buyerul ar plăti 1.500–3.000 € per proiect.",
+    "gate": "Primul proiect plătit înainte de extinderea produsului.",
+    "risk": "Concurenți acoperă managementul de connection offers; fără buyer evidence, nu se justifică platformă mare.",
+    "next": "Vinde un audit pentru un proiect",
+    "related": [
+      "briefings/chatgptANALIZA-2026-09-13.html"
+    ],
+    "tags": [
+      "energie",
+      "ATR",
+      "garanții",
+      "GRIDBANK"
+    ]
+  },
+  {
+    "slug": "outcome-verification-agents",
+    "title": "Outcome Verification for AI Agents",
+    "score": 70,
+    "status": "Watch",
+    "aliases": [
+      "OutcomeLedger",
+      "AI agent governance",
+      "verificare rezultate AI"
+    ],
+    "buyer": "Companii care cumpără muncă executată de agenți AI și trebuie să verifice rezultatul.",
+    "problem": "Executarea unui task AI nu demonstrează automat că rezultatul promis a fost livrat.",
+    "wedge": "Dovadă verificabilă pentru un singur tip de rezultat și flux de aprobare.",
+    "test": "Găsește un buyer cu plăți dependente de outcome și măsoară cât costă verificarea actuală.",
+    "gate": "O echipă plătește pentru controlul unui outcome definit.",
+    "risk": "Platformele AI pot integra verificarea și facturarea direct.",
+    "next": "Caută un buyer și o dovadă nouă",
+    "related": [
+      "briefings/chatgptANALIZA-2026-09-13.html"
+    ],
+    "tags": [
+      "agenți AI",
+      "outcome",
+      "audit",
+      "billing"
+    ]
+  }
+]
