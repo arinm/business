@@ -120,6 +120,34 @@
     ]
   },
   {
+    "slug": "expert-data-service",
+    "title": "Expert Data-as-a-Service CEE",
+    "score": 80,
+    "status": "Validate",
+    "aliases": [
+      "expert data",
+      "datasets CEE",
+      "evaluation sets",
+      "RL environments"
+    ],
+    "buyer": "Echipe enterprise AI sau laboratoare care cumpără date și evaluări specializate.",
+    "problem": "Echipele AI au nevoie de taskuri, medii și evaluări de domeniu care demonstrează prin verificatoare dacă agentul a produs rezultatul corect.",
+    "wedge": "Medii RL verticale pentru România/CEE: taskuri din procese reale, verifier executabil, proveniență, reguli versionate și măsurarea dezacordului între experți.",
+    "test": "Construiește 30 de taskuri cu verifier executabil dintr-un singur workflow și trimite pachetul către cinci cumpărători de evals sau training data.",
+    "gate": "Un cumpărător plătește pentru extinderea la minimum 500 de taskuri într-un vertical concret.",
+    "risk": "Categoria generalistă este foarte finanțată; limba locală nu este moat, iar cererea frontier poate fi concentrată în puțini cumpărători.",
+    "next": "Pachet demonstrabil de 30 de taskuri cu verifier",
+    "related": [
+      "radar/surse-ai-2026-09-25.html"
+    ],
+    "tags": [
+      "date",
+      "AI",
+      "benchmark",
+      "CEE"
+    ]
+  },
+  {
     "slug": "kidspass",
     "title": "KidsPass B2B2C",
     "score": 78,
@@ -175,32 +203,6 @@
       "GridQueue",
       "capacitate",
       "ATR"
-    ]
-  },
-  {
-    "slug": "expert-data-service",
-    "title": "Expert Data-as-a-Service CEE",
-    "score": 75,
-    "status": "Discover",
-    "aliases": [
-      "expert data",
-      "datasets CEE",
-      "evaluation sets",
-      "RL environments"
-    ],
-    "buyer": "Echipe enterprise AI sau laboratoare care cumpără date și evaluări specializate.",
-    "problem": "Modelele AI au nevoie de seturi de evaluare și date cu expertiză de domeniu și limbă locală.",
-    "wedge": "Un set de evaluare sau benchmark pentru o nișă CEE definită, livrat cu verificare de experți.",
-    "test": "Intervievează cumpărători despre un set de date concret, criterii de calitate și buget.",
-    "gate": "Cerere plătită pentru un livrabil clar, cu cost al expertului calculat.",
-    "risk": "Nu există încă dovadă de cerere pentru un domeniu românesc specific; servicii generice au concurență.",
-    "next": "Identifică cerere pentru dataset specializat",
-    "related": [],
-    "tags": [
-      "date",
-      "AI",
-      "benchmark",
-      "CEE"
     ]
   },
   {
