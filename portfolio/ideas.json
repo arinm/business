@@ -19,6 +19,7 @@
     "risk": "Reglementare profesională (CECCAR cere expert asociat/administrator la orice roll-up), acces la date, erori fiscale, costul real al verificării umane, și un concurent numit (Paycraft, Varșovia) cu România pe foaia de parcurs de expansiune.",
     "next": "Pilot cu un cabinet contabil + verificare structură legală CECCAR pentru roll-up",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-08-26.html"
     ],
     "tags": [
@@ -51,6 +52,7 @@
     "risk": "Cabinetul poate primi documentele doar după plată. Produsele consacrate verifică deja furnizorii; diferențierea trebuie să fie distribuția și fluxul local multi-client.",
     "next": "Audit plătit de expunere la fraudă",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html",
       "briefings/chatgptANALIZA-2026-09-03.html"
     ],
@@ -64,7 +66,7 @@
   {
     "slug": "hospital-back-office-agents",
     "title": "Hospital Back-office AI Agents CEE",
-    "score": 82,
+    "score": 74,
     "status": "Validate",
     "aliases": [
       "hospital agents",
@@ -80,6 +82,7 @@
     "risk": "Ciclu lung de vânzare, permisiuni IT, date sensibile și supraestimarea autonomiei.",
     "next": "Identifică un proces administrativ îngust",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-18.html",
       "briefings/chatgptANALIZA-2026-09-24.html"
     ],
@@ -93,8 +96,8 @@
   {
     "slug": "fiscal-operations-os",
     "title": "Accounting / Fiscal Operations OS",
-    "score": 80,
-    "status": "Validate",
+    "score": 68,
+    "status": "Narrow / pause",
     "aliases": [
       "Tax Risk Mirror",
       "fiscal operations",
@@ -109,6 +112,7 @@
     "risk": "Produsele contabile existente pot adăuga verificări similare; eventuale propuneri ANAF nu sunt obligații adoptate.",
     "next": "Verifică nevoia unui cabinet multi-client",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-08-28.html"
     ],
     "tags": [
@@ -122,7 +126,7 @@
   {
     "slug": "expert-data-service",
     "title": "Expert Data-as-a-Service CEE",
-    "score": 80,
+    "score": 78,
     "status": "Validate",
     "aliases": [
       "expert data",
@@ -138,6 +142,7 @@
     "risk": "Categoria generalistă este foarte finanțată; limba locală nu este moat, iar cererea frontier poate fi concentrată în puțini cumpărători.",
     "next": "Pachet demonstrabil de 30 de taskuri cu verifier",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "radar/surse-ai-2026-09-25.html"
     ],
     "tags": [
@@ -150,7 +155,7 @@
   {
     "slug": "made-in-eu-preflight",
     "title": "Made-in-EU Local-Content Preflight",
-    "score": 79,
+    "score": 76,
     "status": "Validate",
     "aliases": [
       "Made in EU",
@@ -167,6 +172,7 @@
     "risk": "Legea nu este finală; pragurile se pot schimba, iar ERP/PLM, customs suites și consultanții pot absorbi funcția.",
     "next": "Vinde un audit pe un BOM real",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "radar/oportunitati-2026-09-26.html"
     ],
     "tags": [
@@ -180,7 +186,7 @@
   {
     "slug": "kidspass",
     "title": "KidsPass B2B2C",
-    "score": 78,
+    "score": 73,
     "status": "Validate",
     "aliases": [
       "KidsPass",
@@ -196,6 +202,7 @@
     "risk": "Trei laturi de activat: angajator, familie și furnizor; utilizarea reală poate fi redusă.",
     "next": "Testează bugetul unui angajator",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html"
     ],
     "tags": [
@@ -208,7 +215,7 @@
   {
     "slug": "energy-grid-intelligence",
     "title": "Energy / Grid Intelligence CEE",
-    "score": 76,
+    "score": 72,
     "status": "Find wedge",
     "aliases": [
       "GridQueue",
@@ -225,6 +232,7 @@
     "risk": "Hărți de capacitate și produse de grid intelligence există deja; date incomplete și premise contradictorii între rapoarte.",
     "next": "Scanare competitori și cinci cumpărători",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/2026-09-21.html",
       "briefings/2026-09-22.html"
     ],
@@ -238,8 +246,8 @@
   {
     "slug": "saft-deadline-monitor",
     "title": "SAF-T / Fiscal Deadline Monitor",
-    "score": 74,
-    "status": "Quick win",
+    "score": 65,
+    "status": "Narrow / pause",
     "aliases": [
       "SAF-T",
       "D406",
@@ -254,6 +262,7 @@
     "risk": "Funcția se poate adăuga rapid în produse contabile existente.",
     "next": "Testează monitorizarea portofoliului",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-08-28.html"
     ],
     "tags": [
@@ -266,7 +275,7 @@
   {
     "slug": "connection-offer-desk",
     "title": "Connection Offer / Securities Desk",
-    "score": 72,
+    "score": 70,
     "status": "Service only",
     "aliases": [
       "ATR",
@@ -282,6 +291,7 @@
     "risk": "Concurenți acoperă managementul de connection offers; fără buyer evidence, nu se justifică platformă mare.",
     "next": "Vinde un audit pentru un proiect",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html"
     ],
     "tags": [
@@ -294,8 +304,8 @@
   {
     "slug": "outcome-verification-agents",
     "title": "Outcome Verification for AI Agents",
-    "score": 70,
-    "status": "Watch",
+    "score": 64,
+    "status": "Watch / outside top 10",
     "aliases": [
       "OutcomeLedger",
       "AI agent governance",
@@ -309,6 +319,7 @@
     "risk": "Platformele AI pot integra verificarea și facturarea direct.",
     "next": "Caută un buyer și o dovadă nouă",
     "related": [
+      "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html"
     ],
     "tags": [
