@@ -2,7 +2,7 @@
   {
     "slug": "ai-native-accounting",
     "title": "AI-native Accounting RO/CEE",
-    "score": 87,
+    "score": 83,
     "status": "Validate now",
     "aliases": [
       "AI accounting",
@@ -16,8 +16,8 @@
     "wedge": "Serviciu complet pentru firme digitale, cu automatizare internă pentru documente, reconciliere și excepții, revizuit de contabilul responsabil.",
     "test": "Discută cu cinci cabinete; mapează timpul per client și testează un flux repetitiv cu cel puțin 20 de firme într-un pilot.",
     "gate": "Un cabinet oferă date și un pilot, ideal plătit; compară timpul uman per firmă înainte și după.",
-    "risk": "Reglementare profesională, acces la date, erori fiscale și costul real al verificării umane.",
-    "next": "Pilot cu un cabinet contabil și workflow real",
+    "risk": "Reglementare profesională (CECCAR cere expert asociat/administrator la orice roll-up), acces la date, erori fiscale, costul real al verificării umane, și un concurent numit (Paycraft, Varșovia) cu România pe foaia de parcurs de expansiune.",
+    "next": "Pilot cu un cabinet contabil + verificare structură legală CECCAR pentru roll-up",
     "related": [
       "briefings/chatgptANALIZA-2026-08-26.html"
     ],
