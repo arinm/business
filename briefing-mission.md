@@ -149,14 +149,26 @@ găsit până atunci, nu continuă la nesfârșit.
    dreapta = Ideile: secțiunile 3-5) și taburi Joc Mare / Quick Wins în
    secțiunea 3 — păstrează exact structura de wrappere
    (`.layout-split`/`.col-world`/`.col-ideas`/`.idea-tracks`/`.full-band`).
-3. Actualizează `index.html`: adaugă noua ediție PRIMA în listă (sub comentariul
-   „adaugă noua ediție PRIMA"), cu data, ordinala (nr. carduri existente + 1),
-   titlul Oportunității #1 și un teaser de 1-2 fraze. Respectă exact structura
-   de card documentată acolo.
+3. Actualizează **TOATE TREI** paginile care listează edițiile Lovitura (regulile
+   comune ale site-ului sunt în `PUBLICARE.md` — citește-l). Același card
+   (data, ordinala = numărul ediției anterioare + 1, titlul Oportunității #1,
+   teaser de 1-2 fraze), în fiecare pagină sub comentariul „adaugă noua ediție
+   PRIMA":
+   - `index.html` (rădăcina) — linkurile sunt `briefings/…`. Actualizează și
+     linkul „Ultima ediție Lovitura · DATA →" din zona introductivă.
+   - `lovitura/index.html` (pagina Lovitura) — linkurile sunt `../briefings/…`.
+     Pagina păstrează maximum 12 carduri: după ce îl adaugi pe cel nou, șterge-l
+     pe cel mai vechi (rămâne în calendar și în arhivă).
+   - `calendar.html` — linkurile sunt `briefings/…`. Cardul intră în grupul
+     lunii curente și crește contorul „N ediții" din `<summary>`. La prima
+     ediție dintr-o lună nouă, creează un grup nou `<details class="month-group"
+     open>` deasupra celorlalte (cu același `<summary>`/`<div class="month-cards">`
+     și comentariul marker), și scoate `open` de pe luna precedentă.
+   Verifică înainte de commit că data de azi apare în toate trei fișierele.
 4. Commit: `Ediția YYYY-MM-DD: [titlul oportunității]`. Imediat înainte de
    push, sincronizează din nou (altă sesiune poate fi scris între timp):
    `git fetch origin main && git rebase origin/main`. Dacă apare conflict pe
-   `index.html`, păstrează AMBELE carduri de ediție (al tău + al celeilalte
+   `index.html`, `lovitura/index.html` sau `calendar.html`, păstrează AMBELE carduri de ediție (al tău + al celeilalte
    sesiuni) — niciodată nu rezolvi un conflict ștergând munca altei sesiuni.
    Push pe `main` DIRECT pe github.com, cu token cu drept de scriere —
    integrarea managed a sesiunii e read-only (dă 403 la `git push origin`),
