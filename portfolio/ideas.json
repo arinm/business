@@ -328,5 +328,21 @@
       "audit",
       "billing"
     ]
+  },
+  {
+    "slug": "biometric-exit-kit",
+    "title": "Biometric Exit Kit RO/CEE",
+    "score": 81,
+    "status": "Sell audit first",
+    "aliases": ["pontaj biometric", "biometric migration", "amprenta pontaj", "non-biometric attendance"],
+    "buyer": "CFO, HR și DPO la firme cu 20–500 angajați și terminale biometrice instalate.",
+    "problem": "Angajatorii trebuie să înlocuiască pontajul biometric disproporționat și să poată demonstra migrarea și ștergerea datelor.",
+    "wedge": "Audit de ieșire și migrare în 10 zile către QR/NFC/PIN, cu export payroll și evidence pack tehnic.",
+    "test": "Trimite oferta la 10 DPO și 10 integratori; cere un export anonimizat real și un audit plătit de minimum 490 €.",
+    "gate": "Un audit plătit, două introduceri la angajatori și acces la un export real înainte de dezvoltarea kiosk-ului.",
+    "risk": "Suitele HR locale pot absorbi funcția, iar hardware-ul proprietar poate împiedica dovada completă a ștergerii.",
+    "next": "Vinde auditul de ieșire",
+    "related": ["radar/oportunitati-2026-09-28.html"],
+    "tags": ["GDPR", "pontaj", "biometrie", "HR", "migrare"]
   }
 ]
