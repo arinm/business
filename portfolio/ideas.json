@@ -1,5 +1,36 @@
 [
   {
+    "slug": "hardware-component-change-intelligence",
+    "title": "Hardware Component Change Intelligence",
+    "score": 88,
+    "status": "Validate / sell audit",
+    "aliases": [
+      "Dependabot pentru hardware",
+      "hardware change intelligence",
+      "component substitution",
+      "PCN impact",
+      "BOM change"
+    ],
+    "buyer": "VP Engineering, Head of Embedded, Systems Lead sau Quality/Change Control la robotics, drones, industrial automation și embedded products.",
+    "problem": "PCN-urile, EOL-urile și substituțiile de componente produc impact dispersat în hardware, firmware, drivere, calibrare, requirements și regression tests.",
+    "wedge": "Audit verificabil old/new datasheet + PCN + BOM + repo read-only, cu linkuri componentă–interfață–cod și lista minimă de teste.",
+    "test": "Construiește trei ground-truth cases publice și vinde un concierge audit de 2.500–7.500 EUR înainte de integrarea PLM.",
+    "gate": "Trei design partners oferă cazuri istorice; recall de minimum 70%, maximum 20% high-severity false positives și un client plătește al doilea audit.",
+    "risk": "Acces dificil la BOM/repo, date nestructurate și incumbents PLM/component intelligence care pot absorbi funcția.",
+    "next": "Audit plătit pe o substituție reală",
+    "related": [
+      "radar/nise-deep-tech-2026-09-29.html"
+    ],
+    "tags": [
+      "hardware",
+      "BOM",
+      "PCN",
+      "embedded",
+      "robotics",
+      "change assurance"
+    ]
+  },
+  {
     "slug": "ai-native-accounting",
     "title": "AI-native Accounting RO/CEE",
     "score": 83,
@@ -334,7 +365,12 @@
     "title": "Biometric Exit Kit RO/CEE",
     "score": 81,
     "status": "Sell audit first",
-    "aliases": ["pontaj biometric", "biometric migration", "amprenta pontaj", "non-biometric attendance"],
+    "aliases": [
+      "pontaj biometric",
+      "biometric migration",
+      "amprenta pontaj",
+      "non-biometric attendance"
+    ],
     "buyer": "CFO, HR și DPO la firme cu 20–500 angajați și terminale biometrice instalate.",
     "problem": "Angajatorii trebuie să înlocuiască pontajul biometric disproporționat și să poată demonstra migrarea și ștergerea datelor.",
     "wedge": "Audit de ieșire și migrare în 10 zile către QR/NFC/PIN, cu export payroll și evidence pack tehnic.",
@@ -342,7 +378,15 @@
     "gate": "Un audit plătit, două introduceri la angajatori și acces la un export real înainte de dezvoltarea kiosk-ului.",
     "risk": "Suitele HR locale pot absorbi funcția, iar hardware-ul proprietar poate împiedica dovada completă a ștergerii.",
     "next": "Vinde auditul de ieșire",
-    "related": ["radar/oportunitati-2026-09-28.html"],
-    "tags": ["GDPR", "pontaj", "biometrie", "HR", "migrare"]
+    "related": [
+      "radar/oportunitati-2026-09-28.html"
+    ],
+    "tags": [
+      "GDPR",
+      "pontaj",
+      "biometrie",
+      "HR",
+      "migrare"
+    ]
   }
 ]
