@@ -1,5 +1,36 @@
 [
   {
+    "slug": "leaseproof-ro-cee",
+    "title": "LeaseProof RO/CEE",
+    "score": 74,
+    "status": "Sell service first",
+    "aliases": [
+      "rental deposit evidence",
+      "pașaport predare locuință",
+      "garantie chirie",
+      "proces verbal chirie",
+      "rental inspection"
+    ],
+    "buyer": "Chiriași internaționali, agenții de relocation și administratori cu 20–200 unități.",
+    "problem": "Pozele, contractul, contoarele și conversațiile sunt dispersate, iar la ieșire părțile nu au o comparație neutră și semnată a stării locuinței.",
+    "wedge": "Serviciu de predare RO/EN în 45 de minute: captură ghidată, comparație intrare-ieșire, semnături și PDF de dovezi.",
+    "test": "Vinde manual două predări la 79 EUR și obține un pilot white-label cu o agenție înainte de a construi aplicația.",
+    "gate": "Două predări plătite și o agenție care acceptă co-semnarea și pilotul white-label.",
+    "risk": "Concurență locală și europeană reală, folosire episodică și valoare probatorie limitată fără acordul ambelor părți.",
+    "next": "Două predări plătite + pilot white-label",
+    "related": [
+      "radar/oportunitati-2026-09-30.html"
+    ],
+    "tags": [
+      "proptech",
+      "chirii",
+      "consumer",
+      "evidence",
+      "Romania",
+      "CEE"
+    ]
+  },
+  {
     "slug": "hardware-component-change-intelligence",
     "title": "Hardware Component Change Intelligence",
     "score": 88,
@@ -33,7 +64,7 @@
   {
     "slug": "ai-native-accounting",
     "title": "AI-native Accounting RO/CEE",
-    "score": 83,
+    "score": 85,
     "status": "Validate now",
     "aliases": [
       "AI accounting",
@@ -63,7 +94,7 @@
   {
     "slug": "payment-fraud-bec-guard",
     "title": "Payment Fraud / BEC Guard",
-    "score": 84,
+    "score": 82,
     "status": "Sell first",
     "aliases": [
       "payment fraud",
@@ -186,7 +217,7 @@
   {
     "slug": "made-in-eu-preflight",
     "title": "Made-in-EU Local-Content Preflight",
-    "score": 76,
+    "score": 75,
     "status": "Validate",
     "aliases": [
       "Made in EU",
@@ -363,7 +394,7 @@
   {
     "slug": "biometric-exit-kit",
     "title": "Biometric Exit Kit RO/CEE",
-    "score": 81,
+    "score": 79,
     "status": "Sell audit first",
     "aliases": [
       "pontaj biometric",
