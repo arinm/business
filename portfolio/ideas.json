@@ -2,7 +2,7 @@
   {
     "slug": "leaseproof-ro-cee",
     "title": "LeaseProof RO/CEE",
-    "score": 74,
+    "score": 69,
     "status": "Sell service first",
     "aliases": [
       "rental deposit evidence",
@@ -17,8 +17,9 @@
     "test": "Vinde manual două predări la 79 EUR și obține un pilot white-label cu o agenție înainte de a construi aplicația.",
     "gate": "Două predări plătite și o agenție care acceptă co-semnarea și pilotul white-label.",
     "risk": "Concurență locală și europeană reală, folosire episodică și valoare probatorie limitată fără acordul ambelor părți.",
-    "next": "Două predări plătite + pilot white-label",
+    "next": "Două predări plătite",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/oportunitati-2026-09-30.html"
     ],
     "tags": [
@@ -33,7 +34,7 @@
   {
     "slug": "hardware-component-change-intelligence",
     "title": "Hardware Component Change Intelligence",
-    "score": 88,
+    "score": 75,
     "status": "Validate / sell audit",
     "aliases": [
       "Dependabot pentru hardware",
@@ -48,8 +49,9 @@
     "test": "Construiește trei ground-truth cases publice și vinde un concierge audit de 2.500–7.500 EUR înainte de integrarea PLM.",
     "gate": "Trei design partners oferă cazuri istorice; recall de minimum 70%, maximum 20% high-severity false positives și un client plătește al doilea audit.",
     "risk": "Acces dificil la BOM/repo, date nestructurate și incumbents PLM/component intelligence care pot absorbi funcția.",
-    "next": "Audit plătit pe o substituție reală",
+    "next": "Trei cazuri reale și un audit plătit",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/nise-deep-tech-2026-09-29.html"
     ],
     "tags": [
@@ -64,7 +66,7 @@
   {
     "slug": "ai-native-accounting",
     "title": "AI-native Accounting RO/CEE",
-    "score": 85,
+    "score": 83,
     "status": "Validate now",
     "aliases": [
       "AI accounting",
@@ -79,8 +81,9 @@
     "test": "Discută cu cinci cabinete; mapează timpul per client și testează un flux repetitiv cu cel puțin 20 de firme într-un pilot.",
     "gate": "Un cabinet oferă date și un pilot, ideal plătit; compară timpul uman per firmă înainte și după.",
     "risk": "Reglementare profesională (CECCAR cere expert asociat/administrator la orice roll-up), acces la date, erori fiscale, costul real al verificării umane, și un concurent numit (Paycraft, Varșovia) cu România pe foaia de parcurs de expansiune.",
-    "next": "Pilot cu un cabinet contabil + verificare structură legală CECCAR pentru roll-up",
+    "next": "Pilot cu expert CECCAR și 20 de firme",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-08-26.html"
     ],
@@ -94,7 +97,7 @@
   {
     "slug": "payment-fraud-bec-guard",
     "title": "Payment Fraud / BEC Guard",
-    "score": 82,
+    "score": 80,
     "status": "Sell first",
     "aliases": [
       "payment fraud",
@@ -112,8 +115,9 @@
     "test": "Oferă Payment Fraud Exposure Audit la 490 €; discută cu 10 cumpărători relevanți despre un caz concret de IBAN schimbat și încearcă să închizi un audit.",
     "gate": "Cel puțin cinci confirmă problema, trei arată procesul real și unul plătește auditul. Validează întâi dacă firma contabilă participă efectiv înainte de plată.",
     "risk": "Cabinetul poate primi documentele doar după plată. Produsele consacrate verifică deja furnizorii; diferențierea trebuie să fie distribuția și fluxul local multi-client.",
-    "next": "Audit plătit de expunere la fraudă",
+    "next": "Un audit de proces plătit",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html",
       "briefings/chatgptANALIZA-2026-09-03.html"
@@ -128,7 +132,7 @@
   {
     "slug": "hospital-back-office-agents",
     "title": "Hospital Back-office AI Agents CEE",
-    "score": 74,
+    "score": 70,
     "status": "Validate",
     "aliases": [
       "hospital agents",
@@ -142,8 +146,9 @@
     "test": "Intervievează responsabili operaționali și alege un proces care poate fi măsurat în ore, erori sau timp de încasare.",
     "gate": "Acces la un flux real și un pilot cu criterii de calitate și timp măsurabile.",
     "risk": "Ciclu lung de vânzare, permisiuni IT, date sensibile și supraestimarea autonomiei.",
-    "next": "Identifică un proces administrativ îngust",
+    "next": "Un workflow și un buyer de clinică privată",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-18.html",
       "briefings/chatgptANALIZA-2026-09-24.html"
@@ -188,7 +193,7 @@
   {
     "slug": "expert-data-service",
     "title": "Expert Data-as-a-Service CEE",
-    "score": 78,
+    "score": 75,
     "status": "Validate",
     "aliases": [
       "expert data",
@@ -202,8 +207,9 @@
     "test": "Construiește 30 de taskuri cu verifier executabil dintr-un singur workflow și trimite pachetul către cinci cumpărători de evals sau training data.",
     "gate": "Un cumpărător plătește pentru extinderea la minimum 500 de taskuri într-un vertical concret.",
     "risk": "Categoria generalistă este foarte finanțată; limba locală nu este moat, iar cererea frontier poate fi concentrată în puțini cumpărători.",
-    "next": "Pachet demonstrabil de 30 de taskuri cu verifier",
+    "next": "Pachet de 30 de taskuri cu verifier",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "radar/surse-ai-2026-09-25.html"
     ],
@@ -217,7 +223,7 @@
   {
     "slug": "made-in-eu-preflight",
     "title": "Made-in-EU Local-Content Preflight",
-    "score": 75,
+    "score": 72,
     "status": "Validate",
     "aliases": [
       "Made in EU",
@@ -232,8 +238,9 @@
     "test": "Oferă un audit manual de două pagini către 15 companii și consultanți și cere un BOM anonimizat de 30–100 linii.",
     "gate": "Trei confirmă impactul în eligibilitate, două oferă date reale și una plătește minimum 750 € pentru audit.",
     "risk": "Legea nu este finală; pragurile se pot schimba, iar ERP/PLM, customs suites și consultanții pot absorbi funcția.",
-    "next": "Vinde un audit pe un BOM real",
+    "next": "Audit pe un BOM real",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "radar/oportunitati-2026-09-26.html"
     ],
@@ -248,7 +255,7 @@
   {
     "slug": "kidspass",
     "title": "KidsPass B2B2C",
-    "score": 73,
+    "score": 70,
     "status": "Validate",
     "aliases": [
       "KidsPass",
@@ -262,8 +269,9 @@
     "test": "Testează cu departamente HR dacă ar aloca 50–150 RON per angajat pe lună și cu furnizorii dacă acceptă modelul.",
     "gate": "Un angajator alocă buget sau semnează un pilot definit; furnizorii pot onora serviciul.",
     "risk": "Trei laturi de activat: angajator, familie și furnizor; utilizarea reală poate fi redusă.",
-    "next": "Testează bugetul unui angajator",
+    "next": "Buget de pilot de la angajator",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/chatgptANALIZA-2026-09-13.html"
     ],
@@ -277,7 +285,7 @@
   {
     "slug": "energy-grid-intelligence",
     "title": "Energy / Grid Intelligence CEE",
-    "score": 72,
+    "score": 69,
     "status": "Find wedge",
     "aliases": [
       "GridQueue",
@@ -292,8 +300,9 @@
     "test": "Scanare competitivă dedicată și cinci discuții cu cumpărători; cere decizia pe care ar lua-o diferit cu această informație.",
     "gate": "Un cumpărător plătește sau oferă un pilot pentru o decizie specifică; sursele de date sunt suficient de fiabile.",
     "risk": "Hărți de capacitate și produse de grid intelligence există deja; date incomplete și premise contradictorii între rapoarte.",
-    "next": "Scanare competitori și cinci cumpărători",
+    "next": "Cinci interviuri cu cumpărători",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/2026-09-21.html",
       "briefings/2026-09-22.html"
@@ -394,7 +403,7 @@
   {
     "slug": "biometric-exit-kit",
     "title": "Biometric Exit Kit RO/CEE",
-    "score": 79,
+    "score": 77,
     "status": "Sell audit first",
     "aliases": [
       "pontaj biometric",
@@ -408,8 +417,9 @@
     "test": "Trimite oferta la 10 DPO și 10 integratori; cere un export anonimizat real și un audit plătit de minimum 490 €.",
     "gate": "Un audit plătit, două introduceri la angajatori și acces la un export real înainte de dezvoltarea kiosk-ului.",
     "risk": "Suitele HR locale pot absorbi funcția, iar hardware-ul proprietar poate împiedica dovada completă a ștergerii.",
-    "next": "Vinde auditul de ieșire",
+    "next": "Audit plătit și export din terminal",
     "related": [
+      "radar/investment-committee-2026-09-30.html",
       "radar/oportunitati-2026-09-28.html"
     ],
     "tags": [
