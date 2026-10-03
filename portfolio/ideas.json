@@ -1,5 +1,53 @@
 [
   {
+    "slug": "insurance-broker-ai-operator",
+    "title": "Insurance Broker AI Operator RO/CEE",
+    "score": 78,
+    "status": "Validate / paid pilot",
+    "aliases": ["FRANK", "AI operator broker", "automatizare broker asigurari", "insurance broker automation", "portal asigurator"],
+    "buyer": "Brokeraje de asigurări cu 5–50 de oameni și multe taskuri repetitive în portalurile asigurătorilor.",
+    "problem": "Brokerii mută manual date între email, WhatsApp, documente, ERP și portalurile diferite ale asigurătorilor.",
+    "wedge": "Un singur task într-un singur portal, executat de agent cu checkpoint uman, jurnal și măsurarea minutelor economisite.",
+    "test": "Zece interviuri, două screen recordings și un pilot plătit de 300–750 EUR/lună.",
+    "gate": "Două brokeraje oferă workflow real, unul plătește și timpul net economisit este de minimum 30%.",
+    "risk": "Incumbenți locali, termeni ai portalurilor, credentiale sensibile, erori cu impact financiar și extinderea FRANK din 2027.",
+    "next": "Un workflow și un pilot plătit",
+    "related": ["radar/investment-committee-2026-10-03.html", "briefings/2026-10-02.html"],
+    "tags": ["asigurări", "brokeri", "AI agents", "RPA", "back-office", "CEE"]
+  },
+  {
+    "slug": "caen-rev3-batch-migration",
+    "title": "CAEN Rev. 3 Batch Migration",
+    "score": 75,
+    "status": "Sell service now",
+    "aliases": ["CAEN Rev 3", "migrare CAEN", "conversie CAEN", "actualizare obiect activitate", "CAEN in lot"],
+    "buyer": "Cabinete contabile, consultanți și administratori cu portofolii de entități.",
+    "problem": "Majoritatea profesioniștilor nu finalizaseră actualizarea la termenul inițial, iar unele coduri împărțite cer decizie și documente.",
+    "wedge": "Audit și pachet white-label în lot: mapare, excepții, checklist și status per client.",
+    "test": "Oferă audit de portofoliu la 490–990 lei și procesare asistată la 99–249 lei/caz.",
+    "gate": "Trei cabinete confirmă minimum 20 de clienți restanți și unul plătește pilotul în șapte zile.",
+    "risk": "Fereastra expiră la 25 martie 2027 și există produse B2C per firmă; nu este ARR durabil.",
+    "next": "Un cabinet plătește pilotul în lot",
+    "related": ["radar/investment-committee-2026-10-03.html", "briefings/2026-10-03.html"],
+    "tags": ["CAEN", "ONRC", "contabilitate", "compliance", "quick win", "Romania"]
+  },
+  {
+    "slug": "vat-d300-risk-radar",
+    "title": "VAT/D300 Risk Radar",
+    "score": 73,
+    "status": "Validate access first",
+    "aliases": ["TVA din oficiu", "D300", "OPANAF 1022", "radar TVA", "notificari ANAF"],
+    "buyer": "Cabinete contabile cu portofolii de plătitori TVA.",
+    "problem": "Notificările de nedepunere D300 și termenele de remediere pot fi ratate într-un portofoliu mare.",
+    "wedge": "Cronometre de 15/60 zile, owner, dovadă de remediere și expunere per client.",
+    "test": "Cinci interviuri, două cazuri anonimizate și pilot manual pe minimum 50 de firme.",
+    "gate": "Un cabinet acceptă pilotul și există o cale legală și robustă de acces la notificări.",
+    "risk": "Acces SPV sensibil, frecvență necunoscută și posibilitatea ca iSPV sau suitele contabile să copieze alerta.",
+    "next": "Două cazuri reale și acces pilot",
+    "related": ["radar/investment-committee-2026-10-03.html", "briefings/2026-10-03.html"],
+    "tags": ["TVA", "D300", "ANAF", "SPV", "contabilitate", "Romania"]
+  },
+  {
     "slug": "leaseproof-ro-cee",
     "title": "LeaseProof RO/CEE",
     "score": 69,
@@ -34,7 +82,7 @@
   {
     "slug": "hardware-component-change-intelligence",
     "title": "Hardware Component Change Intelligence",
-    "score": 75,
+    "score": 72,
     "status": "Validate / sell audit",
     "aliases": [
       "Dependabot pentru hardware",
@@ -66,7 +114,7 @@
   {
     "slug": "ai-native-accounting",
     "title": "AI-native Accounting RO/CEE",
-    "score": 83,
+    "score": 82,
     "status": "Validate now",
     "aliases": [
       "AI accounting",
@@ -97,7 +145,7 @@
   {
     "slug": "payment-fraud-bec-guard",
     "title": "Payment Fraud / BEC Guard",
-    "score": 80,
+    "score": 79,
     "status": "Sell first",
     "aliases": [
       "payment fraud",
@@ -193,7 +241,7 @@
   {
     "slug": "expert-data-service",
     "title": "Expert Data-as-a-Service CEE",
-    "score": 75,
+    "score": 71,
     "status": "Validate",
     "aliases": [
       "expert data",
@@ -255,7 +303,7 @@
   {
     "slug": "kidspass",
     "title": "KidsPass B2B2C",
-    "score": 70,
+    "score": 69,
     "status": "Validate",
     "aliases": [
       "KidsPass",
@@ -403,7 +451,7 @@
   {
     "slug": "biometric-exit-kit",
     "title": "Biometric Exit Kit RO/CEE",
-    "score": 77,
+    "score": 76,
     "status": "Sell audit first",
     "aliases": [
       "pontaj biometric",
