@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="ro"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nișe deep-tech — 6 octombrie 2026</title><meta name="description" content="Radar deep-tech: Physical AI, robotică, photonics, semiconductori, defence, energie și infrastructură AI."><link rel="stylesheet" href="../styles.css"></head><body><div class="container container-wide briefing"><header class="masthead"><p class="kicker">Radar Business · Nișe deep-tech</p><h1><a href="../index.html">Deep-tech: photonics urcă pe #1, hardware-change devine aglomerat</a></h1><p class="tagline">Doar semnalele care schimbă teza · 06.10.2026</p></header><nav class="site-nav"><a href="../index.html">Acasă</a><a href="../lovitura/index.html">Lovitura</a><a href="../radar/index.html">Radar Business</a><a href="../portfolio/index.html">Portofoliu</a><a href="../search/">Caută</a></nav><main>
+<p class="lede"><strong>Verdict:</strong> cea mai importantă schimbare a săptămânii este că AI pentru hardware engineering a trecut din „white space” în categorie finanțată și competitivă. În paralel, photonics intră în faza de industrializare pentru AI scale-up, ceea ce mută oportunitatea software-first spre qualification, yield, test evidence și root-cause analysis.</p>
+<h2 class="section-title">1. Photonics manufacturing & qualification intelligence — #1 · 84/100</h2>
+<p><strong>Semnal:</strong> CScale a ieșit din stealth cu $145M Series C și NVIDIA/Intel Capital ca investitori strategici; Volantis a ridicat $88M Series A pentru o arhitectură photonică de inference; PicoJool a atras $27,5M pentru a scala VCSEL-uri 200G și calificarea la clienți. Nu este o singură rundă: este capital care se mută simultan spre interconnect, memory/bandwidth și producție.</p>
+<p><strong>Wedge software-first:</strong> un evidence graph peste wafer/die/PIC/package/test care leagă schimbarea de proces sau supplier de yield drift, qualification invalidată, test coverage și root-cause. Nu construim testerul optic.</p>
+<p><strong>Competiție:</strong> Teradyne Photon 100 și Axis-Tec automatizează testul fizic; InZiv face in-circuit optical testing/failure analysis; yieldHUB este deja folosit pentru semiconductor/photonics yield analytics. Golul trebuie demonstrat între aceste sisteme: change-aware qualification + evidence lineage, nu „analytics dashboard” generic.</p>
+<p><strong>Test:</strong> 10 interviuri cu PIC/optical module teams și 3 failure/qualification flows anonimizate. Kill dacă yieldHUB + tester/MES acoperă deja 80% din workflow fără muncă manuală.</p>
+
+<h2 class="section-title">2. Hardware Component Change Intelligence — 68/100 ↓</h2>
+<p>Flow Engineering a ridicat $50M Series B la $750M și spune explicit că agenții săi urmăresc schimbări în CAD, Git, simulări și documente, rulează impact analysis, detectează conflicte și requirement failures. Are deja Rivian, Anduril, Joby, Stoke Space, Intuitive Machines și alți clienți; la Rivian adopția ar fi crescut de la 40 la 1.500 utilizatori în șapte luni. Tandem publică la rândul său AI engineering change impact analysis peste BOM/CAD/requirements.</p>
+<p>Mai mult, Schneider Electric a semnat achiziția PTC la o valoare enterprise de $23,7 mld., consolidând PLM/product-data ca strat strategic al industrial AI. Asta validează piața, dar reduce dramatic șansa unui produs generic „Dependabot pentru hardware”.</p>
+<p><strong>Wedge care încă merită testat:</strong> component/supplier change → efect demonstrabil în embedded firmware, drivers, calibration și regression tests, cu citate din datasheet/PCN și repo. Dacă Flow/Tandem pot produce aceeași analiză cu integrare normală, ideea trebuie omorâtă, nu cosmetizată.</p>
+
+<h2 class="section-title">3. AI infrastructure: Power-aware deployment intelligence — 81/100</h2>
+<p>JERA, Dell și RHAELM au anunțat un proiect AI data-center de $15 mld./400 MW lângă Tokyo, cu energie furnizată pe termen lung de JERA. În UK, proiecte AI sunt împinse în ani de întârziere de lipsa conexiunilor la rețea. În SUA, contractele behind-the-meter și investițiile în grid cresc.</p>
+<p><strong>Oportunitate:</strong> nu încă un „energy-aware compute broker” generic, unde Emerald AI și hyperscalerii sunt deja bine poziționați, ci <strong>pre-development / deployment intelligence</strong>: power availability, interconnection risk, permitting, generation options, curtailment/flexibility și timeline într-un model comparabil per site.</p>
+<p><strong>Competiție:</strong> Emerald AI atacă flexibilitatea datacenter↔grid; dezvoltatorii și consultanții energetici au propriile modele. Wedge-ul trebuie să fie underwriting/decision evidence înainte de investiție, nu controlul realtime al centrului.</p>
+
+<h2 class="section-title">4. Dual-use: resilient navigation evidence — 78/100</h2>
+<p>OSCP a atras Series A pentru photonic IMUs ITAR-free destinate navigației când GNSS este jammed/spoofed. În paralel, EIC este acum deschis explicit dual-use și are un call STEP Defence de €100M, inclusiv drones/counter-drone.</p>
+<p><strong>Wedge software-first:</strong> mission-evidence layer pentru GNSS-denied navigation: replay de scenarii, sensor provenance, drift/error budgets, comparații între firmware/sensor revisions și pachet de acceptanță. Nu construim IMU sau autonomy stack.</p>
+<p><strong>Risc:</strong> procurement lent și date sensibile. Ar deveni interesant doar cu un design partner dual-use civil+defence.</p>
+
+<h2 class="section-title">5. Semiconductori: AI-assisted chip design este validat, dar greu de atacat — 72/100</h2>
+<p>AI intră direct în designul de silicon, iar tool-urile EDA incumbente accelerează. Oportunitatea generică „AI chip design copilot” este prea aproape de Synopsys/Cadence/Siemens și de tool-uri interne ale hyperscalerilor.</p>
+<p><strong>Wedge păstrat pe radar:</strong> cross-tool evidence graph: spec → RTL → verification → waivers → physical sign-off → silicon. Devine interesant numai dacă poate rezolva audit/review între tool-uri, nu dacă încearcă să înlocuiască EDA.</p>
+
+<h2 class="section-title">Clasament</h2>
+<table><thead><tr><th>Nișă</th><th>Scor</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>Photonics manufacturing / qualification intelligence</td><td>84</td><td>Deep dive imediat</td></tr>
+<tr><td>AI infrastructure deployment / power intelligence</td><td>81</td><td>Investighează buyer + date</td></tr>
+<tr><td>Physical AI release/evaluation</td><td>80</td><td>Watch; competiție în creștere</td></tr>
+<tr><td>Dual-use resilient-navigation evidence</td><td>78</td><td>Design partner înainte de cod</td></tr>
+<tr><td>Semiconductor cross-tool evidence graph</td><td>72</td><td>Watch</td></tr>
+<tr><td>Hardware Component Change Intelligence</td><td>68</td><td>Wedge îngust sau kill</td></tr>
+</tbody></table>
+
+<h2 class="section-title">Ce aș face acum</h2>
+<p><strong>Nu aș construi nimic încă.</strong> Aș face un teardown comercial al photonics qualification: 20–30 competitori/adjacenți, workflow real wafer→package→qualification, cine deține datele, câtă muncă manuală rămâne între tester–MES–yield analytics și cine semnează bugetul. Dacă nu găsim un gap măsurabil, nu promovăm ideea doar pentru că finanțările sunt mari.</p>
+
+<h2 class="section-title">Surse directe și verificabile</h2>
+<ul>
+<li><a href="https://www.flowengineering.com/blog/series-b-press-release">Flow Engineering — $50M Series B, 30.09.2026</a></li>
+<li><a href="https://www.ptc.com/en/news/2026/schneider-electric-to-acquire-ptc">PTC — Schneider Electric to acquire PTC, 05.10.2026</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/857005/000119312526413124/d174191d8k.htm">SEC 8-K — PTC/Schneider definitive agreement</a></li>
+<li><a href="https://www.photonics.com/Articles/NVIDIA-Backed-CScale-Emerges-From-Stealth-With/p15/a72632">Photonics Spectra — CScale $145M</a></li>
+<li><a href="https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html">Volantis — $88M Series A</a></li>
+<li><a href="https://www.optics.org/news/picojool-to-scale-vcsel-production-with-27.5m-series-a">optics.org — PicoJool $27.5M</a></li>
+<li><a href="https://www.teradyne.com/products/photon-100/">Teradyne Photon 100</a></li>
+<li><a href="https://inziv.com/">InZiv — silicon photonics testing</a></li>
+<li><a href="https://www.yieldhub.com/about/">yieldHUB — yield analytics</a></li>
+<li><a href="https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/">Reuters — JERA/Dell/RHAELM AI infrastructure</a></li>
+<li><a href="https://www.prnewswire.com/news-releases/oscp-closes-series-a-financing-led-by-new-science-ventures-302894999.html">OSCP — photonic IMU Series A</a></li>
+<li><a href="https://eic.ec.europa.eu/news/european-innovation-council-opens-defence-and-dual-use-technologies-2026-06-17_en">EIC — defence & dual-use funding</a></li>
+</ul>
+<p><small>Metodă: semnale din 29.09–06.10.2026; faptele de finanțare/M&A sunt separate de scorurile și inferențele editoriale. Existența competitorilor este tratată ca validare și presiune competitivă, nu ca motiv automat de eliminare.</small></p>
+</main><footer class="footer-nav"><a href="../radar/index.html">← Radar Business</a><span>06.10.2026 · cercetare în română</span></footer></div></body></html>
