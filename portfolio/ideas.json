@@ -1,5 +1,21 @@
 [
   {
+    "slug": "grija-la-telefon",
+    "title": "Grijă la Telefon RO/CEE",
+    "score": 72,
+    "status": "Pre-sell before build",
+    "aliases": ["care call", "apel seniori", "reminder telefonic", "elder care voice", "check-in părinți"],
+    "buyer": "Copilul adult din România sau diaspora care coordonează îngrijirea unui părinte vârstnic.",
+    "problem": "Părintele nu folosește constant o aplicație, iar familia nu știe dacă reminderul sau check-in-ul a fost primit.",
+    "wedge": "Apel cu mesaj înregistrat de familie, răspuns prin taste și escaladare la aparținător, fără aplicație la senior.",
+    "test": "Demo prin apel real și 15 locuri fondator la 39 lei/lună, înainte de produs.",
+    "gate": "Cinci precomenzi în 48 de ore și minimum 60% dintre familiile pilot active în săptămâna a treia.",
+    "risk": "Concurenți globali direcți, WTP local necunoscut, false alarme și risc reputațional dacă produsul este confundat cu monitorizare medicală.",
+    "next": "Cinci precomenzi plătite",
+    "related": ["radar/oportunitati-2026-10-18.html"],
+    "tags": ["silver economy", "consumer care", "voice", "family", "Romania", "CEE"]
+  },
+  {
     "slug": "insurance-broker-ai-operator",
     "title": "Insurance Broker AI Operator RO/CEE",
     "score": 78,
