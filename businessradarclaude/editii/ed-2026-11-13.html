@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Radar — Ediția 13 · 13 noiembrie 2026</title>
+<meta name="description" content="Briefing privat de business: idei bootstrapped, AI, startupuri finanțate și oportunități în România/UE.">
+<style>
+:root{--bg:#f7f4ee;--paper:#fffdf8;--ink:#1c1a17;--muted:#6b645a;--rule:#d9d2c5;--accent:#b3261e;--accent-soft:#f3e3df;--tag:#ece6da;--link:#8a1c15}
+@media (prefers-color-scheme:dark){:root{--bg:#141311;--paper:#1c1b18;--ink:#ece7de;--muted:#a59d90;--rule:#38342e;--accent:#ef6b5f;--accent-soft:#3a2522;--tag:#2a2824;--link:#f39a90}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,"Times New Roman",serif;font-size:17px;line-height:1.6}
+a{color:var(--link);text-underline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.paper{background:var(--paper);border-left:1px solid var(--rule);border-right:1px solid var(--rule);padding:8px 20px 32px}
+.sans,.kicker,.meta,.tag,nav.toc,.src,footer,.masthead .edline{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.masthead{text-align:center;border-bottom:3px double var(--ink);padding:18px 0 12px}
+.masthead .edline{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:10px}
+.masthead h1{font-size:clamp(40px,10vw,72px);line-height:1;margin:6px 0 4px;font-weight:700;letter-spacing:-.02em}
+.masthead h1 a{color:inherit;text-decoration:none}
+.masthead .tagline{font-style:italic;color:var(--muted);margin:0}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;font-size:13px;padding:10px 0;border-bottom:1px solid var(--rule)}
+nav.toc a{text-decoration:none;color:var(--ink)}
+nav.toc a:hover{color:var(--accent)}
+section{padding:22px 0 6px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 2px}
+h2{font-size:clamp(24px,5vw,32px);line-height:1.15;margin:0 0 6px}
+.dek{color:var(--muted);font-style:italic;margin:0 0 14px}
+h3{font-size:20px;line-height:1.25;margin:0 0 4px}
+.item{padding:14px 0;border-top:1px dotted var(--rule)}
+.item:first-of-type{border-top:0}
+.item p{margin:4px 0}
+.meta{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--tag);color:var(--muted);padding:1px 7px;border-radius:3px;margin-right:4px;vertical-align:2px}
+.tag.warn{background:var(--accent-soft);color:var(--accent)}
+.src{font-size:12.5px;color:var(--muted);word-break:break-word}
+.lead{font-size:18.5px}
+.brief ul{padding-left:20px;margin:6px 0}
+.brief li{margin:6px 0}
+.grid{display:grid;grid-template-columns:1fr;gap:0 28px}
+@media (min-width:720px){.grid.two{grid-template-columns:1fr 1fr}.paper{padding:8px 36px 40px}}
+.opp{background:var(--bg);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:12px 14px;margin:12px 0;border-radius:2px}
+.opp h3{margin-bottom:6px}
+.opp dl{margin:0;display:grid;grid-template-columns:1fr;gap:4px}
+.opp dt{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.opp dd{margin:0}
+@media (min-width:720px){.opp dl{grid-template-columns:150px 1fr;gap:6px 14px}.opp dt{margin-top:2px}}
+ol.moves{padding-left:22px}
+ol.moves li{margin:10px 0}
+.radar-list li{margin:6px 0}
+.archive ul{list-style:none;padding:0;margin:8px 0}
+.archive li{padding:8px 0;border-top:1px dotted var(--rule);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+footer{font-size:13px;color:var(--muted);padding:20px 0 8px;border-top:3px double var(--ink);margin-top:10px}
+footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 4px;color:var(--ink)}
+footer p{margin:4px 0}
+.backlink{font-size:13px;text-align:center;padding:10px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="paper">
+
+<header class="masthead">
+  <div class="edline"><span>Ediția nr. 13</span><span>Vineri, 13 noiembrie 2026</span><span>Apare la 3 zile</span></div>
+  <h1><a href="../index.html">Business Radar</a></h1>
+  <p class="tagline">Briefing privat de business — idei, AI, capital și oportunități în România</p>
+</header>
+
+<nav class="toc" aria-label="Cuprins">
+  <a href="#pe-scurt">Pe scurt</a><a href="#idei">01 Idei</a><a href="#ai">02 AI</a><a href="#startupuri">03 Startupuri</a><a href="#ro-eu">04 RO/UE</a><a href="#miscari">05 Mișcări</a><a href="../index.html#arhiva">Arhivă</a>
+</nav>
+
+<main>
+<section id="pe-scurt" class="brief">
+  <p class="kicker">Pe scurt</p>
+  <h2>Firmele își pot revendica profilul din ChatGPT, contractele de energie se scumpesc cu un sfert la reînnoire, iar ANAF compară SAF-T-ul tău cu al partenerilor tăi</h2>
+  <ul class="lead">
+    <li><strong>Energie:</strong> prețul angro al electricității a urcat cu peste 50% din iulie până în noiembrie. AFEER estimează facturi cu ~25% mai mari pentru firmele care își reînnoiesc contractele. ANRE trece prosumatorii la compensare lunară, iar furnizorii au termen 31 decembrie pentru sistemele IT.</li>
+    <li><strong>ANAF:</strong> o firmă poate intra în categoria de risc pentru că furnizorul sau clientul ei nu a înregistrat un document în SAF-T. Rambursările de TVA ar urma să fie doar online după primul trimestru din 2027. Inspectorii resping cheltuieli de marketing fără dovezi detaliate ale prestării.</li>
+    <li><strong>Legislație:</strong> Legea 213/2026 extinde din 1 ianuarie 2027 sediul permanent al firmelor străine la vânzătorii care negociază contracte în România. Comisia a prezentat oficial Digital Fairness Act pe 11 noiembrie.</li>
+    <li><strong>AI:</strong> OpenAI lansează „Businesses in ChatGPT”: profil verificat și statistici despre mențiuni. Anthropic intră pe foi de calcul și ședințe (Claude Sheets, Meetings, Whiteboards) și ieftinește Fable 5.2 cu 20%.</li>
+    <li><strong>Capital:</strong> UFORCE (Ucraina/UK) strânge 700 mil. $ la 6 mld. $. Agile Robots ia 500 mil. $ la 8,5 mld. $. Sumary (Danemarca) ia 25 mil. $ seed pentru AI în contabilitate. Kinderpedia (România) anunță 2,7 mil. €.</li>
+  </ul>
+</section>
+
+<section id="idei">
+  <p class="kicker">01 · Idei &amp; Indie Hackers</p>
+  <h2>Un agent de prospectare se vinde cu 12 mil. $, rovinietele se vând bine ca aplicație, iar aplicațiile de consum se cer la mai puțin de 3x venitul anual</h2>
+  <p class="dek">Majoritatea cifrelor vin de pe paginile TrustMRR, actualizate între 11 și 13 noiembrie, unde venitul e preluat direct de la procesatorul de plăți. Acolo unde scrie „calculul redacției”, multiplul e prețul cerut împărțit la MRR × 12. Reddit și Product Hunt n-au dat semnale noi cu cifre în această fereastră.</p>
+  <div class="grid two">
+    <div class="item"><h3>Vignette ID (Ucraina): roviniete pentru 9 țări, inclusiv România, 28.221 $ în 30 de zile</h3>
+      <p>Aplicația cumpără roviniete și taxe de drum pentru mai multe mașini și țări odată: Slovenia, Austria, Elveția, Slovacia, Cehia, Ungaria, Bulgaria, România și Moldova, plus tunelurile din Austria. Încasează la fiecare achiziție, nu prin abonament. Are și un planificator de rute. E un strat de UX peste plăți de stat fragmentate, iar modelul funcționează. Pentru România, pasul următor ar fi un agregator pentru flote, peste rovinietă și TollRO, cu facturi consolidate.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>28.221 $ în 30 de zile, 657.471 $ venit total; MRR de doar 42 $, pentru că venitul vine din tranzacții. Fondată în 2022. Nu e de vânzare.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/vignette-id">TrustMRR, actualizat 11 nov.</a></p></div>
+    <div class="item"><h3>AiSDR (SUA): agent AI de prospectare B2B, scos la vânzare cu 12 mil. $</h3>
+      <p>Agentul construiește planul de outbound pornind de la site-ul clientului, găsește cumpărătorii și rulează campanii aprobate pe e-mail și LinkedIn. Echipa are 11–25 de oameni, iar firma a fost fondată în iulie 2023. E unul dintre cele mai mari SaaS-uri de vânzare listate pe TrustMRR. Multiplul de ~5,3x poate servi ca reper pentru un agent de vânzări B2B matur, inclusiv pentru agențiile românești de lead generation.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>184.782 $ MRR, 180 de abonamente, 5,35 mil. $ venit total. Preț cerut 12 mil. $ (5,3x, după TrustMRR).</p>
+      <p class="src"><a href="https://trustmrr.com/startup/aisdr-inc">TrustMRR, actualizat 13 nov.</a></p></div>
+    <div class="item"><h3>Nutria (țară nedeclarată): tracker de calorii cu AI, 47.011 $ MRR, cerut 1,5 mil. $</h3>
+      <p>Aplicație mobilă de nutriție și slăbit, lansată în iulie 2025, cu peste 16.000 de abonamente active. A ajuns la ~630.000 $ venit în 16 luni, într-o categorie considerată saturată. Prețul cerut arată cât de puțin plătesc cumpărătorii pentru aplicațiile de consum, unde abonații renunță repede. O aplicație românească de consum ar trebui evaluată cu acest reper, nu cu multiplii de SaaS B2B.</p>
+      <p class="meta"><span class="tag">verificat RevenueCat</span>47.011 $ MRR, 67.706 $ în 30 de zile, 631.486 $ venit total. Preț cerut 1,5 mil. $ (~2,7x ARR, calculul redacției).</p>
+      <p class="src"><a href="https://trustmrr.com/startup/nutria-9e3eaa">TrustMRR, actualizat 13 nov.</a></p></div>
+    <div class="item"><h3>DM Champ (Olanda): agent AI care vinde pe WhatsApp, Instagram și Messenger</h3>
+      <p>Agentul închide vânzări în conversații pe WhatsApp, Instagram, Messenger și chatul de pe site. Se vinde direct sau prin agenții, ca white-label, cu planuri între 48,50 $ și 248,50 $ pe lună (facturare anuală). Revânzarea white-label prin agenții e un canal la îndemână și pentru agențiile românești de social media.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>54.998 $ MRR din 64 de abonamente, 26.612 $ în ultimele 30 de zile, 239.563 $ venit total. <span class="tag warn">atenție</span>MRR-ul e de două ori mai mare decât venitul pe 30 de zile, probabil din cauza abonamentelor anuale. Creșterea de 93% de la o lună la alta apare doar în descrierea paginii. Nu e de vânzare.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/dm-champ">TrustMRR, actualizat 11 nov.</a></p></div>
+    <div class="item"><h3>Unnamed Company (Turcia): AI pentru magazine online, 24.465 $ MRR, cerut 1,3 mil. $</h3>
+      <p>SaaS care automatizează sarcinile repetitive ale magazinelor online: descrieri de produs, conținut, operațiuni. Are 504 abonamente și a fost fondat în februarie 2025. Un fondator din regiune a ajuns la ~300.000 $ ARR în mai puțin de doi ani, într-o nișă aglomerată. Vânzătorii români pe eMAG au nevoie de același lucru, dar în română și adaptat la regulile marketplace-ului.</p>
+      <p class="meta"><span class="tag">verificat RevenueCat</span>24.465 $ MRR, 553.684 $ venit total. Preț cerut 1,3 mil. $ (~4,4x ARR, calculul redacției). <span class="tag warn">atenție</span>Fondatorul raportează un churn de 3–5% pe zi, foarte mare.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/unnamed-company-30">TrustMRR, actualizat 12 nov.</a></p></div>
+    <div class="item"><h3>Sanskar Tiwari (India): peste 1 mil. $ din 30 de micro-aplicații, singur</h3>
+      <p>Un portofoliu construit în șase ani, din care opt produse aduc bani. Cel mai mare e MagicSlides, care transformă documente, PDF-uri și clipuri YouTube în prezentări. Distribuția vine din Chrome Web Store și Google Workspace Marketplace. AppSumo a adus bani la început. Regula lui: o singură funcție pe produs și o precomandă înainte de a construi. Un dezvoltator român fără buget de marketing o poate aplica la fel.</p>
+      <p class="meta"><span class="tag">raportat</span>Peste 1 mil. $ venit total, din care ~856.000 $ prin Stripe și ~85.000 $ prin AppSumo; SheetAI aduce ~2.000 $ MRR. Sumele parțiale nu ajung la 1 mil. $.</p>
+      <p class="src"><a href="https://www.bulletpointpodcast.com/starterstory/how-i-made-1-m-building-30-micro-apps">Starter Story (podcast), 8 nov.</a></p></div>
+    <div class="item"><h3>Stealth Venture (SUA): coduri QR dinamice, 7.604 $ MRR, cerut 240.000 $</h3>
+      <p>Coduri QR a căror destinație se schimbă fără retipărire, plus statistici de scanare. 530 de abonamente mici, fondat în februarie 2026. Produsul e simplu și cere puțin suport. O versiune locală, cu prețuri în lei și factură românească, ar avea clienți la restaurante, imobiliare și afișaj.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>7.604 $ MRR, 119.226 $ venit total. Preț cerut 240.000 $ (~2,6x ARR, calculul redacției).</p>
+      <p class="src"><a href="https://trustmrr.com/startup/stealth-venture-31">TrustMRR, actualizat 12 nov.</a></p></div>
+    <div class="item"><h3>Capacity Track (SUA): locuri libere în centrele de îngrijire dintr-un singur stat</h3>
+      <p>Director local al furnizorilor licențiați de îngrijire rezidențială din Minnesota, cu paturile disponibile. Familia trimite o singură cerere către mai mulți furnizori, iar furnizorii plătesc abonament. În România, un loc într-un cămin sau centru rezidențial se caută încă din telefon în telefon, așa că modelul se poate copia aproape identic.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>2.059 $ MRR din 41 de abonamente, 16.591 $ venit total; fondat în noiembrie 2025. Preț cerut 100.000 $ (4x, după TrustMRR).</p>
+      <p class="src"><a href="https://trustmrr.com/startup/capacity-track">TrustMRR, actualizat 11 nov.</a></p></div>
+    <div class="item"><h3>Builder de asistenți AI white-label: 521.756 $ venit total, acum doar 2.561 $ MRR</h3>
+      <p>Transformă conținutul unui site într-un chatbot de marcă, care preia lead-uri. Se vinde agențiilor și firmelor mici și a fost fondat în martie 2023. E un caz de avertisment: venitul total e mare, dar chatboții generici din 2023 s-au transformat în marfă. Cine vinde chatboți IMM-urilor din România are nevoie de o verticală clară.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>2.561 $ MRR din 43 de abonamente. Preț cerut 250.000 $ (~8x ARR, calculul redacției), greu de justificat.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/whitelabel-ai-assistants-builder-huge-opportunity-98-margin-250k">TrustMRR, actualizat 13 nov.</a></p></div>
+    <div class="item"><h3>CatalogoHoy (America Latină): catalog online plus casă de marcat pentru micii comercianți</h3>
+      <p>Aplicație all-in-one pentru magazine mici: catalog de distribuit pe WhatsApp, comenzi, stoc, casă de marcat (POS) și cheltuieli. Fondată în martie 2026, mai ales pentru Venezuela. E un „Shopify lite” pentru o piață emergentă. În România există aceeași masă de vânzători pe Facebook și WhatsApp fără magazin online.</p>
+      <p class="meta"><span class="tag">verificat RevenueCat</span>419 $ MRR, 2.073 $ în 30 de zile, +64% de la o lună la alta. <span class="tag warn">neconfirmat</span>Fondatorul declară ~2.400 $ MRR real. Preț cerut 70.000 $.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/catalogohoy">TrustMRR, actualizat 11 nov.</a></p></div>
+  </div>
+  <p class="meta">Reper de evaluare: indexul Livmo dă un multiplu median de 4,9x venitul pentru 87 de SaaS-uri listate public, în săptămâna încheiată pe 6 noiembrie (<a href="https://livmo.com/saas-valuation-multiples/">Livmo</a>). Listările de mai sus, între 2x și 5x, se încadrează în acest interval, cu excepția builderului de chatboți.</p>
+</section>
+
+<section id="ai">
+  <p class="kicker">02 · AI</p>
+  <h2>ChatGPT devine catalog de firme, Anthropic intră peste Excel și Google Meet, iar agenții care cumpără singuri primesc primul refuz</h2>
+  <p class="dek">Lansări și anunțuri din 9–12 noiembrie. Cifrele sunt raportate de companii, în afara celor marcate. Paginile oficiale OpenAI și Google și articolele Axios și The Verge nu s-au deschis nici la a doua încercare, așa că mai multe semnale vin prin presa de specialitate.</p>
+  <div class="item"><h3>Businesses in ChatGPT: firmele își revendică profilul și văd de câte ori le menționează ChatGPT</h3>
+    <p>Beta lansat pe 10 noiembrie. Firmele își revendică un profil verificat și își actualizează datele, prețurile și stocul. Primesc statistici agregate: câte mențiuni au în ChatGPT, câte click-uri ajung pe site, ce subiecte apar în conversații. Firmele de e-commerce și servicii online din SUA pot lansa și un „Business Agent” care răspunde clienților și poate fi promovat prin ChatGPT Ads. Revendicarea profilului e deschisă în țările unde funcționează ChatGPT. Asta face posibil un serviciu concret pentru firmele românești: revendicarea profilului, curățarea datelor de produs și monitorizarea mențiunilor, înainte ca agenții să ajungă în UE.</p>
+    <p class="meta"><span class="tag">raportat</span>1,2 mld. de utilizatori săptămânal; reclamele au trecut de un ritm anual de 1 mld. $ în august. Prețul nu e comunicat. <span class="tag warn">neconfirmat</span>Eligibilitatea exactă pentru România: pagina OpenAI nu s-a deschis.</p>
+    <p class="src"><a href="https://thenextweb.com/news/openai-businesses-in-chatgpt-business-agents">The Next Web, 10 nov.</a> · <a href="https://www.unite.ai/?p=511195">Unite.AI</a></p></div>
+  <div class="grid two">
+    <div class="item"><h3>Claude Sheets, Meetings și Whiteboards: Anthropic intră pe foi de calcul și ședințe</h3>
+      <p>Trei produse beta: foi de calcul cu formule și export în Excel (Anthropic le numește chiar „destul de simple”), un agent care intră vizibil în apelurile Google Meet și scoate sarcini în timp real, plus o tablă pentru idei. Notetakerii AI de sine stătători pierd teren. Rămân libere ședințele pe Zoom și Teams, cele în limba română și fluxurile din ședință direct în CRM-uri sau ERP-uri românești.</p>
+      <p class="meta"><span class="tag">raportat</span>Meetings e doar pentru planurile Team și Enterprise; peste 9.000 de conectori în Claude Marketplace.</p>
+      <p class="src"><a href="https://aiweekly.co/alerts/anthropic-rolls-out-claude-sheets-meetings-and-whiteboards">AI Weekly, 10 nov.</a></p></div>
+    <div class="item"><h3>Claude Fable 5.2: modelul de vârf al Anthropic se ieftinește cu 20%</h3>
+      <p>Disponibil pe toate platformele din 9 noiembrie, cu un „Fast mode” separat. Pentru produsele construite pe Fable, marja crește imediat, deci merită recalculat costul pe sarcină. Varianta Mythos 5.2 rămâne restrânsă la organizații verificate.</p>
+      <p class="meta"><span class="tag">raportat</span>8 $ / 40 $ per milion de tokeni (intrare/ieșire), față de 10 $ / 50 $ la Fable 5.1. <span class="tag warn">neconfirmat</span>Răspunsuri cu până la 30% mai rapide.</p>
+      <p class="src"><a href="https://www.implicator.ai/anthropic-fable-5-2-mythos-5-2-price-cut/">Implicator, 9 nov.</a></p></div>
+    <div class="item"><h3>n8n Nod: agent personal open-source care lucrează pe calculatorul tău</h3>
+      <p>Lansat ca versiune de test pe 10 noiembrie. Agentul rulează izolat, cu browser propriu, pe Mac, Windows sau pe server. Lucrează în Gmail, Drive și Slack și pe site-uri fără integrare: anulează abonamente, urmărește prețuri, descarcă facturi. Primește comenzi și pe Telegram sau WhatsApp. Agentul care folosește calculatorul devine gratuit, așa că valoarea rămâne în implementare. Exemple: rețete gata făcute pentru contabili, cum ar fi descărcarea lunară a facturilor din portalurile furnizorilor. Rulat local, ajută și la conformarea cu GDPR.</p>
+      <p class="meta"><span class="tag">raportat</span>Gratuit, licență Apache 2.0; plătești doar modelul. Cere confirmare peste 5 $ pe sarcină și are plafon lunar.</p>
+      <p class="src"><a href="https://blog.n8n.io/meet-nod">Blog n8n, 10 nov.</a></p></div>
+    <div class="item"><h3>Automattic Spacefast: găzduire pentru aplicațiile generate de agenți</h3>
+      <p>Bază de date, autentificare, fișiere, e-mail, analytics, DNS și revenire la versiunea anterioară pentru aplicațiile „vibe-coded”. Se leagă de ChatGPT, Claude, Cursor sau Git. După Cursor, e al doilea jucător mare care acoperă tot drumul de la prompt la producție. Pentru agențiile web, valoarea se mută din hosting în mentenanță, securitate și conformare.</p>
+      <p class="meta"><span class="tag">raportat</span>Previzualizare gratuită; prețuri și limite nepublicate.</p>
+      <p class="src"><a href="https://letsdatascience.com/news/automattic-launches-spacefast-to-deploy-vibe-coded-websites-fb2995d5">Let's Data Science, 9 nov.</a></p></div>
+    <div class="item"><h3>Notion și Fireworks AI: datele au fost păstrate, deși contractul promitea zero păstrare</h3>
+      <p>După un incident de securitate la Fireworks AI, furnizorul Notion pentru modele open-weight, Notion a descoperit că transcrierile din chat fuseseră păstrate, deși contractul prevedea zero păstrare a datelor. A deconectat furnizorul și recomandă schimbarea parolelor și a cheilor lipite în chat. Pentru firmele românești care trimit date de clienți prin API-uri terțe e un risc GDPR concret. Auditul furnizorilor de AI și găzduirea în UE sunt un serviciu ușor de vândut pe baza acestui caz.</p>
+      <p class="meta"><span class="tag">raportat</span>Sub 1% din spațiile de lucru afectate; ancheta continuă.</p>
+      <p class="src"><a href="https://notion.com/help/security-incident-involving-a-third-party-ai-vendor">Notion (oficial)</a> · <a href="https://aiweekly.co/ai-news-today/edition/2026-11-10">AI Weekly, 10 nov.</a></p></div>
+    <div class="item"><h3>United Airlines nu mai lasă agenții AI neautorizați să cumpere bilete</h3>
+      <p>Actualizare la tema agenților care cumpără în locul clienților. Asistenții AI pot afișa zboruri, dar clientul trebuie să cumpere singur. CEO-ul Scott Kirby spune că nu vrea „încă un intermediar”. Marii comercianți închid ușa agenților generali. Rămâne loc pentru „agentul autorizat”, adică identitate verificată și integrări oficiale. Linux Foundation a lansat pe 11 noiembrie Agent Name Service pentru identificarea agenților.</p>
+      <p class="meta"><span class="tag warn">confirmare parțială</span>Articolul The Verge nu s-a deschis; decizia e citată dintr-un rezumat.</p>
+      <p class="src"><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/">The Neuron, 12 nov.</a> · <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agent Store</a></p></div>
+    <div class="item"><h3>Apple Intelligence Usage Packs: primul AI plătit de la Apple e un pachet de consum</h3>
+      <p>Pachet de 49,99 $, plătit o singură dată, care adaugă utilizare după epuizarea limitei lunare. Deocamdată funcționează în Logic Pro, iar Final Cut Pro, Pixelmator Pro și iWork urmează. Utilizarea nefolosită se reportează și expiră după 12 luni. E încă un semn că AI-ul trece de la abonament nelimitat la credite. Pentru o aplicație mică cu costuri reale de inferență, modelul de urmat e un plan de bază plus pachete de credite.</p>
+      <p class="meta"><span class="tag">raportat</span>49,99 $; lansat în opt țări, nenumite.</p>
+      <p class="src"><a href="https://aiweekly.co/alerts/apple-launches-4999-intelligence-usage-packs-first-paid-ai-tier">AI Weekly, 10 nov.</a></p></div>
+    <div class="item"><h3>Databricks Genie „always-on”: agentul de date lucrează în fundal</h3>
+      <p>Agentul rulează sarcini lungi pe datele companiei, iar funcția Ontology cartografiază legăturile dintre oameni, proiecte și date. Raportarea trece de la dashboard la agentul care răspunde singur. Pentru IMM-urile românești fără Databricks rămâne loc pentru un „Genie” ieftin, construit peste ERP-ul local și exporturile SAF-T și e-Factura.</p>
+      <p class="meta"><span class="tag">raportat</span>Versiunea always-on e în preview; preț nespecificat.</p>
+      <p class="src"><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-12-2026">AI Agents Directory, 12 nov.</a> · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/">The Neuron</a></p></div>
+  </div>
+  <div class="item"><h3>Tot pe radar, pe scurt</h3>
+    <p><strong>„Decisions API”:</strong> un API care răspunde la până la 1.000 de întrebări da/nu într-un apel, de la 0,10 $ per milion de tokeni de intrare. The Neuron îl atribuie Google, altă sursă îl atribuie OpenAI <span class="tag warn">neconfirmat</span>. Dacă se confirmă, moderarea, triajul tichetelor și clasificarea facturilor devin aproape gratuite (<a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/">The Neuron, 12 nov.</a>). <strong>Meituan LongCat-2.5:</strong> model cu 1,6T parametri și ponderi deschise sub licență MIT (<a href="https://aiweekly.co/ai-news-today/edition/2026-11-10">AI Weekly</a>). <strong>AWS Emulator:</strong> unealtă gratuită care simulează local peste 200 de servicii AWS; Amazon spune că a fost scrisă integral de agenți AI (The Neuron, 12 nov.).</p></div>
+</section>
+
+<section id="startupuri">
+  <p class="kicker">03 · Startupuri finanțate</p>
+  <h2>Apărarea ucraineană ajunge la 6 mld. $, robotica germană la 8,5 mld. $, iar contabilitatea cu AI strânge cel mai mare seed european din domeniu</h2>
+  <p class="dek">Runde anunțate între 9 și 12 noiembrie. Evaluările nepublicate nu sunt estimate. Nominal, Coframe și Blackletter au ca sursă un singur roundup și nu au fost verificate cu comunicatele companiilor.</p>
+  <div class="grid two">
+    <div class="item"><h3>UFORCE (Ucraina/UK): Seria A de 700 mil. $ la 6 mld. $ evaluare</h3>
+      <p>Drone navale MAGURA, avioane de atac, roboți terestri și turele anti-dronă, plus software-ul de control. Vinde Ucrainei și mai multor state NATO. Fondul britanic National Wealth Fund a pus 150 mil. $, cea mai mare investiție a sa în apărare. Banii publici europeni intră direct în startupurile de apărare. Pentru furnizorii români de componente, electronică și mentenanță de pe flancul estic, lanțul de aprovizionare devine o piață reală.</p>
+      <p class="meta"><span class="tag">raportat</span>Co-lideri Valor Equity Partners și UK National Wealth Fund; participă Lakestar, Shield Capital și alții. Comenzile „s-au dublat într-un an” (CEO, fără cifră exactă).</p>
+      <p class="src"><a href="https://techfundingnews.com/uforce-raises-700m-at-6b-valuation-as-uk-wealth-fund-makes-its-biggest-defence-deal/">Tech Funding News, 12 nov.</a> · <a href="https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html">CNBC</a></p></div>
+    <div class="item"><h3>Agile Robots (Germania): Seria F de 500 mil. $ la 8,5 mld. $</h3>
+      <p>Brațe și mâini robotice, roboți mobili și umanoizi, plus software-ul și modelele AI care îi conduc. Clienții vin din auto, electronice și sănătate. Fabricile auto și furnizorii lor din România sunt clienții tipici ai automatizării „robot plus AI”. Integratorii locali vor avea mai devreme produse europene de revândut.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider SoftBank, cu Nvidia și Hitachi; ~2 mld. $ strânși în total.</p>
+      <p class="src"><a href="https://tech.eu/2026/11/12/softbank-leads-500m-funding-round-in-agile-robots/">Tech.eu, 12 nov.</a></p></div>
+    <div class="item"><h3>Nominal (SUA): Seria C de 240 mil. $ la 3 mld. $</h3>
+      <p>Software și agenți AI pentru inginerii care analizează datele din testele de hardware în aerospațial, apărare și automotive. E SaaS vertical, vândut companiilor mari. Firmele românești de inginerie și testare pot fi atât clienți, cât și parteneri de integrare.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider Lightspeed, co-lider Insight Partners. <span class="tag warn">o singură sursă</span></p>
+      <p class="src"><a href="https://techstartups.com/?p=140317">TechStartups, 10 nov.</a></p></div>
+    <div class="item"><h3>Rox (SUA): Seria B de 100 mil. $ la 1,3 mld. $</h3>
+      <p>Agenți AI peste CRM-ul existent: cercetează conturile, prioritizează clienții și pregătesc mesajele, ca vânzătorii să piardă mai puțin timp cu administrativul. Agenții de vânzări se pot vinde ca strat peste CRM, fără să-l înlocuiască. E o cale realistă și pentru un SaaS românesc care vinde echipelor mici.</p>
+      <p class="meta"><span class="tag">raportat</span>Co-lideri General Catalyst și March Capital. ARR „de peste 10 ori” mai mare față de primul an (fără sumă). Clienți: Ramp, MongoDB, New Relic.</p>
+      <p class="src"><a href="https://fortune.com/2026/11/11/rox-series-b-100-million-funding-take-on-salesforce">Fortune, 11 nov.</a></p></div>
+    <div class="item"><h3>Sumary (Danemarca): seed de 25 mil. $ pentru AI în contabilitate</h3>
+      <p>Face închiderea de lună, deconturile de TVA și pregătirea de final de an direct peste sistemul de contabilitate al clientului. Un contabil aprobă fiecare pas. Lucrează cu majoritatea celor mai mari 20 de firme de contabilitate din Nordice, inclusiv Deloitte, Grant Thornton și Baker Tilly. Se extinde în UK și Benelux, nu în CEE. În România, SAF-T, e-Factura și RO e-TVA cresc volumul de lucru, iar modelul „automatizare plus aprobare” se potrivește cabinetelor locale.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider Singular, cu byFounders, Partech și Tenity; „cea mai mare rundă seed din Europa în contabilitate” (declarația companiei). Venitul nu e publicat.</p>
+      <p class="src"><a href="https://thenextweb.com/news/sumary-25m-seed-ai-accounting">The Next Web, 10 nov.</a> · <a href="https://tech.eu/2026/11/10/sumary-secures-25m-to-expand-its-accounting-software-across-europe/">Tech.eu</a></p></div>
+    <div class="item"><h3>Kinderpedia (România): rundă de 2,7 mil. €</h3>
+      <p>SaaS pentru școli și grădinițe: admitere, progresul copiilor, comunicarea cu părinții, facturare și încasări. Se vinde ca abonament instituțiilor. Un SaaS vertical românesc pe o nișă „plictisitoare”, prezent în peste 40 de țări, finanțat de un fond polonez și de o bancă românească.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider Simpact Ventures (Polonia), cu Early Game Ventures, ROCA X și BCR Seed Starter; peste 2.000 de școli și 500.000 de utilizatori. <span class="tag warn">neclar</span>În februarie, The Recursive scria despre 2,2 mil. € dintr-o rundă de 3,5 mil. €; StartupCafe nu explică diferența.</p>
+      <p class="src"><a href="https://startupcafe.ro/startup-romanesc-kinderpedia-investitie-2-7-milioane-euro-110132">StartupCafe, 11 nov.</a></p></div>
+    <div class="item"><h3>Kardi AI (Cehia): Seria A de 5,3 mil. € la 23 mil. € post-money</h3>
+      <p>Centură de fitness cu senzor ECG și aplicație AI care analizează înregistrările. Rezultatele pot fi trimise medicului, dar aplicația nu pune diagnostic. Se vinde prin spitale, programe de beneficii pentru angajați, e-shop și farmacii online. E deja activă în România, iar banii vin și prin programul Seed Starter al grupului Erste, din care face parte BCR.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider Callisto Health; peste 70 de spitale și 6.000 de utilizatori în Cehia.</p>
+      <p class="src"><a href="https://www.therecursive.com/czech-kardi-ai-raises-eur5-3m-series-a-led-by-callisto-health/">The Recursive, 11 nov.</a></p></div>
+    <div class="item"><h3>Coframe (SUA): Seria A de 25 mil. $</h3>
+      <p>Agenți care generează, testează A/B și aplică singuri modificări pe site-uri și în reclame. Magazinele online pot cere agențiilor „optimizare continuă”, nu teste făcute din când în când.</p>
+      <p class="meta"><span class="tag">raportat</span>Co-lideri Khosla Ventures și Hanabi Capital; „peste 300 mil. $ venit incremental pentru clienți” (afirmația companiei). <span class="tag warn">o singură sursă</span></p>
+      <p class="src"><a href="https://techstartups.com/?p=140317">TechStartups, 10 nov.</a></p></div>
+    <div class="item"><h3>Transtreams (China): Seria B de ~150 mil. $</h3>
+      <p>Procesoare pentru video și generare AI, desprinse din divizia de semiconductori a Kuaishou. China finanțează masiv cipuri proprii pentru video AI, deci costul pe secundă de video generat va continua să scadă.</p>
+      <p class="meta"><span class="tag">raportat</span>1 mld. RMB; lider un fond E-Town Capital, cu Qiming. Evaluarea nu e publică.</p>
+      <p class="src"><a href="https://kr-asia.com/deals-in-brief-amity-secures-series-d-extension-econili-gains-vynn-capital-backing-ten-china-investments-and-more">KrASIA, 10 nov.</a></p></div>
+    <div class="item"><h3>Blackletter (SUA): seed de 6 mil. $ pentru o firmă de avocatură cu AI</h3>
+      <p>Avocați licențiați lucrează pe un software propriu și cer onorarii fixe, nu pe oră. Modelul „software plus om” vinde rezultatul la preț fix cu marjă de software. Se poate replica în România pe juridic, contabilitate sau HR.</p>
+      <p class="meta"><span class="tag">raportat</span>Lider Lerer Hippeau. <span class="tag warn">o singură sursă</span></p>
+      <p class="src"><a href="https://techstartups.com/?p=140317">TechStartups, 10 nov.</a></p></div>
+  </div>
+  <div class="item"><h3>CEE și România, pe scurt</h3>
+    <p><strong>Hedepy (Cehia):</strong> 4 mil. € datorie venture de la Orbit Capital, pentru achiziții. Platforma de terapie online a cumpărat HearMe (Polonia) și e prezentă în 9 țări (<a href="https://www.therecursive.com/czech-mental-health-platform-hedepy-raises-eur4m-in-venture-debt-to-fund-acquisitions/">The Recursive, 10 nov.</a>). <strong>Valkyrie Dynamics (Lituania/Ucraina):</strong> pre-seed de 1 mil. € pentru un radar mic care ghidează drone interceptoare ieftine, vândut altor producători (<a href="https://www.therecursive.com/valkyrie-dynamics-raises-eur1m-for-a-tiny-radar-that-lets-cheap-drones-intercept-in-any-weather/">The Recursive</a>). <strong>FlowX.AI (fondatori români):</strong> Radu Georgescu intră în board; nu e rundă (<a href="https://www.romania-insider.com/business/entrepreneur-radu-georgescu-joins-romanian-founded-flowx-ai-board">Romania Insider, 11 nov.</a>). <strong>NormArchAI (România):</strong> asistent AI pentru normativele de construcții, peste 330 de utilizatori, finanțat din banii fondatorilor; pregătește o aplicație la EIC Accelerator (<a href="https://start-up.ro/ce-spune-normativul-intrebarea-de-la-care-a-pornit-normarchai-startup-romanesc-cu-planuri-europene-pentru-arhitecti-si-ingineri">Start-up.ro, 12 nov.</a>).</p></div>
+</section>
+
+<section id="ro-eu">
+  <p class="kicker">04 · Oportunități RO/UE</p>
+  <h2>Șase dureri: contracte de energie mai scumpe, compensarea lunară a prosumatorilor, riscul fiscal moștenit de la parteneri, depozitele cartografiate de ANAF, marketingul fără dovezi și vânzătorii care creează sediu permanent</h2>
+  <p class="dek">Secțiunea principală. Reperele de preț sunt estimările redacției, nu cifre din surse. Temele din edițiile anterioare apar doar ca actualizări marcate.</p>
+
+  <div class="opp"><h3>1. Energia pentru firme: facturi cu ~25% mai mari la reînnoirea contractelor</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Laurențiu Urluescu, președintele AFEER, spune că prețul angro al electricității a crescut cu peste 50% între iulie și noiembrie 2026. Clienții cu preț fix nu simt încă diferența, dar AFEER se așteaptă la facturi cu circa 25% mai mari la reînnoire. Furnizorii avertizează că adaptarea în grabă a facturării la noile reguli ANRE poate produce erori.</dd>
+    <dt>Durerea</dt><dd>Firma care reînnoiește contractul iarna primește brusc o factură mai mare cu un sfert. Un IMM nu are pe cineva care să compare ofertele, să aleagă între preț fix și variabil și să citească clauzele.</dd>
+    <dt>Soluția</dt><dd>Serviciu de achiziție și renegociere pentru IMM-uri: alertă cu 60–90 de zile înainte de expirarea contractului, comparație de oferte, verificarea facturilor după erori. Se vinde ușor la pachet cu un audit pentru panouri și baterii.</dd>
+    <dt>Cine plătește</dt><dd>HoReCa, retail, producători mici, clădiri de birouri. Estimarea noastră: 150–400 lei pe lună pe loc de consum sau 10–20% din economia obținută.</dd>
+    <dt>Statut</dt><dd>Estimare de piață a asociației furnizorilor, nu reglementare. Fereastra de vânzare se deschide la fiecare contract care expiră.</dd></dl>
+    <p class="src"><a href="https://national.ro/economie/avertismentul-cutremurator-al-furnizorilor-energia-in-piata-angro-s-a-scumpit-cu-peste-50-cu-cat-vor-creste-facturile/">National.ro, 12 nov.</a></p></div>
+
+  <div class="opp"><h3>2. Prosumatori: ANRE trece la compensare lunară, iar furnizorii au termen 31 decembrie</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>ANRE a adoptat metodologia pentru Legea 160/2026, care înlocuiește Ordinul 15/2022. Compensarea devine lunară, inclusiv pe contractele existente, pentru energia livrată din 26 iulie 2026. Surplusul unui loc de producție poate plăti facturile altor locuri de consum ale aceluiași prosumator, la același furnizor. Instalațiile de 200–400 kW primesc decontare financiară la prețul mediu PZU. Persoanele fizice cu până la 27 kW nu mai emit facturi. Furnizorii își termină adaptările IT până pe 31.12.2026. Compensarea cantitativă până la 200 kW se încheie în 2030.</dd>
+    <dt>Durerea</dt><dd>Furnizorii au 7 săptămâni să-și refacă facturarea. Firmele cu mai multe locații nu știu cum să-și aloce surplusul și cum să verifice regularizările.</dd>
+    <dt>Soluția</dt><dd>(a) Un modul de facturare și decontare pentru prosumatori, vândut furnizorilor mici sau integratorilor de ERP. (b) O aplicație pentru firmele cu mai multe locații, care verifică alocarea surplusului și regularizările. (c) Un argument nou pentru instalatori: „surplusul plătește și factura magazinului al doilea”.</dd>
+    <dt>Cine plătește</dt><dd>Furnizorii de energie (estimarea noastră: proiect IT de 20.000–100.000 €) și firmele prosumatoare (50–200 lei pe lună pe loc de consum).</dd>
+    <dt>Statut</dt><dd>Adoptată de Comitetul de reglementare ANRE; textul trebuie verificat după publicarea în Monitorul Oficial.</dd></dl>
+    <p class="src"><a href="https://startupcafe.ro/noi-reguli-anre-pentru-prosumatorii-care-produc-energie-verde-in-romania-110103">StartupCafe, 11 nov.</a></p></div>
+
+  <div class="opp"><h3>3. SAF-T: firma ta intră la risc din cauza documentelor neînregistrate de partener</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Actualizare la tema verificărilor ANAF. Pe 11 noiembrie, președintele ANAF, Adrian Nica, a spus că fiscul compară SAF-T-urile partenerilor de afaceri. Dacă un document e înregistrat la o firmă și lipsește la cealaltă, ambele pot intra în categoria de risc. Cauza obișnuită sunt documentele aduse târziu de administrator la contabil. ANAF va ține în 2027 cursuri gratuite cel puțin lunar, despre corelările pe care le face. După primul trimestru din 2027, toate rambursările de TVA ar urma să fie doar online. ANAF testează un instrument AI propriu cu 300 de angajați și urmează să-l extindă la încă 1.000.</dd>
+    <dt>Durerea</dt><dd>Riscul fiscal al unei firme depinde acum de cât de disciplinați sunt contabilii furnizorilor și clienților ei.</dd>
+    <dt>Soluția</dt><dd>Reconciliere SAF-T și e-Factura între parteneri, cu alerte de tipul „facturi din SPV neînregistrate” și „facturi trimise, dar neînregistrate de client”, plus un mesaj automat către partener. Separat, colectarea automată a documentelor de la administrator, pe WhatsApp sau pe e-mail, ca să nu mai ajungă târziu la contabil.</dd>
+    <dt>Cine plătește</dt><dd>Cabinetele de contabilitate (pe client administrat) și IMM-urile plătitoare de TVA. Estimarea noastră: 30–100 lei pe lună pe firmă.</dd>
+    <dt>Statut</dt><dd>Declarații publice ale șefului ANAF, fără act normativ nou.</dd></dl>
+    <p class="src"><a href="https://startupcafe.ro/anaf-va-tine-in-2027-cursuri-online-gratuite-pentru-firme-o-sa-explicam-ce-corelatii-facem-si-unde-datele-trebuie-sa-fie-corecte-110115">StartupCafe, 11 nov.</a> · <a href="https://startupcafe.ro/seful-anaf-ne-propunem-ca-dupa-primul-trimestru-al-anului-viitor-toate-rambursarile-de-tva-sa-fie-doar-online-sa-cada-si-mitul-asta-cu-nu-stiu-cat-se-cere-si-nu-stiu-cat-110091">StartupCafe (rambursări)</a></p></div>
+
+  <div class="opp"><h3>4. După Schengen, ANAF suprapune harta depozitelor cu harta drumurilor</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Adrian Nica a recunoscut la Tax &amp; Technology Summit că, odată cu Schengen, ANAF a pierdut citirea scrisorilor de transport (CMR) la vamă: „n-am pus nimic în loc, o să punem acum”. Planul are patru piese: harta tuturor depozitelor suprapusă cu drumurile, ca să identifice firmele riscante și proprietarii depozitelor; camere și cântare ale Poliției și CNAIR, plus senzori proprii; mai mulți inspectori pe e-Transport; camere de corp pentru inspectori, „sperăm” de anul viitor.</dd>
+    <dt>Durerea</dt><dd>Transportatorii, depozitele și distribuitorii intracomunitari vor fi opriți mai des în trafic, iar orice nepotrivire între e-Transport, aviz și factură devine motiv de control.</dd>
+    <dt>Soluția</dt><dd>Verificarea automată, pe fiecare transport, a potrivirii dintre codul e-Transport, factură și avizul de însoțire, înainte ca marfa să plece. Plus un audit de pregătire pentru depozite: evidența stocului și actele de intrare și ieșire.</dd>
+    <dt>Cine plătește</dt><dd>Firmele de transport și logistică, distribuitorii, operatorii de depozite. Estimarea noastră: 200–800 lei pe lună pentru software, 3.000–10.000 lei pentru un audit.</dd>
+    <dt>Statut</dt><dd>Anunț, fără termene ferme și fără act normativ.</dd></dl>
+    <p class="src"><a href="https://startupcafe.ro/anunt-al-sefului-fiscului-dupa-aderarea-romaniei-la-schengen-anaf-a-pierdut-cea-mai-importanta-sursa-de-informare-n-am-pus-nimic-in-loc-o-sa-punem-acum-110128">StartupCafe, 11 nov.</a></p></div>
+
+  <div class="opp"><h3>5. ANAF respinge cheltuielile de marketing fără dovezi detaliate ale prestării</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Avocata Luisiana Dobrinescu descrie un raport de inspecție din octombrie 2026. Inspectorii au respins cheltuielile de marketing și TVA-ul aferent ale unor lanțuri de retail (broșuri, amplasare la raft), pentru că nu erau identificați prestatorii și orele lucrate. Într-un alt caz, cheltuiala a fost declarată nejustificată economic pentru că firma avea profit mic. ANAF n-ar fi acceptat ca dovezi e-mailuri, invitații din calendar sau note de ședință generate automat. Avocatnet scrie pe 10 noiembrie că inspectorii tratează aceste cheltuieli ca nedeductibile în controalele din retail.</dd>
+    <dt>Durerea</dt><dd>Marketingul, consultanța și serviciile fără un rezultat fizic pot fi impozitate de două ori: o dată prin impozitul pe profit, a doua oară prin TVA-ul respins.</dd>
+    <dt>Soluția</dt><dd>Un „dosar de prestare” generat automat pentru fiecare factură de servicii: contract, comandă, rapoarte de activitate cu ore și persoane, rezultate, capturi de ecran și justificarea economică. Agențiile îl pot oferi ca argument de vânzare, iar programele de contabilitate ca funcție nouă.</dd>
+    <dt>Cine plătește</dt><dd>Retailerii, brandurile și agențiile lor. Estimarea noastră: 99–499 lei pe lună sau 1–2% din valoarea contractului de marketing.</dd>
+    <dt>Statut</dt><dd>Practică de control relatată de o avocată; raportul nu e public, iar ANAF nu a comentat.</dd></dl>
+    <p class="src"><a href="https://startupcafe.ro/inspectii-anaf-2026-o-avocata-a-descoperit-o-noua-abordare-a-fiscului-care-depaseste-logica-obisnuita-109899">StartupCafe, 9 nov.</a> · <a href="https://www.avocatnet.ro/articol_73003/Retail-Cheltuielile-de-marketing-sunt-nedeductibile-consider%C4%83-inspectorii-ANAF.html">Avocatnet, 10 nov.</a></p></div>
+
+  <div class="opp"><h3>6. Legea 213/2026: vânzătorul local poate crea sediu permanent pentru firma străină, din 1 ianuarie</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Legea, promulgată pe 11 noiembrie, modifică art. 8 din Codul fiscal începând cu 1 ianuarie 2027, după modelul OCDE. O firmă nerezidentă are sediu permanent în România dacă o persoană de aici joacă în mod obișnuit rolul principal în încheierea contractelor, chiar dacă nu le semnează. Cine negociază aici toți termenii esențiali e considerat că a încheiat contractul în România, chiar dacă semnătura se pune în străinătate. Excepțiile pentru activitățile pregătitoare sau auxiliare rămân.</dd>
+    <dt>Durerea</dt><dd>Vânzătorii locali ai firmelor străine pot face ca firma să datoreze impozit pe profit în România. E vorba de angajați prin furnizori de EOR (angajare prin terț), contractori PFA care închid contracte și reprezentanți SaaS.</dd>
+    <dt>Soluția</dt><dd>O analiză a riscului de sediu permanent pentru firmele străine cu oameni de vânzări în România. Include rescrierea contractelor de agent sau mandat și un flux în care aprobarea finală a contractelor se dă în afara țării. Furnizorii de EOR o pot include în pachetul lor.</dd>
+    <dt>Cine plătește</dt><dd>Firmele străine cu echipe de vânzări în România, furnizorii de EOR, casele de avocatură. Estimarea noastră: 2.000–8.000 € pe analiză.</dd>
+    <dt>Statut</dt><dd>Lege promulgată, aplicabilă din 1 ianuarie 2027. Numărul Monitorului Oficial nu apare în surse.</dd></dl>
+    <p class="src"><a href="https://www.avocatnet.ro/articol_72852/Oficial-Regulile-stabilirii-sediilor-permanente-in-Romania-se-extind-la-1-ianuarie.html">Avocatnet, 13 nov.</a> · <a href="https://www.contzilla.ro/codul-fiscal-se-modifica-prin-l-213-2026-din-1-ianuarie-2027/">Contzilla, 12 nov.</a></p></div>
+
+  <div class="item"><h3>Tot pe radar</h3>
+    <p><strong>Digital Fairness Act, actualizare:</strong> Comisia a prezentat propunerea oficială pe 11 noiembrie. Conține interdicția tiparelor manipulative, opțiunea de a opri scroll-ul infinit, notificare înainte ca perioada de probă să devină plătită, dreptul de a vorbi cu un om în loc de chatbot și reguli pentru influenceri. Amenzile ajung la 6% din cifra de afaceri globală. Costul estimat pentru firme e de 678 mil. € pe an. Urmează Parlamentul și Consiliul, fără dată de aplicare (<a href="https://www.euronews.com/2026/11/11/eu-targets-subscription-traps-addictive-design-and-hidden-fees-with-new-digital-rules">Euronews, 11 nov.</a>). În România, ANPC a dat operatorilor de telefonie, internet și TV 1.060 de sancțiuni și 4.892.500 lei amenzi din 2024 până în septembrie 2026, multe pentru facturi venite după cererea de reziliere (<a href="https://financiarul.ro/finante-personale/firmele-de-telefonie-internet-si-tv-au-primit-amenzi-de-4-892-500-de-lei-din-2024-pana-in-septembrie-2026-abonatii-au-reclamat-facturi-dupa-cererea-de-inchidere/">Financiarul</a>).</p>
+    <p><strong>Grupurile de firme, PL-x 694/2026:</strong> adoptat de Senat, acum la Camera Deputaților, care decide. Din 2027, serviciile de management, consultanță și licențele plătite în cadrul grupului ar deveni integral nedeductibile. Guvernul și CES au dat aviz negativ, iar Camera Consultanților Fiscali avertizează că aceeași sumă ar fi impozitată de două ori (<a href="https://www.economica.net/consultantii-fiscali-atrag-atentia-ca-proiectul-de-lege-referitor-la-cheltuielile-din-interiorul-grupurilor-de-firme-impoziteaza-doua-ori-aceeasi-suma-vor-fi-afectate-atat-bancile-cat-si-ifn-urile_991512.html">Economica.net</a>).</p>
+    <p><strong>Salariul minim 2027, actualizare:</strong> dacă scutirea de 200 lei expiră pe 31 decembrie, netul scade de la 2.699 la 2.616 lei la același brut de 4.325 lei. Scenariile ministerului sunt 4.593, 4.884 sau 5.079 lei. Circa 1,4 milioane de angajați câștigă salariul minim sau cel mult 75 lei peste el (<a href="https://www.undelucram.ro/ro/cumlucram/salariul-minim-2027-net-scade-83-lei-scutire-taxe-2520">Undelucram, 10 nov.</a>).</p>
+    <p><strong>Frigiderele atacate, actualizare:</strong> DNSC a raportat creșteri anormale de temperatură la 6 magazine ale aceluiași lanț din România. Atacurile vizează controlere Danfoss și Copeland/Dixell cu firmware vechi. DNSC recomandă scoaterea lor de pe internet și acces doar prin VPN (<a href="https://www.wall-street.ro/articol/retail/dnsc-temperaturi-anormale-in-frigiderele-aceluiasi-retailer-din-romania">Wall-Street.ro</a>). <strong>Cadouri de Crăciun fără taxe salariale</strong>, în limitele legale: sezon bun pentru furnizorii de vouchere (<a href="https://www.avocatnet.ro/articol_73015/Cu-ocazia-Cr%C4%83ciunului-firmele-pot-da-cadouri-angaja%C8%9Bilor-%C8%99i-copiilor-lor-f%C4%83r%C4%83-s%C4%83-datoreze-taxe-salariale.html">Avocatnet, 11 nov.</a>).</p></div>
+</section>
+
+<section id="miscari">
+  <p class="kicker">05 · Mișcări pe care le-ai putea face</p>
+  <h2>Ce aș testa în următoarele 3 zile</h2>
+  <ol class="moves">
+    <li><strong>Revendicarea profilului din ChatGPT, ca serviciu.</strong> Revendici profilul pentru 5 firme locale (o clinică, un restaurant, un magazin online), le cureți datele și le trimiți după două săptămâni raportul de mențiuni. Testezi apoi un abonament lunar de „vizibilitate în AI”.</li>
+    <li><strong>Lista cu contractele de energie care expiră.</strong> Ceri la 20 de IMM-uri (HoReCa, retail) data expirării și ultima factură. Le oferi comparația de oferte gratuit și iei comision doar din economia obținută. Creșterea anunțată de AFEER e argumentul de deschidere.</li>
+    <li><strong>Reconciliere SAF-T între parteneri, prin 3 cabinete de contabilitate.</strong> Iei e-Factura și SAF-T-ul unui client real și listezi documentele care lipsesc la parteneri. Un singur caz rezolvat poate vinde abonamentul pe cabinet.</li>
+    <li><strong>Șablon de „dosar de prestare” pentru agențiile de marketing.</strong> Un Google Doc sau un Notion cu contract, raport de ore, rezultate și justificare economică, trimis la 10 agenții împreună cu articolul despre controalele din retail. Măsori câte cer versiunea automată.</li>
+    <li><strong>Agregator de roviniete și TollRO pentru flote mici.</strong> Vignette ID arată că oamenii plătesc pentru un strat de UX peste plăți de stat. Înainte să scrii cod, întrebi 10 transportatori cu 5–20 de camioane cât timp pierd lunar cu facturile.</li>
+    <li><strong>Notă către firmele străine cu vânzători în România.</strong> Un e-mail scurt despre Legea 213/2026, trimis furnizorilor de EOR și reprezentanților SaaS, cu oferta unei analize de risc făcute împreună cu un avocat. Termenul de 1 ianuarie dă urgența.</li>
+  </ol>
+  <p class="meta">Sunt ipoteze de testat, nu recomandări de investiție. Ideile cu componentă juridică, fiscală sau energetică (2, 3, 4, 6) cer validare de la un avocat, un expert contabil, un consultant fiscal sau un specialist în energie.</p>
+</section>
+</main>
+
+
+<footer>
+  <h4>Surse și metodologie</h4>
+  <p>Ediție produsă automat din patru desk-uri de research (Idei &amp; Indie Hackers; AI; Startupuri finanțate; Oportunități RO/UE), pe baza căutărilor web din 13 noiembrie 2026. Fiecare cifră are link la sursă. <strong>„Raportat”</strong> = cifră declarată de companie sau fondator, neauditată. <strong>„Verificat Stripe / RevenueCat”</strong> = venit preluat de TrustMRR direct de la procesatorul de plăți. <strong>„Neconfirmat” / „confirmare parțială” / „o singură sursă” / „neclar”</strong> = informație din presă sau dintr-un singur roundup, neverificată cu sursa primară. Multiplii din secțiunea 01 și reperele de preț din secțiunea 04 sunt calculele și estimările redacției, cu excepția celor atribuite explicit unei surse. Semnalele publicate în edițiile anterioare nu au fost repetate, cu excepția actualizărilor marcate.</p>
+  <p>Limitări ale acestei ediții (după a doua încercare): pagina OpenAI despre „Businesses in ChatGPT” și articolul Axios despre Claude Meetings au dat eroare de client; blogul Google despre Decisions API, articolul The Verge despre United Airlines și articolul Tech.eu despre UFORCE au cerut aprobare de acces, care a expirat într-o rulare automată. Am folosit surse secundare (The Next Web, AI Weekly, The Neuron, Tech Funding News, CNBC), iar atribuirea „Decisions API” rămâne neconfirmată. Pagina TrustMRR a DM Champ a eșuat la desk, dar s-a deschis la a doua încercare. Alte pagini TrustMRR (Laper, uhoh.com, Conductor), Inc42 (PlatinumRx) și două articole Avocatnet au cerut aprobare de acces; semnalele fără sursă alternativă au fost lăsate deoparte. Postările Acquire.com pe X sunt blocate prin robots.txt, iar amosnews.ro (actele adoptate de Guvern pe 12 noiembrie) blochează accesul automat prin robots.txt. Profit.ro blochează accesul automat. Căutările pe Reddit n-au întors fire relevante în această fereastră.</p>
+  <p>Nu este consultanță juridică, fiscală sau financiară.</p>
+  <p class="backlink"><a href="../index.html">← Coperta și arhiva</a></p>
+</footer>
+
+</div></div>
+</body>
+</html>
