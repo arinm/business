@@ -610,5 +610,36 @@
       "ecommerce"
     ],
     "scoreDate": "2026-10-18"
+  },
+  {
+    "slug": "mostenire-fara-drumuri",
+    "title": "Moștenire fără drumuri RO–diaspora",
+    "score": 64,
+    "status": "Sell service first",
+    "aliases": [
+      "succesiune diaspora",
+      "dosar succesoral",
+      "moștenire online",
+      "procura succesiune",
+      "inheritance Romania"
+    ],
+    "buyer": "Român din diaspora implicat într-o succesiune necontencioasă cu bun în România.",
+    "problem": "Familia coordonează de la distanță acte, procuri, rude, termene și un profesionist, fără o vedere comună asupra dosarului.",
+    "wedge": "Audit de completitudine la 49 EUR și dosar ghidat pentru un imobil și cel puțin un moștenitor în UE, cu notar sau avocat în buclă.",
+    "test": "Trimite oferta către 10 comunități diaspora și 5 notari sau avocați înainte de dezvoltare.",
+    "gate": "Două acorduri de parteneriat și cinci audituri plătite în 14 zile.",
+    "risk": "Competență reglementată, excepții juridice, date patrimoniale sensibile și concurență prin checklisturi și servicii profesionale existente.",
+    "next": "Două parteneriate și cinci audituri plătite",
+    "related": [
+      "radar/oportunitati-2026-11-17.html"
+    ],
+    "tags": [
+      "succesiune",
+      "diaspora",
+      "legal operations",
+      "consumer",
+      "Romania"
+    ],
+    "scoreDate": "2026-11-17"
   }
 ]
