@@ -986,7 +986,10 @@
     "branch": "main",
     "report": "radar/sicap-2026-11-19.html",
     "url": "https://arinm.github.io/business/radar/sicap-2026-11-19.html",
-    "verification": "pending_at_commit; verify commit, deployment and live page after publication"
+    "verification": "Initial publication verified; CPV correction for Elias 72500000-0 requires final deployment/live verification after this commit.",
+    "verified_initial_commit": "bc50265c2b8a0118df49dca554260d1344c4c22f",
+    "initial_live_check": "HTTP 200; exact bytes compared successfully before CPV transcription correction",
+    "initial_deploy": "Both GitHub Pages workflows completed successfully"
   },
   "run_history": [
     {
