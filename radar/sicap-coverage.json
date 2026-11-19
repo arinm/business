@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "timezone": "Europe/Bucharest",
-  "last_run_at": "2026-11-18T09:53:53+02:00",
-  "report": "radar/sicap-2026-11-18-v2.html",
+  "last_run_at": "2026-11-19T10:15:21+02:00",
+  "report": "radar/sicap-2026-11-19.html",
   "baseline": {
     "last_complete_before_initialization": null,
     "history": "unknown",
     "recovery_from": "2026-11-10T00:00:00+02:00",
     "older_active_gaps": "unknown lower bound; documented partial runs before 10 November and unaudited attachments/catalog/plans/awards in 10–13 November reports",
-    "previous_report": "radar/sicap-2026-11-18.html"
+    "previous_report": "radar/sicap-2026-11-18-v2.html"
   },
   "rules": {
     "minimum_overlap_hours": 36,
@@ -26,21 +26,37 @@
       "section": "Participare CN",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:53:53+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "18.11, de la 00:00 până la verificare; toate tipurile în lista comună; în desfășurare; depunere ≥18.11; fără CPV/text restrictiv",
+      "query_description": "17.11, 00:00–19.11, ora observației; în desfășurare, depunere ≥19.11; toate tipurile din lista comună, fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
+        "description": "17.11, 00:00–19.11, ora observației; în desfășurare, depunere ≥19.11; toate tipurile din lista comună, fără CPV/text restrictiv",
         "cpv": null,
         "domain": null,
-        "description": "18.11, de la 00:00 până la verificare; toate tipurile în lista comună; în desfășurare; depunere ≥18.11; fără CPV/text restrictiv",
-        "exact_notice_ids": []
+        "text": null
       },
-      "observed": "15/15 poziții, 1/1 pagini comune, inclusiv CN/SCN; 0 dosare CN noi aprofundate",
+      "observed": "239/239 poziții comune, 3/3 pagini (100+100+39); un dosar CN nou aprofundat",
       "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Reinterogare 10–16.11 și dosarele candidaților încă activi, inclusiv CN1098469 legătură cuantică Arad–Nădlac; documentațiile neauditate."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "previous_observed_at": "2026-11-18T09:53:53+02:00",
+      "previous_observed": "15/15 poziții, 1/1 pagini comune, inclusiv CN/SCN; 0 dosare CN noi aprofundate",
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:53:53+02:00",
@@ -51,33 +67,43 @@
           "to": "2026-11-09T23:59:59+02:00",
           "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
         }
-      ],
-      "current_run_checked": true,
-      "previous_observed_at": "2026-11-18T09:38:33+02:00",
-      "previous_observed": "139/139 poziții, 2/2 pagini + 524/524, 6/6, în lista comună",
-      "observed_at": "2026-11-18T09:53:53+02:00"
+      ]
     },
     {
       "section": "Simplificate SCN",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:53:53+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "Aceeași listă comună 18.11 + filtru exact SCN1182161 din 10.11",
+      "query_description": "Aceeași listă comună 17–19.11; fără dublarea pozițiilor CN/SCN/RFQ",
       "filters": {
         "public_only": true,
         "authentication": false,
+        "description": "Aceeași listă comună 17–19.11; fără dublarea pozițiilor CN/SCN/RFQ",
         "cpv": null,
         "domain": null,
-        "description": "Aceeași listă comună 18.11 + filtru exact SCN1182161 din 10.11",
-        "exact_notice_ids": [
-          "SCN1182161"
-        ]
+        "text": null
       },
-      "observed": "Aceleași 15 poziții comune; 1/1 rezultat exact DGPMB, fișă + caiet 7 pagini + contract 10 pagini; fără dublarea listei",
+      "observed": "Aceleași 239 poziții; două dosare SCN noi, trei decizii pe loturi",
       "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "10–16.11; SCN1182336 Timișoara telecom, SCN1182342 echipamente IT și candidații de urbanism/GIS SCN1182299/SCN1182300, calificări și contracte restante."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "previous_observed_at": "2026-11-18T09:53:53+02:00",
+      "previous_observed": "Aceleași 15 poziții comune; 1/1 rezultat exact DGPMB, fișă + caiet 7 pagini + contract 10 pagini; fără dublarea listei",
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:53:53+02:00",
@@ -88,32 +114,43 @@
           "to": "2026-11-09T23:59:59+02:00",
           "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
         }
-      ],
-      "current_run_checked": true,
-      "previous_observed_at": "2026-11-18T09:38:33+02:00",
-      "previous_observed": "Aceleași 663 poziții comune; nu se adună a doua oară",
-      "observed_at": "2026-11-18T09:53:53+02:00"
+      ]
     },
     {
       "section": "Invitații RFQ",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11; depunere ≥18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; RFQ bifat separat, în desfășurare, depunere ≥19.11",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; RFQ bifat separat, în desfășurare, depunere ≥19.11",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "Interogare separată: 0; RFQ1000550 observat în lista comună",
-      "status": "Parțială — observație anterioară",
+      "observed": "2/2 rezultate, o pagină; RFQ1000551 și RFQ1000550; STS: pagină și fișă citite",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "RFQ1000550 PIESE SISOM rămâne neaprofundat; caietul STS nu este public în dosarul citit. Filtrul RFQ anterior cu zero rezultate este reconciliat prin cele două rezultate actuale."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "Interogare separată: 0; RFQ1000550 observat în lista comună",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -129,31 +166,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Invitații SAD / RFD",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11; depunere ≥18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; numai RFD bifat, în desfășurare, depunere ≥19.11",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; numai RFD bifat, în desfășurare, depunere ≥19.11",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "Filtru RFD confirmat bifat: 0 rezultate",
-      "status": "Parțială — observație anterioară",
+      "observed": "0 rânduri de rezultat în filtrul verificat; RFD confirmat bifat",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Invitațiile și admiterea în sisteme mai vechi de 10.11. Încărcarea JavaScript a returnat temporar 503; o reîncărcare a recuperat pagina."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "Filtru RFD confirmat bifat: 0 rezultate",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -169,31 +218,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "SAD — sisteme",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; fără CPV/text/stare restrictivă",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; fără CPV/text/stare restrictivă",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "1/1 rezultat: anvelope IGPR, nerelevant tech",
-      "status": "Parțială — observație anterioară",
+      "observed": "1/1 rezultat, o pagină: CN1098230 anvelope IGPR, exclus ca nerelevant tech",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Sistemele mai vechi active și categoriile de admitere, neauditate."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "1/1 rezultat: anvelope IGPR, nerelevant tech",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -209,41 +270,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Publicitate ADV",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–16.11 și 17–18.11",
+      "query_description": "17.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "17.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
         "cpv": null,
         "domain": null,
-        "subintervals": [
-          {
-            "from": "2026-11-10",
-            "to": "2026-11-16"
-          },
-          {
-            "from": "2026-11-17",
-            "to": "2026-11-18T09:38:33+02:00"
-          }
-        ]
+        "text": null
       },
-      "observed": "1.258/1.258 poziții, 13/13 pagini + 279/279, 3/3; 1.537 ID unice de listă",
-      "status": "Parțială — observație anterioară",
+      "observed": "579/579 poziții, 6/6 pagini (5×100+79), 579 ID unice; un dosar nou cu două anexe aprofundat",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Reinterogare 10–16.11 și dosare restante. Urgent: ADV1558222 Senat 255.000 lei, termen din listă 20.11, 12:30; ADV1558122 HCLOS, 20.11, 15:00. Nevalidate pentru ofertare, fără scor. ADV1558186 PAM ANP; ADV1558205 Copilot UB; ADV1558231 LMS UB; ADV1558238 rețea UM02517; ADV1558214 Hypack; ADV1558088 server ASTRA."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "1.258/1.258 poziții, 13/13 pagini + 279/279, 3/3; 1.537 ID unice de listă",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -259,31 +322,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Schimbări CN eForms",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; numai CN, fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; numai CN, fără CPV/text restrictiv",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "119/119 poziții, 2/2 pagini",
-      "status": "Parțială — observație anterioară",
+      "observed": "143/143 poziții, 2/2 pagini; SCH018694 PICCJ citit în detaliu",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "SCH018702 Romsilva și ceilalți candidați, inclusiv SCH018660, SCH018550 și SCH018564; celelalte tipuri de schimbare și anexele neauditate."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "119/119 poziții, 2/2 pagini",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -299,31 +374,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Erate clasice",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; fără CPV/text/tip restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; fără CPV/text/tip restrictiv",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
       "observed": "0 rezultate în filtrul datat",
-      "status": "Parțială — observație anterioară",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Nu dovedește absența documentelor sau clarificărilor adăugate direct în proceduri."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "0 rezultate în filtrul datat",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -339,30 +426,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Clarificări și documente",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:53:53+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "Dosare restante publicate 13–17.11; verificare punctuală la ora acestei ediții",
+      "query_description": "Verificări punctuale pentru cinci anunțuri noi, o schimbare și consultarea urgentă BCPD",
       "filters": {
         "public_only": true,
         "authentication": false,
+        "description": "Verificări punctuale pentru cinci anunțuri noi, o schimbare și consultarea urgentă BCPD",
         "cpv": null,
         "domain": null,
-        "description": "Dosare restante publicate 13–17.11; verificare punctuală la ora acestei ediții",
-        "exact_notice_ids": []
+        "text": null
       },
-      "observed": "DGPMB: fișă, caiet și clauze contractuale relevante; Poșta BCPD: DOCX; Sf. Spiridon: PDF 4 pagini prin OCR",
+      "observed": "Fișe UMF, FortiGate, Elias, STS; caiete UMF/FortiGate/Elias; formular DOCX și fișă tehnică ANP; schimbare PICCJ; BCPD pagină recitită",
       "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Nu există aici un control global al clarificărilor; contractele UMF/FortiGate/Elias neauditate integral; anexa Ana Aslan și XLSX amplasamente BCPD restante; toate celelalte dosare active."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "previous_observed_at": "2026-11-18T09:53:53+02:00",
+      "previous_observed": "DGPMB: fișă, caiet și clauze contractuale relevante; Poșta BCPD: DOCX; Sf. Spiridon: PDF 4 pagini prin OCR",
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:53:53+02:00",
@@ -373,34 +473,43 @@
           "to": "2026-11-09T23:59:59+02:00",
           "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
         }
-      ],
-      "current_run_checked": true,
-      "previous_observed_at": "2026-11-18T09:38:33+02:00",
-      "previous_observed": "2 CN și 1 ADV analizate pentru decizie; fișa și caietul Poșta, anexa SAJ; 1 anexă consultare CNCIR",
-      "observed_at": "2026-11-18T09:53:53+02:00"
+      ]
     },
     {
       "section": "Consultări de piață",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:53:53+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10.11–prezent: filtre exacte MC1040119 și MC1040151; fiecare 1/1 rezultat",
+      "query_description": "10.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
+        "description": "10.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
         "cpv": null,
         "domain": null,
-        "description": "10.11–prezent: filtre exacte MC1040119 și MC1040151; fiecare 1/1 rezultat",
-        "exact_notice_ids": [
-          "MC1040119",
-          "MC1040151"
-        ]
+        "text": null
       },
-      "observed": "2/2 rezultate exacte și pagini de detaliu; 2 anexe citite. Lista largă 135/135 aparține ediției de la 09:38, nu acestei reluări.",
+      "observed": "157/157 poziții afișate, 2/2 pagini (100+57); Ana Aslan și BCPD citite în detaliu",
       "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Anexa Ana Aslan; MC1040146 Sf. Spiridon analiză date, MC1040103 MILMACS, MC1040128 firewall Vrancea, MC1040126 VCSFA și MC1040122 Romgaz neaprofundate; termenele din liste nu înlocuiesc documentele."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "previous_observed_at": "2026-11-18T09:53:53+02:00",
+      "previous_observed": "2/2 rezultate exacte și pagini de detaliu; 2 anexe citite. Lista largă 135/135 aparține ediției de la 09:38, nu acestei reluări.",
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:53:53+02:00",
@@ -411,32 +520,43 @@
           "to": "2026-11-09T23:59:59+02:00",
           "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
         }
-      ],
-      "current_run_checked": true,
-      "previous_observed_at": "2026-11-18T09:38:33+02:00",
-      "previous_observed": "135/135 poziții, 2/2 pagini; CNCIR nou și Lupeni existent citite în detaliu",
-      "observed_at": "2026-11-18T09:53:53+02:00"
+      ]
     },
     {
       "section": "Intenții",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației; fără CPV/text restrictiv",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "10/10 titluri și metadate",
-      "status": "Parțială — observație anterioară",
+      "observed": "10/10 titluri și metadate, o pagină; PI1004658 telecom este existent",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Corelare cu lansările efective și anexele intențiilor; fără semnal tech nou confirmat în cele zece metadate."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "10/10 titluri și metadate",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -452,31 +572,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Planuri publice",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "10.11, 00:00–19.11, ora observației",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "10.11, 00:00–19.11, ora observației",
         "cpv": null,
-        "domain": null
+        "domain": null,
+        "text": null
       },
-      "observed": "18 metadate vizibile / 252 planuri; 0 linii de plan analizate",
-      "status": "Parțială — observație anterioară",
+      "observed": "18 metadate vizibile / 295 planuri; 0 linii analizate",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "277 metadate rămase și toate liniile celor 295 planuri. Nu se afirmă triere tech a planurilor."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "18 metadate vizibile / 252 planuri; 0 linii de plan analizate",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -492,32 +624,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Catalog / achiziții directe",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10.11 00:00–19.11 00:00; observat până la verificare",
+      "query_description": "10.11, 00:00–20.11, 00:00, observat numai până la verificare; text software, în desfășurare, fără CPV",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-19T00:00:00+02:00",
-        "text": "software",
+        "description": "10.11, 00:00–20.11, 00:00, observat numai până la verificare; text software, în desfășurare, fără CPV",
         "cpv": null,
         "domain": null,
-        "state": "in_progress"
+        "text": "software"
       },
-      "observed": "7/7 poziții, 1 pagină: text «software», în desfășurare; ANI detaliat",
-      "status": "Parțială — observație anterioară",
+      "observed": "10/10 poziții, 1/1 pagini; un detaliu RAR recitit, trecut între timp în deliberare",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Toate celelalte familii CPV și texte, stările finalizate, catalogul produselor. Cele zece sunt achiziții cu ofertant nominal, nu oportunități deschise."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "7/7 poziții, 1 pagină: text «software», în desfășurare; ANI detaliat",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -533,34 +676,43 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     },
     {
       "section": "Atribuiri",
       "attempted_interval": {
         "from": "2026-11-10T00:00:00+02:00",
-        "to": "2026-11-18T09:38:33+02:00"
+        "to": "2026-11-19T10:15:21+02:00"
       },
-      "query_description": "10–18.11",
+      "query_description": "17.11, 00:00–19.11, ora observației; numai CN, fără CPV/text restrictiv",
       "filters": {
         "public_only": true,
         "authentication": false,
-        "publication_from": "2026-11-10",
-        "publication_to": "2026-11-18T09:38:33+02:00",
-        "text": null,
+        "description": "17.11, 00:00–19.11, ora observației; numai CN, fără CPV/text restrictiv",
         "cpv": null,
         "domain": null,
-        "types": [
-          "CN"
-        ]
+        "text": null
       },
-      "observed": "877/877 poziții CN, 9/9 pagini; 1 atribuire verificată în detaliu",
-      "status": "Parțială — observație anterioară",
+      "observed": "363/363 poziții, 4/4 pagini (100+100+100+63); o atribuire Moodle verificată cu câștigător și contracte",
+      "status": "Parțială",
       "last_complete_through": null,
       "outstanding": [
+        {
+          "from": "2026-11-10T00:00:00+02:00",
+          "to": "2026-11-19T10:15:21+02:00",
+          "work": "Reinterogare 10–16.11, tipurile SCN/RFQ/RFDA, ceilalți câștigători și contractele neauditate; anunțurile istorice repetate în listă se deduplică."
+        },
+        {
+          "from": null,
+          "to": "2026-11-09T23:59:59+02:00",
+          "work": "Istoric complet necunoscut; proceduri încă active și goluri documentate mai vechi de recuperat prin intervale datate."
+        }
+      ],
+      "current_run_checked": true,
+      "observed_at": "2026-11-19T10:15:21+02:00",
+      "previous_observed_at": "2026-11-18T09:38:33+02:00",
+      "previous_observed": "877/877 poziții CN, 9/9 pagini; 1 atribuire verificată în detaliu",
+      "previous_outstanding_unclosed": [
         {
           "from": "2026-11-10T00:00:00+02:00",
           "to": "2026-11-18T09:38:33+02:00",
@@ -576,10 +728,7 @@
           "to": "2026-11-18T09:53:53+02:00",
           "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
         }
-      ],
-      "current_run_checked": false,
-      "observed_at": "2026-11-18T09:38:33+02:00",
-      "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+      ]
     }
   ],
   "decision_records": [
@@ -666,6 +815,114 @@
       "verdict": "SKIP",
       "reported_at": "2026-11-18T09:53:53+02:00",
       "source_report": "radar/sicap-2026-11-18-v2.html"
+    },
+    {
+      "notice": "CN1098461",
+      "lot": "LOT-0000",
+      "url": "https://www.e-licitatie.ro/pub/notices/c-notice/v2/view/100214366",
+      "score": 52,
+      "score_components": [
+        18,
+        10,
+        10,
+        9,
+        3,
+        1,
+        1
+      ],
+      "verdict": "WATCH",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    },
+    {
+      "notice": "ADV1558185",
+      "lot": null,
+      "url": "https://www.e-licitatie.ro/pub/notices/adv-notices/view/100747439",
+      "score": 50,
+      "score_components": [
+        21,
+        8,
+        7,
+        4,
+        6,
+        2,
+        2
+      ],
+      "verdict": "WATCH",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    },
+    {
+      "notice": "SCN1182378",
+      "lot": "LOT-0000",
+      "url": "https://www.e-licitatie.ro/pub/notices/simplified-notice/v2/view/100247612",
+      "score": 44,
+      "score_components": [
+        13,
+        10,
+        6,
+        5,
+        5,
+        3,
+        2
+      ],
+      "verdict": "WATCH",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    },
+    {
+      "notice": "SCN1182348",
+      "lot": "1",
+      "url": "https://www.e-licitatie.ro/pub/notices/simplified-notice/v2/view/100247577",
+      "score": 30,
+      "score_components": [
+        18,
+        1,
+        5,
+        5,
+        0,
+        1,
+        0
+      ],
+      "verdict": "SKIP",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    },
+    {
+      "notice": "SCN1182348",
+      "lot": "2",
+      "url": "https://www.e-licitatie.ro/pub/notices/simplified-notice/v2/view/100247577",
+      "score": 34,
+      "score_components": [
+        22,
+        1,
+        5,
+        5,
+        0,
+        1,
+        0
+      ],
+      "verdict": "SKIP",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    },
+    {
+      "notice": "RFQ1000551",
+      "lot": "LOT-0000",
+      "url": "https://www.e-licitatie.ro/pub/notices/rfq-invitation/v2/view/100247597",
+      "score": 28,
+      "score_components": [
+        12,
+        3,
+        7,
+        2,
+        1,
+        2,
+        1
+      ],
+      "verdict": "SKIP",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
     }
   ],
   "backlog_candidates": [
@@ -684,33 +941,51 @@
     "CN1098214",
     "CN1098210",
     "SCH018702",
-    "SCH018694",
     "ADV1555989",
     "RFQ1000550",
-    "ADV1557218 clarification attachment",
     "CN1098315 annexes and ANAP notice",
     "CN1098460 draft contract",
     "SCN1182336",
     "MC1040119 XLSX locations and future procedure",
-    "MC1040151 future procurement and HospitalNet equivalence"
+    "MC1040151 future procurement and HospitalNet equivalence",
+    "SCH018694 original procurement annexes; change 512 MB to 512 GB recovered 19 November",
+    "CN1098469",
+    "SCN1182342",
+    "SCN1182299",
+    "SCN1182300",
+    "ADV1558222 Senat urgent 20 November 12:30; not decision-reviewed",
+    "ADV1558122 HCLOS urgent 20 November 15:00; not decision-reviewed",
+    "ADV1558186",
+    "ADV1558205",
+    "ADV1558231",
+    "ADV1558238",
+    "ADV1558214",
+    "ADV1558088",
+    "MC1040193 technical DOCX",
+    "MC1040146",
+    "MC1040103",
+    "MC1040128",
+    "MC1040126",
+    "MC1040122"
   ],
   "counts": {
     "new_hot": 0,
-    "new_watch": 0,
-    "new_skip": 1,
+    "new_watch": 3,
+    "new_skip": 3,
     "watch_total_without_vat": {
-      "RON": 0
+      "RON": 2391304.52
     },
-    "new_pipeline_verified": 2,
-    "new_awards_verified": 0,
-    "decision_analyzed_new": 1,
-    "note": "Delta vs first edition on same day; previous 3 WATCH are not counted again."
+    "new_pipeline_verified": 1,
+    "new_awards_verified": 1,
+    "decision_analyzed_new": 6,
+    "unique_new_notices_decided": 5,
+    "note": "3 WATCH pe 3 anunțuri; 3 SKIP pe 2 anunțuri (Elias două loturi + STS). Pozițiile comune CN/SCN/RFQ nu se adună între secțiuni."
   },
   "publication": {
     "repository": "arinm/business",
     "branch": "main",
-    "report": "radar/sicap-2026-11-18-v2.html",
-    "url": "https://arinm.github.io/business/radar/sicap-2026-11-18-v2.html",
+    "report": "radar/sicap-2026-11-19.html",
+    "url": "https://arinm.github.io/business/radar/sicap-2026-11-19.html",
     "verification": "pending_at_commit; verify commit, deployment and live page after publication"
   },
   "run_history": [
@@ -1710,6 +1985,590 @@
         "url": "https://arinm.github.io/business/radar/sicap-2026-11-18.html",
         "verification": "pending_at_commit; commit, deployment and live checks are performed after publication, without advancing coverage"
       }
+    },
+    {
+      "last_run_at": "2026-11-18T09:53:53+02:00",
+      "report": "radar/sicap-2026-11-18-v2.html",
+      "sections": [
+        {
+          "section": "Participare CN",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:53:53+02:00"
+          },
+          "query_description": "18.11, de la 00:00 până la verificare; toate tipurile în lista comună; în desfășurare; depunere ≥18.11; fără CPV/text restrictiv",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "cpv": null,
+            "domain": null,
+            "description": "18.11, de la 00:00 până la verificare; toate tipurile în lista comună; în desfășurare; depunere ≥18.11; fără CPV/text restrictiv",
+            "exact_notice_ids": []
+          },
+          "observed": "15/15 poziții, 1/1 pagini comune, inclusiv CN/SCN; 0 dosare CN noi aprofundate",
+          "status": "Parțială",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nu se extinde acoperirea completă din 10.11; toate documentațiile candidaților și publicările după observație rămân restante."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            }
+          ],
+          "current_run_checked": true,
+          "previous_observed_at": "2026-11-18T09:38:33+02:00",
+          "previous_observed": "139/139 poziții, 2/2 pagini + 524/524, 6/6, în lista comună",
+          "observed_at": "2026-11-18T09:53:53+02:00"
+        },
+        {
+          "section": "Simplificate SCN",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:53:53+02:00"
+          },
+          "query_description": "Aceeași listă comună 18.11 + filtru exact SCN1182161 din 10.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "cpv": null,
+            "domain": null,
+            "description": "Aceeași listă comună 18.11 + filtru exact SCN1182161 din 10.11",
+            "exact_notice_ids": [
+              "SCN1182161"
+            ]
+          },
+          "observed": "Aceleași 15 poziții comune; 1/1 rezultat exact DGPMB, fișă + caiet 7 pagini + contract 10 pagini; fără dublarea listei",
+          "status": "Parțială",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "SCN1182336 Timișoara telecom 248.280 lei, depunere 02.12, 15:00, rămâne candidat fără decizie. Restul dosarelor din registru restante."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            }
+          ],
+          "current_run_checked": true,
+          "previous_observed_at": "2026-11-18T09:38:33+02:00",
+          "previous_observed": "Aceleași 663 poziții comune; nu se adună a doua oară",
+          "observed_at": "2026-11-18T09:53:53+02:00"
+        },
+        {
+          "section": "Invitații RFQ",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11; depunere ≥18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "Interogare separată: 0; RFQ1000550 observat în lista comună",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Diferența între filtrul separat și lista comună trebuie reconciliată; nu se declară absența invitațiilor."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Invitații SAD / RFD",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11; depunere ≥18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "Filtru RFD confirmat bifat: 0 rezultate",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Accesul unui ofertant nou și sistemele/invitațiile mai vechi nu sunt auditate."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "SAD — sisteme",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "1/1 rezultat: anvelope IGPR, nerelevant tech",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Sistemele vechi active și categoriile de admitere rămân de verificat."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Publicitate ADV",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–16.11 și 17–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null,
+            "subintervals": [
+              {
+                "from": "2026-11-10",
+                "to": "2026-11-16"
+              },
+              {
+                "from": "2026-11-17",
+                "to": "2026-11-18T09:38:33+02:00"
+              }
+            ]
+          },
+          "observed": "1.258/1.258 poziții, 13/13 pagini + 279/279, 3/3; 1.537 ID unice de listă",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Lista a fost parcursă integral; dosarele neanalizate, versiunile vechi și modificările din cursul zilei rămân restante."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Schimbări CN eForms",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "119/119 poziții, 2/2 pagini",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Impactul SCH018702 Romsilva, SCH018694 PICCJ și celelalte tipuri eForms/anexe neauditate."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Erate clasice",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "0 rezultate în filtrul datat",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Nu dovedește absența clarificărilor sau a documentelor adăugate în dosare."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Clarificări și documente",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:53:53+02:00"
+          },
+          "query_description": "Dosare restante publicate 13–17.11; verificare punctuală la ora acestei ediții",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "cpv": null,
+            "domain": null,
+            "description": "Dosare restante publicate 13–17.11; verificare punctuală la ora acestei ediții",
+            "exact_notice_ids": []
+          },
+          "observed": "DGPMB: fișă, caiet și clauze contractuale relevante; Poșta BCPD: DOCX; Sf. Spiridon: PDF 4 pagini prin OCR",
+          "status": "Parțială",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "DGPMB: nicio clarificare vizibilă în lista dosarului citită; nu este un control global al clarificărilor. Lista amplasamentelor BCPD XLSX nu a fost analizată."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            }
+          ],
+          "current_run_checked": true,
+          "previous_observed_at": "2026-11-18T09:38:33+02:00",
+          "previous_observed": "2 CN și 1 ADV analizate pentru decizie; fișa și caietul Poșta, anexa SAJ; 1 anexă consultare CNCIR",
+          "observed_at": "2026-11-18T09:53:53+02:00"
+        },
+        {
+          "section": "Consultări de piață",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:53:53+02:00"
+          },
+          "query_description": "10.11–prezent: filtre exacte MC1040119 și MC1040151; fiecare 1/1 rezultat",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "cpv": null,
+            "domain": null,
+            "description": "10.11–prezent: filtre exacte MC1040119 și MC1040151; fiecare 1/1 rezultat",
+            "exact_notice_ids": [
+              "MC1040119",
+              "MC1040151"
+            ]
+          },
+          "observed": "2/2 rezultate exacte și pagini de detaliu; 2 anexe citite. Lista largă 135/135 aparține ediției de la 09:38, nu acestei reluări.",
+          "status": "Parțială",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Cele două restanțe sunt recuperate la nivel de obiect și document citit; CPV, buget, calificare și contract viitor încă nepublicate/neconfirmate. Reia fluxul larg din 10.11 cu suprapunere."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            }
+          ],
+          "current_run_checked": true,
+          "previous_observed_at": "2026-11-18T09:38:33+02:00",
+          "previous_observed": "135/135 poziții, 2/2 pagini; CNCIR nou și Lupeni existent citite în detaliu",
+          "observed_at": "2026-11-18T09:53:53+02:00"
+        },
+        {
+          "section": "Intenții",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "10/10 titluri și metadate",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Corelarea intențiilor cu lansările efective; PI1004658 Cluj telecom este existent și neschimbat."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Planuri publice",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null
+          },
+          "observed": "18 metadate vizibile / 252 planuri; 0 linii de plan analizate",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "234 metadate și toate liniile celor 252 planuri; relevanța nu este stabilită din simpla existență a planului."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Catalog / achiziții directe",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10.11 00:00–19.11 00:00; observat până la verificare",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-19T00:00:00+02:00",
+            "text": "software",
+            "cpv": null,
+            "domain": null,
+            "state": "in_progress"
+          },
+          "observed": "7/7 poziții, 1 pagină: text «software», în desfășurare; ANI detaliat",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Toate celelalte CPV/text, stările finalizate și catalogul neinterogat. Cele 7 nu reprezintă toate achizițiile IT."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        },
+        {
+          "section": "Atribuiri",
+          "attempted_interval": {
+            "from": "2026-11-10T00:00:00+02:00",
+            "to": "2026-11-18T09:38:33+02:00"
+          },
+          "query_description": "10–18.11",
+          "filters": {
+            "public_only": true,
+            "authentication": false,
+            "publication_from": "2026-11-10",
+            "publication_to": "2026-11-18T09:38:33+02:00",
+            "text": null,
+            "cpv": null,
+            "domain": null,
+            "types": [
+              "CN"
+            ]
+          },
+          "observed": "877/877 poziții CN, 9/9 pagini; 1 atribuire verificată în detaliu",
+          "status": "Parțială — observație anterioară",
+          "last_complete_through": null,
+          "outstanding": [
+            {
+              "from": "2026-11-10T00:00:00+02:00",
+              "to": "2026-11-18T09:38:33+02:00",
+              "work": "Atribuirile SCN/RFQ/RFDA și alte tipuri; câștigătorii/loturile celorlalți candidați neauditați."
+            },
+            {
+              "from": null,
+              "to": "2026-11-09T23:59:59+02:00",
+              "work": "Older still-active procedures and documented historical gaps: no reliable complete baseline; recover by dated intervals, not saved page offset."
+            },
+            {
+              "from": "2026-11-18T09:38:33+02:00",
+              "to": "2026-11-18T09:53:53+02:00",
+              "work": "Nereverificat în această reluare; include noutățile și reluarea tuturor restanțelor istorice."
+            }
+          ],
+          "current_run_checked": false,
+          "observed_at": "2026-11-18T09:38:33+02:00",
+          "current_run_note": "Nereverificat în această reluare; observația anterioară se păstrează și nu dovedește acoperire până acum."
+        }
+      ],
+      "counts": {
+        "new_hot": 0,
+        "new_watch": 0,
+        "new_skip": 1,
+        "watch_total_without_vat": {
+          "RON": 0
+        },
+        "new_pipeline_verified": 2,
+        "new_awards_verified": 0,
+        "decision_analyzed_new": 1,
+        "note": "Delta vs first edition on same day; previous 3 WATCH are not counted again."
+      },
+      "publication": {
+        "repository": "arinm/business",
+        "branch": "main",
+        "report": "radar/sicap-2026-11-18-v2.html",
+        "url": "https://arinm.github.io/business/radar/sicap-2026-11-18-v2.html",
+        "verification": "pending_at_commit; verify commit, deployment and live page after publication"
+      }
     }
   ],
   "intelligence_records": [
@@ -1746,6 +2605,34 @@
       "kind": "pipeline_consultation",
       "url": "https://www.e-licitatie.ro/pub/notices/mc-notice/view/100170856",
       "reported_at": "2026-11-18T09:53:53+02:00"
+    },
+    {
+      "notice": "CAN1177392",
+      "url": "https://www.e-licitatie.ro/pub/notices/ca-notices/view-c/100668285",
+      "winner": "ELEARNING & SOFTWARE SRL",
+      "framework_without_vat_RON": 573680,
+      "subsequent_contract_without_vat_RON": 92560,
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    }
+  ],
+  "pipeline_records": [
+    {
+      "notice": "MC1040193",
+      "url": "https://www.e-licitatie.ro/pub/notices/mc-notice/view/100170899",
+      "deadline": "2026-11-26T23:59:00+02:00",
+      "reported_at": "2026-11-19T10:15:21+02:00",
+      "source_report": "radar/sicap-2026-11-19.html"
+    }
+  ],
+  "closed_deadlines": [
+    {
+      "notice": "ADV1557218",
+      "reason": "Termen depunere 18.11.2026 15:00 trecut; nu este dovadă de atribuire."
+    },
+    {
+      "notice": "MC1040073",
+      "reason": "Termen propuneri 18.11.2026 10:00 trecut; nu mai este pipeline acționabil pentru răspuns."
     }
   ]
 }
