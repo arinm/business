@@ -1,5 +1,22 @@
 [
   {
+    "slug": "bilet-clar",
+    "title": "Bilet Clar",
+    "score": 68,
+    "status": "Sell pilot before build",
+    "aliases": ["externare accesibilă", "discharge instructions", "patient audio", "QR medical", "instrucțiuni pacient"],
+    "buyer": "Clinică privată cu proceduri de zi repetitive și multe întrebări după externare.",
+    "problem": "Pacientul primește instrucțiuni complexe într-un moment de stres și nu le poate reasculta ușor în limba sau formatul potrivit.",
+    "wedge": "Un document aprobat devine pagină QR cu text clar, audio și traduceri; clinicianul aprobă fiecare versiune.",
+    "test": "Demo manual dintr-un PDF public trimis către 30 de clinici, la 290 EUR setup și 99 EUR/lună.",
+    "gate": "Trei demonstrații programate și un pilot plătit în 21 zile.",
+    "risk": "Vânzare lentă, review clinic obligatoriu, răspundere pentru traducere și competitori internaționali.",
+    "next": "Un pilot clinic plătit",
+    "related": ["radar/oportunitati-2026-11-19.html"],
+    "tags": ["healthcare", "patient communication", "accessibility", "audio", "Romania", "QR"],
+    "scoreDate": "2026-11-19"
+  },
+  {
     "slug": "grija-la-telefon",
     "title": "Grijă la Telefon RO/CEE",
     "score": 59,
