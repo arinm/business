@@ -1,5 +1,22 @@
 [
   {
+    "slug": "pid-bridge-eu",
+    "title": "PID Bridge EU",
+    "score": 70,
+    "status": "Sell data-cleanup pilot first",
+    "aliases": ["M-PID", "NS-PID", "S-PID", "C127", "C128", "C129", "identificatori produs vamă", "H7 PID"],
+    "buyer": "3PL, broker vamal, integrator e-commerce sau merchant non-UE care livrează către consumatori din România și UE.",
+    "problem": "Identificatorii există în listing, ERP, factură sau la fabricant, dar nu ajung complet și corect pe fiecare linie la curier și declarant.",
+    "wedge": "Un feed murdar devine feed validat și exportabil către un singur transportator, cu proveniență pentru fiecare identificator.",
+    "test": "Audit manual pe 100 de linii trimis către 20 de integratori/3PL și 10 brokeri, urmat de un pilot fix la 490 EUR.",
+    "gate": "Două feed-uri anonimizate, o definiție comună a erorii și un pilot plătit în 14 zile.",
+    "risk": "Platformele de shipping au deja câmpurile PID, toleranța de tranziție se termină la începutul lui 2027, iar identificatorii nu pot fi inventați.",
+    "next": "Un feed real și un pilot plătit de 490 EUR",
+    "related": ["radar/oportunitati-2026-11-21.html"],
+    "tags": ["customs", "ecommerce", "product data", "logistics", "Romania", "EU"],
+    "scoreDate": "2026-11-21"
+  },
+  {
     "slug": "bilet-clar",
     "title": "Bilet Clar",
     "score": 68,
@@ -12,9 +29,9 @@
     "gate": "Trei demonstrații programate și un pilot plătit în 21 zile.",
     "risk": "Vânzare lentă, review clinic obligatoriu, răspundere pentru traducere și competitori internaționali.",
     "next": "Un pilot clinic plătit",
-    "related": ["radar/oportunitati-2026-11-19.html"],
+    "related": ["radar/oportunitati-2026-11-21.html", "radar/oportunitati-2026-11-19.html"],
     "tags": ["healthcare", "patient communication", "accessibility", "audio", "Romania", "QR"],
-    "scoreDate": "2026-11-19"
+    "scoreDate": "2026-11-21"
   },
   {
     "slug": "grija-la-telefon",
