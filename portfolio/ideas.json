@@ -1,5 +1,22 @@
 [
   {
+    "slug": "japan-paywall-sprint",
+    "title": "Japan Paywall Sprint",
+    "score": 64,
+    "status": "Sell one sprint, no platform",
+    "aliases": ["Japan app localization", "RevenueCat paywall", "Japonia ASO", "Coreea paywall", "subscription app localization"],
+    "buyer": "Fondator consumer european cu 2k–30k USD MRR, trafic organic, retenție observabilă și RevenueCat activ.",
+    "problem": "Aplicația are produs și trafic, dar nu știe dacă Japonia/Coreea merită o localizare completă și nu poate izola efectul listingului, paywall-ului și prețului.",
+    "wedge": "Sprint cu preț fix: listing, capturi, paywall și preț local, reviewer nativ și dashboard de cohortă pentru un experiment de 21 zile.",
+    "test": "30 de teardown-uri video personalizate și ofertă de 590 EUR cu avans 295 EUR.",
+    "gate": "Două call-uri și un avans în 48 de ore; altfel închide înainte de build.",
+    "risk": "Concurent direct la 500 USD, agenții RevenueCat, efect cauzal greu de izolat și risc de a rămâne freelancing.",
+    "next": "Un avans de 295 EUR înainte de build",
+    "related": ["radar/oportunitati-2026-11-23.html"],
+    "tags": ["consumer apps", "Japan", "Korea", "RevenueCat", "localization", "paywalls"],
+    "scoreDate": "2026-11-23"
+  },
+  {
     "slug": "pid-bridge-eu",
     "title": "PID Bridge EU",
     "score": 70,
@@ -12,9 +29,9 @@
     "gate": "Două feed-uri anonimizate, o definiție comună a erorii și un pilot plătit în 14 zile.",
     "risk": "Platformele de shipping au deja câmpurile PID, toleranța de tranziție se termină la începutul lui 2027, iar identificatorii nu pot fi inventați.",
     "next": "Un feed real și un pilot plătit de 490 EUR",
-    "related": ["radar/oportunitati-2026-11-21.html"],
+    "related": ["radar/oportunitati-2026-11-23.html", "radar/oportunitati-2026-11-21.html"],
     "tags": ["customs", "ecommerce", "product data", "logistics", "Romania", "EU"],
-    "scoreDate": "2026-11-21"
+    "scoreDate": "2026-11-23"
   },
   {
     "slug": "bilet-clar",
@@ -29,9 +46,9 @@
     "gate": "Trei demonstrații programate și un pilot plătit în 21 zile.",
     "risk": "Vânzare lentă, review clinic obligatoriu, răspundere pentru traducere și competitori internaționali.",
     "next": "Un pilot clinic plătit",
-    "related": ["radar/oportunitati-2026-11-21.html", "radar/oportunitati-2026-11-19.html"],
+    "related": ["radar/oportunitati-2026-11-23.html", "radar/oportunitati-2026-11-21.html", "radar/oportunitati-2026-11-19.html"],
     "tags": ["healthcare", "patient communication", "accessibility", "audio", "Romania", "QR"],
-    "scoreDate": "2026-11-21"
+    "scoreDate": "2026-11-23"
   },
   {
     "slug": "grija-la-telefon",
@@ -290,6 +307,7 @@
     "risk": "Cabinetul poate primi documentele doar după plată. Produsele consacrate verifică deja furnizorii; diferențierea trebuie să fie distribuția și fluxul local multi-client.",
     "next": "Un audit de proces la €490; CFO/AP trebuie să vadă schimbarea înainte de plată.",
     "related": [
+      "radar/oportunitati-2026-11-23.html",
       "radar/investment-committee-2026-10-18.html",
       "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
@@ -302,7 +320,7 @@
       "contabilitate",
       "securitate"
     ],
-    "scoreDate": "2026-10-18"
+    "scoreDate": "2026-11-23"
   },
   {
     "slug": "hospital-back-office-agents",
@@ -483,6 +501,7 @@
     "risk": "Hărți de capacitate și produse de grid intelligence există deja; date incomplete și premise contradictorii între rapoarte.",
     "next": "Cinci interviuri cu cumpărători",
     "related": [
+      "radar/oportunitati-2026-11-23.html",
       "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
       "briefings/2026-09-21.html",
@@ -493,7 +512,8 @@
       "GridQueue",
       "capacitate",
       "ATR"
-    ]
+    ],
+    "scoreDate": "2026-11-23"
   },
   {
     "slug": "saft-deadline-monitor",
