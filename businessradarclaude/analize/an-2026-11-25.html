@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Radar — Analiză de piață · 25 noiembrie 2026</title>
+<meta name="description" content="Trei idei din ediția nr. 17 a Business Radar, verificate pe piețele din România, Europa și Asia (Japonia).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--paper:#fffdf8;--card:#ffffff;--ink:#1c1a17;--muted:#655e54;--rule:#e2dbcd;--accent:#b3261e;--accent-soft:#f6e4e0;--tag:#efe9dd;--link:#8a1c15;--bar:#b3261e;--track:#efe9dd;--focus:#1d5fd1;--shadow:0 1px 2px rgba(40,30,20,.06),0 4px 14px rgba(40,30,20,.05);--nav-h:52px;--serif:"Newsreader",Georgia,"Iowan Old Style","Palatino Linotype",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--paper:#181715;--card:#1f1e1b;--ink:#ece7de;--muted:#a59d90;--rule:#34302a;--accent:#ef6b5f;--accent-soft:#3a2522;--tag:#2a2824;--link:#f39a90;--bar:#d9574b;--track:#2a2824;--focus:#7fb0ff;--shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;font-optical-sizing:auto}
+a{color:var(--link);text-underline-offset:2px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--ink);color:var(--paper);padding:8px 12px;border-radius:6px;font-family:var(--sans);font-size:14px}
+.skip:focus{left:8px}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p,0));z-index:30;pointer-events:none}
+.sans,.kicker,.meta,.tag,nav.toc,.src,footer,.masthead .edline,.tools,.totop,.chart,.stats{font-family:var(--sans)}
+.wrap{max-width:1360px;margin:0 auto}
+.paper{padding:8px 16px 32px}
+/* masthead */
+.masthead{text-align:center;border-bottom:3px double var(--ink);padding:18px 0 14px;grid-area:head}
+.masthead .edline{display:flex;justify-content:space-between;gap:4px 14px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:12px}
+.masthead h1{font-size:clamp(42px,9vw,84px);line-height:1;margin:6px 0 6px;font-weight:700;letter-spacing:-.025em}
+.masthead h1 a{color:inherit;text-decoration:none}
+.masthead .tagline{font-style:italic;color:var(--muted);margin:0 auto;max-width:none}
+/* navigare: pastile pe mobil, coloană laterală pe ecrane mari */
+nav.toc{grid-area:nav;position:sticky;top:0;z-index:20;display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;font-size:14px;font-weight:500;margin:0 -16px;padding:8px 16px;background:var(--paper);border-bottom:1px solid var(--rule);min-height:var(--nav-h);align-items:center}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:0 0 auto;text-decoration:none;color:var(--ink);padding:8px 14px;border-radius:999px;white-space:nowrap;background:var(--tag);border:1px solid transparent;transition:background .15s,color .15s}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+nav.toc a.active{background:var(--accent);color:var(--paper);font-weight:700}
+.tools{grid-area:tools;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);padding:14px 0 0}
+.tools button{font:inherit;font-weight:600;font-size:13.5px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:9px 16px;cursor:pointer;min-height:42px;box-shadow:var(--shadow)}
+.tools button::before{content:"☰  "}
+.tools button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+main{grid-area:main;min-width:0}
+footer{grid-area:foot}
+/* secțiuni */
+section{padding:30px 0 10px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:999px;margin:0 0 10px}
+h2{font-size:clamp(24px,3.2vw,36px);line-height:1.18;margin:0 0 10px;letter-spacing:-.01em;text-wrap:balance;max-width:34em}
+.dek{color:var(--muted);font-style:italic;margin:0 0 18px;font-size:16px;max-width:52em}
+h3{font-size:20px;line-height:1.3;margin:0 0 6px;letter-spacing:-.005em}
+p{max-width:44em}
+.item{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0 0 14px;box-shadow:var(--shadow)}
+.item p{margin:6px 0}
+.meta{font-size:13.5px;color:var(--muted);line-height:1.6}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--tag);color:var(--muted);padding:2px 7px;border-radius:4px;margin-right:4px;vertical-align:1px}
+.tag.warn{background:var(--accent-soft);color:var(--accent)}
+.src{font-size:13px;color:var(--muted);word-break:break-word;line-height:1.7;margin-top:8px!important}
+.src a{padding:2px 0}
+code{font-size:.85em;background:var(--tag);padding:1px 5px;border-radius:4px}
+/* Pe scurt */
+.brief .lead{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr;gap:12px;font-size:17px}
+.brief .lead li{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;box-shadow:var(--shadow);margin:0}
+.grid{display:grid;grid-template-columns:1fr;gap:0 16px}
+.grid>.item{margin-bottom:14px}
+/* oportunități */
+.opp{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--accent);padding:16px 18px;margin:0 0 16px;border-radius:12px;box-shadow:var(--shadow)}
+.opp h3{margin-bottom:8px}
+.opp dl{margin:0;display:grid;grid-template-columns:1fr;gap:2px}
+.opp dt{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:10px}
+.opp dd{margin:0;font-size:17px}
+ol.moves{padding-left:0;list-style:none;counter-reset:mv;display:grid;grid-template-columns:1fr;gap:12px}
+ol.moves li{counter-increment:mv;position:relative;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px 14px 58px;box-shadow:var(--shadow);margin:0}
+ol.moves li::before{content:counter(mv);position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--paper);font-family:var(--sans);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.radar-list li{margin:6px 0}
+/* grafice: bare orizontale, o singură serie, valori etichetate direct */
+.charts{display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 18px}
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0;box-shadow:var(--shadow)}
+.chart figcaption{margin:0 0 12px}
+.chart figcaption strong{display:block;font-size:15px;color:var(--ink)}
+.chart figcaption span{display:block;font-size:12.5px;color:var(--muted)}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(84px,32%) 1fr auto;align-items:center;gap:10px;font-size:13px;padding:3px 4px;border-radius:6px}
+.bar:hover{background:var(--tag)}
+.bar .bl{color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .bt{height:14px;background:var(--track);border-radius:0 4px 4px 0;overflow:hidden}
+.bar .bt i{display:block;height:100%;width:var(--v);background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.bar .bv{color:var(--muted);font-variant-numeric:tabular-nums;text-align:right;min-width:64px}
+.chart .src{margin-top:10px!important}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 18px}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-family:var(--serif);font-size:32px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.4}
+.charttip{position:fixed;z-index:40;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:12.5px;padding:6px 9px;border-radius:6px;max-width:260px;opacity:0;transition:opacity .1s}
+/* arhivă */
+.archive ul{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:1fr;gap:10px}
+.archive li{background:var(--card);border:1px solid var(--rule);border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 16px;box-shadow:var(--shadow)}
+.archive li a{display:block;padding:14px 0;flex:1 1 auto;text-decoration:none;font-weight:600}
+.archive li a:hover{text-decoration:underline}
+.archive li .meta{white-space:nowrap}
+.archive li:first-child{border-color:var(--accent)}
+.archive li:first-child a::after{content:"Nou";font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--paper);border-radius:4px;padding:2px 6px;margin-left:8px;vertical-align:2px}
+footer{font-size:13.5px;color:var(--muted);padding:20px 0 8px;border-top:3px double var(--ink);margin-top:14px}
+footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 4px;color:var(--ink)}
+footer p{margin:6px 0;max-width:none}
+.backlink{font-size:14px;text-align:center;padding:12px 0 0}
+.backlink a{display:inline-block;padding:8px 12px}
+/* tabletă */
+@media (min-width:720px){
+  .paper{padding:8px 28px 40px}
+  nav.toc{margin:0 -28px;padding:8px 28px}
+  .grid.two{grid-template-columns:1fr 1fr}
+  .brief .lead{grid-template-columns:1fr 1fr}
+  .brief .lead li:last-child:nth-child(odd){grid-column:1/-1}
+  .charts{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .opp dl{grid-template-columns:140px 1fr;gap:8px 14px}.opp dt{margin-top:4px}
+  ol.moves{grid-template-columns:1fr 1fr}
+  .archive ul{grid-template-columns:1fr 1fr}
+}
+/* desktop: cuprins lateral fix, conținut lat */
+@media (min-width:1100px){
+  .paper{display:grid;grid-template-columns:210px minmax(0,1fr);grid-template-areas:"head head" "nav tools" "nav main" "nav foot";column-gap:40px;padding:8px 40px 48px}
+  nav.toc{flex-direction:column;align-items:stretch;align-self:start;top:16px;margin:24px 0 0;padding:14px 10px;gap:4px;background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:visible;grid-row:2/5}
+  nav.toc::before{content:"Cuprins";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:2px 12px 8px}
+  nav.toc a{background:transparent;border-radius:8px;padding:10px 12px;border-left:3px solid transparent}
+  nav.toc a:hover{background:var(--tag);border-color:transparent;border-left-color:var(--accent)}
+  nav.toc a.active{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent)}
+  .grid.two{grid-template-columns:repeat(3,1fr)}
+  #ro-eu{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
+  #ro-eu>:not(.opp){grid-column:1/-1}
+  #ro-eu>.kicker{justify-self:start}
+  .opp dl{grid-template-columns:1fr;gap:2px}.opp dt{margin-top:10px}
+  ol.moves{grid-template-columns:repeat(3,1fr)}
+  .archive ul{grid-template-columns:repeat(3,1fr)}
+  .brief .lead{grid-template-columns:repeat(3,1fr)}
+  .brief .lead li:last-child:nth-child(odd){grid-column:auto}
+}
+/* mod „doar titluri” */
+body.skim .item>p:not(.meta),body.skim .item>.src,body.skim .item .meta,body.skim .opp>dl,body.skim .opp>.src,body.skim .dek{display:none}
+body.skim .item.open>p,body.skim .item.open>.src,body.skim .item.open .meta,body.skim .opp.open>.src{display:block}
+body.skim .opp.open>dl{display:grid}
+body.skim .item,body.skim .opp{padding-top:12px;padding-bottom:12px}
+body.skim .item h3,body.skim .opp h3{cursor:pointer;position:relative;padding-right:28px;margin:0}
+body.skim .item h3::after,body.skim .opp h3::after{content:"+";position:absolute;right:0;top:0;color:var(--accent);font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.2}
+body.skim .open h3::after{content:"–"}
+body.skim .open h3{margin-bottom:6px}
+.totop{position:fixed;right:16px;bottom:16px;z-index:25;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule);background:var(--card);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+@media print{nav.toc,.progress,.totop,.tools,.skip{display:none!important}body{background:#fff}.paper{display:block}.item,.opp,.chart,.stat{box-shadow:none}}
+</style>
+<body>
+<div class="wrap"><div class="paper">
+
+<header class="masthead">
+  <div class="edline"><span>Business Radar · Analiză de piață</span><span>Miercuri, 25 noiembrie 2026</span><span>Ediția analizată: nr. 17</span></div>
+  <h1><a href="../index.html">Business Radar</a></h1>
+  <p class="tagline">Trei idei din ediția nr. 17, verificate pe piețele din România, Europa și Asia (accent pe Japonia)</p>
+</header>
+
+<nav class="toc" aria-label="Cuprins">
+  <a href="#verdict">Pe scurt</a><a href="#idee-1">Ideea 1</a><a href="#idee-2">Ideea 2</a><a href="#idee-3">Ideea 3</a><a href="../editii/ed-2026-11-25.html">Ediția analizată</a>
+</nav>
+
+<main>
+<section id="verdict" class="brief">
+  <p class="kicker">Pe scurt</p>
+  <h2>Agentul de programări pentru service-urile auto are loc liber în România. Dosarul de prețuri de transfer și pașaportul de baterie merg doar ca servicii cu om în spate, nu ca software simplu</h2>
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><b>Loc liber (RO)</b><span>Agent AI de programări pe WhatsApp și telefon pentru service-urile auto independente</span></div>
+    <div class="stat" role="listitem"><b>Nișă (RO, UE)</b><span>Dosar de prețuri de transfer la preț fix pentru grupurile de 2–5 firme</span></div>
+    <div class="stat" role="listitem"><b>Nișă (RO, Asia)</b><span>Pașaport digital de baterie făcut pentru importatorii mici de trotinete, e-bike-uri și baterii de stocare</span></div>
+  </div>
+  <ul class="lead">
+    <li><strong>Service auto:</strong> n-am găsit niciun agent în română făcut pentru service-uri auto. Parcul are 8,77 mil. de autoturisme, cu o vârstă medie de ~15,6 ani. În Germania și Austria există deja agenți vocali pentru ateliere, de la 99 €/lună. În Japonia sunt unelte locale ieftine pe LINE.</li>
+    <li><strong>Prețuri de transfer:</strong> n-am găsit niciun produs românesc cu preț fix pentru micro-grupuri. Dar obligația nu e nouă pentru IMM-uri, pragurile au crescut, iar consultanța fiscală e profesie reglementată. Ce merge e software plus un consultant autorizat care semnează. În Japonia problema nu există: regulile se aplică doar tranzacțiilor cu afiliați străini.</li>
+    <li><strong>Pașaport de baterie:</strong> termenul de 18 februarie 2027 era încă valabil la 25 noiembrie. Ca software, piața UE e aglomerată: există self-service de la 7 €/lună. Loc rămâne pentru un serviciu care obține datele de la fabricile chinezești mici, le verifică și le publică.</li>
+  </ul>
+</section>
+
+<section id="idee-1">
+  <p class="kicker">Ideea 1</p>
+  <h2>Dosar de prețuri de transfer la preț fix pentru grupurile mici de firme</h2>
+  <p class="dek">Un „dosar TP-lite” pentru antreprenorii cu 2–5 firme care își facturează între ele management, chirii sau împrumuturi. Tranzacțiile se iau din SAF-T sau din balanță, se marchează ce trece de prag și se generează dosarul. Se vinde white-label prin cabinetele de contabilitate. Cine plătește: antreprenorul, prin contabil. Vine din semnalul <a href="../editii/ed-2026-11-25.html#ro-eu">„Prețuri de transfer din 2027: IMM-urile cu mai multe firme pot primi cerere de dosar la control”</a> (04 · Oportunități RO/UE).</p>
+
+  <div class="item"><h3>Două corecturi la premisă</h3>
+    <p>1) Obligația nu e nouă. Și sub vechiul OPANAF 442/2016, IMM-urile prezentau dosarul doar la cerere, în 30–60 de zile. Ordinul 828/2026 îl înlocuiește și <em>ridică</em> pragurile pentru IMM-uri. Se schimbă conținutul: profil funcțional, alegerea părții testate și un studiu de comparabilitate predat în Excel, cu formule. Dacă dosarul e incomplet, ANAF poate ajusta tranzacțiile la tendința centrală a pieței. 2) Ordinul nu prevede un regim „simplificat” pentru IMM-uri. „Analiza simplificată” ar fi o alegere de produs, nu o facilitate legală, iar asta mută răspunderea pe vânzător.</p>
+    <p class="src"><a href="https://contabilul.manager.ro/a/30293/societati-mici-ce-praguri-prevede-opanaf-8282026-pentru-dosarul-preturilor-de-transfer.html">Contabilul.ro</a> · <a href="https://www.ey.com/en_ro/technical/tax-alerts/ey-transfer-pricing-alert-2-july-2026">EY România, iulie 2026</a> · <a href="https://www.fiscalitatea.ro/anaf-anunta-controale-masive-in-dosarul-preturilor-de-transfer-cum-sa-eviti-amenzile-24794/">Fiscalitatea.ro</a></p></div>
+
+  <div class="opp"><h3>România: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>Big4 și rețelele mari (KPMG, Deloitte, RSM), firme mai mici ca Expert Mind și CC Tax Advisory, care se adresează explicit antreprenorilor cu mai multe firme. Transfer Pricing Services are din 2012 un site de comenzi online, vândut și prin contabili (dosarpreturidetransfer.ro). N-am găsit un modul de prețuri de transfer în SmartBill, Saga, WinMentor sau Keez.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>INS a numărat 113.303 grupuri de întreprinderi în 2024, dintre care 4.902 controlate din România. Statistica probabil nu prinde toate SRL-urile afiliate prin același asociat persoană fizică, deci numărul real de micro-grupuri nu se cunoaște. Amenda pentru dosar neprezentat sau incomplet: 12.000–14.000 lei. Pragurile se calculează pe fiecare firmă afiliată și pe fiecare categorie de tranzacții. Estimare: pragul de 50.000 € la servicii se atinge cu o factură de management de ~4.200 €/lună către aceeași firmă, iar multe grupuri mici rămân sub el.</dd>
+    <dt>Prețuri</dt><dd>N-am găsit prețuri publicate pentru un dosar de IMM. Singurul reper e vechi: „câteva mii de euro” în cel mai bun caz (2015). Intervalul redacției, 1.500–5.000 lei, ar fi sub consultanță (estimare, neverificat).</dd>
+    <dt>Bariere</dt><dd>Consultanța fiscală e reglementată de Camera Consultanților Fiscali: un dosar generat automat, fără semnătura unui profesionist, poate pune probleme (textul legal nu a fost verificat în această rulare). Studiile de comparabilitate cer baze de date plătite. SAF-T nu marchează partenerii afiliați. Iar cererea apare abia la control, așa că antreprenorii amână.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă. Nu există un produs cu preț fix pentru micro-grupuri, dar modelul care merge e „software plus consultant fiscal autorizat care semnează”, nu SaaS pur. Argumentul de vânzare e amenda, nu obligația.</dd></dl>
+    <p class="src"><a href="https://www.bursa.ro/ins-113303-grupuri-de-intreprinderi-existau-in-romania-in-2024-22097851">Bursa (INS)</a> · <a href="https://www.avocatnet.ro/articol_28959/P-Primul-site-dedicat-exclusiv-dosarului-de-preturi-de-transfer-si-studiilor-de-comparabilitate.html">Avocatnet (Transfer Pricing Services)</a> · <a href="https://www.expertmind.ro/en/services/transfer-pricing-folder/">Expert Mind</a> · <a href="https://financialintelligence.ro/preturile-de-transfer-nu-sunt-doar-pentru-multinationale-sunt-despre-felul-in-care-un-antreprenor-isi-trateaza-propriile-firme-intre-ele/">Financial Intelligence (CC Tax)</a> · <a href="https://www.rsm.global/romania/ro/service/construirea-politicii-de-preturi-de-transfer">RSM România</a> · <a href="https://alba24.ro/o-noua-obligatie-pentru-companiile-mici-pregatita-de-anaf-cheltuieli-in-plus-pentru-dosarul-anual-de-preturi-de-transfer-451295.html">Alba24, 2015</a> · <a href="https://www.ey.com/en_ro/technical/tax-alerts/ey-transfer-pricing-alert-1-july-2025">EY, 2025</a></p></div>
+
+  <div class="opp"><h3>Europa: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>Aibidia (Finlanda) a strâns 28 mil. $ în Seria B în 2025 și are peste 100 de clienți multinaționali (raportat). Armslength.ai, t0 (Supernomial), Exactera și platformele Big4 (EY TP Doc, PwC globaldoc, Deloitte Digital Dox) țintesc multinaționalele și consultanții. Cel mai aproape de nișa ideii e GATHER.nexus, pentru grupuri mici pe Xero și QuickBooks, de la 150 £.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>N-am găsit o cifră la nivel UE pentru IMM-urile cu tranzacții între afiliați (date insuficiente). Polonia are obligații similare și raportarea TP-R, deci e o piață analogă de verificat.</dd>
+    <dt>Prețuri</dt><dd>Armslength.ai: 469, 829 și 1.499 €/lună, la plată anuală. t0: de la 200 $/lună. PlaidCloud: de la 800 $/lună. Exactera: de la 15.400 $/an (raportat, din agregatoare). Ținta redacției, ~30–80 €/lună (estimare), e de 6–15 ori sub cel mai ieftin plan Armslength.ai.</dd>
+    <dt>Bariere</dt><dd>Comisia a retras propunerea de directivă UE privind prețurile de transfer, deci regulile rămân naționale și produsul trebuie refăcut pentru fiecare țară. În multe state consultanța fiscală e reglementată, iar Big4 dau software-ul la pachet cu serviciile.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă. Software-ul există și e bine finanțat, dar pentru grupuri de 2–5 firme, în limba locală, sub 50 €/lună, semnalele sunt slabe. Extinderea înseamnă câte un produs pentru fiecare țară.</dd></dl>
+    <p class="src"><a href="https://fintech.global/2025/06/04/ai-tax-fintech-aibidia-secures-28m-series-b-for-us-growth/">FinTech Global (Aibidia)</a> · <a href="https://www.guideflow.com/blog/transfer-pricing-software">Guideflow</a> · <a href="https://slashdot.org/software/transfer-pricing">Slashdot (GATHER.nexus, t0, PlaidCloud)</a> · <a href="https://www.loyensloeff.com/insights/news--events/news/ny-office-snippet-eu-tax-directives-6-repeal-of-3-proposed-eu-tax-directives/">Loyens &amp; Loeff</a> · <a href="https://www.podatki.gov.pl/ceny-transferowe/informacja-tpr">Podatki.gov.pl</a></p></div>
+
+  <div class="opp"><h3>Asia/Japonia: date insuficiente</h3><dl>
+    <dt>Cine o face deja</dt><dd>KPMG Japan, PwC Japan, firme locale ca Ayusawa Partners și consultanții fiscali licențiați (zeirishi). METI finanțează un birou de consiliere pentru IMM-uri, care dă doar explicații generale.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Regulile japoneze se aplică doar tranzacțiilor cu afiliați <em>străini</em>, deci cazul de bază al ideii (firme afiliate din aceeași țară) nu există acolo. Dosarul e obligatoriu în timp real abia peste 5 mld. ¥ tranzacții cu un afiliat străin (sau 300 mil. ¥ la necorporale). În anul fiscal 2024, fiscul (NTA) a găsit nereguli în 107 cazuri, cu 39,9 mld. ¥ venit nedeclarat. Estimare: ~373 mil. ¥ pe caz, adică firme mari.</dd>
+    <dt>Prețuri</dt><dd>Un specialist pentru o firmă mică: 1–5 mil. ¥ pe an (orientativ, raportat de o firmă de consultanță).</dd>
+    <dt>Bariere</dt><dd>Limba, monopolul zeirishi pe consultanța fiscală și nevoia de parteneri locali.</dd>
+    <dt>Verdict</dt><dd>Date insuficiente pentru o nișă de IMM-uri, iar problema-țintă lipsește. Șansa unui jucător din România e foarte mică (estimare).</dd></dl>
+    <p class="src"><a href="https://www.meti.go.jp/policy/external_economy/toshi/kokusaisozei/tpinfo_shousai.pdf">METI</a> · <a href="https://WWW.NTA.GO.JP/publication/pamph/pdf/h29iten-kakakubunsyoka.pdf">NTA, praguri</a> · <a href="https://www.nta.go.jp/information/release/kokuzeicho/2025/hojin_chosa/pdf/01.pdf">NTA, controale</a> · <a href="https://kpmg.com/jp/ja/services/tax/transfer-pricing/japan-tp-documentation.html">KPMG Japan</a> · <a href="https://www.pwc.com/jp/ja/services/tax/transfer-pricing/compliance/global-core-documentation.html">PwC Japan</a> · <a href="https://ayusawa-partners.jp/column/iten-kakaku-zeimu-chousa">Ayusawa Partners</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> o pagină cu oferta „Dosar de prețuri de transfer pentru grupuri de 2–5 firme, preț fix, semnat de un consultant fiscal autorizat” și un calculator gratuit: introduci facturile anuale între firme, pe categorii, și afli dacă treci de prag. Contactezi 20–30 de cabinete contabile (LinkedIn, grupuri de contabili, filialele CECCAR) cu o ofertă white-label cu comision. Înainte de lansare, găsești consultantul care semnează.</p>
+    <p><strong>Ce măsori:</strong> câte calculatoare se completează, câți ies peste prag, câte precomenzi cu avans vin și câte cabinete spun câți clienți cu firme afiliate au. Prag orientativ (estimare): cel puțin 3 precomenzi plătite sau 5 cabinete care numesc clienți concreți.</p>
+    <p><strong>Ce ar invalida ideea:</strong> majoritatea grupurilor rămân sub praguri; contabilii spun că „ANAF nu cere dosarul la IMM-uri”; nimeni nu plătește înainte de un control; sau un avocat confirmă că dosarul generat fără consultant semnatar nu se poate vinde.</p></div>
+</section>
+
+<section id="idee-2">
+  <p class="kicker">Ideea 2</p>
+  <h2>Agent AI de programări pentru service-urile auto independente, plătit pe programare confirmată</h2>
+  <p class="dek">Un agent în română, pe WhatsApp și la telefon, care răspunde clienților, programează la revizie, trimite reamintiri pentru ITP, revizie și RCA și face oferte de piese. Prețul se plătește pe programare confirmată, nu pe licență. Cine plătește: service-ul auto independent cu 5–20 de angajați. Vine din semnalul <a href="../editii/ed-2026-11-25.html#ai">„Numa (SUA): 45 mil. $ pentru agenți care răspund la telefon în reprezentanțele auto”</a> (02 · AI) și din mișcarea 4 a ediției.</p>
+
+  <div class="charts"><figure class="chart"><figcaption><strong>Cât costă în Japonia</strong><span>yeni pe lună, agenți de telefon AI (IVRy) și rezervări pe LINE pentru ateliere (totoco)</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="totoco Safe: 60.500 ¥/lună (cu TVA, 2022)"><span class="bl">totoco Safe</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">60.500 ¥</span></div><div class="bar" role="listitem" data-tip="totoco Standard: 36.300 ¥/lună (cu TVA, 2022)"><span class="bl">totoco Standard</span><span class="bt"><i style="--v:60.0%"></i></span><span class="bv">36.300 ¥</span></div><div class="bar" role="listitem" data-tip="totoco Light: 19.800 ¥/lună (cu TVA, 2022)"><span class="bl">totoco Light</span><span class="bt"><i style="--v:32.7%"></i></span><span class="bv">19.800 ¥</span></div><div class="bar" role="listitem" data-tip="IVRy Advance: 8.734 ¥/lună (contract anual)"><span class="bl">IVRy Advance</span><span class="bt"><i style="--v:14.4%"></i></span><span class="bv">8.734 ¥</span></div><div class="bar" role="listitem" data-tip="IVRy Standard: 5.480 ¥/lună (contract anual)"><span class="bl">IVRy Standard</span><span class="bt"><i style="--v:9.1%"></i></span><span class="bv">5.480 ¥</span></div><div class="bar" role="listitem" data-tip="IVRy Starter: 3.317 ¥/lună (contract anual)"><span class="bl">IVRy Starter</span><span class="bt"><i style="--v:5.5%"></i></span><span class="bv">3.317 ¥</span></div></div><p class="src">Surse: <a href="https://www.itreview.jp/products/ivry/price">ITreview (IVRy)</a>, <a href="https://bestcarweb.jp/bc-newsrelese/471656">Bestcar (totoco, comunicat din 2022, poate fi depășit)</a>. În euro n-am găsit 4 furnizori comparabili: fonio cere 99, 299 și 539 €/lună.</p></figure></div>
+
+  <div class="opp"><h3>România: loc liber</h3><dl>
+    <dt>Cine o face deja</dt><dd>N-am găsit niciun agent AI românesc, pe WhatsApp sau voce, făcut pentru service-uri auto. Există soft de gestiune cu notificări prin SMS și e-mail (MyManager de la AttoSoft) și programări online cu reamintiri prin SMS (Anolla, cu plan gratuit). Agenții vocali sunt generaliști: Autocalls.ai, Roweb (pentru clinici), TECHSY (18.000 $ o singură dată plus 0,30–0,50 € pe apel, raportat) și CloudTalk. Rețelele mari de mărci se digitalizează singure: BMW Group România face peste 65 de programări online pe zi (raportat).</dd>
+    <dt>Cât de mare e nevoia</dt><dd>8.774.808 autoturisme la finalul lui 2025, din care ~39% au peste 20 de ani. Vârsta medie e ~15,6 ani. Pe codul CAEN 4520 erau 10.031 de firme în 2015 (date vechi, n-am găsit o cifră recentă). Peste 10.000 de service-uri lucrau neautorizat în 2019. Estimare: dacă 10% din ~10.000 de firme plătesc 100 €/lună, rezultă ~1,2 mil. €/an. E o piață bună pentru un antreprenor solo, nu pentru o afacere de mărimea Numa.</dd>
+    <dt>Prețuri</dt><dd>Nu am prețuri publice pentru soft de service auto românesc. Costul tău principal e WhatsApp Business: din iulie 2025 se plătește per mesaj, iar răspunsurile din fereastra de 24 de ore deschisă de client sunt gratuite. Reamintirile trimise din inițiativa service-ului se plătesc.</dd>
+    <dt>Bariere</dt><dd>Din 2 august 2026, AI Act (art. 50) cere să-i spui clientului că vorbește cu un AI. Din 15 ianuarie 2026, Meta restricționează asistenții AI generaliști pe WhatsApp Business: un bot de programări pare permis, dar trebuie confirmat. Reamintirile cer consimțământ conform GDPR. Service-urile din economia gri nu plătesc pentru ceva care lasă urme. Fără acces la calendarul service-ului, agentul doar preia cereri. Iar „programarea confirmată” poate genera dispute la facturare.</dd>
+    <dt>Verdict</dt><dd>Loc liber: n-am găsit produs în română pe WhatsApp și voce, pentru service-uri, cu plată pe rezultat. Riscul nu e concurența, ci dacă service-urile mici plătesc. Iar agenții generaliști pot intra repede.</dd></dl>
+    <p class="src"><a href="https://gadget.ro/romania-are-un-parc-auto-total-de-peste-8-7-milioane-de-autoturisme-iar-aproape-40-dintre-acestea-sunt-rable-cu-o-vechime-de-peste-20-de-ani/">Gadget.ro (parc auto)</a> · <a href="https://gadget.ro/masina-medie-din-romania-are-o-vechime-de-15-6-ani-avem-un-parc-auto-destul-de-imbatranit/">Gadget.ro (vârstă)</a> · <a href="https://www.bursa.ro/analiza-keysfin-romania-tara-service-urilor-auto-04002130">Bursa (KeysFin)</a> · <a href="https://www.stiripesurse.ro/pia-a-neagra-a-service-urilor-auto-din-romania-gaura-la-buget-de-500-de-milioane-de-euro-anual-analiza_1389204.html">Știripesurse</a> · <a href="https://attosoft.ro/mym/">AttoSoft</a> · <a href="https://anolla.com/ro/software-auto">Anolla</a> · <a href="https://www.revistabiz.ro/startup-ul-romanesc-autocalls-ai-lanseaza-roboti-vocali-ai-fluenti-in-25-limbi-piata-potentiala-de-500-mld/">Revista Biz (Autocalls)</a> · <a href="https://techsy.io/ro/solutions/voice-agents">TECHSY</a> · <a href="https://newsweek.ro/auto/o-aplicatie-inventata-si-dezvoltata-in-romania-digitalizeaza-serviceurile-auto-din-intreaga-lume">Newsweek (BMW)</a> · <a href="https://developers.facebook.com/docs/whatsapp/pricing">Meta, prețuri WhatsApp</a> · <a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/ai-providers">Meta, AI providers</a> · <a href="https://www.goodwinlaw.com/en/insights/publications/2026/08/alerts-technology-dpc-eu-ai-act-transparency-obligations-now-in-force">Goodwin (AI Act)</a></p></div>
+
+  <div class="opp"><h3>Europa: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>fonio.ai (Austria), cu pagină dedicată atelierelor auto. AINORA (Lituania), integrat cu soft de atelier german (werkstattplaner, Werbas, DAT), fără română menționată explicit. ReceptionMate (UK), integrat cu Garage Hive și cu WhatsApp. BookMyGarage (UK) a lansat în iulie 2026 un asistent AI pentru site-urile garajelor. Platforme ca Retell sau Famulor permit oricui să-și construiască un agent.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Piața globală de software pentru service-uri auto: ~3,4 mld. $ în 2026, spre 8,6 mld. $ în 2033 (raportat, estimare de firmă de research). N-am găsit date UE despre numărul de ateliere. Rundele din nișă sunt toate în SUA: Numa 45 mil. $, Beside 32 mil. $, Newo 25 mil. $, Toma 17 mil. $.</dd>
+    <dt>Prețuri</dt><dd>fonio: 99, 299 și 539 €/lună la plată anuală, cu 1.000–6.000 de minute. TechMan (UK, soft de atelier): 58 £ per utilizator pe lună. Retell: 0,07–0,31 $ pe minut.</dd>
+    <dt>Bariere</dt><dd>AI Act și GDPR (AINORA vinde găzduirea în UE ca argument). Integrarea cu softul de atelier local e avantajul celor deja prezenți. În Germania și UK, concurența pe voce e reală.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă: piețele mari sunt deja acoperite pe voce. Spațiul rămâne în Europa de Est și în combinația WhatsApp plus plată pe rezultat (piețele din Est nu au fost verificate una câte una).</dd></dl>
+    <p class="src"><a href="https://www.fonio.ai/de/preise">fonio, prețuri</a> · <a href="https://www.fonio.ai/de/ki-telefonassistenten/ki-telefonassistent-autowerkstatt">fonio, ateliere</a> · <a href="https://ainora.lt/de/ki-rezeptionist-autowerkstaetten">AINORA</a> · <a href="https://portal-frontend-1ey.pages.dev/blog/ai-receptionist-uk-garages-2026-buyers-guide">ReceptionMate</a> · <a href="https://aftermarketinsight.spglobal.com/news/5455/uks-bookmygarage-launches-ai-service-adviser-for-garages">S&amp;P Aftermarket (BookMyGarage)</a> · <a href="https://www.g2.com/products/techman-garage-management-system/pricing">G2 (TechMan)</a> · <a href="https://www.retellai.com/de/use-cases/auto-repair-booking">Retell</a> · <a href="https://thenextweb.com/news/vertical-ai-auto-repair-shops-software-market">TNW (piață)</a> · <a href="https://thenextweb.com/news/numa-45m-series-c-ai-car-dealerships">TNW (Numa)</a> · <a href="https://dc.fortune.com/2025/11/11/beside-ai-voice-startup-raises-32-million-ai-receptionist-for-small-business/">Fortune (Beside)</a> · <a href="https://itbrief.co.uk/story/newo-raises-usd-25m-to-scale-ai-reception-platform">IT Brief (Newo)</a> · <a href="https://aimresearch.co/ai-startups/toma-answers-the-call-of-auto-dealerships-with-17m-series-a">AIM (Toma)</a></p></div>
+
+  <div class="opp"><h3>Asia/Japonia: loc pentru nișă, dar pentru jucători locali</h3><dl>
+    <dt>Cine o face deja</dt><dd>totoco (Yamauchi, Kagawa): rezervări online pentru inspecția obligatorie (車検) și schimburi de ulei, pe LINE, integrat cu softul de atelier local (Broadleaf, DIC Japan și alții). IVRy: agent de telefon AI foarte ieftin pentru afaceri mici. Spark+ (din laboratorul Matsuo, Universitatea Tokyo) are un pilot de agent vocal cu Toyota Corolla Kagawa. Nissan folosește un chatbot pe LINE pentru test drive.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>92.261 de ateliere autorizate în anul fiscal 2025 (MLIT), de ~9 ori mai multe decât firmele CAEN 4520 din România (estimare). Vârsta medie a autoturismelor: 9,44 ani. Inspecția 車検 periodică e un motiv natural de reamintire.</dd>
+    <dt>Prețuri</dt><dd>IVRy: 3.317–8.734 ¥/lună. totoco: 19.800–60.500 ¥/lună, după un comunicat din 2022 (vezi graficul).</dd>
+    <dt>Bariere</dt><dd>Canalul e LINE, nu WhatsApp. Clienții cer integrare cu softul local de atelier și japoneză impecabilă. Vânzarea trece prin rețele locale. Iar prețul de referință e foarte jos.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă: agenții vocali pentru ateliere sunt abia în pilot. Șansa unui jucător din România sau UE e însă mică.</dd></dl>
+    <p class="src"><a href="https://bestcarweb.jp/bc-newsrelese/471656">Bestcar (totoco)</a> · <a href="https://www.itreview.jp/products/ivry/price">ITreview (IVRy)</a> · <a href="https://aipicks.jp/mag/ai-for-auto-dealership-repair-2026">AIpicks (Nissan)</a> · <a href="https://www.mlit.go.jp/jidosha/content/002010464.pdf">MLIT</a> · <a href="https://www.airia.or.jp/publish/file/syarei_2025.pdf">AIRIA</a> · <a href="https://webtan.impress.co.jp/r/prtimes/items/000000035.000139489">Web担当者Forum (Spark+, doar titlul)</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> faci o listă de 60–80 de service-uri independente dintr-un oraș și suni la fiecare de două ori la orele de vârf și o dată după program. Notezi câte apeluri rămân fără răspuns: așa măsori durerea fără niciun produs. Apoi faci un prototip în care o parte o faci manual: aplicația WhatsApp Business, un agent vocal pe Retell sau fonio care spune clar că e AI și câte un calendar Google pentru fiecare service. Vizitezi 20 de service-uri și oferi 2 săptămâni gratuit, apoi un preț fix pe programare confirmată (de exemplu 15–25 lei; e o ipoteză de testat, nu un preț de piață). La 2–3 service-uri trimiți reamintiri ITP clienților care și-au dat acordul.</p>
+    <p><strong>Ce măsori:</strong> procentul de apeluri pierdute (prag util: peste 25%), câte service-uri din 20 acceptă pilotul (cel puțin 5) și câte acceptă plata pe programare (cel puțin 3). Mai măsori programările la 100 de reamintiri și timpul de configurare pentru un service.</p>
+    <p><strong>Ce ar invalida ideea:</strong> mai puțin de 10% apeluri pierdute sau programul deja plin pe săptămâni; sub 2 din 20 acceptă plata pe rezultat; sub 3–5 programări la 100 de mesaje; lipsa consimțământului clienților; sau Meta respinge botul ori șabloanele.</p></div>
+</section>
+
+<section id="idee-3">
+  <p class="kicker">Ideea 3</p>
+  <h2>Pașaportul digital de baterie, ca serviciu pentru importatorii mici</h2>
+  <p class="dek">Pentru importatorii și distribuitorii mici de e-bike-uri, trotinete și baterii de stocare peste 2 kWh: un formular tradus pentru furnizorul chinez, colectarea și verificarea datelor, o pagină publică cu cod QR și versiuni actualizate. Cine plătește: importatorul. Vine din semnalul <a href="../editii/ed-2026-11-25.html#ro-eu">„Pașaportul digital pentru baterii devine obligatoriu pe 18 februarie 2027”</a> (04 · Oportunități RO/UE).</p>
+
+  <div class="item"><h3>Ce s-a verificat la reglementare</h3>
+    <p>La 25 noiembrie, termenul de 18 februarie 2027 era încă valabil. Comisia a publicat pe 21 august 2026 un ghid cu 71 de câmpuri de date. Pachetul Omnibus de mediu, propus în decembrie 2025, nu amână pașaportul. Votul din plenul Parlamentului European era anunțat pentru 23 noiembrie, dar rezultatul nu l-am găsit. Riscul: EUROBAT cere ca la termen să fie obligatorii doar datele publice, iar cele cu acces restricționat abia din 2030. Dacă trece, cererea pe termen scurt scade. Obligația e a importatorului, dar datele le are fabrica: exact golul pe care îl acoperă ideea. Nu am putut confirma dacă standardele tehnice sunt finalizate.</p>
+    <p class="src"><a href="https://single-market-economy.ec.europa.eu/news/guidance-support-preparations-digital-batteries-passport-2026-08-21_en?prefLang=it">Comisia Europeană</a> · <a href="https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-omnibus-viii-industrial-emissions-reporting-batteries">Parlamentul European</a> · <a href="https://projetcelsius.com/en/faq/dpp-espr-affichage-env/l-echeance-du-18-fevrier-2027-peut-elle-etre-reportee/">Projet Celsius</a> · <a href="https://eurobat.org/wp-content/uploads/2026/08/EUROBATs-Proposed-Amendments-to-the-Environmental-Omnibus-06.07.2026.pdf">EUROBAT</a> · <a href="https://evreporter.com/battery-passport-2027-what-makers-exporting-to-the-eu-actually-have-to-do/">EVreporter</a></p></div>
+
+  <div class="charts"><figure class="chart"><figcaption><strong>Cât costă software-ul de pașaport de baterie în UE</strong><span>euro pe lună, planuri self-service</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="dpp-tool Business: 149 €/lună"><span class="bl">dpp-tool Business</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">149 €</span></div><div class="bar" role="listitem" data-tip="WIARA Growth: 125 €/lună"><span class="bl">WIARA Growth</span><span class="bt"><i style="--v:83.9%"></i></span><span class="bv">125 €</span></div><div class="bar" role="listitem" data-tip="dpp-tool Pro: 79 €/lună, 10.000 pașapoarte/an"><span class="bl">dpp-tool Pro</span><span class="bt"><i style="--v:53.0%"></i></span><span class="bv">79 €</span></div><div class="bar" role="listitem" data-tip="DPP Hero: de la 49 €/lună"><span class="bl">DPP Hero</span><span class="bt"><i style="--v:32.9%"></i></span><span class="bv">49 €</span></div><div class="bar" role="listitem" data-tip="WIARA Starter: 33 €/lună"><span class="bl">WIARA Starter</span><span class="bt"><i style="--v:22.1%"></i></span><span class="bv">33 €</span></div><div class="bar" role="listitem" data-tip="dpp-tool Starter: 14 €/lună, 500 pașapoarte/an"><span class="bl">dpp-tool Starter</span><span class="bt"><i style="--v:9.4%"></i></span><span class="bv">14 €</span></div></div><p class="src">Surse: <a href="https://dpp-tool.com/en/battery-passport-software/">dpp-tool</a>, <a href="https://www.capterra.com/p/10182732/Digital-Product-Passport-by-WIARA/">Capterra (WIARA)</a>, <a href="https://www.capterra.com.au/software/1239226/DPP-Hero">Capterra (DPP Hero)</a>. Pentru comparație, EaseCert cere 500 € o singură dată per grup de produse, plus 50 € configurare.</p></figure></div>
+
+  <div class="opp"><h3>România: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>EaseCert are pagină în română pentru importatorii de baterii LMT, industriale și EV: analiza datelor lipsă, cod QR, găzduire și pregătirea înregistrării. E concurentul direct cel mai apropiat. Rev-Log publică ghiduri despre regulament, ECOTIC are pagini pentru producători, dar la niciunul n-am găsit un serviciu de pașaport. N-am găsit un SaaS sau un consultant românesc dedicat.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>La 30 aprilie 2026 erau 332.684 de prosumatori, dintre care 101.243 cu baterii, și se adăugau peste 10.000 pe lună (ANRE). Programul AFM pentru stocare are 400 mil. lei, cu înscrieri pe 20–25 noiembrie 2026. Cifra din ediție, „23.000 de cereri într-o oră”, nu a putut fi confirmată. La trotinete, un singur retailer raportează vânzări de 4 ori mai mari în 2025 față de 2024. Estimare: clienții reali sunt cel mult câteva sute de firme (importatori pe eMAG, distribuitori de baterii cu marcă albă).</dd>
+    <dt>Prețuri</dt><dd>EaseCert: 500 € per grup de produse, o singură dată, plus 50 € configurare.</dd>
+    <dt>Bariere</dt><dd>Furnizorii chinezi mici au adesea date estimate, iar răspunderea rămâne la importator. Standardele nu sunt clar finalizate. Mărcile mari (Huawei, BYD) își vor livra probabil singure pașapoartele.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă: nu există un jucător românesc dedicat, dar EaseCert și SaaS-urile ieftine sunt deja aici. Diferențierea e serviciul (chineză, urmărirea furnizorului, verificarea datelor), nu software-ul.</dd></dl>
+    <p class="src"><a href="https://easecert.com/ro/products/eu-digital-battery-passport-dbp-compliance-service">EaseCert</a> · <a href="https://rev-log.com/ro/regulamentul-ue-privind-bateriile-cerinte-termene-si-obligatii-esentiale/">Rev-Log</a> · <a href="https://www.ecotic.ro/en/I-am-a-manufacturer/">ECOTIC</a> · <a href="https://www.romania-insider.com/ro-10000-prosumers-one-month-jun-2026">Romania Insider (ANRE)</a> · <a href="https://startupcafe.ro/?p=110563">StartupCafe (AFM)</a> · <a href="https://www.revistabiz.ro/romania-unul-dintre-cei-mai-dinamici-actori-europeni-in-segmentul-mobilitatii-electrice-usoare/">Revista Biz (LMT)</a> · <a href="https://www.vde.com/resource/blob/2498710/e9dbef04205717a25e558f5692f35adc/2026-10-13-eu-batteriepass-pm-pdf-data.pdf">VDE</a> · <a href="https://autonews.gasgoo.com/articles/market-industry/2119995722753286144">Gasgoo</a></p></div>
+
+  <div class="opp"><h3>Europa: aglomerat</h3><dl>
+    <dt>Cine o face deja</dt><dd>Pentru firmele mari: Siemens, Circulor, AVL, Kiwa, T-Systems, Circularise și Catena-X (pilot CATL și BMW). Pentru IMM-uri, self-service: dpp-tool, DPP Hero, WIARA, Traceable Digital și EcoComply, care are formulare pentru furnizori trimise prin link. EcoComply e foarte aproape de ideea testată.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Dintre 9 integratori mari de sisteme de stocare, doar 45% au un pașaport conform, la nivel de pilot, iar 42% nu îndeplinesc cerința (raportat, Infyos, 25 noiembrie). VDE avertizează că prea multe companii nu sunt pregătite. În Marea Britanie, regula se aplică doar în Irlanda de Nord.</dd>
+    <dt>Prețuri</dt><dd>dpp-tool: de la 7 la 399 €/lună. WIARA: 33–419 €/lună. DPP Hero: de la 49 €/lună (vezi graficul). Estimare: la dpp-tool Starter, un pașaport costă ~0,34 €, deci prețul de 1–5 € per pașaport din ediție e de 3–50 de ori peste software. Se justifică doar dacă include munca cu furnizorul.</dd>
+    <dt>Bariere</dt><dd>Software-ul a împins deja prețurile jos, datele de la fabrici lipsesc, iar propunerea EUROBAT ar putea reduce obligațiile.</dd>
+    <dt>Verdict</dt><dd>Aglomerat ca software: cel puțin 5 SaaS-uri pentru IMM-uri, plus jucătorii enterprise. Loc rămâne doar pentru un serviciu complet, local, pentru importatorii LMT mici. N-am găsit o rundă de finanțare 2025–2026 strict pe pașaportul de baterie pentru IMM-uri.</dd></dl>
+    <p class="src"><a href="https://dpp-tool.com/en/battery-passport-software/">dpp-tool</a> · <a href="https://ecocomply.ai/digital-product-passport-service">EcoComply</a> · <a href="https://www.siemens.com/en-gb/industries/batteries/battery-passport">Siemens</a> · <a href="https://circulor.com/battery-passport">Circulor</a> · <a href="https://www.electrive.com/2026/02/27/catl-and-bmw-prepare-for-upcoming-battery-passport/">electrive (Catena-X)</a> · <a href="https://www.energy-storage.news/most-bess-supply-industry-not-ready-for-eu-2027-battery-regulations-report/">Energy-Storage.news (Infyos)</a> · <a href="https://www.gov.uk/guidance/eu-batteries-regulations-in-northern-ireland">gov.uk</a> · <a href="https://www.batterydesign.net/the-cost-of-producing-a-battery-passport/">BatteryDesign</a></p></div>
+
+  <div class="opp"><h3>Asia/Japonia: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>În Japonia, ABtC, centrul de trasabilitate al industriei auto, construiește pașaportul pe platforma Ouranos (METI). Denso a lansat pe 25 august 2026 o soluție de pașaport de baterie compatibilă cu modelul european. În China, CATL, Sunwoda (cu Siemens) și EVE Energy conduc. Producătorii mijlocii angajează consultanți, iar cei mici abia știu de obligație. Pentru vânzătorii chinezi de pe Amazon există intermediari de conformitate pentru baterii (EVAT, Funtax, eLing).</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Presiunea de conformitate se mută spre furnizorii din amonte. Peste 200 de companii participă la testele japoneze de calcul al amprentei de carbon (raportat). N-am găsit date despre exportatorii chinezi mici de baterii LMT.</dd>
+    <dt>Prețuri</dt><dd>ABtC și Denso nu publică prețuri. Înregistrarea în schemele de responsabilitate a producătorului prin intermediari chinezi costă 360–1.299 RMB pentru Germania sau Olanda.</dd>
+    <dt>Bariere</dt><dd>Japonia e un ecosistem închis, condus de industria auto. În China, intermediarii locali au deja relația cu exportatorii, iar furnizorii nu vor să-și dea datele.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă, dar nu în Japonia. Nișa e rolul de intermediar european între fabricile chinezești mici și importatorii mici din UE.</dd></dl>
+    <p class="src"><a href="https://monoist.itmedia.co.jp/mn/spv/2510/20/news047.html">MONOist (ABtC)</a> · <a href="https://monoist.itmedia.co.jp/mn/spv/2608/07/news045_2.html">MONOist (LCA)</a> · <a href="https://monoist.itmedia.co.jp/mn/articles/2608/25/news081.html">MONOist (Denso)</a> · <a href="https://autonews.gasgoo.com/articles/market-industry/2119995722753286144">Gasgoo</a> · <a href="https://news.qq.com/rain/a/20260811A07K3F00">Tencent News</a> · <a href="https://m.media-amazon.com/images/G/01/CN_Compliance_Team/EU_Batteries_CSP_Promotion.pdf">Amazon China</a> · <a href="https://www.kiwa.com/cn/zh/services/digital-solutions/digital-product-passports/battery-passport/">Kiwa China</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> faci o listă de 40–60 de importatori și distribuitori români de trotinete, e-bike-uri și baterii pentru fotovoltaice (vânzători pe eMAG, distribuitorii din listele de instalatori AFM). Faci o pagină în română cu oferta „Pașaport gata până pe 18 februarie 2027: trimitem formularul în chineză furnizorului tău, verificăm datele, publicăm codul QR”, cu preț per model plus găzduire lunară. Pui pe pagină comparația cu EaseCert și cu self-service-ul. Contactezi 40 de firme și 2–3 organizații de colectare (ECOTIC, Rev-Log) pentru recomandări și ceri o precomandă cu avans rambursabil.</p>
+    <p><strong>Ce măsori:</strong> câte firme știu de obligație, câte au deja un furnizor de pașaport, câte modele au, câte avansuri și apeluri programate obții. Prag orientativ (estimare): 3 avansuri sau 8 apeluri calificate din 40 de contacte.</p>
+    <p><strong>Ce ar invalida ideea:</strong> importatorii spun că fabrica sau marca le dă pașaportul gratuit; plătesc doar cât un SaaS (sub 15 €/lună); UE adoptă amânarea sau reducerea la date publice; sau furnizorii chinezi nu răspund nici la urmăriri repetate.</p></div>
+</section>
+</main>
+
+<footer>
+  <h4>Surse și metodologie</h4>
+  <p>Analiză produsă automat pe 25 noiembrie 2026, din trei cercetări web paralele, câte una pentru fiecare idee, pe trei piețe: România, Europa (UE și Marea Britanie) și Asia, cu accent pe Japonia. Ideile au fost alese din <a href="../editii/ed-2026-11-25.html">ediția nr. 17</a> după raportul dintre potențial și efortul unui antreprenor mic, cu buget redus. Fiecare cifră are link la sursă. <strong>Verdicte:</strong> „loc liber” = n-am găsit pe nimeni care să facă exact asta pe piața respectivă; „loc pentru nișă sau diferențiere” = există jucători, dar un segment, o limbă sau un model de preț rămân neacoperite; „aglomerat” = mai mulți jucători serviți bine, la prețuri mici; „date insuficiente” = nu există destule surse pentru un verdict. <strong>„Raportat”</strong> = cifră declarată de companie sau de sursă, neauditată. <strong>„Estimare”</strong> = calculul nostru, pornind de la cifrele citate.</p>
+  <p>Limitări: n-am găsit un număr recent de firme pe codul CAEN 4520 (ultima cifră e din 2015; termene.ro nu s-a deschis). Articolul Wall-Street.ro despre Ordinul 828/2026 a cerut o aprobare care a expirat în rularea automată; am folosit Contabilul.ro, EY și Fiscalitatea.ro. Pagina Web担当者Forum despre Spark+ nu s-a deschis; am folosit doar titlul. Cifra „23.000 de cereri AFM într-o oră” din ediție nu a fost confirmată. Rezultatul votului din plenul PE din 23 noiembrie pe Omnibusul de mediu nu a fost găsit. Nu am verificat dacă standardele tehnice ale pașaportului sunt finalizate și nici textul legal privind consultanța fiscală. În această rulare, URL-urile eșuate nu au putut fi reîncercate direct, pentru că instrumentul de citire a paginilor nu a fost disponibil pentru sesiunea principală. Prețurile totoco sunt din 2022.</p>
+  <p>Nu este consultanță juridică, fiscală sau de investiții. Ideile sunt ipoteze de testat. Ideile 1 și 3 cer validare de la un consultant fiscal sau un avocat, iar ideea 2 cere atenție la GDPR și la AI Act.</p>
+  <p class="backlink"><a href="../index.html">← Coperta și arhiva</a></p>
+</footer>
+
+</div></div>
+<script>
+/* Business Radar UX: progres de citire, meniu activ, timp de citire, mod „doar titluri”, buton sus. Pagina funcționează și fără acest script. */
+(function(){
+  var d=document,b=d.body;
+  var bar=d.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');b.insertBefore(bar,b.firstChild);
+  var top=d.createElement('button');top.className='totop';top.type='button';top.setAttribute('aria-label','Înapoi sus');top.textContent='↑';b.appendChild(top);
+  top.addEventListener('click',function(){window.scrollTo({top:0});});
+  var main=d.querySelector('main'),nav=d.querySelector('nav.toc'),masthead=d.querySelector('.masthead');
+  if(main&&!main.id)main.id='continut';
+  if(main){var sk=d.createElement('a');sk.className='skip';sk.href='#'+main.id;sk.textContent='Sari la conținut';b.insertBefore(sk,b.firstChild);}
+  /* timp de citire */
+  var line=d.querySelector('.masthead .edline');
+  if(main&&line){var w=(main.innerText||'').split(/\s+/).length,m=Math.max(1,Math.round(w/220));var s=d.createElement('span');s.textContent='~'+m+' min de citit';line.appendChild(s);}
+  /* bara de unelte: mod „doar titluri” */
+  var skimKey='br-skim',skim=false;try{skim=localStorage.getItem(skimKey)==='1'}catch(e){}
+  if(nav&&main){
+    var tools=d.createElement('div');tools.className='tools';
+    var n=d.querySelectorAll('main .item h3, main .opp h3').length;
+    var info=d.createElement('span');info.textContent=n+' semnale în această ediție';
+    var btn=d.createElement('button');btn.type='button';btn.textContent='Doar titluri';
+    function setSkim(v){skim=v;b.classList.toggle('skim',v);btn.setAttribute('aria-pressed',v?'true':'false');try{localStorage.setItem(skimKey,v?'1':'0')}catch(e){}}
+    btn.addEventListener('click',function(){setSkim(!skim)});
+    tools.appendChild(info);tools.appendChild(btn);nav.parentNode.insertBefore(tools,nav.nextSibling);setSkim(skim);
+    main.addEventListener('click',function(e){
+      if(!b.classList.contains('skim'))return;
+      var h=e.target.closest('h3');if(!h||e.target.closest('a'))return;
+      var box=h.parentNode;if(box.classList.contains('item')||box.classList.contains('opp'))box.classList.toggle('open');
+    });
+  }
+  /* tooltip pentru barele din grafice (data-tip) */
+  var tip=d.createElement('div');tip.className='charttip';tip.setAttribute('role','tooltip');b.appendChild(tip);
+  [].forEach.call(d.querySelectorAll('.bar[data-tip]'),function(el){
+    el.addEventListener('mousemove',function(e){tip.textContent=el.getAttribute('data-tip');tip.style.opacity=1;var x=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px'});
+    el.addEventListener('mouseleave',function(){tip.style.opacity=0});
+  });
+  /* linkurile externe se deschid în tab nou */
+  [].forEach.call(d.querySelectorAll('a[href^="http"]'),function(a){a.target='_blank';a.rel='noopener'});
+  /* meniu activ + progres + buton sus */
+  var links=nav?[].slice.call(nav.querySelectorAll('a[href^="#"]')):[];
+  var secs=links.map(function(a){return d.getElementById(a.getAttribute('href').slice(1))});
+  var ticking=false;
+  function onScroll(){
+    var y=window.scrollY,h=d.documentElement.scrollHeight-window.innerHeight;
+    bar.style.setProperty('--p',h>0?Math.min(1,y/h):0);
+    top.classList.toggle('show',y>900);
+    var cur=-1;for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].getBoundingClientRect().top<120)cur=i}
+    links.forEach(function(a,i){var on=i===cur;if(a.classList.contains('active')!==on){a.classList.toggle('active',on);if(on&&a.scrollIntoView&&nav.scrollWidth>nav.clientWidth){nav.scrollTo({left:a.offsetLeft-40})}}});
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
