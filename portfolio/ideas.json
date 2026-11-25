@@ -1,9 +1,26 @@
 [
   {
+    "slug": "slotconfirm-ro-cee",
+    "title": "SlotConfirm RO/CEE",
+    "score": 69,
+    "status": "Sell 50-delivery pilot first",
+    "aliases": ["delivery appointment WhatsApp", "livrări voluminoase", "confirmare slot livrare", "bulky delivery", "reprogramare livrare"],
+    "buyer": "Magazin regional de mobilă sau electrocasnice, atelier ori distribuitor cu 30–300 livrări programate lunar.",
+    "problem": "Dispecerul confirmă manual intervalele, află prea târziu că destinatarul nu este disponibil și pierde timp cu apeluri și reprogramări.",
+    "wedge": "Import CSV sau Shopify, sloturi valide, confirmare și reprogramare pe WhatsApp, reminder ETA și listă de excepții; fără rutare sau TMS.",
+    "test": "20 de conversații și un pilot pe 50 livrări la 490 EUR, cu avans 245 EUR.",
+    "gate": "Două CSV-uri anonimizate și un avans în 48 de ore; altfel închide înainte de build.",
+    "risk": "Funcțiile există în Urbantz, Bumbal, ReturnGrid, Track-POD și Onfleet; WhatsApp este commodity, iar onboarding-ul poate consuma abonamentul.",
+    "next": "Un avans de 245 EUR și două exporturi CSV reale",
+    "related": ["radar/oportunitati-2026-11-25.html"],
+    "tags": ["last mile", "logistics", "WhatsApp", "furniture", "Romania", "CEE"],
+    "scoreDate": "2026-11-25"
+  },
+  {
     "slug": "japan-paywall-sprint",
     "title": "Japan Paywall Sprint",
-    "score": 64,
-    "status": "Sell one sprint, no platform",
+    "score": 60,
+    "status": "Paused without deposit",
     "aliases": ["Japan app localization", "RevenueCat paywall", "Japonia ASO", "Coreea paywall", "subscription app localization"],
     "buyer": "Fondator consumer european cu 2k–30k USD MRR, trafic organic, retenție observabilă și RevenueCat activ.",
     "problem": "Aplicația are produs și trafic, dar nu știe dacă Japonia/Coreea merită o localizare completă și nu poate izola efectul listingului, paywall-ului și prețului.",
@@ -12,15 +29,15 @@
     "gate": "Două call-uri și un avans în 48 de ore; altfel închide înainte de build.",
     "risk": "Concurent direct la 500 USD, agenții RevenueCat, efect cauzal greu de izolat și risc de a rămâne freelancing.",
     "next": "Un avans de 295 EUR înainte de build",
-    "related": ["radar/oportunitati-2026-11-23.html"],
+    "related": ["radar/oportunitati-2026-11-25.html", "radar/oportunitati-2026-11-23.html"],
     "tags": ["consumer apps", "Japan", "Korea", "RevenueCat", "localization", "paywalls"],
-    "scoreDate": "2026-11-23"
+    "scoreDate": "2026-11-25"
   },
   {
     "slug": "pid-bridge-eu",
     "title": "PID Bridge EU",
-    "score": 70,
-    "status": "Sell data-cleanup pilot first",
+    "score": 68,
+    "status": "Watchlist; feed before build",
     "aliases": ["M-PID", "NS-PID", "S-PID", "C127", "C128", "C129", "identificatori produs vamă", "H7 PID"],
     "buyer": "3PL, broker vamal, integrator e-commerce sau merchant non-UE care livrează către consumatori din România și UE.",
     "problem": "Identificatorii există în listing, ERP, factură sau la fabricant, dar nu ajung complet și corect pe fiecare linie la curier și declarant.",
@@ -29,9 +46,9 @@
     "gate": "Două feed-uri anonimizate, o definiție comună a erorii și un pilot plătit în 14 zile.",
     "risk": "Platformele de shipping au deja câmpurile PID, toleranța de tranziție se termină la începutul lui 2027, iar identificatorii nu pot fi inventați.",
     "next": "Un feed real și un pilot plătit de 490 EUR",
-    "related": ["radar/oportunitati-2026-11-23.html", "radar/oportunitati-2026-11-21.html"],
+    "related": ["radar/oportunitati-2026-11-25.html", "radar/oportunitati-2026-11-23.html", "radar/oportunitati-2026-11-21.html"],
     "tags": ["customs", "ecommerce", "product data", "logistics", "Romania", "EU"],
-    "scoreDate": "2026-11-23"
+    "scoreDate": "2026-11-25"
   },
   {
     "slug": "bilet-clar",
@@ -287,8 +304,8 @@
   {
     "slug": "payment-fraud-bec-guard",
     "title": "Payment Fraud / BEC Guard",
-    "score": 73,
-    "status": "Sell first",
+    "score": 68,
+    "status": "Watchlist after Acorda; sell audit only",
     "aliases": [
       "payment fraud",
       "bec guard",
@@ -307,6 +324,7 @@
     "risk": "Cabinetul poate primi documentele doar după plată. Produsele consacrate verifică deja furnizorii; diferențierea trebuie să fie distribuția și fluxul local multi-client.",
     "next": "Un audit de proces la €490; CFO/AP trebuie să vadă schimbarea înainte de plată.",
     "related": [
+      "radar/oportunitati-2026-11-25.html",
       "radar/oportunitati-2026-11-23.html",
       "radar/investment-committee-2026-10-18.html",
       "radar/investment-committee-2026-09-30.html",
@@ -320,7 +338,7 @@
       "contabilitate",
       "securitate"
     ],
-    "scoreDate": "2026-11-23"
+    "scoreDate": "2026-11-25"
   },
   {
     "slug": "hospital-back-office-agents",
@@ -485,7 +503,7 @@
     "slug": "energy-grid-intelligence",
     "title": "Energy / Grid Intelligence CEE",
     "score": 69,
-    "status": "Find wedge",
+    "status": "Closed benchmark",
     "aliases": [
       "GridQueue",
       "grid intelligence",
@@ -501,6 +519,7 @@
     "risk": "Hărți de capacitate și produse de grid intelligence există deja; date incomplete și premise contradictorii între rapoarte.",
     "next": "Cinci interviuri cu cumpărători",
     "related": [
+      "radar/oportunitati-2026-11-25.html",
       "radar/oportunitati-2026-11-23.html",
       "radar/investment-committee-2026-09-30.html",
       "radar/investment-committee-2026-09-27.html",
@@ -513,7 +532,7 @@
       "capacitate",
       "ATR"
     ],
-    "scoreDate": "2026-11-23"
+    "scoreDate": "2026-11-25"
   },
   {
     "slug": "saft-deadline-monitor",
