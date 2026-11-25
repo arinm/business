@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Radar — Ediția 17 · 25 noiembrie 2026</title>
+<meta name="description" content="Briefing privat de business: idei bootstrapped, AI, startupuri finanțate și oportunități în România/UE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--paper:#fffdf8;--card:#ffffff;--ink:#1c1a17;--muted:#655e54;--rule:#e2dbcd;--accent:#b3261e;--accent-soft:#f6e4e0;--tag:#efe9dd;--link:#8a1c15;--bar:#b3261e;--track:#efe9dd;--focus:#1d5fd1;--shadow:0 1px 2px rgba(40,30,20,.06),0 4px 14px rgba(40,30,20,.05);--nav-h:52px;--serif:"Newsreader",Georgia,"Iowan Old Style","Palatino Linotype",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--paper:#181715;--card:#1f1e1b;--ink:#ece7de;--muted:#a59d90;--rule:#34302a;--accent:#ef6b5f;--accent-soft:#3a2522;--tag:#2a2824;--link:#f39a90;--bar:#d9574b;--track:#2a2824;--focus:#7fb0ff;--shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;font-optical-sizing:auto}
+a{color:var(--link);text-underline-offset:2px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--ink);color:var(--paper);padding:8px 12px;border-radius:6px;font-family:var(--sans);font-size:14px}
+.skip:focus{left:8px}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p,0));z-index:30;pointer-events:none}
+.sans,.kicker,.meta,.tag,nav.toc,.src,footer,.masthead .edline,.tools,.totop,.chart,.stats{font-family:var(--sans)}
+.wrap{max-width:1360px;margin:0 auto}
+.paper{padding:8px 16px 32px}
+/* masthead */
+.masthead{text-align:center;border-bottom:3px double var(--ink);padding:18px 0 14px;grid-area:head}
+.masthead .edline{display:flex;justify-content:space-between;gap:4px 14px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:12px}
+.masthead h1{font-size:clamp(42px,9vw,84px);line-height:1;margin:6px 0 6px;font-weight:700;letter-spacing:-.025em}
+.masthead h1 a{color:inherit;text-decoration:none}
+.masthead .tagline{font-style:italic;color:var(--muted);margin:0 auto;max-width:none}
+/* navigare: pastile pe mobil, coloană laterală pe ecrane mari */
+nav.toc{grid-area:nav;position:sticky;top:0;z-index:20;display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;font-size:14px;font-weight:500;margin:0 -16px;padding:8px 16px;background:var(--paper);border-bottom:1px solid var(--rule);min-height:var(--nav-h);align-items:center}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:0 0 auto;text-decoration:none;color:var(--ink);padding:8px 14px;border-radius:999px;white-space:nowrap;background:var(--tag);border:1px solid transparent;transition:background .15s,color .15s}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+nav.toc a.active{background:var(--accent);color:var(--paper);font-weight:700}
+.tools{grid-area:tools;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);padding:14px 0 0}
+.tools button{font:inherit;font-weight:600;font-size:13.5px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:9px 16px;cursor:pointer;min-height:42px;box-shadow:var(--shadow)}
+.tools button::before{content:"☰  "}
+.tools button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+main{grid-area:main;min-width:0}
+footer{grid-area:foot}
+/* secțiuni */
+section{padding:30px 0 10px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:999px;margin:0 0 10px}
+h2{font-size:clamp(24px,3.2vw,36px);line-height:1.18;margin:0 0 10px;letter-spacing:-.01em;text-wrap:balance;max-width:34em}
+.dek{color:var(--muted);font-style:italic;margin:0 0 18px;font-size:16px;max-width:52em}
+h3{font-size:20px;line-height:1.3;margin:0 0 6px;letter-spacing:-.005em}
+p{max-width:44em}
+.item{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0 0 14px;box-shadow:var(--shadow)}
+.item p{margin:6px 0}
+.meta{font-size:13.5px;color:var(--muted);line-height:1.6}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--tag);color:var(--muted);padding:2px 7px;border-radius:4px;margin-right:4px;vertical-align:1px}
+.tag.warn{background:var(--accent-soft);color:var(--accent)}
+.src{font-size:13px;color:var(--muted);word-break:break-word;line-height:1.7;margin-top:8px!important}
+.src a{padding:2px 0}
+code{font-size:.85em;background:var(--tag);padding:1px 5px;border-radius:4px}
+/* Pe scurt */
+.brief .lead{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr;gap:12px;font-size:17px}
+.brief .lead li{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;box-shadow:var(--shadow);margin:0}
+.grid{display:grid;grid-template-columns:1fr;gap:0 16px}
+.grid>.item{margin-bottom:14px}
+/* oportunități */
+.opp{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--accent);padding:16px 18px;margin:0 0 16px;border-radius:12px;box-shadow:var(--shadow)}
+.opp h3{margin-bottom:8px}
+.opp dl{margin:0;display:grid;grid-template-columns:1fr;gap:2px}
+.opp dt{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:10px}
+.opp dd{margin:0;font-size:17px}
+ol.moves{padding-left:0;list-style:none;counter-reset:mv;display:grid;grid-template-columns:1fr;gap:12px}
+ol.moves li{counter-increment:mv;position:relative;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px 14px 58px;box-shadow:var(--shadow);margin:0}
+ol.moves li::before{content:counter(mv);position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--paper);font-family:var(--sans);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.radar-list li{margin:6px 0}
+/* grafice: bare orizontale, o singură serie, valori etichetate direct */
+.charts{display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 18px}
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0;box-shadow:var(--shadow)}
+.chart figcaption{margin:0 0 12px}
+.chart figcaption strong{display:block;font-size:15px;color:var(--ink)}
+.chart figcaption span{display:block;font-size:12.5px;color:var(--muted)}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(84px,32%) 1fr auto;align-items:center;gap:10px;font-size:13px;padding:3px 4px;border-radius:6px}
+.bar:hover{background:var(--tag)}
+.bar .bl{color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .bt{height:14px;background:var(--track);border-radius:0 4px 4px 0;overflow:hidden}
+.bar .bt i{display:block;height:100%;width:var(--v);background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.bar .bv{color:var(--muted);font-variant-numeric:tabular-nums;text-align:right;min-width:64px}
+.chart .src{margin-top:10px!important}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 18px}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-family:var(--serif);font-size:32px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.4}
+.charttip{position:fixed;z-index:40;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:12.5px;padding:6px 9px;border-radius:6px;max-width:260px;opacity:0;transition:opacity .1s}
+/* arhivă */
+.archive ul{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:1fr;gap:10px}
+.archive li{background:var(--card);border:1px solid var(--rule);border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 16px;box-shadow:var(--shadow)}
+.archive li a{display:block;padding:14px 0;flex:1 1 auto;text-decoration:none;font-weight:600}
+.archive li a:hover{text-decoration:underline}
+.archive li .meta{white-space:nowrap}
+.archive li:first-child{border-color:var(--accent)}
+.archive li:first-child a::after{content:"Nou";font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--paper);border-radius:4px;padding:2px 6px;margin-left:8px;vertical-align:2px}
+footer{font-size:13.5px;color:var(--muted);padding:20px 0 8px;border-top:3px double var(--ink);margin-top:14px}
+footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 4px;color:var(--ink)}
+footer p{margin:6px 0;max-width:none}
+.backlink{font-size:14px;text-align:center;padding:12px 0 0}
+.backlink a{display:inline-block;padding:8px 12px}
+/* tabletă */
+@media (min-width:720px){
+  .paper{padding:8px 28px 40px}
+  nav.toc{margin:0 -28px;padding:8px 28px}
+  .grid.two{grid-template-columns:1fr 1fr}
+  .brief .lead{grid-template-columns:1fr 1fr}
+  .brief .lead li:last-child:nth-child(odd){grid-column:1/-1}
+  .charts{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .opp dl{grid-template-columns:140px 1fr;gap:8px 14px}.opp dt{margin-top:4px}
+  ol.moves{grid-template-columns:1fr 1fr}
+  .archive ul{grid-template-columns:1fr 1fr}
+}
+/* desktop: cuprins lateral fix, conținut lat */
+@media (min-width:1100px){
+  .paper{display:grid;grid-template-columns:210px minmax(0,1fr);grid-template-areas:"head head" "nav tools" "nav main" "nav foot";column-gap:40px;padding:8px 40px 48px}
+  nav.toc{flex-direction:column;align-items:stretch;align-self:start;top:16px;margin:24px 0 0;padding:14px 10px;gap:4px;background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:visible;grid-row:2/5}
+  nav.toc::before{content:"Cuprins";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:2px 12px 8px}
+  nav.toc a{background:transparent;border-radius:8px;padding:10px 12px;border-left:3px solid transparent}
+  nav.toc a:hover{background:var(--tag);border-color:transparent;border-left-color:var(--accent)}
+  nav.toc a.active{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent)}
+  .grid.two{grid-template-columns:repeat(3,1fr)}
+  #ro-eu{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
+  #ro-eu>:not(.opp){grid-column:1/-1}
+  #ro-eu>.kicker{justify-self:start}
+  .opp dl{grid-template-columns:1fr;gap:2px}.opp dt{margin-top:10px}
+  ol.moves{grid-template-columns:repeat(3,1fr)}
+  .archive ul{grid-template-columns:repeat(3,1fr)}
+  .brief .lead{grid-template-columns:repeat(3,1fr)}
+  .brief .lead li:last-child:nth-child(odd){grid-column:auto}
+}
+/* mod „doar titluri” */
+body.skim .item>p:not(.meta),body.skim .item>.src,body.skim .item .meta,body.skim .opp>dl,body.skim .opp>.src,body.skim .dek{display:none}
+body.skim .item.open>p,body.skim .item.open>.src,body.skim .item.open .meta,body.skim .opp.open>.src{display:block}
+body.skim .opp.open>dl{display:grid}
+body.skim .item,body.skim .opp{padding-top:12px;padding-bottom:12px}
+body.skim .item h3,body.skim .opp h3{cursor:pointer;position:relative;padding-right:28px;margin:0}
+body.skim .item h3::after,body.skim .opp h3::after{content:"+";position:absolute;right:0;top:0;color:var(--accent);font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.2}
+body.skim .open h3::after{content:"–"}
+body.skim .open h3{margin-bottom:6px}
+.totop{position:fixed;right:16px;bottom:16px;z-index:25;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule);background:var(--card);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+@media print{nav.toc,.progress,.totop,.tools,.skip{display:none!important}body{background:#fff}.paper{display:block}.item,.opp,.chart,.stat{box-shadow:none}}
+</style>
+<body>
+<div class="wrap"><div class="paper">
+
+<header class="masthead">
+  <div class="edline"><span>Ediția nr. 17</span><span>Miercuri, 25 noiembrie 2026</span><span>Apare la 3 zile</span></div>
+  <h1><a href="../index.html">Business Radar</a></h1>
+  <p class="tagline">Briefing privat de business — idei, AI, capital și oportunități în România</p>
+</header>
+
+<nav class="toc" aria-label="Cuprins">
+  <a href="#pe-scurt">Pe scurt</a><a href="#idei">01 Idei</a><a href="#ai">02 AI</a><a href="#startupuri">03 Startupuri</a><a href="#ro-eu">04 RO/UE</a><a href="#miscari">05 Mișcări</a><a href="../index.html#arhiva">Arhivă</a>
+</nav>
+
+<main>
+<section id="pe-scurt" class="brief">
+  <p class="kicker">Pe scurt</p>
+  <h2>Sierra valorează 30 mld. $ pe plată la rezultat, AI-ul vertical intră în salarizare și reprezentanțe auto, iar în România IMM-urile cu mai multe firme primesc reguli noi de prețuri de transfer din ianuarie</h2>
+  <ul class="lead">
+    <li><strong>Indie:</strong> o școală de limbi „profesor + AI” cu 173.631 $ MRR verificat e scoasă la vânzare cu 7,5 mil. $. La celălalt capăt, Landy AI (landing pages) cere 190.000 $, adică ~2,6 ori profitul anual raportat.</li>
+    <li><strong>AI:</strong> Valeria (Spania) ia 5,5 mil. € pentru salarizare automată în firme cu fluctuație mare, Numa 45 mil. $ pentru agenți în reprezentanțe auto. Software-ul de „coleg AI cu calculator propriu” devine gratuit: Rakazo, clona open-source a Grok Bot, trece de 9.000 de stele.</li>
+    <li><strong>Capital:</strong> Sierra, Seria F de 1,75 mld. $ la 30 mld. $ evaluare, cu peste 400 mil. $ ARR raportat și preț pe problemă rezolvată. Marlowe ia 277 mil. $ ca seed pentru centre de inferență. În CEE, TASTED (Polonia) și Pai Defence (Ucraina).</li>
+    <li><strong>România:</strong> 1,4 milioane de salariați sunt pe salariul minim sau aproape, iar scutirea de 200 lei expiră pe 31 decembrie. Din 2027, ANAF poate cere dosar de prețuri de transfer IMM-urilor de la 50.000 € servicii intragrup.</li>
+    <li><strong>Termene:</strong> Formularul 216 pentru impozitul pe mașini și case scumpe, până pe 31 decembrie. Pașaportul digital pentru baterii, din 18 februarie 2027.</li>
+  </ul>
+</section>
+
+<section id="idei">
+  <p class="kicker">01 · Idei &amp; Indie Hackers</p>
+  <h2>O școală de limbi „om + AI” de 7,5 mil. $, branduri la cheie pentru creatori și micro-SaaS-uri vândute între 1x și 3x venitul</h2>
+  <p class="dek">Majoritatea cifrelor vin de pe paginile TrustMRR, actualizate între 23 și 25 noiembrie. TrustMRR spune că citește veniturile direct din Stripe sau Polar; noi nu le-am verificat altfel. Multiplii marcați „calculul redacției” sunt prețul cerut împărțit la venitul anualizat. Articolele Indie Hackers și listările Acquire.com de pe X nu s-au deschis.</p>
+  <div class="charts"><figure class="chart"><figcaption><strong>MRR, afaceri din această ediție</strong><span>dolari pe lună, 23–25 noiembrie 2026</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="Brand On Demand: 174.365 $"><span class="bl">Brand On Demand</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">174.365 $</span></div><div class="bar" role="listitem" data-tip="Școala de limbi (anonim): 173.631 $"><span class="bl">Școala de limbi</span><span class="bt"><i style="--v:99.6%"></i></span><span class="bv">173.631 $</span></div><div class="bar" role="listitem" data-tip="Sleek: 16.963 $"><span class="bl">Sleek</span><span class="bt"><i style="--v:9.7%"></i></span><span class="bv">16.963 $</span></div><div class="bar" role="listitem" data-tip="Orshot*: 10.855 $"><span class="bl">Orshot*</span><span class="bt"><i style="--v:6.2%"></i></span><span class="bv">10.855 $</span></div><div class="bar" role="listitem" data-tip="Landy AI: 8.207 $"><span class="bl">Landy AI</span><span class="bt"><i style="--v:4.7%"></i></span><span class="bv">8.207 $</span></div><div class="bar" role="listitem" data-tip="Ace Pitcher: 923 $"><span class="bl">Ace Pitcher</span><span class="bt"><i style="--v:0.5%"></i></span><span class="bv">923 $</span></div></div><p class="src">Sursa: paginile TrustMRR citate la fiecare semnal. *Orshot: cifră raportată de fondator (4 nov.), neverificată.</p></figure><figure class="chart"><figcaption><strong>Preț cerut la vânzare</strong><span>mii de dolari, listări TrustMRR</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="Școala de limbi: 7.500 mii $"><span class="bl">Școala de limbi</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">7.500</span></div><div class="bar" role="listitem" data-tip="Sleek: 500 mii $"><span class="bl">Sleek</span><span class="bt"><i style="--v:6.7%"></i></span><span class="bv">500</span></div><div class="bar" role="listitem" data-tip="Numere virtuale SUA: 325 mii $"><span class="bl">Numere virtuale</span><span class="bt"><i style="--v:4.3%"></i></span><span class="bv">325</span></div><div class="bar" role="listitem" data-tip="Landy AI: 190 mii $"><span class="bl">Landy AI</span><span class="bt"><i style="--v:2.5%"></i></span><span class="bv">190</span></div><div class="bar" role="listitem" data-tip="Ace Pitcher: 18 mii $"><span class="bl">Ace Pitcher</span><span class="bt"><i style="--v:0.2%"></i></span><span class="bv">18</span></div></div><p class="src">Sursa: <a href="https://trustmrr.com/">TrustMRR</a>, prețuri afișate de vânzători.</p></figure></div>
+  <div class="grid two">
+    <div class="item"><h3>Școală de limbi online „profesor + AI”: 173.631 $ MRR, cerută 7,5 mil. $</h3>
+      <p>Lecții live 1-la-1 cu profesori, plus exersarea vorbirii cu un AI, pe abonament. Fondatorul e anonim, firma e din SUA, din 2021. Într-o piață pe care AI-ul o atacă direct, modelul hibrid valorează milioane. Încasările lunare sunt de aproape 5 ori MRR-ul, probabil din pachete plătite în avans. Pentru România: școlile de limbi și meditațiile online pot adăuga un partener AI de conversație între lecții, fără să-și înlocuiască profesorii.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>173.631 $ MRR, +11% față de luna trecută; 667.263 $ încasați în 30 de zile; 8,98 mil. $ venit total; 825 de abonamente. <span class="tag warn">atenție</span>Finanțele detaliate doar sub NDA.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/online-edtech">TrustMRR</a></p></div>
+    <div class="item"><h3>Brand On Demand: branduri de consum la cheie pentru creatori, 54,9 mil. $ venit total</h3>
+      <p>Creatorul își lansează propriul brand de suplimente, cafea, skincare sau produse pentru animale. Platforma face produsul, magazinul și livrarea, iar fabricarea pornește doar după comandă, deci fără stoc. Abonament de 69 $ pe lună. E un „Shopify plus fabrică”: o variantă locală cu producători români (cafea prăjită, cosmetice naturale) pentru influencerii de pe TikTok și Instagram e încă liberă.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>174.365 $ MRR, 845.753 $ în 30 de zile, 3.101 abonamente. Nu e de vânzare. Activă din 2017.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/brand-on-demand-inc">TrustMRR</a></p></div>
+    <div class="item"><h3>Orshot: un API de imagini și PDF-uri care a crescut prin directoarele de agenți</h3>
+      <p>Generează imagini, PDF-uri și video din șabloane, pornind de la un tabel, un webhook sau un agent AI. Un singur fondator. Creșterea a venit din distribuție, nu din reclame: marketplace-ul Webflow, directorul de conectori Claude, un server MCP găzduit, n8n, Make, Zapier și peste 2.000 de șabloane publice. Lecția: un produs mic poate fi găsit acum prin ecosistemul agenților.</p>
+      <p class="meta"><span class="tag">raportat</span>10.855 $ MRR pe 4 noiembrie, de la ~5.000 $ în martie; peste 200 de clienți plătitori; prețuri de la 39 la 349 $ pe lună. <span class="tag warn">atenție</span>Sursa e un teardown generat automat din postările fondatorului.</p>
+      <p class="src"><a href="https://neodrop.ai/post/xA8XOA_er0T">Neodrop</a></p></div>
+    <div class="item"><h3>Landy AI: agent care face landing pages, cerut 190.000 $ (~2,6x profitul)</h3>
+      <p>Agentul documentează subiectul, scrie, construiește și publică pagina pe domeniul clientului. Lansat în mai 2025. Pachetul de vânzare include P&amp;L, export Polar, date pe cohorte și 30 de zile de predare. E un reper bun de preț pentru un micro-SaaS profitabil.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>8.207 $ MRR, 145.222 $ venit total, 261 de abonamente. <span class="tag">raportat</span>Profit pe 12 luni: 72.900 $.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/landy">TrustMRR</a></p></div>
+    <div class="item"><h3>Sleek: design de aplicații din chat, 199.000 $ venit în 8 luni, cerut 500.000 $</h3>
+      <p>Descrii aplicația în chat și primești ecranele. Trei fondatori, lansat în martie 2026. Venitul a venit repede, dar creșterea a încetinit la 3% pe lună, probabil motivul vânzării. Nișele înguste din „vibe coding” fac bani repede și se saturează la fel de repede.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>16.963 $ MRR, 198.528 $ venit total, 503 abonamente. Multiplu ~2,5x venitul anualizat (calculul redacției).</p>
+      <p class="src"><a href="https://trustmrr.com/startup/sleek?metric=mrr">TrustMRR</a></p></div>
+    <div class="item"><h3>Numere de telefon virtuale în volum: ~15.000 $ pe lună cu 2 ore de muncă</h3>
+      <p>Platformă no-code pentru cumpărarea și administrarea numerelor virtuale din SUA, cu rutare, înregistrare a apelurilor și SMS. Fără abonament: clienții încarcă un portofel, deci MRR-ul afișat e 0 $. Infrastructura „plictisitoare”, condusă de un singur om, se vinde la ~1,9x venitul anual.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>15.201 $ în 30 de zile, 97.362 $ venit total. <span class="tag">raportat</span>~2 ore de muncă pe lună. Cerut 325.000 $. <span class="tag warn">atenție</span>Fondatorul declară 14.200 $, cifrele diferă ușor.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/private-enterprise-81">TrustMRR</a></p></div>
+    <div class="item"><h3>Ace Pitcher: aplicație de nișă sportivă, „priced to sell” la 18.000 $</h3>
+      <p>Programe de viteză și îngrijirea brațului pentru aruncătorii de baseball, pe abonament iOS. Fondatorul face aplicații mici în serie și le vinde ieftin, sub un an de venit. E pragul de jos al pieței: o aplicație de nișă care se poate cumpăra și traduce pe alt sport.</p>
+      <p class="meta"><span class="tag">verificat Stripe</span>923 $ MRR, +59%; 9.699 $ venit total; 111 abonamente. <span class="tag">raportat</span>Marjă de 85%.</p>
+      <p class="src"><a href="https://trustmrr.com/startup/ace-pitcher">TrustMRR</a></p></div>
+    <div class="item"><h3>ZigZag (Show HN): editor de broderie open-source, ca să scapi de abonamentul producătorului</h3>
+      <p>Kathy Korevec a construit, cu ChatGPT, un editor pentru mașina Brother Skitch PP1, ca să nu plătească abonamentul Artspira+. Exportă în PES, DST, EXP, JEF și VP3 și are un server MCP prin care un agent poate controla mașina. Nu e o afacere, e un semnal de cerere: oamenii resping hardware-ul „blocat” pe abonament. Idee: unelte sau suport plătit pentru hobby-hardware (broderie, tăiere, imprimare 3D) fără abonament.</p>
+      <p class="meta"><span class="tag">raportat</span>743 de puncte și 260 de comentarii pe HN, a 3-a cea mai votată Show HN din noiembrie. Fără venit.</p>
+      <p class="src"><a href="https://itsfoss.com/news/zigzag-embroidery-software/">It's FOSS</a> · <a href="https://bestofshowhn.com/2026/11">Best of Show HN</a></p></div>
+  </div>
+</section>
+
+<section id="ai">
+  <p class="kicker">02 · AI</p>
+  <h2>AI vertical „software plus specialist” în salarizare și consultanță, agenți pentru reprezentanțe auto și clone gratuite ale „colegului AI”</h2>
+  <p class="dek">Lansări și runde din 11–25 noiembrie. Cifrele sunt raportate de companii. Comunicatul Cequence (GlobeNewswire) nu s-a deschis nici la a doua încercare, așa că cifrele lui vin dintr-un rezumat. Căutările pe Reddit n-au întors semnale recente.</p>
+  <div class="item"><h3>Valeria (Spania): 5,5 mil. € pentru salarizare automată în firmele cu fluctuație mare</h3>
+    <p>Platformă de HR și salarizare cu motor propriu de calcul, conectată prin API la administrațiile spaniole: concedii medicale, popriri, accidente de muncă, contracte colective. Anomaliile le verifică specialiști în dreptul muncii. Clienții sunt flote, livrări și curierat; urmează HoReCa, retail și curățenie. Valoarea stă în integrarea cu statul, nu în model. În România problema e identică (REVISAL, D112, concedii medicale, rotație mare în HoReCa), iar un birou mic de salarizare poate porni varianta „mesajul de pe WhatsApp al managerului devine act și declarație”.</p>
+    <p class="meta"><span class="tag">raportat</span>Seed condus de BlackFin; peste 7 mil. € strânși în 2026; peste 100 de clienți și 20.000 de lucrători deserviți.</p>
+    <p class="src"><a href="https://tech.eu/2026/11/16/valeria-raises-eur55m-to-accelerate-ai-powered-payroll-and-hr-automation/">Tech.eu, 16 nov.</a></p></div>
+  <div class="item"><h3>Numa (SUA): 45 mil. $ pentru agenți care răspund la telefon în reprezentanțele auto</h3>
+    <p>Agenții răspund la apeluri, SMS-uri și chat, programează la service și cunosc stocul pe echipare și kilometraj. Numa a intrat pe verticală prin cea mai simplă problemă, telefonul la care nu răspunde nimeni, și se extinde spre „sistemul de operare al reprezentanței”. În România, unghiul pentru un antreprenor mic e service-ul auto independent: programări, reamintiri ITP și revizie, oferte de piese, pe WhatsApp și la telefon, în română.</p>
+    <p class="meta"><span class="tag">raportat</span>Seria C condusă de Blue Cloud Ventures, 96 mil. $ în total; peste 1.500 de reprezentanțe; la GM, timpul de răspuns ar fi scăzut de la 23 de ore la 24 de minute. <span class="tag warn">neconfirmat</span>Evaluarea de 500 mil. $ apare doar în agregatoare.</p>
+    <p class="src"><a href="https://thenextweb.com/news/numa-45m-series-c-ai-car-dealerships">TNW</a></p></div>
+  <div class="grid two">
+    <div class="item"><h3>Verra (SUA): 5 mil. $ pentru AI care refolosește arhiva firmelor de consultanță</h3>
+      <p>Leagă propunerile, rapoartele și modelele vechi ale unei firme de agenți care scriu livrabile noi în Word, Excel și PowerPoint, cu sursa citată. Rulează în cloud-ul clientului. Golul local: firmele românești de contabilitate, audit sau consultanță pe fonduri europene au ani de dosare în foldere și nicio unealtă care să genereze documente noi din ele, în română.</p>
+      <p class="meta"><span class="tag">raportat</span>Seed condus de Kearny Jackson, cu a16z Speedrun; venit de șapte cifre în 7 luni de vânzări.</p>
+      <p class="src"><a href="https://urgent.news/2026/11/25/verra-raises-5m-to-bring-consulting-firms-past-work-into-ai-workflows">Urgent.news</a> · <a href="https://aifundingtracker.com/ai-funding-news-november-24-2026/">AI Funding Tracker</a></p></div>
+    <div class="item"><h3>Rakazo și valul de clone Grok Bot: „colegul AI” devine software gratuit</h3>
+      <p>Grok Bot (xAI) e închis și merge doar cu modelele Grok. Alternativele open-source s-au înmulțit: Rakazo (Apache 2.0, orice model, sandbox în Docker), OpenMausBot, Rerun, Lorca, iar pe Product Hunt Toone și dusk bot. Banii se mută în instalare, securitate și rutine gata făcute pe meserii. Pentru un integrator mic: agent instalat pe serverul clientului, cu rutine pentru o firmă românească (facturi din SPV, reconcilieri, rapoarte), taxă de instalare plus mentenanță.</p>
+      <p class="meta"><span class="tag">raportat</span>Rakazo: de la 5,3k stele pe 23 oct. la 9,1k stele pe GitHub. Toone: 298 de voturi pe Product Hunt pe 18 nov. <span class="tag warn">atenție</span>Proiectele sunt în beta sau alpha.</p>
+      <p class="src"><a href="https://www.bitdoze.com/best-open-source-grok-bot-alternatives/">Bitdoze</a> · <a href="https://github.com/elie222/rakazo">GitHub</a></p></div>
+    <div class="item"><h3>Agenții cumpără, dar și boții care se dau drept agenți</h3>
+      <p>Indexul Cequence din 23 noiembrie: ponderea vizitelor de agenți AI care se loghează, rezervă sau cumpără a urcat de la 1,4% la 13%, iar a celor care se termină cu o cumpărare de la 0,2% la 3,0%. Traficul boților deghizați în agenți a crescut cu 2.600%. Problema nouă a magazinelor mici: să deosebească agentul real de impostor. Serviciu posibil: audit de trafic agentic și reguli de firewall/Cloudflare, la preț fix, înainte de sărbători.</p>
+      <p class="meta"><span class="tag warn">neconfirmat</span>Cifre raportate de Cequence, fără număr total de vizite; comunicatul original nu s-a deschis, am folosit un rezumat.</p>
+      <p class="src"><a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-24-2026">Agile Brand Guide</a> · <a href="https://ppc.land/a16z-says-firms-must-court-ai-agents-as-agent-traffic-grows-8x-in-two-months/">PPC Land (a16z)</a></p></div>
+    <div class="item"><h3>Versine (YC F26): plăți trimise de asistentul AI, „Venmo cu MCP”</h3>
+      <p>Ceri sau trimiți bani scriind cu ChatGPT sau Claude: asistentul împarte nota și face transferul, aprobat cu passkey. Poți cere bani de la până la 100 de persoane deodată. Fondatorii spun deschis că plățile între persoane nu sunt profitabile; sunt o pană spre o „bancă pentru agenți”. Varianta românească mică: un bot care strânge cotizații pentru asociații de proprietari, cluburi sportive de copii și grupuri de părinți, cu plată prin link de card.</p>
+      <p class="meta"><span class="tag">raportat</span>Construit în ~4 săptămâni după un pivot; rulează pe USDC pe Base; prețul nu e publicat.</p>
+      <p class="src"><a href="https://news.ycombinator.com/item?id=50634426">Launch HN</a></p></div>
+    <div class="item"><h3>Quivly: agenți de customer success la 500 $ pe lună pentru 50 de conturi</h3>
+      <p>Agenții preiau clientul după semnare: onboarding, adopție, extindere, reînnoiri. Prețul e pe conturi gestionate, cu utilizatori nelimitați, alt semn că prețul pe loc dispare la agenți. Pentru agențiile și SaaS-urile românești cu 20–100 de clienți, 500 $ e mult: un „customer success pe WhatsApp” la 50–100 € pe lună are loc dedesubt.</p>
+      <p class="meta"><span class="tag">raportat</span>Starter 500 $/lună (5 agenți, 50 de conturi), Growth 1.000 $/lună (100 de conturi).</p>
+      <p class="src"><a href="https://www.thetoolnerd.com/p/new-ai-tools-this-week-nov-24-2026">The Tool Nerd, 24 nov.</a></p></div>
+    <div class="item"><h3>Supertake (SUA): 20 mil. $ pentru agenți care fac portofoliu dintr-o părere despre piață</h3>
+      <p>Utilizatorul își descrie convingerea, AI-ul o rafinează, agenții o transformă în portofoliu prin Coinbase și Robinhood. Interesant e modelul de permisiuni: fără retrageri fără acord, limite de mărime, liste de active permise. Se poate copia în procurement-ul unui IMM: un agent care comandă consumabile sub un plafon, doar de la furnizori aprobați.</p>
+      <p class="meta"><span class="tag">raportat</span>Seed condus de Adjacent, cu Coinbase Ventures și USV; produs în beta.</p>
+      <p class="src"><a href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/">TechCrunch, 23 nov.</a></p></div>
+    <div class="item"><h3>Notițe AI din apeluri telefonice și un inbox unic operat de chatbot</h3>
+      <p>Bluedot Phone Calls (locul 2 pe Product Hunt pe 18 nov.) face notițe din convorbiri telefonice, nu doar din video. Juncts (Show HN) adună mesajele din cinci aplicații într-un inbox pe care Claude și ChatGPT îl pot opera. Telefonul și mesajele directe sunt canalele principale ale agenților imobiliari, brokerilor și service-urilor. Diferențiatorul local e limba română.</p>
+      <p class="meta"><span class="tag">raportat</span>Bluedot: 322 de voturi. Juncts: fără cifre publice; pagina produsului nu s-a deschis.</p>
+      <p class="src"><a href="https://www.producthunt.com/products/bluedot-2/launches">Product Hunt</a> · <a href="https://trendoday.com/hacker-news/show/2026/11/24">Trendoday</a></p></div>
+    <div class="item"><h3>LexDo.it (Italia): 500.000 de utilizatori pentru înființarea firmelor online, cu asistent AI pe drum</h3>
+      <p>„Firma de avocatură online” devine abonament de back-office: acte, HR, sediu social, iar asistentul AI se va lega de facturare. În România, cu ONRC aglomerat și termenele CAEN Rev.3 și de capital social în 2027, un asistent care pregătește dosarul și urmărește termenele are cerere.</p>
+      <p class="meta"><span class="tag">raportat</span>2,4 mil. € în ultimele 18 luni; mărimea extensiei și investitorii nu sunt publicate.</p>
+      <p class="src"><a href="https://startuprise.co.uk/lexdo-it-raises-e2-4mn/">Startup Rise</a></p></div>
+  </div>
+  <div class="item"><h3>Pe scurt din lansări</h3>
+    <p><strong>Islo (Incredibuild):</strong> trece agenții de cod prin procesul echipei (teste, risc, aprobare umană), 20 $/lună pentru un loc (<a href="https://www.thetoolnerd.com/p/new-ai-tools-this-week-nov-24-2026">The Tool Nerd</a>). <strong>Zipher (Israel):</strong> 53 mil. $ pentru agenți care optimizează joburile de date în cloud; Hertz raportează costuri cu 25–40% mai mici (<a href="https://aifundingtracker.com/ai-funding-news-november-24-2026/">AI Funding Tracker</a>). <strong>WP Engine:</strong> trei unelte AI în beta pentru peste 5 mil. de site-uri WordPress (<a href="https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-november-24-2026">Agile Brand Guide</a>). <strong>Epochal (ex-xAI):</strong> „Time Portal”, un sandbox fixat la o dată din trecut, în care agenții învață să prognozeze (<a href="https://phemex.com/news/article/exxai-founders-launch-epochal-with-time-portal-to-train-ai-forecasting-models-104750">Phemex</a>).</p></div>
+</section>
+
+<section id="startupuri">
+  <p class="kicker">03 · Startupuri finanțate</p>
+  <h2>Plata pe rezultat valorează 30 mld. $, un seed de 277 mil. $ pentru inferență și defence tech-ul CEE care strânge cecuri timpurii mari</h2>
+  <p class="dek">Runde anunțate între 16 și 24 noiembrie. Evaluările apar doar unde sursa le publică. N-am găsit nicio rundă românească nouă, nepublicată deja; semnalul românesc e fabrica Runware. Marlowe vine doar din agregatoare.</p>
+  <div class="charts"><figure class="chart"><figcaption><strong>Rundele din această ediție, fără Sierra</strong><span>milioane de dolari, sume raportate</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="Marlowe: 277 mil. $"><span class="bl">Marlowe</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">277 mil. $</span></div><div class="bar" role="listitem" data-tip="Boltz: 110 mil. $"><span class="bl">Boltz</span><span class="bt"><i style="--v:39.7%"></i></span><span class="bv">110 mil. $</span></div><div class="bar" role="listitem" data-tip="Simplexity Robotics: 100 mil. $"><span class="bl">Simplexity</span><span class="bt"><i style="--v:36.1%"></i></span><span class="bv">100 mil. $</span></div><div class="bar" role="listitem" data-tip="Agon: 70 mil. $"><span class="bl">Agon</span><span class="bt"><i style="--v:25.3%"></i></span><span class="bv">70 mil. $</span></div><div class="bar" role="listitem" data-tip="Style Union: ~51,8 mil. $"><span class="bl">Style Union*</span><span class="bt"><i style="--v:18.7%"></i></span><span class="bv">51,8 mil. $</span></div><div class="bar" role="listitem" data-tip="Numa: 45 mil. $"><span class="bl">Numa</span><span class="bt"><i style="--v:16.2%"></i></span><span class="bv">45 mil. $</span></div><div class="bar" role="listitem" data-tip="Supertake: 20 mil. $"><span class="bl">Supertake</span><span class="bt"><i style="--v:7.2%"></i></span><span class="bv">20 mil. $</span></div><div class="bar" role="listitem" data-tip="TASTED: 6,5 mil. $"><span class="bl">TASTED</span><span class="bt"><i style="--v:2.3%"></i></span><span class="bv">6,5 mil. $</span></div><div class="bar" role="listitem" data-tip="Verra: 5 mil. $"><span class="bl">Verra</span><span class="bt"><i style="--v:1.8%"></i></span><span class="bv">5 mil. $</span></div></div><p class="src">Surse: articolele citate la fiecare rundă. Sierra (1.750 mil. $) e omisă ca să nu strivească scara. *Style Union: 485 crore ₹, conversia Inc42. Excluse rundele anunțate în euro (Stark Future, Pai Defence, Valeria).</p></figure></div>
+  <div class="item"><h3>Sierra (SUA): Seria F de 1,75 mld. $ la 30 mld. $, cu preț plătit pe problemă rezolvată</h3>
+    <p>Agenți AI pentru relația cu clienții marilor companii. Clientul plătește pe rezultat (problemă rezolvată, abonat păstrat, daună plătită), nu pe licență sau pe token. Evaluarea s-a dublat în circa 6 luni. E cel mai clar reper că plata pe rezultat funcționează la scară; la scară mică, același preț se poate aplica unui agent de suport pentru un magazin online românesc: plătești pe conversație închisă.</p>
+    <p class="meta"><span class="tag">raportat</span>Condusă de Greenoaks și Lightspeed, cu Benchmark, Sequoia, GV; ARR peste 400 mil. $, din care peste 150 mil. $ adăugați în T3; evaluare de ~75 de ori ARR (calculul sursei).</p>
+    <p class="src"><a href="https://www.unite.ai/sierra-raises-1-75b-in-series-f-funding-at-30b-valuation/">Unite.AI, 23 nov.</a> · <a href="https://aifundingtracker.com/ai-funding-news-november-23-2026/">AI Funding Tracker</a></p></div>
+  <div class="grid two">
+    <div class="item"><h3>Marlowe (SUA): seed de 277 mil. $, unicorn de la prima rundă</h3>
+      <p>Centre de date pentru inferență, pe cipuri Etched și AMD, ca alternativă la dependența de Nvidia. Capitalul se mută de la antrenarea modelelor la costul rulării lor.</p>
+      <p class="meta"><span class="tag warn">o singură sursă</span>Condus de Accel, la 1,15 mld. $; detalii doar din agregatoare, fără presă primară.</p>
+      <p class="src"><a href="https://aifundingtracker.com/ai-funding-news-november-23-2026/">AI Funding Tracker</a> · <a href="https://workinsiders.com/funding/2026-11/">Workinsiders</a></p></div>
+    <div class="item"><h3>Boltz (spin-out MIT): 110 mil. $ pentru modele open-source de proiectat medicamente</h3>
+      <p>Modelul „open-source ca pâlnie, API plătit ca venit”, aplicat în biotech, cu parteneriate Pfizer, GSK, Takeda și BMS.</p>
+      <p class="meta"><span class="tag">raportat</span>Seria A condusă de Bessemer; consumul de tokeni a crescut de 50 de ori din iunie.</p>
+      <p class="src"><a href="https://tech.eu/2026/11/19/london-based-boltz-raises-110m-series-a/">Tech.eu, 19 nov.</a></p></div>
+    <div class="item"><h3>Simplexity Robotics (China): 100 mil. $ pre-Seria A, la 1,6 mld. $</h3>
+      <p>Roboți umanoizi și pe roți pentru servicii și depozite, cu o linie de sortare deja instalată. Ant Group și Tencent în aceeași rundă: „AI-ul fizic” din China are încă mulți bani.</p>
+      <p class="meta"><span class="tag">raportat</span>Condusă de Ant Group, cu Tencent, HSG și Lanchi Ventures.</p>
+      <p class="src"><a href="https://theaiinsider.tech/2026/11/24/china-physical-ai-roundup-simplexity-robotics-raises-100m-pre-a-plus-x-square-model-oymotion-and-agibot-deployment/">The AI Insider, 24 nov.</a></p></div>
+    <div class="item"><h3>Agon (Marea Britanie/Germania): 70 mil. $ pentru câmpuri de luptă simulate</h3>
+      <p>Antrenează și testează sisteme autonome de apărare în simulări, ca infrastructură „suverană” pentru armatele europene. Fondul suveran britanic pentru AI intră direct ca investitor.</p>
+      <p class="meta"><span class="tag">raportat</span>Seria A condusă de Northzone, la 450 mil. $, la mai puțin de 6 luni după seed.</p>
+      <p class="src"><a href="https://tech.eu/2026/11/23/defence-startup-agon-raises-70m-with-uk-sovai-and-nssif-investing">Tech.eu, 23 nov.</a></p></div>
+    <div class="item"><h3>Stark Future (Spania): peste 150 mil. € la 1,2 mld. €, motociclete electrice integrate vertical</h3>
+      <p>Proiectează, produce lângă Barcelona și vinde direct motociclete electrice, cu baterii proprii, pornind din nișa enduro. Hardware-ul de consum integrat vertical încă atrage capital de creștere.</p>
+      <p class="meta"><span class="tag">raportat</span>Condusă de Highland Europe; evaluare +60% față de septembrie 2025; ~5% din piața off-road de 3 mld. €.</p>
+      <p class="src"><a href="https://tech.eu/2026/11/16/barcelona-based-stark-future-motors-to-unicorn-status/">Tech.eu, 16 nov.</a></p></div>
+    <div class="item"><h3>Style Union (India): ~51,8 mil. $ pentru modă ieftină în orașe mici</h3>
+      <p>Retail fizic și online pentru familii, cu magazine proprii în orașele mici. Un contrapunct non-AI: capitalul de creștere finanțează retail fizic. Paralela românească: lanțurile regionale din orașele mici rămân neacoperite de capital.</p>
+      <p class="meta"><span class="tag">raportat</span>Seria E condusă de Venturi Partners; venit de peste 1.150 crore ₹ în FY26, de la 123 crore ₹ în FY23. <span class="tag warn">atenție</span>Sursa e inconsecventă la numărul de magazine.</p>
+      <p class="src"><a href="https://yourstory.com/2026/11/style-union-raises-rs-485-cr-to-expand-beyond-southern-india">YourStory</a> · <a href="https://inc42.com/buzz/from-dreamteam-to-boba-bhai-indian-startups-raised-over-291-mn-this-week/">Inc42</a></p></div>
+    <div class="item"><h3>TASTED (Polonia/SUA): 6,5 mil. $, restaurantul plătește doar când clientul plătește nota</h3>
+      <p>Fără reclame plătite: restaurantul plătește doar pentru clientul adus care achită. Clientul scanează bonul și primește „TASTED cash”. Un startup din CEE care se lansează direct în Los Angeles cu plată pe rezultat. Modelul se poate testa și în HoReCa din București sau Cluj.</p>
+      <p class="meta"><span class="tag">raportat</span>Fondatorul Techland, Inovo.vc, Sunfish și alții; ~500 de restaurante în SUA și Europa.</p>
+      <p class="src"><a href="https://tech.eu/2026/11/24/polish-foodtech-tasted-raises-65m-as-it-launches-in-los-angeles">Tech.eu, 24 nov.</a></p></div>
+    <div class="item"><h3>Pai Defence (Ucraina/Marea Britanie): pre-seed de 4,58 mil. € pentru detecția dronelor</h3>
+      <p>Rețea de senzori care detectează dronele după semnalele radio și le identifică tipul. Un pre-seed de aproape 5 mil. € arată cât de mari au devenit cecurile timpurii în defence tech-ul din regiune.</p>
+      <p class="meta"><span class="tag">raportat</span>Condus de Gardar, cu UA1, D3 și alții; modelul de venit nu e descris.</p>
+      <p class="src"><a href="https://www.therecursive.com/british-ukrainian-pai-defence-raises-eur4-58m-to-expand-drone-detection-in-ukraine/">The Recursive, 24 nov.</a></p></div>
+  </div>
+  <div class="item"><h3>România: Runware pregătește o fabrică de 36 mil. € de centre de date AI în containere</h3>
+    <p>Startupul cu fondatori români vrea să producă lângă București (județul Călărași) „Sonic Pods”: centre de date AI modulare de 1–2 MW, răcite cu lichid, în containere maritime, instalabile în 48 de ore. Producția ar porni în T1 2027, cu ~180 de angajați. Pentru firmele românești de metalurgie, instalații electrice și răcire, e un client potențial mare în apropiere.</p>
+    <p class="meta"><span class="tag">raportat</span>~190 mil. lei investiție; ~66 mil. $ strânși în total, inclusiv 50 mil. $ conduși de Dawn Capital; capacitate țintă de până la 20 de containere pe zi. <span class="tag warn">atenție</span>Interesul comercial de ~1 mld. $ e cerere declarată, nu venit; fabrica e în autorizare.</p>
+    <p class="src"><a href="https://startupcafe.ro/un-antreprenor-roman-care-recruteaza-specialisti-de-la-nvidia-si-openai-pregateste-o-fabrica-de-36-milioane-euro-langa-bucuresti-va-produce-centre-de-date-ai-din-containere-maritime-110107">StartupCafe, 11 nov.</a></p></div>
+</section>
+
+<section id="ro-eu">
+  <p class="kicker">04 · Oportunități RO/UE</p>
+  <h2>Șase dureri: prețuri de transfer pentru grupurile mici de firme, salariul minim nedecis, taxa pe lux, controalele ANPC de sărbători, pașaportul bateriilor și datoriile plătite cu imobile</h2>
+  <p class="dek">Secțiunea principală. Reperele de preț sunt estimările redacției, nu cifre din surse. Temele din edițiile anterioare apar doar ca actualizări marcate, cu fapte noi.</p>
+  <div class="stats" role="list">
+  <div class="stat" role="listitem"><b>1,4 mil.</b><span>salariați cu normă întreagă pe salariul minim sau cel mult 75 lei peste el (26,9%)</span></div>
+  <div class="stat" role="listitem"><b>−83 lei</b><span>pe lună din net pentru un salariat pe minim, dacă scutirea de 200 lei nu e prelungită</span></div>
+  <div class="stat" role="listitem"><b>50.000 €</b><span>prag pentru servicii intragrup la IMM, de la care ANAF poate cere dosarul de prețuri de transfer</span></div>
+  <div class="stat" role="listitem"><b>4,8 mil. lei</b><span>amenzi ANPC la 1.600 de operatori controlați într-o singură săptămână</span></div>
+</div>
+
+  <div class="opp"><h3>1. Prețuri de transfer din 2027: IMM-urile cu mai multe firme pot primi cerere de dosar la control</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Actualizare la tema din 22 noiembrie, cu pragurile pentru IMM-uri. Ordinul ANAF 828/2026 se aplică procedurilor începute după 1 ianuarie 2027. IMM-urile prezintă dosarul doar la cerere, în 30–60 de zile lucrătoare, cu o singură prelungire de maximum 30 de zile. Pragurile IMM: 50.000 € la servicii, 100.000 € la împrumuturi, 150.000 € la active necorporale și redevențe, 200.000 € la active corporale. Se analizează pe fiecare tranzacție și pe fiecare persoană afiliată, nu cumulat. La marii contribuabili pragul pentru servicii scade de la 250.000 € la 100.000 €.</dd>
+    <dt>Durerea</dt><dd>Antreprenorii cu 2–5 firme care își facturează între ele management, chirii sau împrumuturi de la asociat nu au de obicei dosar. Problema apare la fiecare control.</dd>
+    <dt>Soluția</dt><dd>Un „dosar TP-lite”: importă din SAF-T (D406) sau din balanță tranzacțiile cu afiliații, marchează ce trece de prag, generează un dosar-șablon cu analiză simplificată și politică intragrup și îl ține gata de control. Se vinde white-label prin firmele de contabilitate.</dd>
+    <dt>Cine plătește</dt><dd>Antreprenorii cu grupuri mici de firme, prin contabilii lor. Estimarea noastră: 1.500–5.000 lei per dosar sau 150–400 lei pe lună per grup.</dd>
+    <dt>Statut</dt><dd>Ordin publicat, aplicabil din 1 ianuarie 2027.</dd></dl>
+    <p class="src"><a href="https://www.wall-street.ro/articol/taxe/ai-mai-multe-firme-si-faci-tranzactii-intre-ele-anaf-introduce-reguli-noi.html">Wall-Street.ro, 23 nov.</a></p></div>
+
+  <div class="opp"><h3>2. Salariul minim 2027: trei scenarii, 1,4 milioane de salariați și o scutire care expiră</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Actualizare la tema salariului minim, cu cifre noi. La 30 septembrie 2026, 1,4 milioane de salariați (26,9%) câștigau minimul sau cel mult 75 lei peste; ~715.000 aveau exact 4.325 lei brut. Ministerul Muncii are trei variante: 4.593 lei (+6,2%), 4.884 lei (+12,9%) și 5.079 lei (+17,4%); BNS cere 4.652 lei. Scutirea de 200 lei expiră pe 31 decembrie: fără prelungire, netul scade de la 2.699 la 2.616 lei. IMM România estimează că +300 lei brut înseamnă 311 lei cost lunar în plus pentru angajator. Decizia e așteptată după Tripartită, la final de noiembrie.</dd>
+    <dt>Durerea</dt><dd>HoReCa, retailul, producția și serviciile își fac bugetul de salarii pentru ianuarie fără să știe cifra.</dd>
+    <dt>Soluția</dt><dd>Un simulator de cost salarial pe scenarii: încarci statul de plată, vezi costul pe fiecare variantă, cu sau fără scutire, impactul pe marjă și pe preț (cât trebuie să crească un meniu) și generezi actele adiționale. Lansat acum, înainte de decizie.</dd>
+    <dt>Cine plătește</dt><dd>IMM-urile cu 5–50 de angajați. Estimarea noastră: 49–149 lei pe lună sau 299 lei pentru un pachet de „închidere de an HR”; contabilii îl pot folosi ca lead magnet.</dd>
+    <dt>Statut</dt><dd>Nedecis la 25 noiembrie.</dd></dl>
+    <p class="src"><a href="https://www.undelucram.ro/ro/cumlucram/salariul-minim-2027-net-scade-83-lei-scutire-taxe-2520">Undelucram</a> · <a href="https://www.radioromania.ro/economic/presedintele-imm-romania-la-rra-o-crestere-a-salariului-minim-acum-ar-aduce-castig-doar-statului-id242319.html">Radio România, 24 nov.</a></p></div>
+
+  <div class="opp"><h3>3. Taxa pe lux: 0,9% pe mașini și case scumpe, Formularul 216 până pe 31 decembrie</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Firmele și persoanele fizice cu autoturisme peste 375.000 lei valoare de achiziție sau cu locuințe peste 2,5 mil. lei valoare impozabilă depun Formularul 216 până pe 31 decembrie. Cota e 0,9% pe diferența peste prag; la mașini se aplică 5 ani fiscali de la achiziție. Ordinul ANAF 1.444/2026 (MO 918, 2 noiembrie) stabilește procedura din oficiu: notificare, apoi 20 de zile pentru depunere. Separat, deducerea de 50% din TVA la mașini e prelungită până la final de 2029.</dd>
+    <dt>Durerea</dt><dd>Mulți proprietari nu știu ce valoare intră în calcul (cu sau fără TVA, mașini în leasing) și află de obligație abia din notificare.</dd>
+    <dt>Soluția</dt><dd>Calculator plus „F216 asistat”: verificare pe fiecare bun, calcul pe 5 ani, formular precompletat, alertă pentru notificarea ANAF. Distribuție prin dealerii auto premium și firmele de leasing, ca serviciu post-vânzare.</dd>
+    <dt>Cine plătește</dt><dd>Proprietarii de mașini premium, persoane fizice și firme. Estimarea noastră: 99–299 lei per declarație sau inclus de dealer în pachet.</dd>
+    <dt>Statut</dt><dd>În vigoare. <span class="tag warn">neconfirmat</span>Cota anterioară de 0,3% apare doar la StartCo.</dd></dl>
+    <p class="src"><a href="https://www.taxinstitute.ro/uncategorized-ro/monitor-fiscal-no-20-1-15-noiembrie-2026/">Tax Institute</a> · <a href="https://startco.ro/newsletter/?p=1123">StartCo</a></p></div>
+
+  <div class="opp"><h3>4. ANPC înainte de sărbători: jucării neconforme și instalații de iluminat fără marcaj CE</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>În 9–13 noiembrie, ANPC a controlat 1.600 de operatori: peste 4,8 mil. lei amenzi, 1.030 de amenzi și 716 avertismente, produse de peste 300.000 lei oprite definitiv de la vânzare și 9 operatori cu activitatea oprită. Au fost găsite jucării neconforme, iluminat festiv fără CE, diferențe între prețul de la raft și cel de pe bon și reduceri de Black Friday calculate greșit.</dd>
+    <dt>Durerea</dt><dd>Magazinele de cartier, târgurile de Crăciun și vânzătorii online care aduc marfă din afara UE nu au documente de conformitate. Controalele se repetă în fiecare decembrie.</dd>
+    <dt>Soluția</dt><dd>Un „dosar de conformitate sezonier”: scanezi produsul, primești checklist CE și de etichetare în română, ceri automat declarația de conformitate de la furnizor, generezi etichete; un modul compară prețurile de raft cu cele din casa de marcat.</dd>
+    <dt>Cine plătește</dt><dd>Retailerii mici și importatorii sezonieri. Estimarea noastră: 200–800 lei per sezon sau 0,5–2 lei per SKU verificat.</dd>
+    <dt>Statut</dt><dd>Controale în desfășurare.</dd></dl>
+    <p class="src"><a href="https://agerpres.ro/economic/2026/11/13/anpc-a-aplicat-sanctiuni-de-peste-4-8-milioane-lei-in-perioada-9---13-noiembrie--1613027">Agerpres, 13 nov.</a></p></div>
+
+  <div class="opp"><h3>5. Pașaportul digital pentru baterii devine obligatoriu pe 18 februarie 2027</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Producătorii și importatorii de baterii pentru vehicule electrice, pentru LMT (biciclete și trotinete electrice) și de baterii industriale peste 2 kWh trebuie să ofere un registru electronic accesibil printr-un cod. Obligațiile de due diligence pentru materii prime au fost mutate pe 18 august 2027 (Regulamentul UE 2025/1561). Piața de stocare crește: programul AFM pentru baterii, cu până la 15.000 lei per cerere, a strâns peste 23.000 de cereri într-o oră.</dd>
+    <dt>Durerea</dt><dd>Asamblatorii români de acumulatori și sisteme de stocare și magazinele care importă direct e-bike-uri și trotinete din China nu au datele de la furnizori și nici unde să le publice. Termenul e la mai puțin de 3 luni.</dd>
+    <dt>Soluția</dt><dd>SaaS de „pașaport de baterie” pentru importatori mici: formular tradus pentru furnizorul chinez, pagină publică cu cod QR, versionare. Vândut și ca serviciu instalatorilor de sisteme de stocare.</dd>
+    <dt>Cine plătește</dt><dd>Importatorii și distribuitorii de LMT și baterii de stocare. Estimarea noastră: 1–5 € per pașaport sau 100–300 € pe lună.</dd>
+    <dt>Statut</dt><dd>Regulament UE în vigoare. <span class="tag warn">atenție</span>Sursa principală e din august; semnalul e termenul iminent, nu o știre nouă.</dd></dl>
+    <p class="src"><a href="https://www.mobilissimo.ro/stiri-diverse/battery-passport-devine-obligatoriu-din-2027-pentru-anumite-categorii-de-baterii">Mobilissimo</a></p></div>
+
+  <div class="opp"><h3>6. Datoriile la ANAF se pot stinge cu un imobil, fără condiția inspecției recente</h3><dl>
+    <dt>Ce s-a întâmplat</dt><dd>Ordinul ANAF 1.511/2026 (MO 920, 3 noiembrie) elimină condiția ca inspecția fiscală să fi avut loc în ultimele 6 luni, inclusiv pentru cererile în curs. Procedura rămâne grea: evaluare independentă, comisie de 5 membri și o instituție publică care să vrea bunul (maximum 30 de zile ca să ceară preluarea, 90 de zile ca să inițieze hotărârea de Guvern). Datoria se stinge la cea mai mică valoare dintre evaluare și valoarea contabilă; în insolvență, la valoarea de lichidare.</dd>
+    <dt>Durerea</dt><dd>Firmele cu datorii fiscale și imobile greu vandabile (hale, terenuri, clădiri vechi), inclusiv cele în insolvență, nu știu să pregătească dosarul și nu au cum găsi instituția interesată.</dd>
+    <dt>Soluția</dt><dd>Un serviciu de „matchmaking” între firmele datornice și instituțiile care caută spații (primării, școli, spitale): eligibilitate, evaluare ANEVAR prin parteneri, dosar complet. Clienții vin prin practicienii în insolvență.</dd>
+    <dt>Cine plătește</dt><dd>Firmele datornice și lichidatorii judiciari. Estimarea noastră: 3.000–10.000 lei onorariu fix plus 1–3% din datoria stinsă.</dd>
+    <dt>Statut</dt><dd>Ordin în vigoare; statul nu e obligat să accepte bunul.</dd></dl>
+    <p class="src"><a href="https://financiarul.ro/economie/firmele-pot-cere-sa-stinga-datoriile-la-anaf-cu-un-imobil-chiar-daca-inspectia-fiscala-are-peste-sase-luni/">Financiarul, 16 nov.</a></p></div>
+
+  <div class="item"><h3>Tot pe radar</h3>
+    <p><strong>Antreprenoarele iau credite mai mici:</strong> firmele conduse de femei au 25% din numărul creditelor garantate de BID, dar doar 12% din valoare (la 30 iunie), deși garanția pentru ele urcă la 80%. Granturile „Femeia Antreprenor”: peste 6.800 de cereri, 793 de contracte semnate până în octombrie. Nișă: pregătirea dosarului de credit pentru investiții, plătită de antreprenoare sau de bancă ca referral (<a href="https://startupcafe.ro/statul-garanteaza-pana-la-80-din-creditele-antreprenoarelor-dar-firmele-lor-atrag-doar-12-din-finantari-de-ce-110589">StartupCafe, 19 nov.</a>).</p>
+    <p><strong>IMM-urile pierd mai mulți oameni decât angajează:</strong> în medie 3,15 angajări și 3,25 plecări per firmă, după Carta Albă a IMM-urilor 2026; 29% dintre angajați cred că vor pleca în 6 luni. <span class="tag warn">atenție</span>Articolul e advertorial pentru o conferință (<a href="https://www.wall-street.ro/articol/economie-and-finante/imm-urile-romanesti-au-pierdut-mai-multi-oameni-in-2026-ca-niciodata.html">Wall-Street.ro</a>).</p>
+    <p><strong>Regulamentul anti-spălare (AMLR) din iulie 2027:</strong> obligații KYC noi pentru comercianții de bunuri de valoare (bijuterii și ceasuri peste 10.000 €, mașini peste 250.000 €). Bijutierii și dealerii auto premium nu au procese; un „KYC lite” cu screening PEP și registru de tranzacții are cumpărători (<a href="https://termene.ro/articole/noile-reguli-europene-antispalare-a-banilor-intra-in-vigoare-in-2027-ce-trebuie-sa-faca-firmele-pana-atunci">Termene.ro</a>).</p></div>
+</section>
+
+<section id="miscari">
+  <p class="kicker">05 · Mișcări pe care le-ai putea face</p>
+  <h2>Ce aș testa în următoarele 3 zile</h2>
+  <ol class="moves">
+    <li><strong>Simulatorul de salariu minim, lansat înainte de decizie.</strong> Un tabel online în care pui numărul de angajați pe minim și vezi costul lunar pe cele trei scenarii, cu și fără scutirea de 200 lei. Îl oferi gratuit prin 5 cabinete de contabilitate, în schimbul adreselor de e-mail ale clienților lor. Măsori câți îl folosesc până la anunț.</li>
+    <li><strong>Lista „ai nevoie de dosar de prețuri de transfer?” pentru 3 cabinete.</strong> O verificare de o pagină cu pragurile IMM (50.000 € servicii, 100.000 € împrumuturi) și o ofertă de dosar la preț fix. Ceri fiecărui cabinet să numere câți clienți au grupuri de firme.</li>
+    <li><strong>F216 prin dealeri premium.</strong> Suni 5 dealeri auto premium și 2 firme de leasing și le propui o scrisoare pentru clienți „verifică-ți impozitul pe lux până pe 31 decembrie”, cu un calculator și declarația pregătită contra cost. Termenul fix face vânzarea ușoară.</li>
+    <li><strong>Agent de programări pentru 3 service-uri auto independente, după modelul Numa.</strong> Configurezi manual un răspuns pe WhatsApp care programează la revizie și trimite reamintiri ITP. Prețul îl pui pe programare confirmată, ca Sierra, nu pe licență.</li>
+    <li><strong>Checklist de conformitate pentru un târg de Crăciun.</strong> Mergi la organizatorii unui târg și le oferi un control rapid al etichetelor, marcajelor CE și prețurilor pentru expozanți, înainte de ANPC. Taxa o plătește organizatorul sau fiecare expozant.</li>
+    <li><strong>Pașaport de baterie pentru 5 importatori de trotinete și e-bike-uri.</strong> Îi găsești pe eMAG și îi întrebi dacă au datele de la furnizor. Dacă nu, vinzi colectarea și pagina QR la preț per model, înainte de 18 februarie.</li>
+  </ol>
+  <p class="meta">Sunt ipoteze de testat, nu recomandări de investiție. Ideile cu componentă fiscală sau juridică (1, 2, 3, 5, 6) cer validare de la un consultant fiscal sau un avocat. La mișcarea 4, atenție la GDPR când trimiți mesaje clienților persoane fizice.</p>
+</section>
+</main>
+
+
+<footer>
+  <h4>Surse și metodologie</h4>
+  <p>Ediție produsă automat din patru desk-uri de research (Idei &amp; Indie Hackers; AI; Startupuri finanțate; Oportunități RO/UE), pe baza căutărilor web din 25 noiembrie 2026. Fiecare cifră are link la sursă. <strong>„Raportat”</strong> = cifră declarată de companie sau fondator, neauditată. <strong>„Verificat Stripe”</strong> = venit afișat de TrustMRR, care spune că îl preia direct de la procesatorul de plăți (Stripe sau Polar); redacția nu l-a verificat altfel. <strong>„Neconfirmat” / „o singură sursă”</strong> = informație din presă sau dintr-un singur agregator, neverificată cu sursa primară. Reperele de preț din secțiunea 04 sunt estimările redacției. Semnalele publicate în edițiile anterioare nu au fost repetate, cu excepția actualizărilor marcate.</p>
+  <p>Limitări ale acestei ediții (după a doua încercare): comunicatul Cequence de pe GlobeNewswire a cerut aprobare de acces, care a expirat într-o rulare automată; cifrele vin dintr-un rezumat. Articolele Indie Hackers au dat eroare de client; postările Acquire.com de pe X și site-ul AmosNews sunt blocate prin robots.txt. Paginile principale StartupCafe, Start-up.ro și EU-Startups au fost refuzate de filtrul de acces; am folosit articole individuale. Articolul Financiarul despre repararea produselor în garanție în 15 zile s-a deschis la a doua încercare, dar e o actualizare a unui text din 2016, fără număr de act normativ, și a fost lăsat deoparte. Marlowe nu are încă o sursă de presă primară. Profit.ro blochează accesul automat. Căutările pe Reddit și Product Hunt nu au întors postări recente cu cifre de venit.</p>
+  <p>Nu este consultanță juridică, fiscală sau financiară.</p>
+  <p class="backlink"><a href="../index.html">← Coperta și arhiva</a></p>
+</footer>
+
+</div></div>
+<script>
+/* Business Radar UX: progres de citire, meniu activ, timp de citire, mod „doar titluri”, buton sus. Pagina funcționează și fără acest script. */
+(function(){
+  var d=document,b=d.body;
+  var bar=d.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');b.insertBefore(bar,b.firstChild);
+  var top=d.createElement('button');top.className='totop';top.type='button';top.setAttribute('aria-label','Înapoi sus');top.textContent='↑';b.appendChild(top);
+  top.addEventListener('click',function(){window.scrollTo({top:0});});
+  var main=d.querySelector('main'),nav=d.querySelector('nav.toc'),masthead=d.querySelector('.masthead');
+  if(main&&!main.id)main.id='continut';
+  if(main){var sk=d.createElement('a');sk.className='skip';sk.href='#'+main.id;sk.textContent='Sari la conținut';b.insertBefore(sk,b.firstChild);}
+  /* timp de citire */
+  var line=d.querySelector('.masthead .edline');
+  if(main&&line){var w=(main.innerText||'').split(/\s+/).length,m=Math.max(1,Math.round(w/220));var s=d.createElement('span');s.textContent='~'+m+' min de citit';line.appendChild(s);}
+  /* bara de unelte: mod „doar titluri” */
+  var skimKey='br-skim',skim=false;try{skim=localStorage.getItem(skimKey)==='1'}catch(e){}
+  if(nav&&main){
+    var tools=d.createElement('div');tools.className='tools';
+    var n=d.querySelectorAll('main .item h3, main .opp h3').length;
+    var info=d.createElement('span');info.textContent=n+' semnale în această ediție';
+    var btn=d.createElement('button');btn.type='button';btn.textContent='Doar titluri';
+    function setSkim(v){skim=v;b.classList.toggle('skim',v);btn.setAttribute('aria-pressed',v?'true':'false');try{localStorage.setItem(skimKey,v?'1':'0')}catch(e){}}
+    btn.addEventListener('click',function(){setSkim(!skim)});
+    tools.appendChild(info);tools.appendChild(btn);nav.parentNode.insertBefore(tools,nav.nextSibling);setSkim(skim);
+    main.addEventListener('click',function(e){
+      if(!b.classList.contains('skim'))return;
+      var h=e.target.closest('h3');if(!h||e.target.closest('a'))return;
+      var box=h.parentNode;if(box.classList.contains('item')||box.classList.contains('opp'))box.classList.toggle('open');
+    });
+  }
+  /* tooltip pentru barele din grafice (data-tip) */
+  var tip=d.createElement('div');tip.className='charttip';tip.setAttribute('role','tooltip');b.appendChild(tip);
+  [].forEach.call(d.querySelectorAll('.bar[data-tip]'),function(el){
+    el.addEventListener('mousemove',function(e){tip.textContent=el.getAttribute('data-tip');tip.style.opacity=1;var x=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px'});
+    el.addEventListener('mouseleave',function(){tip.style.opacity=0});
+  });
+  /* linkurile externe se deschid în tab nou */
+  [].forEach.call(d.querySelectorAll('a[href^="http"]'),function(a){a.target='_blank';a.rel='noopener'});
+  /* meniu activ + progres + buton sus */
+  var links=nav?[].slice.call(nav.querySelectorAll('a[href^="#"]')):[];
+  var secs=links.map(function(a){return d.getElementById(a.getAttribute('href').slice(1))});
+  var ticking=false;
+  function onScroll(){
+    var y=window.scrollY,h=d.documentElement.scrollHeight-window.innerHeight;
+    bar.style.setProperty('--p',h>0?Math.min(1,y/h):0);
+    top.classList.toggle('show',y>900);
+    var cur=-1;for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].getBoundingClientRect().top<120)cur=i}
+    links.forEach(function(a,i){var on=i===cur;if(a.classList.contains('active')!==on){a.classList.toggle('active',on);if(on&&a.scrollIntoView&&nav.scrollWidth>nav.clientWidth){nav.scrollTo({left:a.offsetLeft-40})}}});
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
