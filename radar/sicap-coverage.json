@@ -1946,11 +1946,26 @@
     "notice": "Metadatele nu reprezintă dosare analizate. AFM: valoare EUR; bugetul CS 666.120 lei și echivalentul listei 666.444,07 lei necesită clarificare."
   },
   "publication": {
-    "state": "pending_post_publish_verification",
+    "state": "published_verified",
     "branch": "main",
     "report": "radar/sicap-2026-11-27.html",
     "expected_base": "3d71a116244b92925bb6827afa6d94dca60d52b4",
-    "verification": "Commitul, deploy-ul și pagina live se verifică după actualizarea main; publicarea nu închide acoperirea."
+    "verification": {
+      "main_commit_confirmed": true,
+      "workflows": {
+        "Deploy site to GitHub Pages": "success",
+        "pages build and deployment": "success"
+      },
+      "live_http_200_and_bytes_match": [
+        "radar/sicap-2026-11-27.html",
+        "radar/sicap-coverage.json",
+        "radar/index.html",
+        "index.html"
+      ],
+      "note": "Verificare observată pentru commitul raportului; înregistrată ulterior în registru. Acoperirea cercetării rămâne parțială."
+    },
+    "commit": "85e7d8eac2142e772c4f477b976885596c747ab4",
+    "verified_at": "2026-11-27T09:51:52+02:00"
   },
   "run_history": [
     {
