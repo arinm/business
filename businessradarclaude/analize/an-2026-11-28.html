@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Radar — Analiză de piață · 28 noiembrie 2026</title>
+<meta name="description" content="Trei idei din ediția nr. 18 a Business Radar, verificate pe piețele din România, Europa și Asia (Japonia).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--paper:#fffdf8;--card:#ffffff;--ink:#1c1a17;--muted:#655e54;--rule:#e2dbcd;--accent:#b3261e;--accent-soft:#f6e4e0;--tag:#efe9dd;--link:#8a1c15;--bar:#b3261e;--track:#efe9dd;--focus:#1d5fd1;--shadow:0 1px 2px rgba(40,30,20,.06),0 4px 14px rgba(40,30,20,.05);--nav-h:52px;--serif:"Newsreader",Georgia,"Iowan Old Style","Palatino Linotype",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--paper:#181715;--card:#1f1e1b;--ink:#ece7de;--muted:#a59d90;--rule:#34302a;--accent:#ef6b5f;--accent-soft:#3a2522;--tag:#2a2824;--link:#f39a90;--bar:#d9574b;--track:#2a2824;--focus:#7fb0ff;--shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;font-optical-sizing:auto}
+a{color:var(--link);text-underline-offset:2px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:50;background:var(--ink);color:var(--paper);padding:8px 12px;border-radius:6px;font-family:var(--sans);font-size:14px}
+.skip:focus{left:8px}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p,0));z-index:30;pointer-events:none}
+.sans,.kicker,.meta,.tag,nav.toc,.src,footer,.masthead .edline,.tools,.totop,.chart,.stats{font-family:var(--sans)}
+.wrap{max-width:1360px;margin:0 auto}
+.paper{padding:8px 16px 32px}
+/* masthead */
+.masthead{text-align:center;border-bottom:3px double var(--ink);padding:18px 0 14px;grid-area:head}
+.masthead .edline{display:flex;justify-content:space-between;gap:4px 14px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:12px}
+.masthead h1{font-size:clamp(42px,9vw,84px);line-height:1;margin:6px 0 6px;font-weight:700;letter-spacing:-.025em}
+.masthead h1 a{color:inherit;text-decoration:none}
+.masthead .tagline{font-style:italic;color:var(--muted);margin:0 auto;max-width:none}
+/* navigare: pastile pe mobil, coloană laterală pe ecrane mari */
+nav.toc{grid-area:nav;position:sticky;top:0;z-index:20;display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;font-size:14px;font-weight:500;margin:0 -16px;padding:8px 16px;background:var(--paper);border-bottom:1px solid var(--rule);min-height:var(--nav-h);align-items:center}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{flex:0 0 auto;text-decoration:none;color:var(--ink);padding:8px 14px;border-radius:999px;white-space:nowrap;background:var(--tag);border:1px solid transparent;transition:background .15s,color .15s}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+nav.toc a.active{background:var(--accent);color:var(--paper);font-weight:700}
+.tools{grid-area:tools;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);padding:14px 0 0}
+.tools button{font:inherit;font-weight:600;font-size:13.5px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:9px 16px;cursor:pointer;min-height:42px;box-shadow:var(--shadow)}
+.tools button::before{content:"☰  "}
+.tools button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+main{grid-area:main;min-width:0}
+footer{grid-area:foot}
+/* secțiuni */
+section{padding:30px 0 10px;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:0}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:4px 10px;border-radius:999px;margin:0 0 10px}
+h2{font-size:clamp(24px,3.2vw,36px);line-height:1.18;margin:0 0 10px;letter-spacing:-.01em;text-wrap:balance;max-width:34em}
+.dek{color:var(--muted);font-style:italic;margin:0 0 18px;font-size:16px;max-width:52em}
+h3{font-size:20px;line-height:1.3;margin:0 0 6px;letter-spacing:-.005em}
+p{max-width:44em}
+.item{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0 0 14px;box-shadow:var(--shadow)}
+.item p{margin:6px 0}
+.meta{font-size:13.5px;color:var(--muted);line-height:1.6}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--tag);color:var(--muted);padding:2px 7px;border-radius:4px;margin-right:4px;vertical-align:1px}
+.tag.warn{background:var(--accent-soft);color:var(--accent)}
+.src{font-size:13px;color:var(--muted);word-break:break-word;line-height:1.7;margin-top:8px!important}
+.src a{padding:2px 0}
+code{font-size:.85em;background:var(--tag);padding:1px 5px;border-radius:4px}
+/* Pe scurt */
+.brief .lead{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr;gap:12px;font-size:17px}
+.brief .lead li{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;box-shadow:var(--shadow);margin:0}
+.grid{display:grid;grid-template-columns:1fr;gap:0 16px}
+.grid>.item{margin-bottom:14px}
+/* oportunități */
+.opp{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--accent);padding:16px 18px;margin:0 0 16px;border-radius:12px;box-shadow:var(--shadow)}
+.opp h3{margin-bottom:8px}
+.opp dl{margin:0;display:grid;grid-template-columns:1fr;gap:2px}
+.opp dt{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-top:10px}
+.opp dd{margin:0;font-size:17px}
+ol.moves{padding-left:0;list-style:none;counter-reset:mv;display:grid;grid-template-columns:1fr;gap:12px}
+ol.moves li{counter-increment:mv;position:relative;background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px 14px 58px;box-shadow:var(--shadow);margin:0}
+ol.moves li::before{content:counter(mv);position:absolute;left:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--paper);font-family:var(--sans);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.radar-list li{margin:6px 0}
+/* grafice: bare orizontale, o singură serie, valori etichetate direct */
+.charts{display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 18px}
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:16px 18px;margin:0;box-shadow:var(--shadow)}
+.chart figcaption{margin:0 0 12px}
+.chart figcaption strong{display:block;font-size:15px;color:var(--ink)}
+.chart figcaption span{display:block;font-size:12.5px;color:var(--muted)}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(84px,32%) 1fr auto;align-items:center;gap:10px;font-size:13px;padding:3px 4px;border-radius:6px}
+.bar:hover{background:var(--tag)}
+.bar .bl{color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .bt{height:14px;background:var(--track);border-radius:0 4px 4px 0;overflow:hidden}
+.bar .bt i{display:block;height:100%;width:var(--v);background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.bar .bv{color:var(--muted);font-variant-numeric:tabular-nums;text-align:right;min-width:64px}
+.chart .src{margin-top:10px!important}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 18px}
+.stat{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-family:var(--serif);font-size:32px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:4px;line-height:1.4}
+.charttip{position:fixed;z-index:40;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:12.5px;padding:6px 9px;border-radius:6px;max-width:260px;opacity:0;transition:opacity .1s}
+/* arhivă */
+.archive ul{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:1fr;gap:10px}
+.archive li{background:var(--card);border:1px solid var(--rule);border-radius:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 16px;box-shadow:var(--shadow)}
+.archive li a{display:block;padding:14px 0;flex:1 1 auto;text-decoration:none;font-weight:600}
+.archive li a:hover{text-decoration:underline}
+.archive li .meta{white-space:nowrap}
+.archive li:first-child{border-color:var(--accent)}
+.archive li:first-child a::after{content:"Nou";font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--paper);border-radius:4px;padding:2px 6px;margin-left:8px;vertical-align:2px}
+footer{font-size:13.5px;color:var(--muted);padding:20px 0 8px;border-top:3px double var(--ink);margin-top:14px}
+footer h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:12px 0 4px;color:var(--ink)}
+footer p{margin:6px 0;max-width:none}
+.backlink{font-size:14px;text-align:center;padding:12px 0 0}
+.backlink a{display:inline-block;padding:8px 12px}
+/* tabletă */
+@media (min-width:720px){
+  .paper{padding:8px 28px 40px}
+  nav.toc{margin:0 -28px;padding:8px 28px}
+  .grid.two{grid-template-columns:1fr 1fr}
+  .brief .lead{grid-template-columns:1fr 1fr}
+  .brief .lead li:last-child:nth-child(odd){grid-column:1/-1}
+  .charts{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .opp dl{grid-template-columns:140px 1fr;gap:8px 14px}.opp dt{margin-top:4px}
+  ol.moves{grid-template-columns:1fr 1fr}
+  .archive ul{grid-template-columns:1fr 1fr}
+}
+/* desktop: cuprins lateral fix, conținut lat */
+@media (min-width:1100px){
+  .paper{display:grid;grid-template-columns:210px minmax(0,1fr);grid-template-areas:"head head" "nav tools" "nav main" "nav foot";column-gap:40px;padding:8px 40px 48px}
+  nav.toc{flex-direction:column;align-items:stretch;align-self:start;top:16px;margin:24px 0 0;padding:14px 10px;gap:4px;background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:visible;grid-row:2/5}
+  nav.toc::before{content:"Cuprins";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:2px 12px 8px}
+  nav.toc a{background:transparent;border-radius:8px;padding:10px 12px;border-left:3px solid transparent}
+  nav.toc a:hover{background:var(--tag);border-color:transparent;border-left-color:var(--accent)}
+  nav.toc a.active{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent)}
+  .grid.two{grid-template-columns:repeat(3,1fr)}
+  #ro-eu{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
+  #ro-eu>:not(.opp){grid-column:1/-1}
+  #ro-eu>.kicker{justify-self:start}
+  .opp dl{grid-template-columns:1fr;gap:2px}.opp dt{margin-top:10px}
+  ol.moves{grid-template-columns:repeat(3,1fr)}
+  .archive ul{grid-template-columns:repeat(3,1fr)}
+  .brief .lead{grid-template-columns:repeat(3,1fr)}
+  .brief .lead li:last-child:nth-child(odd){grid-column:auto}
+}
+/* mod „doar titluri” */
+body.skim .item>p:not(.meta),body.skim .item>.src,body.skim .item .meta,body.skim .opp>dl,body.skim .opp>.src,body.skim .dek{display:none}
+body.skim .item.open>p,body.skim .item.open>.src,body.skim .item.open .meta,body.skim .opp.open>.src{display:block}
+body.skim .opp.open>dl{display:grid}
+body.skim .item,body.skim .opp{padding-top:12px;padding-bottom:12px}
+body.skim .item h3,body.skim .opp h3{cursor:pointer;position:relative;padding-right:28px;margin:0}
+body.skim .item h3::after,body.skim .opp h3::after{content:"+";position:absolute;right:0;top:0;color:var(--accent);font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.2}
+body.skim .open h3::after{content:"–"}
+body.skim .open h3{margin-bottom:6px}
+.totop{position:fixed;right:16px;bottom:16px;z-index:25;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule);background:var(--card);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.2);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+@media print{nav.toc,.progress,.totop,.tools,.skip{display:none!important}body{background:#fff}.paper{display:block}.item,.opp,.chart,.stat{box-shadow:none}}
+</style>
+<body>
+<div class="wrap"><div class="paper">
+
+<header class="masthead">
+  <div class="edline"><span>Business Radar · Analiză de piață</span><span>Sâmbătă, 28 noiembrie 2026</span><span>Ediția analizată: nr. 18</span></div>
+  <h1><a href="../index.html">Business Radar</a></h1>
+  <p class="tagline">Trei idei din ediția nr. 18, verificate pe piețele din România, Europa și Asia (accent pe Japonia)</p>
+</header>
+
+<nav class="toc" aria-label="Cuprins">
+  <a href="#verdict">Pe scurt</a><a href="#idee-1">Ideea 1</a><a href="#idee-2">Ideea 2</a><a href="#idee-3">Ideea 3</a><a href="../editii/ed-2026-11-28.html">Ediția analizată</a>
+</nav>
+
+<main>
+<section id="verdict" class="brief">
+  <p class="kicker">Pe scurt</p>
+  <h2>Nicio idee nu are loc liber. Cea mai bună șansă e bannerul de cookie conform, vândut în română prin agenții și Gomag. Monitorul de parteneri inactivi și reconcilierea e-Factura merg doar ca nișe, iar în afara României piața e deja ocupată</h2>
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><b>Nișă (RO)</b><span>Banner de cookie și audit conforme noii legi, în română, white-label pentru agenții web</span></div>
+    <div class="stat" role="listitem"><b>Nișă (RO)</b><span>Alertă înainte de plată când un partener devine inactiv sau își pierde codul de TVA</span></div>
+    <div class="stat" role="listitem"><b>Nișă (RO, Croația)</b><span>Raport de anomalii între facturile din SPV și extrasul bancar, pentru cabinetele contabile</span></div>
+  </div>
+  <ul class="lead">
+    <li><strong>Cookie:</strong> doar 19,3% din site-urile din România au un modul de consimțământ detectabil, iar în top 25 nu e niciun furnizor local. Prețurile globale sunt mici (de la ~5–7 €/lună) și există planuri gratuite, deci se vinde auditul, limba română și canalul de agenții, nu bannerul în sine. Numărul și data legii trebuie verificate în Monitorul Oficial.</li>
+    <li><strong>Parteneri inactivi:</strong> API-ul ANAF dă gratuit statusul de inactiv și de TVA, iar ApiFirme vinde deja webhook-uri de la 69 lei/lună. Lipsește fluxul pentru cabinete: alertă înainte de plată, pe tot portofoliul, cu dovadă arhivată. Plafonul pieței e mic. Polonia, Cehia și Japonia au funcția gratuit în programele locale.</li>
+    <li><strong>Reconciliere SPV–bancă:</strong> potrivirea de bază există deja la Keez, SmartBill, ContApp și FGO. Rămâne loc doar pentru detectarea anomaliilor (plăți duble, abonamente uitate, plăți fără factură) pentru cabinetele pe Saga sau WinMentor. În UE, Croația e singura țară unde o obligație nouă cere legătura factură–plată.</li>
+  </ul>
+</section>
+
+<section id="idee-1">
+  <p class="kicker">Ideea 1</p>
+  <h2>Banner de cookie și audit conforme noii legi, pentru magazinele online, vândute prin agenții web</h2>
+  <p class="dek">Scanner de cookie-uri, banner în română cu „Refuz” pe primul ecran, jurnal de consimțăminte, blocarea scripturilor până la acord, pluginuri pentru WooCommerce, Shopify și Gomag, plus audit cu raport tehnic datat. Cine plătește: magazinele online și publisherii, direct sau prin agențiile web care îl revând. Vine din semnalul <a href="../editii/ed-2026-11-28.html#ro-eu">„Legea cookie-urilor: butonul «Refuz» devine obligatoriu pe primul ecran până pe 22 martie 2027”</a> (04 · Oportunități RO/UE) și din mișcarea 1 a ediției.</p>
+
+  <div class="item"><h3>O corectură la premisă</h3>
+    <p>Cercetarea n-a găsit nicio sursă independentă care să confirme numărul „219/2026”, publicarea în Monitorul Oficial 964 din 19 noiembrie sau intrarea în vigoare pe 22 noiembrie. Cele mai noi articole găsite, din 28 octombrie, descriu încă un <em>proiect</em> de modificare a Legii 506/2004, cu 120 de zile pentru conformare. AmCham confirmă conținutul: amenzi de 5.000–100.000 lei sau până la 2% din cifra de afaceri peste 5 mil. lei, control ANSPDCP, refuz pe primul ecran, fără căsuțe pre-bifate și evidența consimțămintelor. Data de 22 martie 2027 se potrivește cu 22 noiembrie plus 120 de zile. Verifică actul în Monitorul Oficial înainte să-l pui într-o ofertă.</p>
+    <p class="src"><a href="https://spotmedia.ro/stiri/media/fara-casute-pre-bifate-si-fara-butoane-ascunse-pentru-refuzul-cookie-urilor-noi-reguli-pentru-site-urile-de-internet">Spotmedia, 28 oct.</a> · <a href="https://www.bugetul.ro/se-schimba-cookie-urile-noua-obligatie-pentru-site-uri-ce-se-va-intampla-cu-datele-utilizatorilor/">Bugetul.ro</a> · <a href="https://www.amcham.ro/business-intelligence/new-rules-on-cookie-consent-aligning-romanian-legislation-with-european-standards">AmCham România</a> · <a href="https://www.mondaq.com/privacy-protection/1782518/upcoming-changes-to-romanian-cookie-consent-framework">Mondaq</a></p></div>
+
+  <div class="opp"><h3>România: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>Pe site-urile românești care au un modul de consimțământ domină furnizorii străini: CookieYes (32,3%), Cookiebot (14,9%), Complianz (14%), apoi OneTrust, Cookie Script, iubenda și Didomi. În top 25 nu e niciun furnizor cu sediul în România. Pe WordPress există sute de pluginuri gratuite. N-am găsit agenții care să vândă public un „audit pentru noua lege” cu preț afișat.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Doar 19,3% din site-urile din România folosesc un modul de consimțământ detectabil, deci ~80% nu au unul vizibil (estimare, din date de terță parte). Gomag are aproape 5.000 de comercianți activi, iar MerchantPro peste 2.000 de magazine (raportat). Comerțul online a avut ~8,1 mld. € în 2025. Riscul de amendă e real: ANSPDCP a dat în 2025 105 amenzi, de 2,56 mil. lei în total, la 12.297 de sesizări, inclusiv pentru cookie-uri. N-am găsit un număr total verificabil de magazine online și nici un studiu despre câte site-uri nu sunt conforme.</dd>
+    <dt>Prețuri</dt><dd>Planurile de bază globale: iubenda 5,99 €/lună (4,99 € la plata anuală), Cookiebot de la 7 €/lună, CookieYes 10 $/lună, Axeptio 29 €/lună (raportat). Intervalul redacției, 20–80 lei/lună, înseamnă ~4–16 €/lună (estimare), adică în aceeași bandă. Pentru audit (300–1.500 lei) n-am găsit tarife publice.</dd>
+    <dt>Bariere</dt><dd>Planurile gratuite (Cookiebot până la 50 de subpagini, CookieYes până la 5.000 de afișări). Clientul vrea o garanție juridică, iar un raport tehnic datat nu e o opinie juridică. Gomag poate lansa oricând un modul nativ.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă. Concurenții globali sunt ieftini și deja prezenți, dar niciunul nu e local, majoritatea site-urilor n-au încă un banner vizibil, iar termenul legal creează urgență. Se vinde pachetul: audit, texte în română, integrare Gomag și panou pentru agenții cu mai mulți clienți.</dd></dl>
+    <p class="src"><a href="https://www.wmtips.com/technologies/consent-management/country/ro/">wmtips (cote CMP în RO)</a> · <a href="https://www.zf.ro/business-hi-tech/platforma-comert-electronic-gomag-incheiem-2025-afaceri-5-milioane-22982613">ZF (Gomag)</a> · <a href="https://www.wall-street.ro/articol/ecommerce/cifre-importante-din-comertul-online-romanesc-cu-cat-a-crescut-piata">Wall-Street (MerchantPro)</a> · <a href="https://startupcafe.ro/analiza-piata-online-din-romania-se-apropie-de-85-miliarde-euro-dar-presiunea-marketplace-urilor-si-ai-schimba-regulile-jocului-96489">StartupCafe (piața online)</a> · <a href="https://startupcafe.ro/gdpr-romania-statul-roman-a-dat-amenzi-totale-de-peste-500-000-eur-in-doar-un-an-mii-de-sesizari-transmise-de-romani-si-lista-motivelor-invocate-106748">StartupCafe (amenzi ANSPDCP 2025)</a> · <a href="https://startupcafe.ro/date-personale-un-cabinet-de-avocatura-a-primit-o-amenda-de-aproape-4-000-eur-pentru-cookie-uri-89944">StartupCafe (amendă cookie)</a> · <a href="https://ro.wordpress.org/plugins/tags/cookie-consent-banner/">WordPress.org</a> · Concurenți: <a href="https://www.cookieyes.com/pricing/">CookieYes</a>, <a href="https://www.cookiebot.com/en/pricing?rid=CNC9K">Cookiebot</a>, <a href="https://complianz.io/pricing">Complianz</a></p></div>
+
+  <div class="opp"><h3>Europa: aglomerat</h3><dl>
+    <dt>Cine o face deja</dt><dd>Usercentrics (Cookiebot) raportează peste 100 mil. € venit recurent anual, cu +45% pe an, are o participație Google din decembrie 2024 și a cumpărat MCP Manager în ianuarie 2026. Didomi, cu capital Marlin Equity, a cumpărat Addingwell și Sourcepoint în 2025. Axeptio a cumpărat CookieCode și AdOpt, iar iubenda a cumpărat consentmanager în 2022. Pe Product Hunt apar mereu modulele noi.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Mare și deja servită. Taskforce-ul EDPB cere refuz pe primul nivel și condamnă interfețele manipulative, iar Google Consent Mode v2 e obligatoriu pentru advertiserii din SEE din martie 2024. Date insuficiente despre țări prost deservite; în Europa de Est nu apare niciun furnizor local în top.</dd>
+    <dt>Prețuri</dt><dd>De la ~5 la 29 €/lună pentru un site mic (vezi România), cu planuri gratuite la aproape toți.</dd>
+    <dt>Bariere</dt><dd>Consolidare cu bani de private equity și planuri gratuite. Digital Omnibus (propunerea Comisiei din noiembrie 2025, neadoptată) aduce refuzul dintr-un clic și interdicția de a cere din nou acordul timp de 6 luni. Semnalele de consimțământ din browser ar fi făcut bannerul o marfă și mai ieftină, dar o sursă din 2026 spune că propunerea a fost scoasă din Omnibus.</dd>
+    <dt>Verdict</dt><dd>Aglomerat. Nu e loc pentru un nou modul de consimțământ generalist; un jucător din România poate fi cel mult revânzător sau integrator local.</dd></dl>
+    <p class="src"><a href="https://en.wikipedia.org/wiki/Usercentrics">Wikipedia (Usercentrics)</a> · <a href="https://www.businesswire.com/news/home/20260114506724/en/Usercentrics-Acquires-MCP-Manager-to-Bring-Consent-and-Trust-to-AI">BusinessWire</a> · <a href="https://tech.eu/2025/07/08/didomi-and-sourcepoint-join-forces-to-redefine-privacy-in-the-age-of-ai/">Tech.eu (Didomi)</a> · <a href="https://www.exchangewire.com/blog/2025/02/13/axeptio-acquires-adopt-to-strengthen-global-expansion/">ExchangeWire (Axeptio)</a> · <a href="https://www.dlapiper.com/news/2022/11/dla-piper-advises-iubenda-on-the-acquisition-of-consentmanager">DLA Piper (iubenda)</a> · <a href="https://www.edpb.europa.eu:443/system/files/2023-01/edpb_20230118_report_cookie_banner_taskforce_en.pdf">EDPB</a> · <a href="https://usercentrics.com/knowledge-hub/googles-march-deadline-for-consent-mode-and-ads-privacy-compliance/">Usercentrics (Consent Mode)</a> · <a href="https://osborneclarke.com/insights/digital-omnibus-reshapes-eu-cookie-rules-leaves-banner-fatigue-largely-intact">Osborne Clarke</a> · <a href="https://dig.watch/?p=259943">Dig.watch</a> · Prețuri: <a href="https://www.iubenda.com/en/pricing">iubenda</a>, <a href="https://www.capterra.com/p/173892/Axeptio/pricing/">Capterra (Axeptio)</a></p></div>
+
+  <div class="opp"><h3>Asia / Japonia: aglomerat</h3><dl>
+    <dt>Cine o face deja</dt><dd>Priv Tech „Trust 360”, DataSign „webtru”, Cloud CIRCUS CMP (cu plan gratuit), OneTrust revândut de IIJ, plus Osano, Cookiebot și Sourcepoint prin integratori locali.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Mai mică decât în UE (estimare). Regula „external transmission” din Telecommunications Business Act (în vigoare din 16 iunie 2023) cere de regulă doar o notificare sau un anunț public, nu consimțământ, iar firmele care își vând doar produsele proprii pe site-ul propriu nu intră sub ea. APPI cere consimțământ doar când destinatarul poate identifica persoana.</dd>
+    <dt>Prețuri</dt><dd>Trust 360: 50.000 ¥/lună fără TVA, până la 5 mil. afișări, plus 110.000 ¥ taxă inițială. webtru: Basic de la 6.600 ¥, Plus de la 13.200 ¥. OneTrust prin IIJ: 6.930 ¥/lună (raportat; o parte din surse sunt din 2024).</dd>
+    <dt>Bariere</dt><dd>Limba, distribuitorii locali și faptul că furnizorii globali au deja parteneri japonezi.</dd>
+    <dt>Verdict</dt><dd>Aglomerat. Cererea e redusă, există furnizori locali gratuiți, iar un jucător din România nu are o șansă realistă.</dd></dl>
+    <p class="src"><a href="https://iapp.org/news/a/japan-to-enact-external-data-transmission-rule-of-amended-telecommunications-business-act">IAPP</a> · <a href="https://resourcehub.bakermckenzie.com/en/resources/global-data-and-cyber-handbook/asia-pacific/japan/topics/cookies-online-tracking-and-direct-marketing">Baker McKenzie</a> · <a href="https://www.itreview.jp/products/trust360/price">ITreview (Trust 360)</a> · <a href="https://www.shopowner-support.net/customer_attraction_information/online/homepage_seo/trust360/">shopowner-support (Trust 360)</a> · <a href="https://www.shopowner-support.net/customer_attraction_information/online/homepage_seo/cmp/">shopowner-support (comparație CMP, 2024)</a> · <a href="https://www.itreview.jp/products/webtru/competitors/alternatives">ITreview (webtru)</a> · <a href="https://www.itreview.jp/products/cloud-circus-cmp/price">ITreview (Cloud CIRCUS)</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> verifici întâi legea în Monitorul Oficial. Apoi scanezi 200 de magazine Gomag și WooCommerce și notezi: au banner? au „Refuz” pe primul ecran? se încarcă trackere înainte de acord? Faci o pagină cu două oferte, de exemplu „Audit cu raport datat – 490 lei” și „Banner în română – 39 lei/lună” (prețuri de testat, nu din surse), cu avans plătit, nu doar formular. Trimiți fiecărui magazin un e-mail cu constatarea concretă de pe site-ul lui. În zilele 5–7 suni 10 agenții web cu oferta white-label și încerci un contact la parteneriatele Gomag.</p>
+    <p><strong>Ce măsori:</strong> câte magazine scanate nu sunt conforme, câte răspund, câte plătesc avansul și câte agenții cer prețul white-label. Prag orientativ (estimare): cel puțin 5 audituri plătite și 2 agenții interesate.</p>
+    <p><strong>Ce ar invalida ideea:</strong> legea nu e publicată sau termenul se amână; peste jumătate din magazine au deja Cookiebot sau CookieYes configurat corect; 0 plăți la 200 de contacte; agențiile spun că folosesc gratuit Complianz sau CookieYes; Gomag anunță un modul nativ.</p></div>
+</section>
+
+<section id="idee-2">
+  <p class="kicker">Ideea 2</p>
+  <h2>Monitor de parteneri inactivi fiscal și cu TVA anulat, pentru cabinetele de contabilitate</h2>
+  <p class="dek">Verificare zilnică a furnizorilor și clienților din portofoliul unui cabinet: inactiv fiscal, cod de TVA anulat, insolvență, radiere. Alerta vine înainte de plată, cu un PDF de dovadă pentru dosarul fiscal, plus un serviciu de reactivare la preț fix. Cine plătește: cabinetele contabile, IMM-urile și departamentele de achiziții. Vine din semnalul <a href="../editii/ed-2026-11-28.html#ro-eu">„Inactivarea fiscală: ANAF acceptă dovada cererilor blocate la ONRC, iar Ordinul 1636/2026 rescrie procedura”</a> (04 · Oportunități RO/UE) și din mișcarea 3 a ediției.</p>
+
+  <div class="charts"><figure class="chart"><figcaption><strong>Cât costă verificarea partenerilor în România</strong><span>lei pe lună, fără TVA, preț per cont</span></figcaption><div class="bars" role="list"><div class="bar" role="listitem" data-tip="DemoANAF Pro: 250 lei/lună (fără alerte de inactivitate sau TVA)"><span class="bl">DemoANAF Pro</span><span class="bt"><i style="--v:100.0%"></i></span><span class="bv">250 lei</span></div><div class="bar" role="listitem" data-tip="ApiFirme Pro: 179 lei/lună"><span class="bl">ApiFirme Pro</span><span class="bt"><i style="--v:71.6%"></i></span><span class="bv">179 lei</span></div><div class="bar" role="listitem" data-tip="ApiFirme Plus: 69 lei/lună, cu webhook pentru radiere și TVA"><span class="bl">ApiFirme Plus</span><span class="bt"><i style="--v:27.6%"></i></span><span class="bv">69 lei</span></div><div class="bar" role="listitem" data-tip="ApiFirme Starter: 35 lei/lună"><span class="bl">ApiFirme Starter</span><span class="bt"><i style="--v:14.0%"></i></span><span class="bv">35 lei</span></div><div class="bar" role="listitem" data-tip="Folositor.ro: gratuit, verificare în masă până la 300 de CUI, fără alerte"><span class="bl">Folositor.ro</span><span class="bt"><i style="--v:0%"></i></span><span class="bv">0 lei</span></div><div class="bar" role="listitem" data-tip="API-ul public ANAF: gratuit, max. 500 CUI per cerere, 1 cerere pe secundă"><span class="bl">API ANAF</span><span class="bt"><i style="--v:0%"></i></span><span class="bv">0 lei</span></div></div><p class="src">Surse: <a href="https://demoanaf.ro/en/pro">DemoANAF</a>, <a href="https://www.wall-street.ro/articol/it-and-c/apifirmedev-datele-fiscale-ale-clientilor-tai-intr-un-singur-loc">Wall-Street.ro (ApiFirme, advertorial)</a>, <a href="https://folositor.ro/verificare-firma-lista">Folositor.ro</a>, <a href="https://static.anaf.ro/static/10/Anaf/Informatii_R/doc_WS_V6.txt">documentația API ANAF</a>. Prețuri raportate de furnizori.</p></figure></div>
+
+  <div class="opp"><h3>România: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>API-ul public ANAF returnează gratuit statusul de inactiv, înregistrarea în scopuri de TVA, data anulării, radierea și statusul e-Factura. ApiFirme.dev are verificare înainte de facturare și webhook-uri pentru radiere și TVA pe planurile Plus și Pro. Folositor.ro verifică gratuit până la 300 de CUI și arată dacă furnizorul era inactiv la data facturii, dar fără alerte. ListaFirme alertează pe e-mail la insolvență și schimbări de acționariat. RisCo monitorizează până la 100 de CUI. Funcțiile Termene.ro n-au putut fi verificate.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Peste 462.000 de contribuabili riscau inactivarea din 1 ianuarie 2026 pentru că nu depuseseră situațiile financiare (raportat, analiză EY pe date ANAF). La inactivare, codul de TVA se anulează, iar cumpărătorul poate pierde deducerea TVA și cheltuiala pentru facturile de la un furnizor inactiv (regula vine dintr-o sursă din 2011; trebuie verificată la zi). Peste 210.000 de cereri blocate la ONRC (raportat de sindicat). România are ~1,07 mil. firme active și ~11.800 de firme pe codul CAEN 6920 (contabilitate și audit, cifră din 2020).</dd>
+    <dt>Prețuri</dt><dd>Între 0 și 250 lei/lună per cont (graficul de mai sus). Ținta redacției, 30–100 lei pe firmă monitorizată, ar fi mult peste piață; ar merge doar ca preț per portofoliu. Plafon (estimare): 11.800 de cabinete × 50 lei/lună ≈ 7 mil. lei/an la penetrare totală, deci 0,35–0,7 mil. lei/an la 5–10%. Pentru reactivare n-am găsit tarife publice.</dd>
+    <dt>Bariere</dt><dd>Datele sunt gratuite, iar programele de facturare pot adăuga oricând funcția. API-ul ANAF are limita de 1 cerere pe secundă. Reactivarea depinde de ONRC, care e blocat, deci un preț fix e greu de garantat.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă. N-am găsit pe nimeni care să ofere explicit alerta „înainte de plată”, pe tot portofoliul cabinetului, cu dovadă arhivată. Diferențierea se copiază ușor, iar plafonul e mic: merge ca produs secundar sau ca pâlnie spre serviciul de reactivare, nu ca afacere principală.</dd></dl>
+    <p class="src"><a href="https://www.stiripesurse.ro/over-462000-taxpayers-risk-declaring-fiscal-inactivity-as-of-january-1-2026-analysis_3847291">Știripesurse (EY)</a> · <a href="https://www.digi24.ro/stiri/economie/companii/cand-poate-fi-declarata-o-firma-inactiva-fiscal-din-2026-si-ce-obligatii-raman-in-vigoare-pentru-contribuabili-3627013">Digi24</a> · <a href="https://www.avocatnet.ro/articol_25398/Peste-56000-de-firme-declarate-inactive-de-Fisc-Ce-risti-daca-faci-afaceri-cu-ele.html">Avocatnet, 2011</a> · <a href="https://economedia.ro/?p=380431">Economedia (ONRC)</a> · <a href="https://startupcafe.ro/radiografia-firmelor-din-romania-peste-1-milion-activeaza-in-prezent-104239">StartupCafe (firme active)</a> · <a href="https://startupcafe.ro/companii-servicii-de-contabilitate-audit-cifra-afaceri-3-miliarde-lei-2020-analiza-htm-17590">StartupCafe (CAEN 6920, 2020)</a> · <a href="https://www.forbes.ro/p-monitorizare-firme-pe-listafirme-ro-date-relevante-si-precise-despre-parteneri-105230">Forbes (ListaFirme, advertorial)</a> · <a href="https://dev.risco.ro/en/produse/rapoarte/rapoarte-cip-grupuri-monitorizare-firme-6-luni-1203">RisCo</a> · <a href="https://termene.ro/produs-monitorizare-firme">Termene.ro</a> · <a href="https://www.contzilla.ro/registrul-contribuabililor/">Contzilla (registrul inactivilor)</a></p></div>
+
+  <div class="opp"><h3>Europa: aglomerat, cu nișă doar transfrontalieră</h3><dl>
+    <dt>Cine o face deja</dt><dd>Polonia are „lista albă” a plătitorilor de TVA cu API din 2019, iar KPMG K-Scanner face verificare în masă cu istoric arhivat. În Cehia, Fakturoid verifică zilnic lista „plătitorilor nesiguri” și conturile bancare, în toate planurile plătite. Slovacia publică din 2013 lista „subiecților potențial riscanți”. Pentru monitorizare de credit, Creditsafe are un contract median de 25.830 $/an (raportat de Vendr). Moody's a cumpărat kompany în 2022. Ungaria și Italia: date insuficiente.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>Reală acolo unde riscul e penal sau fiscal: în Polonia, plata de peste 15.000 PLN într-un cont care nu e pe listă aduce răspundere solidară pentru TVA (excluderea de la costuri se abrogă pentru facturile din 2027). În Slovacia, cumpărătorul răspunde dacă „trebuia să știe”. ViDA, adoptat în martie 2025, aduce e-facturarea intra-UE cu raportare în timp real din iulie 2030.</dd>
+    <dt>Prețuri</dt><dd>Inclus gratuit în programele locale (Fakturoid) sau licențe anuale cu preț nepublic (KPMG). Monitorizarea de credit costă zeci de mii de dolari pe an.</dd>
+    <dt>Bariere</dt><dd>Fiecare țară are registrul, limba și regulile ei, iar programele locale de facturare includ deja verificarea.</dd>
+    <dt>Verdict</dt><dd>Aglomerat în Polonia și Cehia. Un monitor „multi-registru” pentru grupuri regionale e posibil, dar intră în competiție cu Creditsafe și Moody's.</dd></dl>
+    <p class="src"><a href="https://ksiegowosc.infor.pl/podatki/vat/podatnik-vat/3071210,Biala-lista-podatnikow-VAT-masowa-weryfikacja-kontrahentow.html">Infor.pl</a> · <a href="https://www.ifirma.pl/blog/biala-lista-podatnikow-vat-zasady-obowiazki-przedsiebiorcow-platnosci-i-konsekwencje/">ifirma.pl</a> · <a href="https://kpmg.com/pl/pl/produkty/kpmg-k-scanner-aplikacja-umozliwiajaca-szybka-i-masowa-weryfikacje-kontrahentow.html">KPMG K-Scanner</a> · <a href="https://www.fakturoid.cz/podpora/automatizace/nespolehlivy-platce-dph">Fakturoid</a> · <a href="https://www.podnikajte.sk/dan-z-pridanej-hodnoty/cierna-listina-a-rucenie-za-dph">Podnikajte.sk, 2013</a> · <a href="https://www.vendr.com/marketplace/creditsafe">Vendr (Creditsafe)</a> · <a href="https://ir.moodys.com/press-releases/news-details/2022/Moodys-Completes-Acquisition-of-kompany/default.aspx">Moody's</a> · <a href="https://www.deloitte.com/be/en/services/tax/blogs/final-go-for-the-vida-package.html">Deloitte (ViDA)</a> · <a href="https://www.vatupdate.com/2025/07/11/eu-court-joint-liability-and-denial-of-vat-deduction-can-coexist-in-fraud-cases">VATupdate (CJUE)</a></p></div>
+
+  <div class="opp"><h3>Asia / Japonia: aglomerat</h3><dl>
+    <dt>Cine o face deja</dt><dd>Registrul public al emitenților de facturi calificate are un API oficial. Money Forward actualizează numerele de înregistrare ale tuturor furnizorilor printr-un buton, cel mult o dată pe zi. Sansan Bill One verifică din august 2023 numărul, potrivirea numelui și câmpurile obligatorii. freee oferă gratuit gestiunea statusului furnizorilor. PwC Japonia face verificare în masă, cu detectarea anulărilor programate. Există și un add-on gratuit pentru Google Sheets.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>4,73 mil. de emitenți calificați la sfârșitul lui martie 2026, din care 2,47 mil. persoane juridice (raportat, NTA).</dd>
+    <dt>Prețuri</dt><dd>Funcția e inclusă gratuit în suitele existente. Prețuri separate: date insuficiente.</dd>
+    <dt>Bariere</dt><dd>Limba, integrarea cu sistemele contabile locale și distribuția prin consultanții fiscali (zeirishi).</dd>
+    <dt>Verdict</dt><dd>Aglomerat. Funcția e gratuită sau inclusă la freee, Money Forward și Bill One; un jucător din România nu are o șansă realistă.</dd></dl>
+    <p class="src"><a href="https://www.invoice-kohyo.nta.go.jp/web-api/web-api-download.files/k-web-api-kinou.pdf">NTA (Web-API)</a> · <a href="https://biz.moneyforward.com/support/account/faq/invoice-faq/invoice07.html">Money Forward</a> · <a href="https://webtan.impress.co.jp/n/2023/08/29/45526">Web担当者Forum (Bill One)</a> · <a href="https://www.freee.co.jp/kb/kb-invoice/invoice_registration_number/">freee</a> · <a href="https://www.pwc.com/jp/ja/services/tax/indirect-tax/invoice-issuer-id-validator.html">PwC Japonia</a> · <a href="https://www.nta.go.jp/about/introduction/torikumi/report/2026/09.htm">NTA (statistici 2026)</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> o pagină cu promisiunea „Încarci lista de furnizori (CSV sau export din Saga/SmartBill) și primești alertă pe e-mail sau WhatsApp când un furnizor devine inactiv, își pierde codul de TVA sau intră în insolvență, cu PDF de dovadă pentru dosarul fiscal”. Două prețuri de testat: 99 lei/lună pentru până la 50 de firme-client și 299 lei/lună nelimitat, plus un buton „Reactivare la preț fix: cere ofertă”. Trimiți 100 de mesaje către cabinete și postezi în 3–4 grupuri de contabili, cu o scanare gratuită a portofoliului prin API-ul ANAF, livrată în 24 de ore.</p>
+    <p><strong>Ce măsori:</strong> câte cabinete trimit liste, câți parteneri problematici găsești pe portofoliu, câte precomenzi plătite vin și câte cereri de reactivare. Prag orientativ (estimare): 10 liste, 3 precomenzi, 2 cereri de reactivare.</p>
+    <p><strong>Ce ar invalida ideea:</strong> contabilii spun că verifică deja gratuit în Saga, SmartBill sau Folositor; scanările găsesc aproape zero parteneri inactivi; nimeni nu plătește peste 50 lei/lună; reactivările se blochează la ONRC și nu pot fi livrate la preț fix.</p></div>
+</section>
+
+<section id="idee-3">
+  <p class="kicker">Ideea 3</p>
+  <h2>Raport de anomalii între facturile primite în SPV și extrasul bancar, pentru cabinetele contabile</h2>
+  <p class="dek">Împerechează facturile primite prin e-Factura cu plățile din extras și semnalează plățile fără factură, plățile duble, abonamentele uitate și facturile neplătite, pe tot portofoliul cabinetului. Cine plătește: cabinetele contabile, per client din portofoliu. Vine din semnalul <a href="../editii/ed-2026-11-28.html#ai">„SpendGap (Show HN): facturi potrivite cu extrasul bancar și abonamente uitate”</a> (02 · AI) și din mișcarea 6 a ediției.</p>
+
+  <div class="opp"><h3>România: loc pentru nișă sau diferențiere</h3><dl>
+    <dt>Cine o face deja</dt><dd>Keez are din iulie 2024 „Extras Online”: preia zilnic extrasele prin Open Banking de la băncile din România și le corelează cu facturile, inclus în abonament. SmartBill e integrat cu Smart Accounts (Smart Fintech, primul furnizor de informații despre conturi autorizat de BNR) din 2023: recunoaște încasările, plățile și comisioanele, iar ce nu identifică trimite în contul 473; facturile se preiau direct din SPV. ContApp se conectează la 15 bănci și potrivește încasările cu facturile pe fiecare firmă din portofoliu. FGO s-a integrat cu Finqware în octombrie 2026. N-am găsit niciun produs care să semnaleze explicit plăți duble, abonamente uitate sau plăți fără factură pe facturile <em>primite</em>, într-o vedere pe portofoliu. Saga, WinMentor și Nexus: date insuficiente.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>1,24 mld. de facturi în e-Factura în 2025, din care 563,1 mil. B2C și 23,5 mil. B2G, și 3,67 mil. utilizatori SPV (raportat, ANAF). Rezultă ~677 mil. de facturi non-B2C, adică ~630 pe an pe firmă activă (estimare, la ~1,07 mil. firme active). CECCAR avea ~30.000 de experți și contabili autorizați în 2022 (raportat).</dd>
+    <dt>Prețuri</dt><dd>Keez: inclus în abonament. ContApp: 49 lei/lună per client și 79 lei/lună pentru cabinet, cu reduceri de volum de 40–75% (pagina e inconsecventă). SmartBill Conta și FGO: n-am găsit prețul.</dd>
+    <dt>Bariere</dt><dd>Accesul la datele bancare cere licență de la BNR sau un partener ca Smart Fintech ori Finqware; alternativa e importul de CSV. Potrivirea de bază e deja inclusă la SmartBill și Keez. Datele bancare ale clienților cer încredere, iar exportul spre Saga sau WinMentor cere integrare.</dd>
+    <dt>Verdict</dt><dd>Loc pentru nișă. Reconcilierea de bază e o funcție, nu un produs. Are șansă doar un strat de detectare a anomaliilor care merge cu orice program contabil, pentru cabinetele care lucrează în Saga sau WinMentor.</dd></dl>
+    <p class="src"><a href="https://www.revistabiz.ro/noul-serviciu-extras-online-de-la-keez/">Revista Biz (Keez)</a> · <a href="https://www.forbes.ro/smartbill-integreaza-smart-accounts-primul-serviciu-automat-de-open-banking-autorizat-de-bnr-319148">Forbes (SmartBill)</a> · <a href="https://www.contzilla.ro/operarea-automatizata-a-extraselor-de-banca-import-csv-sau-conectarea-cu-banca/">Contzilla (extrase)</a> · <a href="https://www.contzilla.ro/5-procese-contabile-care-pot-fi-automatizate-in-2026/">Contzilla (sponsorizat SmartBill)</a> · <a href="https://contapp.ro/?p=14287">ContApp</a> · <a href="https://startupcafe.ro/software-contabilitate-fgo-integrare-solutie-finqware-109162">StartupCafe (FGO)</a> · <a href="https://go.bancatransilvania.ro/storage/app/media/manual_de_utilizare_BT_Go.pdf">Manual BT Go</a> · <a href="https://cursdeguvernare.ro/anaf-primele-cifre-privind-utilizarea-infrastructurii-digitale-peste-12-mld-de-facturi-electronice-367-mil-de-utilizatori-spv.html">Curs de guvernare (ANAF)</a> · <a href="https://evz.ro/30-000-de-experti-contabili-si-contabili-autorizati-se-opun-reorganizarii-si-restrangerii-independentei-profesiei.html">EVZ (CECCAR)</a></p></div>
+
+  <div class="opp"><h3>Europa: aglomerat, cu nișă în Croația</h3><dl>
+    <dt>Cine o face deja</dt><dd>Pennylane include sincronizarea conturilor și reconcilierea în toate planurile și a strâns 200 mil. $ în ianuarie 2026, la o evaluare raportată de ~4,25 mld. $. Qonto a cumpărat în 2024 Regate, o soluție de reconciliere pentru cabinetele contabile, și are 600.000 de clienți (raportat). Dext, AutoEntry, Hubdoc și Datamolino fac captura de documente. În Polonia, ING, PKO, Pekao, mBank și alte bănci descarcă facturile din KSeF direct în aplicație, unele cu decontare automată în pachete de 0–45 zł/lună.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>În Croația, e-facturarea B2B e obligatorie din 1 ianuarie 2026, iar emitentul trebuie să raporteze plata facturii, deci obligația cere direct legătura factură–plată. Belgia are e-facturare obligatorie prin Peppol din 2026; nivelul concurenței de acolo: date insuficiente.</dd>
+    <dt>Prețuri</dt><dd>Captura de documente în Marea Britanie, plan de bază: Dext 30 £, Datamolino 17 £, AutoEntry 15,45 £ pe lună. Pennylane: 7, 14 sau 24 €/lună (raportat).</dd>
+    <dt>Bariere</dt><dd>Fintech-uri finanțate cu sute de milioane și bănci care dau funcția aproape gratuit. FIDA (accesul la date financiare) e pe lista de retrageri a Comisiei din 4 noiembrie 2026, iar votul final pe PSD3 și PSR e programat orientativ pe 14 decembrie 2026.</dd>
+    <dt>Verdict</dt><dd>Aglomerat în Franța, Marea Britanie, Germania și Polonia. Loc pentru nișă în Croația, unde raportarea plății e obligatorie, dar asta cere un produs croat, nu românesc.</dd></dl>
+    <p class="src"><a href="https://www.pennylane.com/fr/tarifs">Pennylane</a> · <a href="https://tech.eu/2026/01/20/french-accounting-software-platform-pennylane-raises-200m">Tech.eu (Pennylane)</a> · <a href="https://www.frenchweb.fr/qonto-soffre-regate-une-solution-pour-faciliter-la-reconciliation-comptable/447325">FrenchWeb (Qonto/Regate)</a> · <a href="https://techcrunch.com/2025/07/02/french-b2b-fintech-qonto-reaches-600000-customers-files-for-banking-license">TechCrunch (Qonto)</a> · <a href="https://moneteo.com/artykuly/ksef-konto-firmowe-zmiany-w-bankach">Moneteo (KSeF)</a> · <a href="https://www.fonoa.com/resources/blog/croatia-fiscalization-2-0-compliance">Fonoa (Croația)</a> · <a href="https://www.deloitte.com/be/en/services/tax/blogs/tax-legal-pulse/belgium-peppol-mandate-what-changes-for-smes.html">Deloitte (Belgia)</a> · <a href="https://www.openbankingtracker.com/blog/state-of-fida-financial-data-access-regulation">Open Banking Tracker</a> · <a href="https://datamolino.com/blog/pricing-and-features-autoentry-vs-hubdoc-vs-dext-vs-datamolino-in-2026">Datamolino (prețuri)</a> · <a href="https://dext.com/uk/business/pricing">Dext</a></p></div>
+
+  <div class="opp"><h3>Asia / Japonia: aglomerat</h3><dl>
+    <dt>Cine o face deja</dt><dd>Pentru potrivirea încasărilor (入金消込) există V-ONEクラウド, Bill One (Sansan, cu conturi virtuale per client), 請求管理ロボ, invox și バクラク (LayerX, cu AI). freee și Money Forward înregistrează automat tranzacțiile din extrase, iar Bill One compară automat facturile primite și semnalează neconcordanțele.</dd>
+    <dt>Cât de mare e nevoia</dt><dd>4,73 mil. de emitenți de facturi calificate (martie 2026), 82.513 consultanți fiscali și 5.287 de societăți de consultanță fiscală, principalul canal de distribuție (raportat, NTA). Adopția Peppol JP: date insuficiente.</dd>
+    <dt>Prețuri</dt><dd>freee pentru firme: de la 2.980 ¥/lună; Money Forward: 2.480–6.480 ¥/lună (plată anuală, fără taxa de consum); Bill One: preț la cerere.</dd>
+    <dt>Bariere</dt><dd>Limba, regulile locale de arhivare electronică (neverificate în această rulare) și distribuția controlată de consultanții fiscali și de rețele ca TKC.</dd>
+    <dt>Verdict</dt><dd>Aglomerat. Fără un partener local, un jucător din România sau UE nu are o șansă realistă.</dd></dl>
+    <p class="src"><a href="https://boxil.jp/mag/?p=23999">Boxil</a> · <a href="https://www.onamae.com/business/article/306126/">Onamae (Bill One)</a> · <a href="https://www.nta.go.jp/about/introduction/torikumi/report/2026/09.htm">NTA (emitenți)</a> · <a href="https://www.nta.go.jp/about/introduction/torikumi/report/report2026/pdf/07.pdf">NTA (consultanți fiscali)</a> · <a href="https://hatenabase.jp/blog/freee-accounting-pricing-plans-2025/">Hatenabase (freee)</a> · <a href="https://biz.moneyforward.com/accounting/smb/price/">Money Forward</a></p></div>
+
+  <div class="item"><h3>Testul de 7 zile</h3>
+    <p><strong>Ce faci:</strong> o pagină cu oferta „Raport de anomalii pentru un client, în 48 de ore: plăți fără factură, plăți duble, abonamente recurente, facturi neplătite”, cu intrare simplă: arhiva ZIP cu XML-urile din SPV și extrasul în CSV. O trimiți la 30–50 de cabinete, prin grupurile de contabili de pe Facebook și LinkedIn. Rapoartele le faci manual sau cu un script, iar apoi întrebi cât ar plăti, de exemplu 20–40 lei pe client pe lună (ipoteză de testat, nu cifră din surse).</p>
+    <p><strong>Ce măsori:</strong> câte cabinete trimit date reale, câte anomalii găsești per client și câți bani reprezintă, câte precomenzi sau scrisori de intenție vin. Prag orientativ (estimare): 5 cabinete cu date reale și 3 care se angajează pentru cel puțin 10 clienți.</p>
+    <p><strong>Ce ar invalida ideea:</strong> cabinetele spun că SmartBill sau Keez fac deja asta; anomaliile sunt banale sau rare; nimeni nu trimite extrasele; sub 2 răspunsuri pozitive din 30 de contactări.</p></div>
+</section>
+</main>
+
+<footer>
+  <h4>Surse și metodologie</h4>
+  <p>Analiză produsă automat pe 28 noiembrie 2026, din trei cercetări web paralele, câte una pentru fiecare idee, pe trei piețe: România, Europa (UE și Marea Britanie) și Asia, cu accent pe Japonia. Ideile au fost alese din <a href="../editii/ed-2026-11-28.html">ediția nr. 18</a> după raportul dintre potențial și efortul unui antreprenor mic, cu buget redus, și nu repetă ideile din <a href="an-2026-11-25.html">analiza din 25 noiembrie</a>. Fiecare cifră are link la sursă. <strong>Verdicte:</strong> „loc liber” = n-am găsit pe nimeni care să facă exact asta pe piața respectivă; „loc pentru nișă sau diferențiere” = există jucători, dar un segment, o limbă sau un model de preț rămân neacoperite; „aglomerat” = mai mulți jucători serviți bine, la prețuri mici; „date insuficiente” = nu există destule surse pentru un verdict. <strong>„Raportat”</strong> = cifră declarată de companie sau de sursă, neauditată. <strong>„Estimare”</strong> = calculul nostru, pornind de la cifrele citate. Prețurile propuse în testele de 7 zile sunt ipoteze, nu cifre din surse.</p>
+  <p>Limitări: numărul Legii 219/2026, publicarea în MO 964 și data intrării în vigoare vin din ediție și nu au fost confirmate independent; căutările au găsit doar articole din octombrie despre proiect. Cele două articole StartupCafe despre Ordinul 1636/2026 au cerut o aprobare de acces care a expirat, așa că detaliile ordinului (13 formulare, registru public) nu au fost verificate; o căutare a doua n-a adus o sursă alternativă despre acest ordin. Paginile Termene.ro, Wolters Kluwer Polonia, BusinessInfo.cz, TaxDome și Quasa au dat eroare de client. Postarea Show HN despre SpendGap nu a fost găsită. Instrumentul de citire a paginilor nu a fost disponibil în sesiunea principală, deci reîncercarea s-a făcut doar prin căutare. Cota de 19,3% vine de la un serviciu de terță parte care detectează doar modulele vizibile tehnic. Unele prețuri japoneze sunt din 2024, iar regula despre pierderea deducerii la furnizorii inactivi vine dintr-o sursă din 2011.</p>
+  <p>Nu este consultanță juridică, fiscală sau de investiții. Ideile sunt ipoteze de testat. Ideea 1 cere validare de la un avocat (protecția datelor), iar ideile 2 și 3 de la un consultant fiscal; ideea 3 cere și atenție la GDPR și la regulile de acces la datele bancare.</p>
+  <p class="backlink"><a href="../index.html">← Coperta și arhiva</a></p>
+</footer>
+
+</div></div>
+<script>
+/* Business Radar UX: progres de citire, meniu activ, timp de citire, mod „doar titluri”, buton sus. Pagina funcționează și fără acest script. */
+(function(){
+  var d=document,b=d.body;
+  var bar=d.createElement('div');bar.className='progress';bar.setAttribute('aria-hidden','true');b.insertBefore(bar,b.firstChild);
+  var top=d.createElement('button');top.className='totop';top.type='button';top.setAttribute('aria-label','Înapoi sus');top.textContent='↑';b.appendChild(top);
+  top.addEventListener('click',function(){window.scrollTo({top:0});});
+  var main=d.querySelector('main'),nav=d.querySelector('nav.toc'),masthead=d.querySelector('.masthead');
+  if(main&&!main.id)main.id='continut';
+  if(main){var sk=d.createElement('a');sk.className='skip';sk.href='#'+main.id;sk.textContent='Sari la conținut';b.insertBefore(sk,b.firstChild);}
+  /* timp de citire */
+  var line=d.querySelector('.masthead .edline');
+  if(main&&line){var w=(main.innerText||'').split(/\s+/).length,m=Math.max(1,Math.round(w/220));var s=d.createElement('span');s.textContent='~'+m+' min de citit';line.appendChild(s);}
+  /* bara de unelte: mod „doar titluri” */
+  var skimKey='br-skim',skim=false;try{skim=localStorage.getItem(skimKey)==='1'}catch(e){}
+  if(nav&&main){
+    var tools=d.createElement('div');tools.className='tools';
+    var n=d.querySelectorAll('main .item h3, main .opp h3').length;
+    var info=d.createElement('span');info.textContent=n+' semnale în această ediție';
+    var btn=d.createElement('button');btn.type='button';btn.textContent='Doar titluri';
+    function setSkim(v){skim=v;b.classList.toggle('skim',v);btn.setAttribute('aria-pressed',v?'true':'false');try{localStorage.setItem(skimKey,v?'1':'0')}catch(e){}}
+    btn.addEventListener('click',function(){setSkim(!skim)});
+    tools.appendChild(info);tools.appendChild(btn);nav.parentNode.insertBefore(tools,nav.nextSibling);setSkim(skim);
+    main.addEventListener('click',function(e){
+      if(!b.classList.contains('skim'))return;
+      var h=e.target.closest('h3');if(!h||e.target.closest('a'))return;
+      var box=h.parentNode;if(box.classList.contains('item')||box.classList.contains('opp'))box.classList.toggle('open');
+    });
+  }
+  /* tooltip pentru barele din grafice (data-tip) */
+  var tip=d.createElement('div');tip.className='charttip';tip.setAttribute('role','tooltip');b.appendChild(tip);
+  [].forEach.call(d.querySelectorAll('.bar[data-tip]'),function(el){
+    el.addEventListener('mousemove',function(e){tip.textContent=el.getAttribute('data-tip');tip.style.opacity=1;var x=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px'});
+    el.addEventListener('mouseleave',function(){tip.style.opacity=0});
+  });
+  /* linkurile externe se deschid în tab nou */
+  [].forEach.call(d.querySelectorAll('a[href^="http"]'),function(a){a.target='_blank';a.rel='noopener'});
+  /* meniu activ + progres + buton sus */
+  var links=nav?[].slice.call(nav.querySelectorAll('a[href^="#"]')):[];
+  var secs=links.map(function(a){return d.getElementById(a.getAttribute('href').slice(1))});
+  var ticking=false;
+  function onScroll(){
+    var y=window.scrollY,h=d.documentElement.scrollHeight-window.innerHeight;
+    bar.style.setProperty('--p',h>0?Math.min(1,y/h):0);
+    top.classList.toggle('show',y>900);
+    var cur=-1;for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].getBoundingClientRect().top<120)cur=i}
+    links.forEach(function(a,i){var on=i===cur;if(a.classList.contains('active')!==on){a.classList.toggle('active',on);if(on&&a.scrollIntoView&&nav.scrollWidth>nav.clientWidth){nav.scrollTo({left:a.offsetLeft-40})}}});
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
